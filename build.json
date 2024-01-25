@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "buildingBlocks.jks",
+            "storePassword": "Aksharabb@org.in",
+            "alias": "aksharabuildingblockskey",
+            "password" : "Aksharabb@org.in",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "buildingBlocks.jks",
+            "storePassword": "Aksharabb@org.in",
+            "alias": "aksharabuildingblockskey",
+            "password" : "Aksharabb@org.in",
+            "keystoreType": "jks"
+        }
+    }
+}
