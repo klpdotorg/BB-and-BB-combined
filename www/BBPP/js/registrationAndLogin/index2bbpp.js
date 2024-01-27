@@ -224,7 +224,7 @@ Game.index2bbpp.prototype = {
 		//}
 		//alert(window.score);
 
-		abbchmprmdsjsapi.initializeDS();
+		abbprmdsjsapi.initializeDS();
 
 		window.timeSaveFunc = function () {
 			var today = new Date();

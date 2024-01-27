@@ -1,6 +1,6 @@
 var bbregloginbbpp = {
 
-    databasename: "AppDatabase.db",
+    databasename: "AppDatabaseBBpp.db",
     providercode: "CAL",  // 3-char ID for the provider of the app/game. (e.g 'CAL' for Callystro)
     bbdbhandler: null,
     debugalerts: true,

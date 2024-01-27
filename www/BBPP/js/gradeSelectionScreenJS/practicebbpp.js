@@ -38,7 +38,7 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 			console.log("sync telemetry" + navigator.connection.type);
-			abbchmprmdsjsapi.syncTelemetryData();
+			abbprmdsjsapi.syncTelemetryData();
 		}
 		document.addEventListener("online", _this.syncTelFunc, false);
 
@@ -53,7 +53,7 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 	syncTelFunc: function () {
 		if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 			console.log("sync telemetry" + navigator.connection.type);
-			abbchmprmdsjsapi.syncTelemetryData();
+			abbprmdsjsapi.syncTelemetryData();
 		}
 	},
 

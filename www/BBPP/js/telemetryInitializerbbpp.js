@@ -420,7 +420,7 @@ var telInitializerbbpp = {
 			//alert("game id is not proper");
 		}
 		//alert(saveGameplay.deviceid);
-		saveGameplayReturnedValue = abbchmprmdsjsapi.prm_saveGameplay(saveGameplay);
+		saveGameplayReturnedValue = abbprmdsjsapi.prm_saveGameplay(saveGameplay);
 		////alert(saveGameplayReturnedValue);
 
 		nativeApp.startPracticeActivity(passStringToWebView);
@@ -504,7 +504,7 @@ var telInitializerbbpp = {
 			//alert("attempts to answer is not proper");
 		}
 		console.log(saveAsment);
-		abbchmprmdsjsapi.prm_saveAssessment(saveAsment);
+		abbprmdsjsapi.prm_saveAssessment(saveAsment);
 
 	},
 
