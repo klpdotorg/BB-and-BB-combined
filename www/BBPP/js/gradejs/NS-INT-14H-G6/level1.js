@@ -44,7 +44,7 @@ Game.NS_INT_14H_G6level1.prototype =
         _this.askQn1 = _this.createAudio("NS-INT-14-G6 a_2");
         _this.askQn2 = _this.createAudio("ClickCheckVO");
 
-        telInitializer.gameIdInit("NS_INT_14H_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_14H_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -112,7 +112,7 @@ Game.NS_INT_14H_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
 
                 _this.speakerbtn.inputEnabled = false;
@@ -1160,7 +1160,7 @@ Game.NS_INT_14H_G6level1.prototype =
                 _this.correctans.play();
                 _this.frog.scale.setTo(0.65);
                 _this.questionid =1;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.time.events.add(1000, () => {
                     _this.frog.scale.setTo(0.6);

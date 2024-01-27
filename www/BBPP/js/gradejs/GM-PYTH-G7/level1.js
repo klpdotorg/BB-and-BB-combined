@@ -54,7 +54,7 @@ Game.GMPYTH_G7level1.prototype =
         _this.Ask_Question6 = _this.createAudio("GM_PYTH_G7_a6");//Select the square
         _this.Ask_Question7 = _this.createAudio("GM_PYTH_G7_a2");//These sides cannot form a right angle triangle
 
-        telInitializer.gameIdInit("GM_PYTH_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("GM_PYTH_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
     },
 
@@ -158,7 +158,7 @@ Game.GMPYTH_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3334,7 +3334,7 @@ Game.GMPYTH_G7level1.prototype =
     starActions: function (target) {
         _this.noofAttempts ++;
 
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.microConcepts = "GeometryG7";
         console.log("get a star")

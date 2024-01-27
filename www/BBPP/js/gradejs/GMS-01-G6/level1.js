@@ -47,7 +47,7 @@ Game.GMS_01_G6level1.prototype = {
         _this.askQ1 = _this.createAudio("GMS_01_G6");
         //_this.askQ2 = _this.createAudio("hrVoice");
 
-     telInitializer.gameIdInit("GMS_01_G6",gradeSelected);
+     telInitializerbbpp.gameIdInit("GMS_01_G6",gradeSelected);
      console.log(gameID,"gameID...");
     },
     createAudio: function (src) {
@@ -166,7 +166,7 @@ Game.GMS_01_G6level1.prototype = {
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.selecttile.play();
                 // console.log("speaker btn clicked")
@@ -2150,7 +2150,7 @@ Game.GMS_01_G6level1.prototype = {
         if (_this.no11 < 5) {
 
             _this.noofAttempts ++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions(_this.no11);
             _this.time.events.add(2000, _this.eraseAll);
             _this.time.events.add(3000, _this.randomization);

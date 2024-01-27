@@ -35,7 +35,7 @@ Game.NS_FM_3_G6level1.prototype = {
             _this.snapSound.appendChild(_this.snapSoundsrc);
             // _this.load.audio('snapSound', 'sounds/snapSound.mp3');
 
-            telInitializer.gameIdInit("NSN_FM_3_G6", gradeSelected);
+            telInitializerbbpp.gameIdInit("NSN_FM_3_G6", gradeSelected);
             console.log(gameID,"gameID...");
       },
 
@@ -5883,7 +5883,7 @@ Game.NS_FM_3_G6level1.prototype = {
 
                   _this.noofAttempts++;
                   if ((_this.puzzle1.visible == true) && (_this.puzzle2.visible == true) && (_this.puzzle3.visible == true) && (_this.puzzle4.visible == true) && (_this.puzzle5.visible == true) && (_this.puzzle6.visible == true) && (_this.puzzle7.visible == true) && (_this.puzzle8.visible == true) && (_this.puzzle9.visible == true)) {
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         _this.correctAns();
 
@@ -5953,7 +5953,7 @@ Game.NS_FM_3_G6level1.prototype = {
 
 
 
-            // telInitializer.tele_saveAssessment(1, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            // telInitializerbbpp.tele_saveAssessment(1, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
       },
 

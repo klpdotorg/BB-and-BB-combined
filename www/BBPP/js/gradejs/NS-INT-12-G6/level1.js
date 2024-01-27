@@ -46,7 +46,7 @@ Game.NS_INT_12_G6level1.prototype =
         _this.nullyficationSoundsrc.setAttribute("src", window.baseUrl+"sounds/Game_Asset_Disappear.mp3");
         _this.nullyficationSound.appendChild(_this.nullyficationSoundsrc);  
         
-        telInitializer.gameIdInit("NS_INT_12_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_12_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -113,7 +113,7 @@ Game.NS_INT_12_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () 
         {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -1459,7 +1459,7 @@ Game.NS_INT_12_G6level1.prototype =
         _this.noofAttempts++;
         if(_this.evaluation1() )
         {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             if(_this.allQuestion[_this.allQuestion_count]==4||_this.allQuestion[_this.allQuestion_count]==5){
                 _this.evaluation2()
@@ -2343,7 +2343,7 @@ Game.NS_INT_12_G6level1.prototype =
     {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
 

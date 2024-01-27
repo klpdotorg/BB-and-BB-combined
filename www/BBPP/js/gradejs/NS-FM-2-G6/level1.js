@@ -64,7 +64,7 @@ Game.NS_FM_2_G6level1.prototype =
         _this.boxHighlightsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.boxHighlight.appendChild(_this.boxHighlightsrc);
 
-       // telInitializer.gameIdInit("NS_FM_1_G6", gradeSelected);
+       // telInitializerbbpp.gameIdInit("NS_FM_1_G6", gradeSelected);
     },
 
 
@@ -129,7 +129,7 @@ Game.NS_FM_2_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1070,7 +1070,7 @@ Game.NS_FM_2_G6level1.prototype =
             //              _this.destroyNonfactor();
             //              _this.enableRemainingFactor();
             //           });
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrationSound.play();
             _this.rightbtn.events.onInputDown.removeAll();
@@ -1140,7 +1140,7 @@ Game.NS_FM_2_G6level1.prototype =
         _this.evaluation1();
         _this.noofAttempts++;
         if (_this.final_selected_num == _this.greaterFactor) {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrationSound.play();
             _this.rightbtn.events.onInputDown.removeAll();
@@ -1392,7 +1392,7 @@ Game.NS_FM_2_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 }
 

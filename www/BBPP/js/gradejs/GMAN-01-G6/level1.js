@@ -4,7 +4,7 @@ Game.GMAN_01_G6level1.prototype = {
     init: function (game) {
         _this = this;
         _this.languageSelected = window.languageSelected;
-        //    telInitializer.gameIdInit("SG21_2_5",gradeSelected);
+        //    telInitializerbbpp.gameIdInit("SG21_2_5",gradeSelected);
 
         if (_this.languageSelected == null
             || _this.languageSelected == " "
@@ -13,7 +13,7 @@ Game.GMAN_01_G6level1.prototype = {
         }
         else console.log("Language selected: " + _this.languageSelected);
 
-        telInitializer.gameIdInit("GMAN_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMAN_01_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -8159,7 +8159,7 @@ Game.GMAN_01_G6level1.prototype = {
         _this.sceneCount++;
         _this.questionid = 1;
 
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.score++; //score increement
 
         _this.wrongAnswer = false;
