@@ -64,7 +64,7 @@ Game.AL_ES_G7level1.prototype =
         _this.GamePositiveSound.appendChild(_this.GamePositiveSoundsrc);
 
         //edited for baseurl apk
-        telInitializer.gameIdInit("AL_ES_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("AL_ES_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
 
     },
@@ -162,8 +162,8 @@ Game.AL_ES_G7level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             ////// console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
-            //telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
+            //telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2680,7 +2680,7 @@ Game.AL_ES_G7level1.prototype =
 
         //edited for baseurl apk
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         //..............
 
         console.log(_this.noofAttempts, "_this.noofAttempts.................");

@@ -51,7 +51,7 @@ Game.ALD_01_G6level1.prototype =
         _this.CounterCelebrationSoundsrc.setAttribute("src", window.baseUrl + "sounds/counter_celebration.mp3");
         _this.CounterCelebrationSound.appendChild(_this.CounterCelebrationSoundsrc);
 
-        telInitializer.gameIdInit("ALD_01_G6", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("ALD_01_G6", gradeSelected);// first Tele call
         console.log(gameID,"gameID...");
     },
 
@@ -156,7 +156,7 @@ Game.ALD_01_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 console.log(_this.Question_flag);
                 _this.speakerbtn.inputEnabled = false;
@@ -1859,7 +1859,7 @@ Game.ALD_01_G6level1.prototype =
             if (Number('' + _this.selectedAns1 + _this.selectedAns2) == _this.QYArray[_this.count1]) {
                 console.log("FIBType 1 answer is correct");
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
@@ -1886,7 +1886,7 @@ Game.ALD_01_G6level1.prototype =
             if (Number('' + _this.selectedAns1 + _this.selectedAns2) == _this.QZArray[_this.count1]) {
                 console.log("initial answer is correct");
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
@@ -1916,7 +1916,7 @@ Game.ALD_01_G6level1.prototype =
             {
                 console.log("initial answer is correct");
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
@@ -2041,7 +2041,7 @@ Game.ALD_01_G6level1.prototype =
         if (Number(target.name) == _this.ZArray[_this.PartAQnCnt]) {
             console.log("ans is correct");
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions(_this.count1);
             _this.celebrationSound.play();
@@ -2553,7 +2553,7 @@ Game.ALD_01_G6level1.prototype =
         if (Number(target.name) == _this.QXArray[_this.PartBQnCnt]) {
             console.log("ans is correct");
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions(_this.count1);
             _this.celebrationSound.play();
@@ -2664,7 +2664,7 @@ Game.ALD_01_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

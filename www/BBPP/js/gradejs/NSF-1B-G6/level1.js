@@ -5,7 +5,7 @@ Game.NSF_1B_G6level1.prototype = {
     init: function (minutes, seconds, counterForTimer) {
         console.log("started init fn");
         _this = this;
-        // telInitializer.gameIdInit("NSF2_4",gradeSelected);
+        // telInitializerbbpp.gameIdInit("NSF2_4",gradeSelected);
         _this.languageSelected = window.languageSelected;
 
         if (_this.languageSelected == null
@@ -26,7 +26,7 @@ Game.NSF_1B_G6level1.prototype = {
         console.log(_this.seconds);
         console.log(_this.counterForTimer);
 
-//        telInitializer.gameIdInit("NSF_1A_G6", gradeSelected);
+//        telInitializerbbpp.gameIdInit("NSF_1A_G6", gradeSelected);
     },
 
     preload: function () {
@@ -21371,7 +21371,7 @@ Game.NSF_1B_G6level1.prototype = {
         _this.time.events.add(2000, _this.removeEverthing, _this);
 
         _this.questionid = 1;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
     },
 
     wrongAns: function (target) {

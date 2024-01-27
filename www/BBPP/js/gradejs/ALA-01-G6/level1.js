@@ -41,7 +41,7 @@ Game.ALA_01_G6level1.prototype =
         _this.bubbleSoundsrc.setAttribute("src", window.baseUrl + "sounds/WaterBubbling.mp3");
         _this.bubbleSound.appendChild(_this.bubbleSoundsrc);
 
-        telInitializer.gameIdInit("ALA_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("ALA_01_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -131,7 +131,7 @@ Game.ALA_01_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 console.log(_this.Question_flag);
                 _this.speakerbtn.inputEnabled = false;
@@ -1083,7 +1083,7 @@ Game.ALA_01_G6level1.prototype =
             if (Number('' + _this.selectedAns1 + _this.selectedAns2) == _this.ValueYArray[_this.count1]) {
                 console.log("FIBType 1 answer is correct");
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
                 _this.time.events.add(2000, function () {
@@ -1110,7 +1110,7 @@ Game.ALA_01_G6level1.prototype =
             if (Number('' + _this.selectedAns1 + _this.selectedAns2) == _this.ValueXArray[_this.count1]) {
                 console.log("initial answer is correct");
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
                 _this.time.events.add(2000, function () {
@@ -1138,7 +1138,7 @@ Game.ALA_01_G6level1.prototype =
             if (_this.AnswerBox.name == _this.ValueXArray[_this.count1] && _this.AnswerBox1.name == _this.ValueYArray[_this.count1]) {
                 _this.noofAttempts++;
                 console.log("initial answer is correct");
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.starActions(_this.count1);
                 _this.celebrationSound.play();
@@ -1534,7 +1534,7 @@ Game.ALA_01_G6level1.prototype =
         if (Number(target.name) == _this.ValueZArray[_this.count1]) {
             console.log("ans is correct");
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions(_this.count1);
             _this.celebrationSound.play();
@@ -1936,7 +1936,7 @@ Game.ALA_01_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

@@ -45,7 +45,7 @@ Game.NSF_15_G6level1.prototype =
         _this.nextOptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextOptionSound.appendChild(_this.nextOptionSoundsrc);
 
-        telInitializer.gameIdInit("NSF_15_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_15_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -122,7 +122,7 @@ Game.NSF_15_G6level1.prototype =
         _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.input.useHandCursor = true;
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2483,7 +2483,7 @@ Game.NSF_15_G6level1.prototype =
             _this.enterTxt1 = null;
             _this.enterTxt2 = null;
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions();
             _this.nextquestion();

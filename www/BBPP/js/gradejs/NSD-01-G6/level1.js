@@ -51,7 +51,7 @@ Game.NSD_1_G6level1.prototype =
         _this.Ask_Question2 = _this.createAudio("NSD-1-G6B");
         _this.Ask_Question3 = _this.createAudio("NSD-1-G6C");
 
-        telInitializer.gameIdInit("NSD_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSD_01_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -139,7 +139,7 @@ Game.NSD_1_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -718,7 +718,7 @@ Game.NSD_1_G6level1.prototype =
 
 
                         }
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         _this.correctAns();
                         _this.finalAns = false;
@@ -741,7 +741,7 @@ Game.NSD_1_G6level1.prototype =
                 }
 
                 else if ((_this.finalval == Value1Array[_this.count1] + "." + Value10Array[_this.count1] + Value100Array[_this.count1]) || (Value100Array[_this.count1] == 0 && (_this.finalval == Value1Array[_this.count1] + "." + Value10Array[_this.count1]))) {
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                     _this.correctAns();
                     _this.finalAns = false;
@@ -759,7 +759,7 @@ Game.NSD_1_G6level1.prototype =
                 //edited on 17-01-2023
                 else if ((Value1Array[_this.count1] == 0 && _this.finalval == "." + Value10Array[_this.count1] + Value100Array[_this.count1]) || ((Value100Array[_this.count1] == 0 && Value1Array[_this.count1] == 0) && (_this.finalval == "." + Value10Array[_this.count1]))) {
                     console.log("zeroooooooooooo.........");
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
 
                     _this.correctAns();
@@ -1582,7 +1582,7 @@ Game.NSD_1_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

@@ -47,7 +47,7 @@ Game.NSF_5_G6level1.prototype =
         _this.nextOptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextOptionSound.appendChild(_this.nextOptionSoundsrc);
 
-        telInitializer.gameIdInit("NSF_5_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_5_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -123,7 +123,7 @@ Game.NSF_5_G6level1.prototype =
         });
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 //                console.log("speaker button clicked:qn flag is: " + _this.qn_flag);
                 _this.speakerbtn.inputEnabled = false;
@@ -3126,7 +3126,7 @@ Game.NSF_5_G6level1.prototype =
             _this.noofAttempts++;
             //_this.fractionBoxCount++;
             if (_this.equi_count == _this.fractionBoxCount) {
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebrationSound.play();
                 _this.starActions();
@@ -3244,7 +3244,7 @@ Game.NSF_5_G6level1.prototype =
         }
 
         else if (_this.rightbtn_evaluation1()) {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrationSound.play();
             _this.starActions();
@@ -3420,7 +3420,7 @@ Game.NSF_5_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     //* functions related to showing the demo video. 

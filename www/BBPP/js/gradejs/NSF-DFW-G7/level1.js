@@ -57,7 +57,7 @@ Game.NSF_DFW_G7level1.prototype =
         //_this.Ask_Question3 = _this.createAudio("V3");
 
         //edited for baseurl apk
-        telInitializer.gameIdInit("NSF_DFW_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("NSF_DFW_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
 
 
@@ -146,7 +146,7 @@ Game.NSF_DFW_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3110,7 +3110,7 @@ Game.NSF_DFW_G7level1.prototype =
         if (_this.count1 < 5) {
             //edited for baseurl apk
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             //..............
 
             console.log(_this.noofAttempts, "_this.noofAttempts.................");
@@ -3128,7 +3128,7 @@ Game.NSF_DFW_G7level1.prototype =
         else {
             //edited for baseurl apk
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             //..............
 
             console.log(_this.noofAttempts, "_this.noofAttempts.................");
@@ -3161,7 +3161,7 @@ Game.NSF_DFW_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {
