@@ -93,6 +93,21 @@ Game.appLoginScreenbbpp.prototype = {
 			//}
 
 		}, this);
+
+		_this.regBackArrow = game.add.sprite(40, 40, 'regBackArrow');
+		_this.regBackArrow.scale.setTo(0.35);
+		_this.regBackArrow.anchor.setTo(0.5);
+
+
+		var regBackArrowGrph = game.add.graphics(0, 0);
+		regBackArrowGrph.beginFill(0x4E342E, 0.05);
+		regBackArrowGrph.drawRect(-60, -60, 200, 200);
+		_this.regBackArrow.addChild(regBackArrowGrph);
+
+		_this.regBackArrow.inputEnabled = true;
+		_this.regBackArrow.events.onInputDown.add(function () {
+			_this.state.start('app');
+		}, _this);
 	},
 
 	checkPermission: function () {
