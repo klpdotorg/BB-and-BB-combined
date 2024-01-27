@@ -64,7 +64,7 @@ Game.NS_FM_4B_G6level1.prototype =
         _this.notFactorSoundsrc.setAttribute("src", window.baseUrl+"sounds/Not_factor_sound.mp3");
         _this.notFactorSound.appendChild(_this.notFactorSoundsrc);
 
-       // telInitializer.gameIdInit("NS_FM_4A_G6", gradeSelected);
+       // telInitializerbbpp.gameIdInit("NS_FM_4A_G6", gradeSelected);
 
     },
 
@@ -143,7 +143,7 @@ Game.NS_FM_4B_G6level1.prototype =
         _this.speakerbtn.events.onInputDown.add(function () 
         {
             console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -576,7 +576,7 @@ Game.NS_FM_4B_G6level1.prototype =
         _this.speakerbtn.events.onInputDown.add(function () 
         {
             console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -1687,7 +1687,7 @@ Game.NS_FM_4B_G6level1.prototype =
         _this.noofAttempts++;
         if(_this.flag1 == true && _this.flag2 == true && _this.flag3 == true && _this.flag4 == true)
         {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebration();
         }
         else

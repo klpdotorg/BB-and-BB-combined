@@ -51,7 +51,7 @@ Game.GMLA_02_G7level1.prototype =
         _this.Ask_Question5 = _this.createAudio("GMLA_02_G7_h1");
         _this.Ask_Question6 = _this.createAudio("GMLA_02_G7_h2");
 
-        telInitializer.gameIdInit("GMLA_02_G7", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMLA_02_G7", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -145,7 +145,7 @@ Game.GMLA_02_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3245,7 +3245,7 @@ Game.GMLA_02_G7level1.prototype =
     },
 
     starActions: function (target) {
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.microConcepts = "GeometryG7";
         console.log("get a star")

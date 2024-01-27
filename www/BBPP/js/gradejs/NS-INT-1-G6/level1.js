@@ -19,7 +19,7 @@ Game.NS_INT_1_G6level1.prototype = {
         }
         else console.log("Language selected: " + _this.languageSelected);
 
-        //telInitializer.gameIdInit("sequence2_1_1a",gradeSelected);
+        //telInitializerbbpp.gameIdInit("sequence2_1_1a",gradeSelected);
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
@@ -45,7 +45,7 @@ Game.NS_INT_1_G6level1.prototype = {
         _this.physics.startSystem(Phaser.Physics.ARCADE);
         _this.physics.setBoundsToWorld();
 
-        telInitializer.gameIdInit("NS_INT_1_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_1_G6", gradeSelected);
         console.log(gameID,"gameID...");
 
     },
@@ -229,10 +229,10 @@ Game.NS_INT_1_G6level1.prototype = {
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             //_this.clickSound = _this.add.audio('ClickSound');
             if (_this.speakerbtnClicked == false && _this.rightbtnClicked == false) {
-                telInitializer.tele_interactEvent("TOUCH", "speaker");
+                telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
                 _this.clickSound.play();
@@ -453,7 +453,7 @@ Game.NS_INT_1_G6level1.prototype = {
 
         }
         _this.questionid =1;
-        //telInitializer.gameIdInit(_this.questionid);
+        //telInitializerbbpp.gameIdInit(_this.questionid);
     },
 
     stopVoice: function () {
@@ -1376,7 +1376,7 @@ Game.NS_INT_1_G6level1.prototype = {
                 _this.clothanim1 = _this.clothanim.animations.add('clothanim');
             }
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions();
             _this.time.events.add(500, function () { _this.Q1_objectCelebrations(1) });
@@ -1752,7 +1752,7 @@ Game.NS_INT_1_G6level1.prototype = {
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     starActions: function () {

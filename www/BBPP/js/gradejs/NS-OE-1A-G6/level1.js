@@ -73,7 +73,7 @@ Game.NS_OE_1A_G6level1.prototype =
         _this.tweenSound.appendChild(_this.tweenSoundsrc);
         _this.tweenSound.volume = 0.5;
 
-        telInitializer.gameIdInit("NSN_OE_1_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSN_OE_1_G6", gradeSelected);
         console.log(gameID, "gameID...");
 
     },
@@ -146,7 +146,7 @@ Game.NS_OE_1A_G6level1.prototype =
         _this.speakerbtn.events.onInputDown.add(function () {
             console.log("ENterd speaker");
 
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 //console.log("speaker if: " + _this.AskOddEvenAudio + ":" + _this.array_audioquestion[0]);
                 _this.speakerbtnClicked = true;
@@ -921,7 +921,7 @@ Game.NS_OE_1A_G6level1.prototype =
             _this.rightbtn_is_Clicked = true;
             _this.tickButton.frame = 1;
             if (_this.answer == true) {
-                // telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+                // telInitializerbbpp.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
                 _this.tickButton.inputEnabled = false;
                 _this.thumbsUp.inputEnabled = false;
                 _this.thumbsDown.inputEnabled = false;
@@ -973,7 +973,7 @@ Game.NS_OE_1A_G6level1.prototype =
 
         _this.time.events.add(1000, function () {
             //            _this.speakerbtn.visible = false;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.AnsTimerCount = 0;
             _this.noofAttempts =0;
             

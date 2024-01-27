@@ -9,7 +9,7 @@ Game.NS_INT_3_G6level1.prototype = {
 
         //* This game is for integers. Identify the level of bird or fish as asked. 3 questions asked.
 
-        //telInitializer.gameIdInit("sequence2_1_1a",gradeSelected);
+        //telInitializerbbpp.gameIdInit("sequence2_1_1a",gradeSelected);
 
         //* use the language selected to form the string for url of the audio files.
         //* need to populate that from a parameter that is passed.
@@ -105,7 +105,7 @@ Game.NS_INT_3_G6level1.prototype = {
         _this.physics.startSystem(Phaser.Physics.ARCADE);
         _this.physics.setBoundsToWorld();
 
-        telInitializer.gameIdInit("NS_INT_3_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_3_G6", gradeSelected);
         console.log(gameID, "gameID...");
 
     },
@@ -237,7 +237,7 @@ Game.NS_INT_3_G6level1.prototype = {
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
-            //telInitializer.tele_interactEvent("TOUCH","speaker");
+            //telInitializerbbpp.tele_interactEvent("TOUCH","speaker");
             _this.clickSound.play();
             _this.Q3_askQ3VoiceQuestion();
         });
@@ -1106,7 +1106,7 @@ Game.NS_INT_3_G6level1.prototype = {
     shutdown: function () {
         _this.stopQuestionVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
 
@@ -1355,7 +1355,7 @@ Game.NS_INT_3_G6level1.prototype = {
         _this.numGroup.destroy();
         if (_this.count1 < 3) {
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.selectedAns1 = "";
             _this.selectedAns2 = "";

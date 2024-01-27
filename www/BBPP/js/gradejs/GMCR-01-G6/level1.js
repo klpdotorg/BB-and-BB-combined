@@ -6,7 +6,7 @@ Game.GMCR_01_G6level1.prototype = {
 
         _this.languageSelected = window.languageSelected;
         
-        telInitializer.gameIdInit("GMCR_01_G6",gradeSelected);
+        telInitializerbbpp.gameIdInit("GMCR_01_G6",gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -1321,7 +1321,7 @@ Game.GMCR_01_G6level1.prototype = {
         }
 
         _this.questionid = 1;
-    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
     },
 
 

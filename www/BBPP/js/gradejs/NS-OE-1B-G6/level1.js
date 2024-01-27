@@ -67,7 +67,7 @@ Game.NS_OE_1B_G6level1.prototype = {
         _this.hatchSoundsrc.setAttribute("src", window.baseUrl+"sounds/egg_cracking.wav");
         _this.hatchSound.appendChild(_this.hatchSoundsrc);
 
-       // telInitializer.gameIdInit("NS_OE_1A_G6",gradeSelected);
+       // telInitializerbbpp.gameIdInit("NS_OE_1A_G6",gradeSelected);
     },
 
 
@@ -137,7 +137,7 @@ Game.NS_OE_1B_G6level1.prototype = {
         _this.speakerbtn.events.onInputDown.add(function () 
         {
             
-            telInitializer.tele_interactEvent("TOUCH", "speaker");            
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");            
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -2045,7 +2045,7 @@ Game.NS_OE_1B_G6level1.prototype = {
         _this.noofAttempts++;    
         if(Number_evn_odd == selected)
         {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.AnsTimerCount = 0;
             _this.noofAttempts =0;
             

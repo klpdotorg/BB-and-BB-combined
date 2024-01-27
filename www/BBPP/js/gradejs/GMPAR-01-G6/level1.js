@@ -62,7 +62,7 @@ Game.GMPAR_01_G6level1.prototype =
         _this.Ask_Question8 = _this.createAudio("GMPAR-01-G6H");
         _this.Ask_Question9 = _this.createAudio("GMPAR-01-G6I");
 
-        telInitializer.gameIdInit("GMPAR_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMPAR_01_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -166,7 +166,7 @@ Game.GMPAR_01_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3742,7 +3742,7 @@ Game.GMPAR_01_G6level1.prototype =
             if (_this.shapesArray[_this.trackCount] == 1) {
                 console.log(target.name);
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.OptionPaneltickbtn_PartB.inputEnabled = false;
                 _this.OptionBox1_PartB.inputEnabled = false;
                 _this.OptionBox2_PartB.inputEnabled = false;
@@ -3787,7 +3787,7 @@ Game.GMPAR_01_G6level1.prototype =
             else if (_this.shapesArray[_this.trackCount] == 2) {
                 console.log(target.name);
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.OptionPaneltickbtn_PartB.inputEnabled = false;
                 _this.OptionBox1_PartB.inputEnabled = false;
                 _this.OptionBox2_PartB.inputEnabled = false;
@@ -3830,7 +3830,7 @@ Game.GMPAR_01_G6level1.prototype =
             else if (_this.shapesArray[_this.trackCount] == 3) {
                 console.log(target.name);
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.OptionPaneltickbtn_PartB.inputEnabled = false;
                 _this.OptionBox1_PartB.inputEnabled = false;
                 _this.OptionBox2_PartB.inputEnabled = false;
@@ -3874,7 +3874,7 @@ Game.GMPAR_01_G6level1.prototype =
         else if (_this.gmpar_flag == 1) {
             if (_this.decideAreaArray[_this.trackCount] == 1) {
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 console.log(target.name);
                 _this.OptionPaneltickbtn_PartB.inputEnabled = false;
                 _this.OptionBox1_PartB.inputEnabled = false;
@@ -3918,7 +3918,7 @@ Game.GMPAR_01_G6level1.prototype =
             else if (_this.decideAreaArray[_this.trackCount] == 2) {
                 console.log(target.name);
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.OptionPaneltickbtn_PartB.inputEnabled = false;
                 _this.OptionBox1_PartB.inputEnabled = false;
                 _this.OptionBox2_PartB.inputEnabled = false;

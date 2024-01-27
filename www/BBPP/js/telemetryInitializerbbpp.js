@@ -8,7 +8,7 @@ var telInitializerbbpp = {
 
 	gameIdInit: function (gameName, grade) {
 		window.prevScreen = "gameScreen";
-		console.log(gameName, grade);
+		console.log(gameName, grade); 
 		saveGameplayReturnedValue = null;
 		gameID = null;
 

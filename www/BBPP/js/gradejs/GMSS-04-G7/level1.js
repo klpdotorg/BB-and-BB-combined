@@ -50,7 +50,7 @@ Game.GMSS_04_G7level1.prototype =
         _this.Ask_Question1 = _this.createAudio("GMSS_04_G7_a1");
         _this.Ask_Question2 = _this.createAudio("GMSS_04_G7_a2");
 
-        telInitializer.gameIdInit("GMSS_04_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("GMSS_04_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
     },
 
@@ -127,7 +127,7 @@ Game.GMSS_04_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3451,7 +3451,7 @@ Game.GMSS_04_G7level1.prototype =
     //Adding a star to the above created six stars.
     starActions: function (target) {
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.microConcepts = "GeometryG7";
         console.log("starActions")
