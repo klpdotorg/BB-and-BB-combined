@@ -367,10 +367,10 @@ Game.appLoginScreenbbpp.prototype = {
 					//* If it is offline you cannot call this call registrationPicSelectionScreen
 					if (_this.app_Mode == "online") {
 						console.log("Fresh reg online", _this.userArray, _this.app_Mode);
-						_this.state.start('registrationLangSelectionScreen', true, false, _this.userArray, _this.app_Mode);
+						_this.state.start('registrationLangSelectionScreenbbpp', true, false, _this.userArray, _this.app_Mode);
 					} else {
 						console.log(_this.userArray);
-						_this.state.start('registrationPicSelectionScreen', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
+						_this.state.start('registrationPicSelectionScreenbbpp', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
 					}
 				}, _this);
 			}
@@ -420,10 +420,10 @@ Game.appLoginScreenbbpp.prototype = {
 					//* see if it online you want you can call registrationLangSelectionScreen
 					//* If it is offline you cannot call this call registrationPicSelectionScreen
 					if (_this.app_Mode == "online") {
-						_this.state.start('registrationLangSelectionScreen', true, false, _this.userArray, _this.app_Mode);
+						_this.state.start('registrationLangSelectionScreenbbpp', true, false, _this.userArray, _this.app_Mode);
 					} else {
 						console.log(_this.userArray);
-						_this.state.start('registrationPicSelectionScreen', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
+						_this.state.start('registrationPicSelectionScreenbbpp', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
 					}
 				}, _this);
 			}
@@ -437,10 +437,10 @@ Game.appLoginScreenbbpp.prototype = {
 			//* see if it online you want you can call registrationLangSelectionScreen
 			//* If it is offline you cannot call this call registrationPicSelectionScreen
 			if (_this.app_Mode == "online") {
-				_this.state.start('registrationLangSelectionScreen', true, false, _this.userArray, _this.app_Mode);
+				_this.state.start('registrationLangSelectionScreenbbpp', true, false, _this.userArray, _this.app_Mode);
 			} else {
 				console.log("Pic selection")
-				_this.state.start('registrationPicSelectionScreen', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
+				_this.state.start('registrationPicSelectionScreenbbpp', true, false, window.languageSelected, _this.userArray, _this.app_Mode);
 			}
 
 		}
