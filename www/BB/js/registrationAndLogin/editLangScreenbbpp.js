@@ -42,7 +42,7 @@ Game.editLangScreenbbpp.prototype = {
 		regBackArrow.inputEnabled = true;
 		regBackArrow.events.onInputDown.add(function () {
 			console.log(_this.user,"editLangScreenbbpp though");
-			game.state.start('appLoginEditScreen', true, false, _this.user, _this.app_Mode);
+			game.state.start('appLoginEditScreenbbpp', true, false, _this.user, _this.app_Mode);
 		}, this);
 
 		document.addEventListener('backbutton', _this.goback, false);
@@ -236,7 +236,7 @@ Game.editLangScreenbbpp.prototype = {
 					if (jsonresp.status == "success") {
 						window.plugins.toast.show(jsonresp.status, 3000, "bottom");
 						console.log("UPDATE user SET language = '" + target.name + "' WHERE name LIKE %" + _this.user.name + "%");
-						bbreglogin.bbdbhandler.executeSql("UPDATE user SET language = '" + target.name + "' WHERE name LIKE '%" + _this.user.name + "%';", [], _this.localdatasuccess, _this.localdatafailed);
+						bbregloginbbpp.bbdbhandler.executeSql("UPDATE user SET language = '" + target.name + "' WHERE name LIKE '%" + _this.user.name + "%';", [], _this.localdatasuccess, _this.localdatafailed);
 						//bbreglogin.bbdbhandler.executeSql('select * from user where name like %'+_this.user.name+'%;', [], _this.localdatasuccess, _this.localdatafailed);
 					}
 					else {
@@ -268,7 +268,7 @@ Game.editLangScreenbbpp.prototype = {
 	localdatasuccess: function (result) {
 		console.log(result);
 		//_this.state.start('appLoginScreen',true,false,_this.user);
-		bbreglogin.bbdbhandler.executeSql("select * from user where name like '%" + _this.user.name + "%';", [], _this.localdatasuccess2, _this.localdatafailed);
+		bbregloginbbpp.bbdbhandler.executeSql("select * from user where name like '%" + _this.user.name + "%';", [], _this.localdatasuccess2, _this.localdatafailed);
 	},
 
 	localdatasuccess2: function (result) {
