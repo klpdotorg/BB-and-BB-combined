@@ -2,7 +2,7 @@ var Game = {};
 
 Game.bootbbpp = function () {
 
-};
+}; 
 
 Game.bootbbpp.prototype = {
 
@@ -58,7 +58,7 @@ Game.bootbbpp.prototype = {
 
 		_this.game.app_Mode = _this.app_Mode;
 
-		var translations = _this.cache.getJSON('translationsbbpp');
+		var translations = _this.cache.getJSON('translations');
 
 		if (window.languageSelected == "Hindi") {
 			console.log("ITS hindi game...!");

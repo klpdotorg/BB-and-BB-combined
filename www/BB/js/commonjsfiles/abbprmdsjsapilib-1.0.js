@@ -668,7 +668,7 @@ var abbprmdsjsapi = {
                     console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
             },
             function (error) {
-                if (abbprmdsjsapi.erroralerts)
+                if (abbprmdsjsapi.erroralerts) 
                     console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: failed" + error.message);
                 return false;
             }
