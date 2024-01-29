@@ -833,7 +833,7 @@ Game.userprogress2.prototype={
 
         this.shapesPrgress = game.add.sprite(320,200,'progressCircle');
         this.shapesPrgress.frame = this.shapesPercent-1;
-        this.shapesPrgress.anchor.setTo(0.5);
+        this.shapesPrgress.anchor.setTo(0.5); 
         this.shapesPrgress.scale.setTo(1.2);
 
         this.shapesPrgressTxt = this.add.text(320, 200, this.shapesPercent+'%');
