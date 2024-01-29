@@ -58,7 +58,7 @@ Game.bootbbpp.prototype = {
 
 		_this.game.app_Mode = _this.app_Mode;
 
-		var translations = _this.cache.getJSON('translations');
+		var translations = _this.cache.getJSON('translationsbbpp');
 
 		if (window.languageSelected == "Hindi") {
 			console.log("ITS hindi game...!");
