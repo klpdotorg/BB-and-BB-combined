@@ -5,13 +5,15 @@ Game.appLoginEditScreenbbpp = function () {
 Game.appLoginEditScreenbbpp.prototype = {
 
 	init: function (user, app_Mode) {
+		// if(screen.orientation == 'landscape')
+		// {
 		window.user = user;
-		if (user.deviceid) {
+		if(user.deviceid){
 			window.user.deviceid = user.deviceid;
-		} else if (user.deviceId) {
+		}else if(user.deviceId){
 			window.user.deviceid = user.deviceId;
 		}
-		console.log(user.deviceId, user.deviceid, "user.deviceId >>");
+		console.log(user.deviceId,user.deviceid,"user.deviceId >>");
 		screen.orientation.lock('portrait');
 		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
 		_this.game.scale.setGameSize(540, 960);
@@ -22,7 +24,6 @@ Game.appLoginEditScreenbbpp.prototype = {
 		_this.user = user;
 		console.log(_this.user);
 		_this.app_Mode = app_Mode;
-		console.log("I am in appLoginEditScreenbbpp");
 	},
 
 	onDeviceReady: function () {
@@ -49,6 +50,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 
 		_this.i = 0;
 
+		//_this.basePath = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 		_this.basePath = cordova.file.externalRootDirectory + "Android/data/com.Akshara.BBplusplus/Files/Download/.gameFilesBB++V10_2/www/";
 
 		//* nEED to change this ****
@@ -61,7 +63,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 		// ["Odiya.zip", 40129117], ["Gujarati.zip", 31882078], ["questionSounds.zip", 162758079]];
 
 		_this.zipFiles = [["Assets1.zip", 565373], ["Assets2.zip", 25572815], ["Assets4.zip", 66105124], ["EnglishquestionSounds.zip", 29272691], ["HINquestionSounds.zip", 29272691],
-		["KANquestionSounds.zip", 29272691], ["ODIquestionSounds.zip", 48682701], ["MARquestionSounds.zip", 39766797], ["TMquestionSounds.zip", 30783494], ["sounds.zip", 3683747]];
+		["KANquestionSounds.zip", 29272691], ["ODIquestionSounds.zip", 48682701], ["MARquestionSounds.zip", 39766797], ["TMquestionSounds.zip", 30783494], ["sounds.zip", 3742800]];
 
 		_this.counter = 0;
 		_this.counter1 = 0;
@@ -258,6 +260,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 		_this.userEditBtn.anchor.setTo(0.5);
 		_this.userEditBtn.inputEnabled = true;
 		_this.userEditBtn.events.onInputDown.add(function () {
+			console.log(_this.user, "userEditBTN edit screen");
 			_this.state.start('editLangScreenbbpp', true, false, _this.user, _this.app_Mode);
 		}, _this);
 
@@ -276,6 +279,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 			console.log("App Online..... !!!");
 			_this.regBackArrow.inputEnabled = true;
 			_this.regBackArrow.events.onInputDown.add(function () {
+				console.log(_this.user, "APPLOgEDitScreen Back btn !!!");
 				_this.state.start('appLoginScreenbbpp', true, false, _this.app_Mode, _this.user.language);
 			}, _this);
 
@@ -284,6 +288,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function () {
 				FirebasePlugin.logEvent("Button_click_start", { Button_click_start: "", item_id: "" });
+				console.log(_this.user, "moving to index 2 !");
 				_this.state.start('index2bbpp', true, false, _this.user, false, _this.app_Mode);
 			}, _this);
 		}
@@ -452,7 +457,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 
 			//_this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
 			_this.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets2/";
-			//_this.baseUrl = "https://10.0.2.2/abbchmprm/assets/bb5_0_5/";
+			//_this.baseUrl = "https://10.0.2.2/abbppchmprm/assets/bb5_0_5/";
 			var fileTransfer = new FileTransfer();
 
 			fileTransfer.onprogress = function (progressEvent) {
