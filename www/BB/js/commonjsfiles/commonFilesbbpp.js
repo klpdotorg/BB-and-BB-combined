@@ -132,7 +132,7 @@ var commonNavBarbbpp = {
         this.mcIcon = null;
         this.speakerbtn = null;
 
-        telInitializer2bbpp.syncToServer();
+        telInitializer2.syncToServer();
         this.stage.state.start(this.prevScreene,true,false);
     },
 
@@ -791,7 +791,7 @@ var commonNavBarbbpp = {
                 console.log("End screen ");
 
                 nativeApp.screenViewStringPass("Challenge_completion_screen","Challenge_completion_screen");
-                telInitializer2bbpp.finishChallengeActivityToFirebase();
+                telInitializer2.finishChallengeActivityToFirebase();
 
                 game.time.events.add(500,function(){
                     game.add.tween(this.deductScoreVar).to({ x: 820, y: 22}, 3000, 'Linear', true, 0);
@@ -870,7 +870,7 @@ var commonNavBarbbpp = {
         if(hintparams!=null){
 
 
-            telInitializer2bbpp.hintCount++;
+            telInitializer2.hintCount++;
             
             switch(hintparams[0]){
                 case 'NSFG3.1': if(this.hintflag==3){
