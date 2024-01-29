@@ -18,6 +18,7 @@ Game.index2.prototype={
 		window.languageSelected = user.language;
 		window.gradeSelected = user.grade;
 		window.selctedLang = null;
+		//change this window.baseurl once the server upload finished for bb
 		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.Akshara.BBplusplus/Files/Download/.gameFilesBBV5_0_5/www/";
 		window.score = 50;
 		window.mcIcon = null;
