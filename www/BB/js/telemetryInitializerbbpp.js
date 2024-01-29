@@ -1,3 +1,4 @@
+
 var telInitializerbbpp = {
 
 	saveGameplayReturnedValue: null,
@@ -8,7 +9,7 @@ var telInitializerbbpp = {
 
 	gameIdInit: function (gameName, grade) {
 		window.prevScreen = "gameScreen";
-		console.log(gameName, grade); 
+		console.log(gameName, grade);
 		saveGameplayReturnedValue = null;
 		gameID = null;
 
@@ -317,7 +318,6 @@ var telInitializerbbpp = {
 			case "NSF_UNLSB_G7":
 				gameID = "NSF_UNLSB_G7";
 				break;
-
 			case "AL_SORT1_G7":
 				gameID = "AL_SORT1_G7";
 				break;
@@ -366,6 +366,62 @@ var telInitializerbbpp = {
 			case "GMSS_04_G7":
 				gameID = "GMSS_04_G7";
 				break;
+
+			case "GMSS_01_G8":
+				gameID = "GMSS_01_G8";
+				break;
+			case "GMSS_02_G8":
+				gameID = "GMSS_02_G8";
+				break;
+			case "GMSS_03_G8":
+				gameID = "GMSS_03_G8";
+				break;
+			case "GMM_01_G8":
+				gameID = "GMM_01_G8";
+				break;
+			case "GMM_02_G8":
+				gameID = "GMM_02_G8";
+				break;
+			case "GMM_03_G8":
+				gameID = "GMM_03_G8";
+				break;
+			case "GMM_04_G8":
+				gameID = "GMM_04_G8";
+				break;
+			case "GMM_05_G8":
+				gameID = "GMM_05_G8";
+				break;
+			case "AL_ES1_G8":
+				gameID = "AL_ES1_G8";
+				break;
+			case "AL_MUL1_G8":
+				gameID = "AL_MUL1_G8";
+				break;
+			case "AL_MUL2_G8":
+				gameID = "AL_MUL2_G8";
+				break;
+			case "AL_MUL3_G8":
+				gameID = "AL_MUL3_G8";
+				break;
+			case "AL_IDE_G8":
+				gameID = "AL_IDE_G8";
+				break;
+			case "AL_FACT_G8":
+				gameID = "AL_FACT_G8";
+				break;
+			case "AL_DIV_G8":
+				gameID = "AL_DIV_G8";
+				break;
+			case "NSN_RN_G8":
+				gameID = "NSN_RN_G8";
+				break;
+			case "NSN_DIN_G8":
+				gameID = "NSN_DIN_G8";
+				break;
+			case "NSN_SQ_CUB_G8":
+				gameID = "NSN_SQ_CUB_G8";
+				break;
+			//NSN_SQ_CUB_G8
 
 		}
 
@@ -511,4 +567,5 @@ var telInitializerbbpp = {
 
 
 };
+
 
