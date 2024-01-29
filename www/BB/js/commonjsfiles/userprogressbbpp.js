@@ -122,7 +122,7 @@ Game.userprogressbbpp.prototype={
 			this.clickSound = this.add.audio('ClickSound');
         	this.clickSound.play();
 
-			this.state.start('practiceModegradeSelectionScreen',true,false);	
+			this.state.start('practiceModegradeSelectionScreenbbpp',true,false);	
 			
 		},this);
 
