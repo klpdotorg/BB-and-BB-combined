@@ -43,7 +43,7 @@ Game.userprogress2bbpp.prototype={
 		{
 			this.clickSound = this.add.audio('ClickSound');
         	this.clickSound.play();
-			this.state.start('userprogress',true,false);
+			this.state.start('userprogressbbpp',true,false);
 			
 		},this);
 
