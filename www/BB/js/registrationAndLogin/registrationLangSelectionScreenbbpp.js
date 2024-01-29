@@ -6,7 +6,7 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
 
 	init: function (user, app_Mode) {
 		_this = this;
-		_this.user = user;
+		_this.user = user; 
 		_this.app_Mode = app_Mode;
 		console.log("user,_this.app_Mode", _this.user, _this.app_Mode);
 	},
@@ -28,10 +28,9 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
 		titleBar.lineStyle(2, 0x000000, 0.8);
 		titleBar.beginFill(0x4E342E, 1);
 		titleBar.drawRect(0, 0, 540, 80);
-		console.log("title and bg");
+
 
 		if (_this.user) {
-			console.log("user is not zero");
 			var regBackArrow = game.add.sprite(40, 40, 'regBackArrow');
 			regBackArrow.scale.setTo(0.35);
 			regBackArrow.anchor.setTo(0.5);
@@ -43,6 +42,7 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
 
 			regBackArrow.inputEnabled = true;
 			regBackArrow.events.onInputDown.add(function () {
+				console.log(_this.user, "registrationPicSelectionScreen Back");
 				game.state.start('appLoginScreenbbpp', true, false, _this.app_Mode);//,lang
 			}, this);
 
@@ -61,7 +61,6 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
 			titleTxt.wordWrapWidth = 500;
 		}
 		else {
-			console.log("building block 6-8 else part");
 			var titleTxt = game.add.text(game.world.centerX - 10, 45, "Building Blocks 6-8 by Akshara");
 			titleTxt.x = Math.round(titleTxt.x);
 			titleTxt.anchor.setTo(0.5);
