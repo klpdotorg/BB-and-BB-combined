@@ -1,4 +1,4 @@
-Game.practiceModegradeSelectionScreen = function () {
+Game.practiceModegradeSelectionScreenbbpp = function () {
 
 };
 grade2Selected = false;
@@ -21,7 +21,7 @@ var grade7GeometrySelected = false;
 var grade7DecimalsSelected = false;
 
 
-Game.practiceModegradeSelectionScreen.prototype = {
+Game.practiceModegradeSelectionScreenbbpp.prototype = {
 
 	init: function () {
 		_this = this;
@@ -61,7 +61,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 		
 		window.prevScreen = "gameScreen";
-		window.currScreen = "practiceModegradeSelectionScreen";
+		window.currScreen = "practiceModegradeSelectionScreenbbpp";
 
 		nativeApp.screenViewStringPass("Practice_class_selection_screen", "Practice_class_selection_screen");
  
@@ -89,7 +89,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 				}
 				console.log(window.user.deviceid, "PRACTICE JS BACK BTN");
 
-				game.state.start('appLoginEditScreen', true, false, window.user, window.app_Mode);
+				game.state.start('appLoginEditScreenbbpp', true, false, window.user, window.app_Mode);
 				// game.state.start('gameScreen',true,false);
 
 				// if(game && !exitOnce)
@@ -251,7 +251,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			// // 	this.clickSound = this.add.audio('ClickSound');
 			// // 	this.clickSound.play();
 			// // 	_this.scale.forceOrientation(false, true);
-			// // 	nativeApp.playHelp(this,"practiceModegradeSelectionScreen");
+			// // 	nativeApp.playHelp(this,"practiceModegradeSelectionScreenbbpp");
 			// // },this);
 
 			//adding grade clouds
