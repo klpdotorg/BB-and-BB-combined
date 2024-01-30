@@ -128,7 +128,7 @@ var telInitializer2bbpp = {
 	    	datetime_lastupdated:this.timeSaveFunc()
 	    };
 			
-	    abbchmprmdsjsapi.chm_saveWalletscore(saveWallet);
+	    abbprmdsjsapi.chm_saveWalletscore(saveWallet);
 
 	},
 
@@ -145,12 +145,12 @@ var telInitializer2bbpp = {
 
 		//console.log(this.saveGamePlayObj);
 
-		this.saveGameplayReturnedValue = abbchmprmdsjsapi.chm_saveGameplay(this.saveGamePlayObj);
+		this.saveGameplayReturnedValue = abbprmdsjsapi.chm_saveGameplay(this.saveGamePlayObj);
 
 		for(var i=0;i<this.assessmentArray.length;i++)
 		{
 			this.assessmentArray[i].id_game_play = this.saveGameplayReturnedValue;
-			abbchmprmdsjsapi.chm_saveAssessment(this.assessmentArray[i]);
+			abbprmdsjsapi.chm_saveAssessment(this.assessmentArray[i]);
 			
 		}
 		
@@ -162,7 +162,7 @@ var telInitializer2bbpp = {
 	    	datetime_lastupdated:this.timeSaveFunc()
 	    };
 
-		abbchmprmdsjsapi.chm_saveWalletscore(this.saveWallet);
+		abbprmdsjsapi.chm_saveWalletscore(this.saveWallet);
 	},
 
 

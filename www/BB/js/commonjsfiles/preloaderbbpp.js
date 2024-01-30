@@ -52,10 +52,15 @@ Game.preloaderbbpp.prototype = {
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade6NumberSystems.js", "js");
 
         //** grade 7 
-        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/selectgrade7MicroConceptScreen.js", "js");
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/selectgrade7MicroConceptScreen.js", "js");       
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7Algebra.js", "js");
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7Geometry.js", "js");
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7NumberSystems.js", "js");
+
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/selectgrade8MicroConceptScreen.js", "js");
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade8Algebra.js", "js");
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade8Geometry.js", "js");
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade8NumberSystems.js", "js");
 
         this.loadjscssfile("BBPP/js/commonjsfiles/score.js", "js");
         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_Score.js", "js");
@@ -810,6 +815,7 @@ Game.preloaderbbpp.prototype = {
 
         game.state.add('selectgrade6MicroConceptScreen', Game.selectgrade6MicroConceptScreen);
         game.state.add('selectgrade7MicroConceptScreen', Game.selectgrade7MicroConceptScreen);
+        game.state.add('selectgrade8MicroConceptScreen', Game.selectgrade8MicroConceptScreen);
 
         game.state.add('score', Game.score);
         game.state.add('grade6Algebra', Game.grade6Algebra);
@@ -819,8 +825,12 @@ Game.preloaderbbpp.prototype = {
         game.state.add('grade6RatioandProportion', Game.grade6RatioandProportion);
 
         game.state.add('grade7Geometry', Game.grade7Geometry);
-        game.state.add('grade7NumberSystems', Game.grade7NumberSystems);
+        game.state.add('grade7NumberSystems', Game.grade7NumberSystems);       
         game.state.add('grade7Algebra', Game.grade7Algebra);
+
+        game.state.add('grade8Geometry', Game.grade8Geometry);
+        game.state.add('grade8NumberSystems', Game.grade8NumberSystems);       
+        game.state.add('grade8Algebra', Game.grade8Algebra);
 
         //Testing game fm-1
         game.state.add('preloader_fm_1', Game.preloader_fm_1);
@@ -1161,7 +1171,7 @@ Game.preloaderbbpp.prototype = {
         window.currScreen = "practiceModegradeSelectionScreenbbpp";
 
         if (window.userProgress == "true") {
-            this.state.start('userprogress', true, false);
+            this.state.start('userprogressbbpp', true, false);
         } else {
             // 12-01-2023
             //if (localStorage.getItem("downloadComplete") == "true") {
