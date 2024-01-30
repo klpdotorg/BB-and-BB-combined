@@ -69,7 +69,7 @@ Game.NS_DIN_G8level1.prototype = {
     _this.Ask_Question7 = _this.createAudio("NS_DIN_G8_a6");
     _this.Ask_Question8 = _this.createAudio("NS_DIN_G8_a7");
   
-    telInitializer.gameIdInit("NSN_DIN_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("NSN_DIN_G8", gradeSelected);
     console.log(gameID,"gameID...");
   
   },
@@ -187,7 +187,7 @@ Game.NS_DIN_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -12027,7 +12027,7 @@ Game.NS_DIN_G8level1.prototype = {
       _this.celebrationSound.play();
       _this.clearAll();
       _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
       _this.noofAttempts = 0;
                     _this.AnsTimerCount = 0;
@@ -12073,7 +12073,7 @@ Game.NS_DIN_G8level1.prototype = {
       _this.thumbsUp.events.onInputDown.removeAll();
       _this.thumbsDown.events.onInputDown.removeAll();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.celebrationSound.play();
       _this.clearAll();
       _this.starActions();
@@ -12374,7 +12374,7 @@ Game.NS_DIN_G8level1.prototype = {
       } else {
         _this.celebrationSound.play();
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.clearAll();
         _this.starActions();
         _this.time.events.add(3000, () => {

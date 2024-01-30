@@ -13,7 +13,7 @@ Game.GMS_03_G6level1.prototype = {
     }
     else console.log("Language selected: " + _this.languageSelected);
 
-    telInitializer.gameIdInit("GMS_03_G6", gradeSelected);
+    telInitializerbbpp.gameIdInit("GMS_03_G6", gradeSelected);
     console.log(gameID, "gameID...");
   },
 
@@ -1635,7 +1635,7 @@ Game.GMS_03_G6level1.prototype = {
 
     _this.sceneCount++;
 
-    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
 
 

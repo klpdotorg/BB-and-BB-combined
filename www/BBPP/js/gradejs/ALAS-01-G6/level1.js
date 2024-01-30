@@ -78,7 +78,7 @@ Game.ALAS_01_G6level1.prototype =
         _this.GamePositiveSoundsrc.setAttribute("src", window.baseUrl + "sounds/Game Positive.mp3");
         _this.GamePositiveSound.appendChild(_this.GamePositiveSoundsrc);
 
-        telInitializer.gameIdInit("ALAS_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("ALAS_01_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
     create: function (game) {
@@ -180,8 +180,8 @@ Game.ALAS_01_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             ////console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
-            //telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
+            //telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3157,7 +3157,7 @@ Game.ALAS_01_G6level1.prototype =
         }
         else if (Number(_this.enterTxt1.name) == _this.rightValueZArray[_this.questionNumber]) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebration();
             _this.numGroup.destroy();
             _this.numpad = 0;

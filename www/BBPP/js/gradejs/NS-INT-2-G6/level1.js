@@ -25,7 +25,7 @@ Game.NS_INT_2_G6level1.prototype = {
         _this.counterForTimer = counterForTimer;
         _this.gameID = game_id;
 
-        //telInitializer.gameIdInit("sequence2_1_1a",gradeSelected);
+        //telInitializerbbpp.gameIdInit("sequence2_1_1a",gradeSelected);
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
@@ -50,7 +50,7 @@ Game.NS_INT_2_G6level1.prototype = {
         _this.physics.startSystem(Phaser.Physics.ARCADE);
         _this.physics.setBoundsToWorld();
 
-      //  telInitializer.gameIdInit("NS_INT_1_G6", gradeSelected);
+      //  telInitializerbbpp.gameIdInit("NS_INT_1_G6", gradeSelected);
 
     },
 
@@ -189,10 +189,10 @@ Game.NS_INT_2_G6level1.prototype = {
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             //_this.clickSound = _this.add.audio('ClickSound');
             //if (_this.speakerbtnClicked == false && _this.rightbtnClicked == false) {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             _this.speakerbtn.inputEnabled = false;
             _this.speakerbtn.input.useHandCursor = false;
             _this.clickSound.play();
@@ -938,7 +938,7 @@ Game.NS_INT_2_G6level1.prototype = {
             _this.time.events.add(1500, function () { _this.Q2_objectCelebrations(2) });
             _this.time.events.add(3500, _this.Q2_gotonext);
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         } else {
             _this.wrongSound.play();
 
@@ -1271,7 +1271,7 @@ Game.NS_INT_2_G6level1.prototype = {
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     starActions: function () {

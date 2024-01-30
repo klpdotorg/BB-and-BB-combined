@@ -59,7 +59,7 @@ Game.AL_FACT_G8level1.prototype =
         _this.Ask_Question5 = _this.createAudio("AL_FACT_G8_a5");
         _this.Ask_Question6 = _this.createAudio("AL_FACT_G8_a6");
 
-        telInitializer.gameIdInit("AL_FACT_G8", gradeSelected);
+        telInitializerbbpp.gameIdInit("AL_FACT_G8", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -141,7 +141,7 @@ Game.AL_FACT_G8level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2477,7 +2477,7 @@ Game.AL_FACT_G8level1.prototype =
             _this.celebrationSound.play();
             _this.starActions(_this.count1);
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.AnsTimerCount = 0;
             _this.noofAttempts = 0;
 
@@ -2488,7 +2488,7 @@ Game.AL_FACT_G8level1.prototype =
             _this.celebrationSound.play();
             _this.starActions(_this.count1);
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.AnsTimerCount = 0;
             _this.noofAttempts = 0;
 
@@ -2511,7 +2511,7 @@ Game.AL_FACT_G8level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

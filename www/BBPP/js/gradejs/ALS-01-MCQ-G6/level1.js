@@ -58,7 +58,7 @@ Game.ALS_01_MCQ_G6level1.prototype =
         _this.Ask_Question3 = _this.createAudio("ALS-01-MCQ-G6C");
         _this.Ask_Question4 = _this.createAudio("ALS-01-MCQ-G6D");
 
-        telInitializer.gameIdInit("ALS_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("ALS_01_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -156,7 +156,7 @@ Game.ALS_01_MCQ_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1611,7 +1611,7 @@ Game.ALS_01_MCQ_G6level1.prototype =
 
         if (_this.userselectedOp == _this.correcttOption1) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.Tickbtn.destroy();
             _this.correctAns();
@@ -2237,7 +2237,7 @@ Game.ALS_01_MCQ_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     //demo audio and video integration

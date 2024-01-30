@@ -46,7 +46,7 @@ Game.ALP_02_G6level1.prototype =
         _this.Ask_Question1 = _this.createAudio("ALP-02-G6A");
         //_this.Ask_Question2 = _this.createAudio("V2");
 
-        telInitializer.gameIdInit("ALP_02_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("ALP_02_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -143,7 +143,7 @@ Game.ALP_02_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1219,7 +1219,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.addType2Array[_this.Add_countTracker2] + 2 && _this.draggedPurple2Group.length == _this.addType2Array[_this.Add_countTracker2] + 2) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1250,7 +1250,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.addType3Array[_this.Add_countTracker12] + 3 && _this.draggedPurple2Group.length == _this.addType3Array[_this.Add_countTracker12] + 3) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1435,7 +1435,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.divType1Array[_this.Div_countTracker2]/2 && _this.draggedPurple2Group.length == _this.divType1Array[_this.Div_countTracker2]/2) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1464,7 +1464,7 @@ Game.ALP_02_G6level1.prototype =
                     {
 
                           _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1491,7 +1491,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.divType3Array[1]/4 && _this.draggedPurple2Group.length == _this.divType3Array[1]/4) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1728,7 +1728,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.mulType2Array[_this.Multi_countTracker2]*2 && _this.draggedPurple2Group.length ==_this.mulType2Array[_this.Multi_countTracker2]*2) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1756,7 +1756,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.mulType3Array[_this.Multi_countTracker12]*3 && _this.draggedPurple2Group.length == _this.mulType3Array[_this.Multi_countTracker12]*3) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -1784,7 +1784,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.mulType4Array[1]*4 && _this.draggedPurple2Group.length == _this.mulType4Array[1]*4) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -2047,7 +2047,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.subType2Array[_this.Sub_countTracker2] - 2 && _this.draggedPurple2Group.length == _this.subType2Array[_this.Sub_countTracker2] - 2) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();
@@ -2075,7 +2075,7 @@ Game.ALP_02_G6level1.prototype =
                     if(Number(''+_this.selectedAns1+_this.selectedAns2) === _this.subType3Array[_this.Sub_countTracker12] - 3 && _this.draggedPurple2Group.length == _this.subType3Array[_this.Sub_countTracker12] - 3) //&& _this.objectCounter == _this.divAnswer// || _this.div2Answer
                     {
                         _this.noofAttempts++;
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log("Last Question");
                         _this.celebration();

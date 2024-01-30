@@ -43,7 +43,7 @@ Game.GMSS_03_G8level1.prototype = {
     _this.Ask_Question3 = _this.createAudio("GMSS_03_G8_a3");
     _this.Ask_Question4 = _this.createAudio("GMSS_03_G8_a4");
 
-    telInitializer.gameIdInit("GMSS_03_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("GMSS_03_G8", gradeSelected);
     console.log(gameID, "gameID...");
   },
 
@@ -162,7 +162,7 @@ Game.GMSS_03_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -684,7 +684,7 @@ Game.GMSS_03_G8level1.prototype = {
           _this.numGroup.destroy();
           _this.numpad = 0;
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           _this.starActions();
           _this.vertices = false;
           _this.v_flag = 0;
@@ -715,7 +715,7 @@ Game.GMSS_03_G8level1.prototype = {
         _this.numGroup.destroy();
         _this.numpad = 0;
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.starActions();
         _this.noofAttempts = 0;
         _this.AnsTimerCount = 0;
@@ -2820,7 +2820,7 @@ Game.GMSS_03_G8level1.prototype = {
             _this.celebrationSound.play();
             //  _this.tick.inputEnabled = true;
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.disableBoxes();
             _this.starActions();
             _this.noofAttempts = 0;
@@ -2862,7 +2862,7 @@ Game.GMSS_03_G8level1.prototype = {
           ) {
             _this.celebrationSound.play();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             //  _this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.starActions();
@@ -2920,7 +2920,7 @@ Game.GMSS_03_G8level1.prototype = {
           ) {
             _this.celebrationSound.play();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             //  _this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.starActions();
@@ -2963,7 +2963,7 @@ Game.GMSS_03_G8level1.prototype = {
           ) {
             _this.celebrationSound.play();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             //_this.tick.inputEnabled = true;
             _this.disableBoxes();
@@ -3017,7 +3017,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           //  _this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3050,7 +3050,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           //_this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3093,7 +3093,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           //_this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3150,7 +3150,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           //_//this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3183,7 +3183,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           // _this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3226,7 +3226,7 @@ Game.GMSS_03_G8level1.prototype = {
         ) {
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           // _this.tick.inputEnabled = true;
           _this.disableBoxes();
           _this.starActions();
@@ -3286,7 +3286,7 @@ Game.GMSS_03_G8level1.prototype = {
             //_this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions();
             _this.noofAttempts = 0;
             _this.AnsTimerCount = 0;
@@ -3327,7 +3327,7 @@ Game.GMSS_03_G8level1.prototype = {
           ) {
             _this.celebrationSound.play();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             //_this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.starActions();
@@ -3386,7 +3386,7 @@ Game.GMSS_03_G8level1.prototype = {
             //_this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions();
             _this.noofAttempts = 0;
             _this.AnsTimerCount = 0;
@@ -3429,7 +3429,7 @@ Game.GMSS_03_G8level1.prototype = {
             // _this.tick.inputEnabled = true;
             _this.disableBoxes();
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions();
             _this.noofAttempts = 0;
             _this.AnsTimerCount = 0;
@@ -3480,7 +3480,7 @@ Game.GMSS_03_G8level1.prototype = {
             _this.selectedBox1 == false
           ) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebrationSound.play();
             _this.disableBoxes();
             _this.starActions();
@@ -3522,7 +3522,7 @@ Game.GMSS_03_G8level1.prototype = {
             _this.selectedBox1 === false
           ) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebrationSound.play();
             _this.disableBoxes();
             _this.starActions();
@@ -3578,7 +3578,7 @@ Game.GMSS_03_G8level1.prototype = {
             _this.selectedBox2 == false
           ) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebrationSound.play();
             _this.disableBoxes();
             _this.starActions();
@@ -3620,7 +3620,7 @@ Game.GMSS_03_G8level1.prototype = {
             _this.selectedBox1 === false
           ) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.celebrationSound.play();
             _this.disableBoxes();
             _this.starActions();
@@ -3676,7 +3676,7 @@ Game.GMSS_03_G8level1.prototype = {
           _this.selectedBox2 === false
         ) {
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           _this.celebrationSound.play();
           _this.disableBoxes();
           _this.starActions();
@@ -3729,7 +3729,7 @@ Game.GMSS_03_G8level1.prototype = {
           _this.selectedBox1 === false
         ) {
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           _this.celebrationSound.play();
           _this.disableBoxes();
           _this.starActions();
@@ -3782,7 +3782,7 @@ Game.GMSS_03_G8level1.prototype = {
           _this.selectedBox2 === false
         ) {
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           _this.celebrationSound.play();
           _this.disableBoxes();
           _this.starActions();
@@ -3835,7 +3835,7 @@ Game.GMSS_03_G8level1.prototype = {
           _this.selectedBox2 === false
         ) {
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+          telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
           _this.celebrationSound.play();
           _this.disableBoxes();
           _this.starActions();

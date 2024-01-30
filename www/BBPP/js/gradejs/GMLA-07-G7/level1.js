@@ -52,7 +52,7 @@ Game.GMLA_07_G7level1.prototype =
         _this.Ask_Question4 = _this.createAudio("GMLA_07_G7_a6");
         _this.Ask_Question5 = _this.createAudio("GMLA_07_G7_a7");
 
-        telInitializer.gameIdInit("GMLA_07_G7", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMLA_07_G7", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -149,7 +149,7 @@ Game.GMLA_07_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -819,7 +819,7 @@ Game.GMLA_07_G7level1.prototype =
     validatePartA: function () {
         if (_this.sortedArray1 === _this.sortedArray2)  //compare if selected sides are equal to the answer stored array
         {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.backbutton.inputEnabled = false;
             _this.tickBtn.inputEnabled = false;
             _this.celebrationSound.play();
@@ -2585,7 +2585,7 @@ Game.GMLA_07_G7level1.prototype =
         _this.leng33 = _this.add.text(_this.stick33.x + 14, _this.stick33.y - 90, _this.sortedArrayy[0] + " cm");
         _this.applyingStyle(_this.leng33);
 
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.time.events.add(500, function () {
             _this.starActions();
@@ -3433,7 +3433,7 @@ Game.GMLA_07_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     pauseVoice: function () {

@@ -40,7 +40,7 @@ Game.NS_INT_5H_G6level1.prototype =
         _this.jumpsrc.setAttribute("src", window.baseUrl + "sounds/jump.mp3");
         _this.jump.appendChild(_this.jumpsrc);
 
-        telInitializer.gameIdInit("NS_INT_5H_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_5H_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -107,7 +107,7 @@ Game.NS_INT_5H_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
 
                 _this.speakerbtn.inputEnabled = false;
@@ -1577,7 +1577,7 @@ Game.NS_INT_5H_G6level1.prototype =
                 _this.qn_flag = -1;
 
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
 
                 _this.tweenFixed2();
@@ -1678,6 +1678,6 @@ Game.NS_INT_5H_G6level1.prototype =
     shutdown: function () {
         _this.stopAllVoices();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 }

@@ -58,7 +58,7 @@ Game.NS_FM_1_G6level1.prototype =
         _this.tweenSound.appendChild(_this.tweenSoundsrc);
         _this.tweenSound.volume = 0.5;
 
-        telInitializer.gameIdInit("NSN_FM_1_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSN_FM_1_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -144,7 +144,7 @@ Game.NS_FM_1_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1622,7 +1622,7 @@ Game.NS_FM_1_G6level1.prototype =
     ValidateOtherFactor: function () {
         if (_this.Big_Num / _this.Small_Num == Number('' + _this.selectedAns1 + _this.selectedAns2)) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebration();
             _this.Question_flag = -1;
@@ -1718,7 +1718,7 @@ Game.NS_FM_1_G6level1.prototype =
             //* then question ends here.
             if (_this.Big_Num % _this.Small_Num > 0 && _this.isThumbsDown) {
                 _this.noofAttempts++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
     
                 _this.celebration();
                 _this.Question_flag = -1;
@@ -1971,7 +1971,7 @@ Game.NS_FM_1_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     stopAudio: function () {

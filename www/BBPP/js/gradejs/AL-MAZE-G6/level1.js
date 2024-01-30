@@ -55,7 +55,7 @@ Game.AL_MAZE_G6level1.prototype =
         _this.nextOptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextOptionSound.appendChild(_this.nextOptionSoundsrc);
 
-        telInitializer.gameIdInit("AL_MAZE_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("AL_MAZE_G6", gradeSelected);
         console.log(gameID,"gameID ///////////////");
     },
 
@@ -127,7 +127,7 @@ Game.AL_MAZE_G6level1.prototype =
         _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.input.useHandCursor = true;
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1297,7 +1297,7 @@ Game.AL_MAZE_G6level1.prototype =
                // _this.NumSubAttempts++;
                 _this.findNoofattempts();
 
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                 _this.levelUp.play();
                 _this.dots.destroy();
                 _this.winningAction();

@@ -56,7 +56,7 @@ Game.GMLA_03_G7level1.prototype =
         _this.Ask_Question11 = _this.createAudio("GMLA_03_G7_a12");
         _this.Ask_Question12 = _this.createAudio("GMLA_03_G7_a13");
 
-        telInitializer.gameIdInit("GMLA_03_G7", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMLA_03_G7", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -218,7 +218,7 @@ Game.GMLA_03_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2175,7 +2175,7 @@ Game.GMLA_03_G7level1.prototype =
     lastScreenCelebration: function () {
         console.log("lastScreenCelebration");
         _this.celebrationSound.play();
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.starActions();
         _this.time.events.add(3000, () => {
             _this.clearAll();
@@ -3707,7 +3707,7 @@ Game.GMLA_03_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

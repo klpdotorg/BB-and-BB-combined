@@ -47,7 +47,7 @@ Game.NS_PRM_1_G6level1.prototype =
         _this.TraySoundsrc.setAttribute("src", window.baseUrl+"sounds/Egg_Counter_onTray.mp3");
         _this.TraySound.appendChild(_this.TraySoundsrc);
 
-        telInitializer.gameIdInit("NSN_PRM_1_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSN_PRM_1_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -112,7 +112,7 @@ Game.NS_PRM_1_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () 
         {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -1223,7 +1223,7 @@ Game.NS_PRM_1_G6level1.prototype =
         {
             if(_this.evaluatedAns == 1 && _this.selectedAns == 1) //check if the given number is prime & selected ans is thums up
             {
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebration();
                 _this.time.events.add(500,function(){
@@ -1243,7 +1243,7 @@ Game.NS_PRM_1_G6level1.prototype =
             }
             else
             {
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebration();
                 _this.time.events.add(500,function(){
@@ -1256,7 +1256,7 @@ Game.NS_PRM_1_G6level1.prototype =
         {
             if(_this.evaluatedAns == 2 && _this.selectedAns == 1) //check if the given number is composite & selected ans is thums down
             {
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebration();
                 _this.time.events.add(500,function(){
@@ -1277,7 +1277,7 @@ Game.NS_PRM_1_G6level1.prototype =
             }
             else
             {
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebration();
                 _this.time.events.add(500,function(){
@@ -1606,7 +1606,7 @@ Game.NS_PRM_1_G6level1.prototype =
     {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },    
 }
     

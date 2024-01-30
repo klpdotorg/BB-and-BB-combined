@@ -53,7 +53,7 @@ Game.NS_FM_4A_G6level1.prototype =
             _this.languageSelected + "/NS-FM-4-G6-b.mp3");
         _this.Question2.appendChild(_this.Question2src);
 
-        telInitializer.gameIdInit("NSN_FM_4A_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSN_FM_4A_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -144,7 +144,7 @@ Game.NS_FM_4A_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -567,7 +567,7 @@ Game.NS_FM_4A_G6level1.prototype =
                 _this.rightbtn_is_Clicked = false;
 
                 _this.noofAttempts ++;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.time.events.add(500, function () {
                     _this.celebration();

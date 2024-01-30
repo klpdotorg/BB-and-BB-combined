@@ -70,7 +70,7 @@ Game.GMLA_04_G7level1.prototype =
         _this.Ask_Question15 = _this.createAudio("GMLA_04_G7_h1");
         _this.Ask_Question16 = _this.createAudio("GMLA_04_G7_h1");
 
-        telInitializer.gameIdInit("GMLA_04_G7", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMLA_04_G7", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -285,7 +285,7 @@ Game.GMLA_04_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1306,7 +1306,7 @@ Game.GMLA_04_G7level1.prototype =
     correctAns: function () {
         _this.tick1.inputEnabled = false;
         _this.celebrationSound.play();
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.starActions();
         _this.time.events.add(1500, () => {
             console.log("///////////////++++++++++");
@@ -1965,7 +1965,7 @@ Game.GMLA_04_G7level1.prototype =
 
                     _this.time.events.add(3500, function () {
                         _this.celebrationSound.play();
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
                         _this.starActions();
                         _this.tween1 = _this.add.tween(_this.mapShow).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.None, true);
                         _this.mapShow.destroy();
@@ -2246,7 +2246,7 @@ Game.GMLA_04_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

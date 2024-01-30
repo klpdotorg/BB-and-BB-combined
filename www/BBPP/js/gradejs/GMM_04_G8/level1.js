@@ -72,7 +72,7 @@ Game.GMM_04_G8level1.prototype = {
     _this.Ask_Question14 = _this.createAudio("GMM_04_G8_a3");
     _this.Ask_Question15 = _this.createAudio("GMM_04_G8_a7");
   
-    telInitializer.gameIdInit("GMM_04_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("GMM_04_G8", gradeSelected);
     console.log(gameID,"gameID...");
   },
 
@@ -159,7 +159,7 @@ Game.GMM_04_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -3666,7 +3666,7 @@ Game.GMM_04_G8level1.prototype = {
   //     ) {
   //       _this.celebrationSound.play();
   //       _this.noofAttempts++;
-  //       telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+  //       telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
   //       _this.starActions();
   //       _this.numGroup.destroy();
   //       _this.numpad = 0;
@@ -3690,7 +3690,7 @@ Game.GMM_04_G8level1.prototype = {
   //     ) {
   //       _this.celebrationSound.play();
   //       _this.noofAttempts++;
-  //       telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+  //       telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
   //       _this.starActions();
   //       _this.numGroup.destroy();
   //       _this.numpad = 0;
@@ -3712,7 +3712,7 @@ Game.GMM_04_G8level1.prototype = {
   //     ) {
   //       _this.celebrationSound.play();
   //       _this.noofAttempts++;
-  //       telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+  //       telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
   //       _this.starActions();
   //       _this.numGroup.destroy();
   //       _this.numpad = 0;
@@ -5578,7 +5578,7 @@ Game.GMM_04_G8level1.prototype = {
       _this.celebrationSound.currentTime = 0;
       _this.celebrationSound.play();
       _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions();
       _this.perimeterVar = 0;
       if (_this.area != 0) _this.area = 1;
@@ -5703,14 +5703,14 @@ Game.GMM_04_G8level1.prototype = {
     if (_this.count1 < 5) {
       _this.celebrationSound.play();
       _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions(_this.count1);
       _this.noofAttempts = 0;
         _this.AnsTimerCount = 0;
     } else {
       _this.celebrationSound.play();
       _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.starActions(_this.count1);
       _this.noofAttempts = 0;
         _this.AnsTimerCount = 0;
@@ -5732,7 +5732,7 @@ Game.GMM_04_G8level1.prototype = {
   shutdown: function () {
     _this.stopVoice();
     //RI.gotoEndPage();
-    //telInitializer.tele_end();
+    //telInitializerbbpp.tele_end();
   },
 
   DemoVideo: function () {

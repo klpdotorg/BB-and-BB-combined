@@ -49,7 +49,7 @@ Game.NS_LCM_1_G6level1.prototype =
         _this.Question2.appendChild(_this.Question2src);
 
 
-        telInitializer.gameIdInit("NSN_LCM_1_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSN_LCM_1_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -116,7 +116,7 @@ Game.NS_LCM_1_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -900,7 +900,7 @@ Game.NS_LCM_1_G6level1.prototype =
         _this.rightbtn.input.useHandCursor = false;
         _this.rightbtn_is_Clicked = true;
         if (Number('' + _this.selectedAns1 + _this.selectedAns2) === _this.answer) {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebration();
             _this.repetition++;

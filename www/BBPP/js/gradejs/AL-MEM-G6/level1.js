@@ -52,7 +52,7 @@ Game.AL_MEM_G6level1.prototype =
         _this.negativeAlertSoundsrc.setAttribute("src", window.baseUrl+ "sounds/Negative_alert_sound.mp3");
         _this.negativeAlertSound.appendChild(_this.negativeAlertSoundsrc); 
 
-        telInitializer.gameIdInit("AL_MEM_G6",gradeSelected);
+        telInitializerbbpp.gameIdInit("AL_MEM_G6",gradeSelected);
         console.log(gameID,"gameID ///////////////");
     },
 
@@ -128,7 +128,7 @@ Game.AL_MEM_G6level1.prototype =
         _this.speakerbtn.input.useHandCursor = true;
         _this.speakerbtn.events.onInputDown.add(function () 
         {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) 
             {
                 _this.speakerbtn.inputEnabled = false;
@@ -644,7 +644,7 @@ Game.AL_MEM_G6level1.prototype =
                             _this.noofAttempts++;
                             _this.time.events.add(10,function()
                             {
-                                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                                 _this.celebrationSound.play();
                                 _this.starActions();

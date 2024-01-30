@@ -46,7 +46,7 @@ Game.ALM_01_MCQ_G6level1.prototype =
         _this.WaterDropSoundsrc.setAttribute("src", window.baseUrl + "sounds/watersplash.mp3");
         _this.WaterDropSound.appendChild(_this.WaterDropSoundsrc);
 
-        telInitializer.gameIdInit("ALM_01_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("ALM_01_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
     create: function (game) {
@@ -142,7 +142,7 @@ Game.ALM_01_MCQ_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 console.log(_this.Question_flag);
                 _this.speakerbtn.inputEnabled = false;
@@ -2346,7 +2346,7 @@ Game.ALM_01_MCQ_G6level1.prototype =
             console.log("ans is correct");
 
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions(_this.count1);
             _this.celebrationSound.play();
@@ -3773,7 +3773,7 @@ Game.ALM_01_MCQ_G6level1.prototype =
         if (Number(target.name) == _this.YArray_PartB[_this.PartBQnCnt]) {
             console.log("ans is correct");
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.starActions(_this.count1);
             _this.celebrationSound.play();
@@ -3887,7 +3887,7 @@ Game.ALM_01_MCQ_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
     DemoVideo: function () {
 

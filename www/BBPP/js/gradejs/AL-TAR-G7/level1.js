@@ -57,7 +57,7 @@ Game.AL_TAR_G7level1.prototype =
         _this.DemoVo2 = _this.createAudio("AL_TAR_G7_a2");//Solve the puzzle to match each equation to its solution
         _this.DemoVo3 = _this.createAudio("AL_TAR_G7_a3");//Triangular pieces can turn clockwise and anticlockwise with the use of these buttons. 
 
-        telInitializer.gameIdInit("AL_TAR_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("AL_TAR_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
     },
 
@@ -139,7 +139,7 @@ Game.AL_TAR_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2586,7 +2586,7 @@ Game.AL_TAR_G7level1.prototype =
         target.fontSize = "15px"
     },
     starActions: function (target) {
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.AnsTimerCount = 0;
         _this.microConcepts = "AlgebraG7";
@@ -2601,7 +2601,7 @@ Game.AL_TAR_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

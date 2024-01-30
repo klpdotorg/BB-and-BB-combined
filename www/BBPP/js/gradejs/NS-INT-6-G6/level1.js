@@ -20,7 +20,7 @@ Game.NS_INT_6_G6level1.prototype = {
         }
         else console.log("Language selected: " + _this.languageSelected);
 
-        //telInitializer.gameIdInit("sequence2_1_1a",gradeSelected);
+        //telInitializerbbpp.gameIdInit("sequence2_1_1a",gradeSelected);
 
         _this.clickSound = document.createElement('audio');
         _this.clickSoundsrc = document.createElement('source');
@@ -46,7 +46,7 @@ Game.NS_INT_6_G6level1.prototype = {
         _this.physics.startSystem(Phaser.Physics.ARCADE);
         _this.physics.setBoundsToWorld();
 
-        telInitializer.gameIdInit("NS_INT_6_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_6_G6", gradeSelected);
         console.log(gameID,"gameID...");
     },
 
@@ -151,7 +151,7 @@ Game.NS_INT_6_G6level1.prototype = {
 
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             //_this.clickSound = _this.add.audio('ClickSound');
             _this.clickSound.play();
             _this.Q6_Question();
@@ -2176,7 +2176,7 @@ Game.NS_INT_6_G6level1.prototype = {
 
                     _this.Q6_celebration_anm();
 
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                     _this.starActions();
                     //                    _this.time.events.add(1000,function(){
@@ -2260,7 +2260,7 @@ Game.NS_INT_6_G6level1.prototype = {
             }
             else if (_this.selectedAns1 == "0") {
                 _this.celebrationSound.play();
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.starActions();
 
@@ -2305,7 +2305,7 @@ Game.NS_INT_6_G6level1.prototype = {
                     _this.celebrationSound.play();
                     _this.numGroupA.destroy();
 
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
 
                     _this.Q6_celebration_anm();
@@ -2665,7 +2665,7 @@ Game.NS_INT_6_G6level1.prototype = {
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
 

@@ -530,7 +530,7 @@ Game.preloaderbbpp.prototype = {
          this.loadjscssfile("BBPP/js/gradejs/GMM_04_G8/level1.js", "js");
          this.loadjscssfile("BBPP/js/gradejs/GMM_02_G8/level1.js", "js");
          this.loadjscssfile("BBPP/js/gradejs/GMM_01_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/NS_RN_G8/level1.js", "js");
+        // this.loadjscssfile("BBPP/js/gradejs/NS_RN_G8/level1.js", "js");
          this.loadjscssfile("BBPP/js/gradejs/NS_DIN_G8/level1.js", "js");
          this.loadjscssfile("BBPP/js/gradejs/GMSS_03_G8/level1.js", "js");  
          this.loadjscssfile("BBPP/js/gradejs/NS_SQ_CUB_G8/level1.js", "js");  

@@ -59,7 +59,7 @@ Game.GMLA_01_G7level1.prototype =
         _this.Ask_Question4a = _this.createAudio("GMLA_01_G7_a4");//Now, calculate and type the complementary angle.
         _this.Ask_Question4b = _this.createAudio("GMLA_01_G7_a5");//Now, calculate and type the supplementary angle.
 
-        telInitializer.gameIdInit("GMLA_01_G7", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMLA_01_G7", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -133,7 +133,7 @@ Game.GMLA_01_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1362,7 +1362,7 @@ Game.GMLA_01_G7level1.prototype =
     },
 
     starActions: function (target) {
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         starAnim = _this.starsGroup.getChildAt(_this.count1);
         starAnim.smoothed = false;
         anim = starAnim.animations.add('star');
@@ -1376,7 +1376,7 @@ Game.GMLA_01_G7level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

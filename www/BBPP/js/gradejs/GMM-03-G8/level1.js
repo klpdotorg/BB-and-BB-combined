@@ -76,7 +76,7 @@ Game.GMM_03_G8level1.prototype =
         // _this.Ask_Question9 = _this.createAudio("V9");
 
         //edited for baseurl online apk
-        telInitializer.gameIdInit("GMM_03_G8", gradeSelected);
+        telInitializerbbpp.gameIdInit("GMM_03_G8", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -212,7 +212,7 @@ Game.GMM_03_G8level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2030,7 +2030,7 @@ Game.GMM_03_G8level1.prototype =
         //for api
         //edited for baseurl apk
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         //..............
 
         console.log(_this.noofAttempts, "_this.noofAttempts.................");
@@ -2419,7 +2419,7 @@ Game.GMM_03_G8level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

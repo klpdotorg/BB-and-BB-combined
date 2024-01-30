@@ -56,7 +56,7 @@ Game.NS_RN_G8level1.prototype = {
     _this.Ask_Question6 = _this.createAudio("NS_RN_G8_a2");
 
 
-    telInitializer.gameIdInit("NSN_RN_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("NSN_RN_G8", gradeSelected);
     console.log(gameID, "gameID...");
   },
 
@@ -134,7 +134,7 @@ Game.NS_RN_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -1966,7 +1966,7 @@ Game.NS_RN_G8level1.prototype = {
     _this.microConcepts = "Number SystemsG8";
     _this.sceneCount++;
     _this.noofAttempts++;
-    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
     _this.noofAttempts = 0;
     _this.AnsTimerCount = 0;
@@ -1993,7 +1993,7 @@ Game.NS_RN_G8level1.prototype = {
   shutdown: function () {
     _this.stopVoice();
     //RI.gotoEndPage();
-    //telInitializer.tele_end();
+    //telInitializerbbpp.tele_end();
   },
 
 };

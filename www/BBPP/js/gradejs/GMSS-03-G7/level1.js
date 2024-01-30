@@ -56,7 +56,7 @@ Game.GMSS_03_G7level1.prototype =
         _this.Ask_Question1 = _this.createAudio("GMSS_03_G7_a1");
         _this.Ask_Question2 = _this.createAudio("GMSS_03_G7_a2");
 
-        telInitializer.gameIdInit("GMSS_03_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("GMSS_03_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
     },
     create: function (game) {
@@ -151,7 +151,7 @@ Game.GMSS_03_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1918,7 +1918,7 @@ Game.GMSS_03_G7level1.prototype =
     lastScreenCelebration: function () {
         _this.noofAttempts++;
 
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
         _this.microConcepts = "GeometryG7";
         _this.celebrationSound.play();

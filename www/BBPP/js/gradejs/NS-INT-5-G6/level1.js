@@ -8,7 +8,7 @@ Game.NS_INT_5_G6level1.prototype = {
         //* This game is for integers. Select specified bird/fish. There are 3 birds and 3 fish simultaneously
         //* on the screen.
 
-        //telInitializer.gameIdInit("sequence2_1_1a",gradeSelected);
+        //telInitializerbbpp.gameIdInit("sequence2_1_1a",gradeSelected);
 
         //* use the language selected to form the string for url of the audio files.
         //* need to populate that from a parameter that is passed.
@@ -145,7 +145,7 @@ Game.NS_INT_5_G6level1.prototype = {
         _this.src_p0.setAttribute("src", window.baseUrl + "questionSounds/NS-INT-5-G6/" + _this.languageSelected + "/zr-a.mp3");
         _this.playQuestionSound_p0.appendChild(_this.src_p0);
 
-        telInitializer.gameIdInit("NS_INT_5_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NS_INT_5_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -273,7 +273,7 @@ Game.NS_INT_5_G6level1.prototype = {
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
         _this.speakerbtn.events.onInputDown.add(function () {
             //_this.speakerbtn.inputEnabled = false;
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             //_this.clickSound = _this.add.audio('ClickSound');
             _this.clickSound.play();
             _this.Q5_askQ5VoiceQuestion();
@@ -517,7 +517,7 @@ Game.NS_INT_5_G6level1.prototype = {
 
         }
         //_this.questionid =1;
-        //telInitializer.gameIdInit(_this.questionid);
+        //telInitializerbbpp.gameIdInit(_this.questionid);
         _this.questionid = 1;
     },
 
@@ -1586,7 +1586,7 @@ Game.NS_INT_5_G6level1.prototype = {
     //        fishSwimming.inputEnabled = true;
     //        fishSwimming.input.useHandCursor = true;
     //        fishSwimming.events.onInputUp.add(function(target){
-    //			telInitializer.tele_interactEvent("TOUCH",target.name);
+    //			telInitializerbbpp.tele_interactEvent("TOUCH",target.name);
     //            target.frame = 0;
     //        },_this);
     //
@@ -2229,7 +2229,7 @@ Game.NS_INT_5_G6level1.prototype = {
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
 
@@ -2467,7 +2467,7 @@ Game.NS_INT_5_G6level1.prototype = {
         console.log("in showanswerAction Option is: " + _this.fifthQOption);
         if (correct_answer == true) {
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions();
 
             if (_this.fifthQOption == 1) {

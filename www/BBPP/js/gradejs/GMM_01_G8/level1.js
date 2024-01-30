@@ -89,7 +89,7 @@ Game.GMM_01_G8level1.prototype = {
     _this.Ask_Question11 = _this.createAudio("GMM_01_G8_a3");
     _this.Ask_Question12 = _this.createAudio("GMM_01_G8_a7");
 
-    telInitializer.gameIdInit("GMM_01_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("GMM_01_G8", gradeSelected);
     console.log(gameID, "gameID...");
   },
 
@@ -172,7 +172,7 @@ Game.GMM_01_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -5485,7 +5485,7 @@ Game.GMM_01_G8level1.prototype = {
       ) {
         _this.noofAttempts++;
         _this.celebrationSound.play();
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.starActions();
         _this.numGroup.destroy();
         _this.numpad = 0;
@@ -5505,7 +5505,7 @@ Game.GMM_01_G8level1.prototype = {
         _this.areaAns1 - _this.areaAns2
       ) {
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.celebrationSound.play();
         _this.starActions();
         _this.numGroup.destroy();
@@ -5529,7 +5529,7 @@ Game.GMM_01_G8level1.prototype = {
         _this.areaAns2 * _this.smallerGrp.children.length
       ) {
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
         _this.celebrationSound.play();
         _this.starActions();
         _this.numGroup.destroy();
@@ -6238,7 +6238,7 @@ Game.GMM_01_G8level1.prototype = {
   perimeterSelected: function () {
     if (_this.Box1.frame == 1 && _this.Box2.frame == 0) {
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.celebrationSound.currentTime = 0;
       _this.celebrationSound.play();
       _this.starActions();
@@ -6360,14 +6360,14 @@ Game.GMM_01_G8level1.prototype = {
     _this.celebrationSound.currentTime = 0;
     if (_this.count1 < 5) {
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.celebrationSound.play();
       _this.starActions(_this.count1);
       _this.noofAttempts = 0;
                     _this.AnsTimerCount = 0;
     } else {
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+      telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
       _this.celebrationSound.play();
       _this.starActions(_this.count1);
       _this.noofAttempts = 0;
@@ -6390,7 +6390,7 @@ Game.GMM_01_G8level1.prototype = {
   shutdown: function () {
     _this.stopVoice();
     //RI.gotoEndPage();
-    //telInitializer.tele_end();
+    //telInitializerbbpp.tele_end();
   },
 
   DemoVideo: function () {

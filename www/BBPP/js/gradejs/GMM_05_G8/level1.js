@@ -60,7 +60,7 @@ Game.GMM_05_G8level1.prototype = {
     _this.Ask_Question5 = _this.createAudio("GMM_05_G8_a5");
     _this.Ask_Question6 = _this.createAudio("GMM_05_G8_a6");
 
-    telInitializer.gameIdInit("GMM_05_G8", gradeSelected);
+    telInitializerbbpp.gameIdInit("GMM_05_G8", gradeSelected);
     console.log(gameID, "gameID...");
   },
 
@@ -155,7 +155,7 @@ Game.GMM_05_G8level1.prototype = {
     _this.speakerbtn = _this.add.sprite(600, 6, "CommonSpeakerBtn");
 
     _this.speakerbtn.events.onInputDown.add(function () {
-      telInitializer.tele_interactEvent("TOUCH", "speaker");
+      telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
       if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
         _this.speakerbtn.inputEnabled = false;
         _this.speakerbtn.input.useHandCursor = false;
@@ -587,7 +587,7 @@ Game.GMM_05_G8level1.prototype = {
       _this.counterCelebrationSound.play();
       _this.celebrationSound.play();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(
+      telInitializerbbpp.tele_saveAssessment(
         _this.questionid,
         "yes",
         _this.AnsTimerCount,
@@ -646,7 +646,7 @@ Game.GMM_05_G8level1.prototype = {
       _this.counterCelebrationSound.play();
       _this.celebrationSound.play();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(
+      telInitializerbbpp.tele_saveAssessment(
         _this.questionid,
         "yes",
         _this.AnsTimerCount,
@@ -705,7 +705,7 @@ Game.GMM_05_G8level1.prototype = {
       _this.counterCelebrationSound.play();
       _this.celebrationSound.play();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(
+      telInitializerbbpp.tele_saveAssessment(
         _this.questionid,
         "yes",
         _this.AnsTimerCount,
@@ -902,7 +902,7 @@ Game.GMM_05_G8level1.prototype = {
         _this.celebrationSound.currentTime = 0;
         _this.celebrationSound.play();
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(
+        telInitializerbbpp.tele_saveAssessment(
           _this.questionid,
           "yes",
           _this.AnsTimerCount,
@@ -928,7 +928,7 @@ Game.GMM_05_G8level1.prototype = {
         _this.celebrationSound.currentTime = 0;
         _this.celebrationSound.play();
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(
+        telInitializerbbpp.tele_saveAssessment(
           _this.questionid,
           "yes",
           _this.AnsTimerCount,
@@ -954,7 +954,7 @@ Game.GMM_05_G8level1.prototype = {
         _this.celebrationSound.currentTime = 0;
         _this.celebrationSound.play();
         _this.noofAttempts++;
-        telInitializer.tele_saveAssessment(
+        telInitializerbbpp.tele_saveAssessment(
           _this.questionid,
           "yes",
           _this.AnsTimerCount,
@@ -1391,7 +1391,7 @@ Game.GMM_05_G8level1.prototype = {
           // _this.celebrationSound.currentTime = 0;
           _this.celebrationSound.play();
           _this.noofAttempts++;
-          telInitializer.tele_saveAssessment(
+          telInitializerbbpp.tele_saveAssessment(
             _this.questionid,
             "yes",
             _this.AnsTimerCount,
@@ -1762,7 +1762,7 @@ Game.GMM_05_G8level1.prototype = {
     if (_this.count1 < 5) {
       _this.celebrationSound.play();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(
+      telInitializerbbpp.tele_saveAssessment(
         _this.questionid,
         "yes",
         _this.AnsTimerCount,
@@ -1781,7 +1781,7 @@ Game.GMM_05_G8level1.prototype = {
     } else {
       _this.celebrationSound.play();
       _this.noofAttempts++;
-      telInitializer.tele_saveAssessment(
+      telInitializerbbpp.tele_saveAssessment(
         _this.questionid,
         "yes",
         _this.AnsTimerCount,
@@ -1810,7 +1810,7 @@ Game.GMM_05_G8level1.prototype = {
   shutdown: function () {
     _this.stopVoice();
     //RI.gotoEndPage();
-    //telInitializer.tele_end();
+    //telInitializerbbpp.tele_end();
   },
 
   DemoVideo: function () {
