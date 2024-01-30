@@ -69,7 +69,7 @@ Game.NSD_5B_G6level1.prototype = {
         _this.VoiceNote2Fn = _this.createAudio("NSD-5B-G6B")
         _this.VoiceNote3Fn = _this.createAudio("NSD-5B-G6C")
 
-        telInitializer.gameIdInit("NSD_5B_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSD_5B_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -1254,7 +1254,7 @@ Game.NSD_5B_G6level1.prototype = {
         else if (_this.AnswerBox.name === correct_sum && _this.answer_flag == 4) {
             _this.noofAttempts++;
           
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebration();
             _this.numGroup.destroy();
@@ -2114,7 +2114,7 @@ Game.NSD_5B_G6level1.prototype = {
     shutdown: function () {
         _this.stopVoice();
         // RI.gotoEndPage();
-        // telInitializer.tele_end();
+        // telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

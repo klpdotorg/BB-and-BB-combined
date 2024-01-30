@@ -4,7 +4,7 @@ Game.NSF_3_G6level1.prototype = {
 
     init: function (game) {
         _this = this;
-        //telInitializer.gameIdInit("NSF3_4",gradeSelected);
+        //telInitializerbbpp.gameIdInit("NSF3_4",gradeSelected);
         _this.languageSelected = window.languageSelected;
 
         if (_this.languageSelected == null
@@ -14,7 +14,7 @@ Game.NSF_3_G6level1.prototype = {
         }
         else console.log("Language selected: " + _this.languageSelected);
 
-        telInitializer.gameIdInit("NSF_3_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_3_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -2384,7 +2384,7 @@ Game.NSF_3_G6level1.prototype = {
                         var Maintween1 = this.add.tween(_this.numGroup);
                         Maintween1.to({ y: 70 }, 0, 'Linear', true, 0);
                     }, this);
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
 
                     _this.time.events.add(1500, _this.removeEverthing, _this);
@@ -2395,7 +2395,7 @@ Game.NSF_3_G6level1.prototype = {
                     }
 
                     _this.questionid = 1;
-                    //telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+                    //telInitializerbbpp.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
                 }
                 else {
                     console.log("wrong");

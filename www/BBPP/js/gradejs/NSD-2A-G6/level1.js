@@ -51,7 +51,7 @@ Game.NSD_2A_G6level1.prototype =
         _this.Ask_Question2 = _this.createAudio("NSD-2A-G6B");
         _this.Ask_Question3 = _this.createAudio("NSD-2A-G6C");
 
-        telInitializer.gameIdInit("NSD_2A_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSD_2A_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -148,7 +148,7 @@ Game.NSD_2A_G6level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1365,7 +1365,7 @@ Game.NSD_2A_G6level1.prototype =
         _this.noofAttempts++;
         if (_this.usersSelectedBox.name == _this.correctAnsBox.name) {
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrate();
             _this.secondPartNotShown = false;
@@ -1718,7 +1718,7 @@ Game.NSD_2A_G6level1.prototype =
     shutdown: function () {
         _this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

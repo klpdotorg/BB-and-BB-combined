@@ -57,7 +57,7 @@ Game.NSD_6_G7level1.prototype =
         _this.Ask_Question3 = _this.createAudio("NSD_6_G7_a3");//Count and type the answer.
 
         //edited for baseurl apk
-        telInitializer.gameIdInit("NSD_6_G7", gradeSelected);// first Tele call
+        telInitializerbbpp.gameIdInit("NSD_6_G7", gradeSelected);// first Tele call
         console.log(gameID, "gameID...");
     },
 
@@ -142,7 +142,7 @@ Game.NSD_6_G7level1.prototype =
         _this.speakerbtn = _this.add.sprite(600, 6, 'CommonSpeakerBtn');
 
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1849,7 +1849,7 @@ Game.NSD_6_G7level1.prototype =
         if (_this.count1 < 5) {
 
             _this.celebrationSound.play();
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions(_this.count1);
             _this.time.events.add(2000, _this.ClearAll);
             _this.time.events.add(3000, _this.MakeSideBar);
@@ -1857,7 +1857,7 @@ Game.NSD_6_G7level1.prototype =
         }
         else {
             _this.celebrationSound.play();
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
             _this.starActions(_this.count1);
             _this.time.events.add(2000, _this.ClearAll);
             _this.time.events.add(2500, () => {
@@ -1879,7 +1879,7 @@ Game.NSD_6_G7level1.prototype =
     shutdown: function () {
         //_this.stopVoice();
         //RI.gotoEndPage();
-        //telInitializer.tele_end();
+        //telInitializerbbpp.tele_end();
     },
 
     DemoVideo: function () {

@@ -36,7 +36,7 @@ Game.NSF_9B_G6level1.prototype =
         _this.wrongSoundsrc.setAttribute("src", window.baseUrl + "sounds/WrongCelebrationSound.mp3");
         _this.wrongSound.appendChild(_this.wrongSoundsrc);
 
-       // telInitializer.gameIdInit("NSF_9A_G6", gradeSelected);
+       // telInitializerbbpp.gameIdInit("NSF_9A_G6", gradeSelected);
     },
 
     create: function (game) {
@@ -109,8 +109,8 @@ Game.NSF_9B_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             //console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1037,7 +1037,7 @@ Game.NSF_9B_G6level1.prototype =
             _this.slider.input.draggable = false
         if (_this.SliderisCorrect() && _this.CorrectOptionClicked()) {
 
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.showAns();
             // console.log("hello")

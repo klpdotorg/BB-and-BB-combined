@@ -45,7 +45,7 @@ Game.NSF_12_G6level1.prototype =
         _this.nextOptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextOptionSound.appendChild(_this.nextOptionSoundsrc);
 
-        telInitializer.gameIdInit("NSF_12_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_12_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -122,7 +122,7 @@ Game.NSF_12_G6level1.prototype =
         _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.input.useHandCursor = true;
         _this.speakerbtn.events.onInputDown.add(function () {
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -2414,7 +2414,7 @@ Game.NSF_12_G6level1.prototype =
             _this.selectedAns2 = '';
         }
         else if ((Number(_this.enterTxt1.name) === _this.green + _this.blue) && (Number(_this.enterTxt2.name) === _this.objGroup1full.length + _this.green) || (Number(_this.enterTxt2.name) < _this.objGroup1full.length + _this.green && (_this.objGroup1full.length + _this.green) / Number(_this.enterTxt2.name) == (_this.green + _this.blue) / Number(_this.enterTxt1.name))) {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrationSound.play();
             let denomenator;
@@ -2486,7 +2486,7 @@ Game.NSF_12_G6level1.prototype =
         }
 
         else if (_this.rightbtn_evaluation()) {
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
             _this.celebrationSound.play();
             _this.starActions();
