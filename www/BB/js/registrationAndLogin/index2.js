@@ -14,12 +14,16 @@ Game.index2.prototype={
     	window.user = user;
 		window.acctkn = user.uid;
 		window.avatarName = user.name;
-		window.deviceId = user.deviceId;
+		window.deviceId = user.deviceId; 
 		window.languageSelected = user.language;
 		window.gradeSelected = user.grade;
 		window.selctedLang = null;
 		//change this window.baseurl once the server upload finished for bb
-		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.Akshara.BBplusplus/Files/Download/.gameFilesBBV5_0_5/www/";
+		//*previous path for offline version of BB 
+		//window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.Akshara.BBplusplus/Files/Download/.gameFilesBBV5_0_5/www/";
+		//* Chnage this path once you done with server setup for BB
+		window.baseUrl = "https://abbmath.klp.org.in/BuildingBlocksAssets/assets";
+		//"https://abbmath.klp.org.in/bbplusplus/assets1/";
 		window.score = 50;
 		window.mcIcon = null;
 		window.userProgress = flag;
