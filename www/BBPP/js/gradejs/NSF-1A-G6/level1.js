@@ -5,7 +5,7 @@ Game.NSF_1A_G6level1 = function () {
 Game.NSF_1A_G6level1.prototype = {
     init: function (game) {
         _this = this;
-        //    telInitializer.gameIdInit("NSF1_4",gradeSelected);
+        //    telInitializerbbpp.gameIdInit("NSF1_4",gradeSelected);
         _this.languageSelected = window.languageSelected;
 
         if (_this.languageSelected == null
@@ -17,7 +17,7 @@ Game.NSF_1A_G6level1.prototype = {
 
         this.load.image('Level42C_timer', window.baseUrl + 'assets/commonAssets/timerbg.png');
 
-        telInitializer.gameIdInit("NSF_1A_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_1A_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -15820,7 +15820,7 @@ Game.NSF_1A_G6level1.prototype = {
             _this.timer = null;
         }
         _this.questionid = 1;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
     },
 

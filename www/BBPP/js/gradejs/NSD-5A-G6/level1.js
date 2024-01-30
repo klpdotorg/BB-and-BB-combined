@@ -68,7 +68,7 @@ Game.NSD_5A_G6level1.prototype = {
         _this.Successsrc.setAttribute("src", window.baseUrl + "sounds/Success.mp3");
         _this.Success.appendChild(_this.Successsrc);
 
-        telInitializer.gameIdInit("NSD_5A_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSD_5A_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -1704,7 +1704,7 @@ Game.NSD_5A_G6level1.prototype = {
         }
         else if (_this.AnswerBox.name === correct_sum && _this.answer_flag == 4) {
             _this.noofAttempts++;
-            telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount1);
+            telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount1);
 
             _this.celebration();
             _this.numGroup.destroy();

@@ -46,7 +46,7 @@ Game.NSF_8_G6level1.prototype =
         _this.nextoptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextoptionSound.appendChild(_this.nextoptionSoundsrc);
 
-        telInitializer.gameIdInit("NSF_8_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_8_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -141,7 +141,7 @@ Game.NSF_8_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             //console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -3016,7 +3016,7 @@ Game.NSF_8_G6level1.prototype =
                 else {
                     _this.noofAttempts++;
                     if (_this.whole == true && _this.enterTxt6.name == _this.new_quotient) {
-                        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                         console.log(_this.enterTxt6.name);
                         _this.whole = false;
@@ -3079,7 +3079,7 @@ Game.NSF_8_G6level1.prototype =
             else {
                 _this.noofAttempts++;
                 if (Number(_this.enterTxt3.name) == _this.quotient && Number(_this.enterTxt4.name) == _this.remainder && Number(_this.enterTxt5.name) == _this.DenominatorValue) {
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                     _this.celebration();
                     _this.selectedAns1 = '';
@@ -3114,7 +3114,7 @@ Game.NSF_8_G6level1.prototype =
 
                 }
                 else if (Number(_this.enterTxt3.name) == _this.new_quotient && Number(_this.enterTxt4.name) == _this.new_remainder && Number(_this.enterTxt5.name) == _this.new_denominator) {
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                     _this.celebration();
                     _this.selectedAns1 = '';

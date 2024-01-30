@@ -43,7 +43,7 @@ Game.NSF_10_G6level1.prototype =
         _this.nextoptionSoundsrc.setAttribute("src", window.baseUrl + "sounds/Next_option_sound.mp3");
         _this.nextoptionSound.appendChild(_this.nextoptionSoundsrc);
 
-        telInitializer.gameIdInit("NSF_10_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_10_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
 
@@ -130,8 +130,8 @@ Game.NSF_10_G6level1.prototype =
 
         _this.speakerbtn.events.onInputDown.add(function () {
             ////console.log("Hello");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
-            telInitializer.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
+            telInitializerbbpp.tele_interactEvent("TOUCH", "speaker");
             if (_this.speakerbtnClicked == false && _this.rightbtn_is_Clicked == false) {
                 _this.speakerbtn.inputEnabled = false;
                 _this.speakerbtn.input.useHandCursor = false;
@@ -1693,7 +1693,7 @@ Game.NSF_10_G6level1.prototype =
                 _this.enterFractionBox1.frame = 0;
                 _this.whole = 0;
                 _this.numGroup.visible = false;
-                telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                 _this.celebration();
                 _this.time.events.add(1000, () => {
@@ -1833,7 +1833,7 @@ Game.NSF_10_G6level1.prototype =
                     _this.enterTxt1 = null;
                     _this.enterTxt2 = null;
 
-                    telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+                    telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
 
                     _this.celebration();
 

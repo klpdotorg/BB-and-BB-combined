@@ -10,7 +10,7 @@ Game.NSF_4_G6level1.prototype={
         this.Stararr = param;
         this.score = score;
         
-        //telInitializer.gameIdInit("NSF5_5",gradeSelected);
+        //telInitializerbbpp.gameIdInit("NSF5_5",gradeSelected);
         _this.languageSelected = window.languageSelected;
         
         if (_this.languageSelected == null 
@@ -22,7 +22,7 @@ Game.NSF_4_G6level1.prototype={
         else console.log("Language selected: " + _this.languageSelected);
 
         
-        telInitializer.gameIdInit("NSF_4_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_4_G6", gradeSelected);
         console.log(gameID, "gameID...");
     },
  
@@ -2328,7 +2328,7 @@ Game.NSF_4_G6level1.prototype={
                     _this.timer = null;
                }
             _this.questionid = 1;
-       telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+       telInitializerbbpp.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
             }
             else
             {

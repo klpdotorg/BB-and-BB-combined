@@ -3,7 +3,7 @@ Game.NSF_6_G6level1 = function () { };
 Game.NSF_6_G6level1.prototype = {
     init: function (game) {
         _this = this;
-        //telInitializer.gameIdInit("NSF2_5",gradeSelected);
+        //telInitializerbbpp.gameIdInit("NSF2_5",gradeSelected);
         _this.languageSelected = window.languageSelected;
 
         if (_this.languageSelected == null
@@ -13,7 +13,7 @@ Game.NSF_6_G6level1.prototype = {
         }
         else console.log("Language selected: " + _this.languageSelected);
         //NSF_6_G6    
-        telInitializer.gameIdInit("NSF_6_G6", gradeSelected);
+        telInitializerbbpp.gameIdInit("NSF_6_G6", gradeSelected);
         console.log(gameID, "gameID...");
 
     },
@@ -5176,7 +5176,7 @@ Game.NSF_6_G6level1.prototype = {
 
         _this.questionid = 1;
         _this.sceneCount++;
-        telInitializer.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
+        telInitializerbbpp.tele_saveAssessment(_this.questionid, "yes", _this.AnsTimerCount, _this.noofAttempts, _this.sceneCount);
     },
 
 
