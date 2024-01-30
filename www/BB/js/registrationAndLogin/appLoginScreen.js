@@ -94,7 +94,7 @@ Game.appLoginScreen.prototype = {
 		_this.regBackArrow.inputEnabled = true;
 		_this.regBackArrow.events.onInputDown.add(function () {
 			// app.initialize();
-			_this.state.start('mainScreen', true, false, _this.app_Mode);
+			_this.state.start('mainScreen', true, false, "online");
 		}, _this);
 	},
 
