@@ -83,7 +83,7 @@ Game.selectgrade7MicroConceptScreen.prototype={
 				this.clickSound = _this.add.audio('ClickSound');
 	        	this.clickSound.play();
 				selectgrade7MicroConcept = false;
-				game.state.start('practiceModegradeSelectionScreen',true,false);
+				game.state.start('practiceModegradeSelectionScreenbbpp',true,false);
 			},this);
 
 			this.gameModeShareBtn = game.add.image(920,20,'shareIcon');
