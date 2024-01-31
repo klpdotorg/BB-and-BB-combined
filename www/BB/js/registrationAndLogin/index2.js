@@ -22,7 +22,7 @@ Game.index2.prototype={
 		//*previous path for offline version of BB 
 		//window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.Akshara.BBplusplus/Files/Download/.gameFilesBBV5_0_5/www/";
 		//* Chnage this path once you done with server setup for BB
-		window.baseUrl = "https://abbmath.klp.org.in/BuildingBlocksAssets/assets";
+		window.baseUrl = "https://abbmath.klp.org.in/BuildingBlocksAssets/";
 		//"https://abbmath.klp.org.in/bbplusplus/assets1/";
 		window.score = 50;
 		window.mcIcon = null;
