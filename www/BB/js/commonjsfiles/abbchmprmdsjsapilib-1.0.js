@@ -10,7 +10,7 @@
  *              Allow access to the abbrestapi_baseurl in the cordova project config.xml
  * Author: sureshkodoor@gmail.com
  */
-// console.log(window.app_Grade,"inside abbchmprm app grade$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+console.log(window.app_Grade,"inside abbchmprm app grade$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 var abbchmprmdsjsapi = {
 
     databasename: "abbchmprmdb.db",
