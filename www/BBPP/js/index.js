@@ -96,7 +96,7 @@ var app = {
     game.load.atlas('tree', 'assets/tree.png', 'assets/tree.json');
     game.load.atlas('regTickBtn', 'assets/regTickBtn.png', 'assets/regTickBtn.json');
     game.load.atlas('regandstsrtBtn', 'assets/regandstsrtBtn.png', 'assets/regandstsrtBtn.json');
-    game.load.atlas('regloding', 'assets/loding.png', 'assets/loding.json');
+    game.load.atlas('regloding', 'BB/assets/loding.png', 'BB/assets/loding.json');
 
     game.load.bitmapFont('regFont', 'regFont.png', 'regFont.xml');
   },

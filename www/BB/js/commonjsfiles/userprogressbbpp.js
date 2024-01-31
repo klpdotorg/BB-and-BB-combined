@@ -18,20 +18,20 @@ Game.userprogressbbpp.prototype={
 	preload:function(game){
 
 		if(window.avatarName.toLowerCase() == "fish")
-			game.load.atlas('avatar','assets/fish.png','assets/fish.json');
+			game.load.atlas('avatar','BBPP/assets/fish.png','BBPP/assets/fish.json');
 		else if(window.avatarName.toLowerCase() == "butterfly")
-			game.load.atlas('avatar','assets/butterfly.png','assets/butterfly.json');
+			game.load.atlas('avatar','BBPP/assets/butterfly.png','BBPP/assets/butterfly.json');
 		else if(window.avatarName.toLowerCase() == "flower")
-			game.load.atlas('avatar','assets/flower.png','assets/flower.json');
+			game.load.atlas('avatar','BBPP/assets/flower.png','BBPP/assets/flower.json');
 		else if(window.avatarName.toLowerCase() == "parrot")
-			game.load.atlas('avatar','assets/parrot.png','assets/parrot.json');
+			game.load.atlas('avatar','BBPP/assets/parrot.png','BBPP/assets/parrot.json');
 		else if(window.avatarName.toLowerCase() == "sun")
-			game.load.atlas('avatar','assets/sun.png','assets/sun.json');
+			game.load.atlas('avatar','BBPP/assets/sun.png','BBPP/assets/sun.json');
 		else if(window.avatarName.toLowerCase() == "tree")
-			game.load.atlas('avatar','assets/tree.png','assets/tree.json');
+			game.load.atlas('avatar','BBPP/assets/tree.png','BBPP/assets/tree.json');
 
-		game.load.image('scrollWhite','assets/scrollWhite.png');
-		game.load.image('scrollBlack','assets/scrollBlack.png');
+		game.load.image('scrollWhite','BBPP/assets/scrollWhite.png');
+		game.load.image('scrollBlack','BBPP/assets/scrollBlack.png');
 
 		game.time.advancedTiming = true;
 	},

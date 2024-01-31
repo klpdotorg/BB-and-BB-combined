@@ -1990,8 +1990,8 @@ Game.preloader.prototype = {
 
         this.load.atlas('grade161_box2', window.baseUrl + 'assets/gradeAssets/16.1/gameAssets/ans box2.png', window.baseUrl + 'assets/gradeAssets/16.1/gameAssets/ans box2.json');
 
-        this.load.image('longdivision', 'BB/assets/newGames/longdivision.png');
-        this.load.image('longdivision', 'BB/assets/newGames/longdivision.png');
+        // this.load.image('longdivision', 'BB/assets/newGames/longdivision.png');
+        // this.load.image('longdivision', 'BB/assets/newGames/longdivision.png');
     },
 
     loadNumberSense1Assets: function () {

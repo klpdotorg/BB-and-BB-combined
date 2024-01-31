@@ -218,7 +218,7 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 				this.clickSound = this.add.audio('ClickSound');
 				this.clickSound.play();
 				if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
-					this.state.start('userprogress', true, false);
+					this.state.start('userprogressbbpp', true, false);
 				} else {
 					nativeApp.CallUserProgress();
 				}

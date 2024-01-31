@@ -1,10 +1,10 @@
 var Game = {};
 
-Game.bootbbpp = function () {
+Game.bbppb = function () {
 
 }; 
 
-Game.bootbbpp.prototype = {
+Game.bbppb.prototype = {
 
 	init: function (app_Mode) {
 		_this = this;
@@ -42,8 +42,8 @@ Game.bootbbpp.prototype = {
 
 	create: function (game) {
 		console.log("I am in boot.js");
-		_this.bg = _this.add.tileSprite(0, -80, _this.world.width, _this.world.height, 'CommonAssets', 'commonBg');
-		_this.bg.scale.setTo(1, 1.5);
+		// _this.bg = _this.add.tileSprite(0, -80, _this.world.width, _this.world.height, 'CommonAssets', 'commonBg');
+		// _this.bg.scale.setTo(1, 1.5);
 
 		game.input.maxPointers = 1;
 

@@ -39,7 +39,7 @@ var app = {
     game.state.add('registrationPicSelectionScreen', Game.registrationPicSelectionScreen);
     game.state.add('index2', Game.index2);
 
-    game.state.add('bootbbpp', Game.bootbbpp);
+    // game.state.add('bbppb', Game.bbppb);
     game.state.add('preloaderbbpp', Game.preloaderbbpp);
     game.state.add('userprogressbbpp', Game.userprogressbbpp);
     game.state.add('userprogress2bbpp', Game.userprogress2bbpp);

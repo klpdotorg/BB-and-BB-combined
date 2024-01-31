@@ -11,8 +11,8 @@ Game.mainScreen.prototype = {
 
     preload: function () {
 
-        _this.game.load.atlas('regandstsrtBtn', 'assets/regandstsrtBtn.png', 'assets/regandstsrtBtn.json');
-        _this.game.load.atlas('regloding', 'assets/loding.png', 'assets/loding.json');
+        _this.game.load.atlas('regandstsrtBtn', 'BBPP/assets/regandstsrtBtn.png', 'BBPP/assets/regandstsrtBtn.json');
+        _this.game.load.atlas('regloding', 'BBPP/assets/loding.png', 'BBPP/assets/loding.json');
     },
 
     create: function (game) {
@@ -45,6 +45,7 @@ Game.mainScreen.prototype = {
         cloud1_5.inputEnabled = true;
         cloud1_5.input.useHandCursor = true;
         cloud1_5.events.onInputDown.add(() => {
+            window.app_Grade = "BB";
             bbreglogin.initializeDB();
             _this.game.state.start('appLoginScreen', true, false);
         }, _this);
@@ -63,6 +64,7 @@ Game.mainScreen.prototype = {
         cloud6_8.inputEnabled = true;
         cloud6_8.input.useHandCursor = true;
         cloud6_8.events.onInputDown.add(() => {
+            window.app_Grade = "BBPP";
             bbregloginbbpp.initializeDB();
             _this.game.state.start('appLoginScreenbbpp', true, false, this.app_Mode);
         }, _this);

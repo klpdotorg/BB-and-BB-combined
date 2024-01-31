@@ -291,7 +291,7 @@ Game.appLoginEditScreen.prototype = {
     _this.regBackArrow.inputEnabled = true;
     _this.regBackArrow.events.onInputDown.add(function () {
       console.log(_this.user, "APPLOgEDitScreen Back btn !!!");
-      _this.state.start("appLoginScreenbbpp",true,false,_this.user.language);
+      _this.state.start("appLoginScreen",true,false,_this.user.language);
     }, _this);
 
     document.addEventListener("backbutton", _this.goback, false);

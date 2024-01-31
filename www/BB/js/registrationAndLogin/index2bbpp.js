@@ -39,8 +39,8 @@ Game.index2bbpp.prototype = {
 
 	preload: function (game) {
 		//game.cache.destroy();	
-		game.load.image('exitBg', 'assets/exitAssets/exitBg.png');
-		game.load.image('confirmBg', 'assets/exitAssets/confirmBg.png');
+		game.load.image('exitBg', 'BBPP/assets/exitAssets/exitBg.png');
+		game.load.image('confirmBg', 'BBPP/assets/exitAssets/confirmBg.png');
 	},
 
 	create: function (game) {
@@ -200,7 +200,7 @@ Game.index2bbpp.prototype = {
 		}, false);
 		console.log(window.languageSelected,"window.languageSelected");
 		window.prevScreen = "";
-		game.state.start('bootbbpp',_this.app_Mode);//window.languageSelected
+		game.state.start('boot',_this.app_Mode);//window.languageSelected
 	},
 };
 
