@@ -74,7 +74,7 @@ Game.registrationLangSelectionScreen.prototype = {
         game.state.start("mainScreen", true, false, "online"); //,lang
       }, this);
 
-      var titleTxt = game.add.text(game.world.centerX - 40, 45, "Building Blocks 1-5 by Akshara");
+      var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 1-5 by Akshara");
 
       titleTxt.x = Math.round(titleTxt.x);
       titleTxt.anchor.setTo(0.5);
