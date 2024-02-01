@@ -45,10 +45,10 @@ Game.score.prototype = {
 
 	preload: function (game) {
 		//this.load.atlas('backbtn','assets/commonAssets/backbtn.png' ,null,score_JSON.backbtnJson);
-		this.load.image('CommonHomeBtn', 'assets/homeIconScore.png');
-		this.load.image('CommonNextBtn', 'assets/nextIconScore.png');
-		this.load.image('CommonReplayBtn', 'assets/replayIconScore.png');
-		this.load.image('CommonBackground', 'assets/commonAssets/bg.png');
+		this.load.image('CommonHomeBtn', 'BBPP/assets/homeIconScore.png');
+		this.load.image('CommonNextBtn', 'BBPP/assets/nextIconScore.png');
+		this.load.image('CommonReplayBtn', 'BBPP/assets/replayIconScore.png');
+		this.load.image('CommonBackground', 'BBPP/assets/commonAssets/bg.png');
 	},
 
 	create: function (game) {

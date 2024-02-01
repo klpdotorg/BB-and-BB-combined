@@ -1,4 +1,4 @@
-Game.registrationLangSelectionScreen = function () {};
+Game.registrationLangSelectionScreen = function () { };
 
 Game.registrationLangSelectionScreen.prototype = {
   init: function (user) {
@@ -6,7 +6,7 @@ Game.registrationLangSelectionScreen.prototype = {
     _this.user = user;
   },
 
-  preload: function (game) {},
+  preload: function (game) { },
 
   create: function (game) {
     //Fullscreen.off();
@@ -48,11 +48,7 @@ Game.registrationLangSelectionScreen.prototype = {
 
       document.addEventListener("backbutton", _this.goback, false);
 
-      var titleTxt = game.add.text(
-        game.world.centerX - 80,
-        45,
-        "Building Blocks"
-      );
+      var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 1-5 by Akshara");
       titleTxt.x = Math.round(titleTxt.x);
       titleTxt.anchor.setTo(0.5);
       titleTxt.align = "center";
@@ -78,11 +74,7 @@ Game.registrationLangSelectionScreen.prototype = {
         game.state.start("mainScreen", true, false, "online"); //,lang
       }, this);
 
-      var titleTxt = game.add.text(
-        game.world.centerX - 140,
-        45,
-        "Building Blocks"
-      );
+      var titleTxt = game.add.text(game.world.centerX - 40, 45, "Building Blocks 1-5 by Akshara");
 
       titleTxt.x = Math.round(titleTxt.x);
       titleTxt.anchor.setTo(0.5);

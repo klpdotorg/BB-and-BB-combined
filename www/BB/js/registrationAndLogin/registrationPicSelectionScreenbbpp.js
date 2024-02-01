@@ -62,7 +62,7 @@ Game.registrationPicSelectionScreenbbpp.prototype = {
 
 
 
-		var titleTxt = game.add.text(game.world.centerX - 40, 45, "Building Blocks 6-8 by Akshara");
+		var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -283,7 +283,7 @@ Game.registrationPicSelectionScreenbbpp.prototype = {
 					success: function (jsonresp) {
 						console.log(jsonresp);
 						if (jsonresp.status == "success") {
-							//window.plugins.toast.show(jsonresp.status, 3000, "bottom");
+							window.plugins.toast.show(jsonresp.status, 3000, "bottom");
 							target.events.onInputDown.removeAll();
 							_this.checkOnlineForData(avatarSelected);
 						}

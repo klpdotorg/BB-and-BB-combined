@@ -59,12 +59,12 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 
 	create: function (game) {
 
-		
+
 		window.prevScreen = "gameScreen";
 		window.currScreen = "practiceModegradeSelectionScreenbbpp";
 
 		nativeApp.screenViewStringPass("Practice_class_selection_screen", "Practice_class_selection_screen");
- 
+
 		if (selectgrade6MicroConcept == true) {
 			_this.state.start('selectgrade6MicroConceptScreen', true, false);
 		} else if (selectgrade7MicroConcept == true) {
@@ -84,7 +84,7 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 			_this.gradeBackBtn.events.onInputDown.add(function () {
 
 				if (window.user.deviceId) {
-					console.log(window.user.deviceId,"If condition Check");
+					console.log(window.user.deviceId, "If condition Check");
 					window.user.deviceid = window.user.deviceId;
 				}
 				console.log(window.user.deviceid, "PRACTICE JS BACK BTN");

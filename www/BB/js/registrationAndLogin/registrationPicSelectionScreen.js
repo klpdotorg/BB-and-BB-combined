@@ -50,7 +50,7 @@ Game.registrationPicSelectionScreen.prototype = {
 
 
 
-		var titleTxt = game.add.text(game.world.centerX - 80, 45, "Building Blocks");
+		var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 1-5 by Akshara ");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -317,7 +317,7 @@ Game.registrationPicSelectionScreen.prototype = {
 					success: function (jsonresp) {
 						console.log(jsonresp);
 						if (jsonresp.status == "success") {
-							window.plugins.toast.show(jsonresp.status, 3000, "bottom");
+							// window.plugins.toast.show(jsonresp.status, 3000, "bottom");
 							_this.checkOnlineForData2(avatarName, jsonresp.description);
 
 						}
@@ -364,7 +364,7 @@ Game.registrationPicSelectionScreen.prototype = {
 					success: function (jsonresp) {
 						console.log(jsonresp);
 						if (jsonresp.status == "success") {
-							window.plugins.toast.show(jsonresp.status, 3000, "bottom");
+							// window.plugins.toast.show(jsonresp.status, 3000, "bottom");
 							bbreglogin.bbdbhandler.executeSql("insert into user(uid, name, language, deviceId) values (?,?,?,?)", [acc_token, jsonresp.name, jsonresp.language, jsonresp.deviceid], null, null);
 							jsonresp.uid = acc_token;
 							_this.state.start('appLoginEditScreen', true, false, jsonresp);

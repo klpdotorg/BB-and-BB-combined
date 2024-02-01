@@ -47,7 +47,7 @@ Game.editLangScreenbbpp.prototype = {
 
 		document.addEventListener('backbutton', _this.goback, false);
 
-		var titleTxt = game.add.text(game.world.centerX - 10, 45, "Building Blocks 6-8 by Akshara");
+		var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -215,7 +215,7 @@ Game.editLangScreenbbpp.prototype = {
 
 		FirebasePlugin.logEvent("Select_language", { Select_language: target.name, item_id: "" });
 		//window.deviceId //_this.user.deviceid
-		console.log(_this.user.name, _this.user.deviceid, "//////");
+		console.log(_this.user.name, _this.user.deviceid, "//////bbpp");
 
 		var jsondata = { name: _this.user.name, deviceid: _this.user.deviceid, grade: _this.user.grade, schooltype: _this.user.schooltype, language: target.name, organization: _this.user.organization };
 

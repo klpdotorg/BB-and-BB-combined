@@ -10,7 +10,7 @@
  *              Allow access to the abbrestapi_baseurl in the cordova project config.xml
  * Author: sureshkodoor@gmail.com
  */
-console.log(window.app_Grade,"inside abbprm app grade************************************");
+// console.log(window.app_Grade,"inside abbprm app grade************************************");
 
 var abbprmdsjsapi = {
 
@@ -144,59 +144,59 @@ var abbprmdsjsapi = {
     // Save/Update the wallet score
     // If there is an entry for the User (avatarname/deviceid) already, delete the record and then insert a new record 
     // (Checking if a record exist through a SELECT and then calling UPDATE wont work as the first SELECT will be executed in the async mode and thus will not return value in the same thread. 'INSERT OR REPLACE' also not been used)
-    chm_saveWalletscore: function (objData) {
+    // chm_saveWalletscore: function (objData) {
 
-        if((objData.avatarname == "") || (objData.deviceid == "") || (objData.score == "") || (objData.datetime_lastupdated == "")) {
+    //     if((objData.avatarname == "") || (objData.deviceid == "") || (objData.score == "") || (objData.datetime_lastupdated == "")) {
 
-            if (abbprmdsjsapi.erroralerts) {
-                console.log("abbprmdsjsapi: ERROR: chm_saveWalletscore: values for one or more input parameters are missing.");
-            } 
+    //         if (abbprmdsjsapi.erroralerts) {
+    //             console.log("abbprmdsjsapi: ERROR: chm_saveWalletscore: values for one or more input parameters are missing.");
+    //         } 
 
-            return false;
-        }
+    //         return false;
+    //     }
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_saveWalletscore. objData: " + objData.avatarname+", "+objData.deviceid+", "+objData.score+", "+objData.datetime_lastupdated);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_saveWalletscore. objData: " + objData.avatarname+", "+objData.deviceid+", "+objData.score+", "+objData.datetime_lastupdated);
 
-        /*
-        var query = "INSERT INTO chmwalletscoretbl (avatarname, deviceid, score, datetime_lastupdated) VALUES (?,?,?,?)";
+    //     /*
+    //     var query = "INSERT INTO chmwalletscoretbl (avatarname, deviceid, score, datetime_lastupdated) VALUES (?,?,?,?)";
         
-        this.abbchmprmdbhandler.executeSql(query, [objData.avatarname, objData.deviceid, objData.score, objData.datetime_lastupdated],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) {
-                    console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
-                    console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
-                }
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_saveWalletscore: failed" + error.message);
-                return false;
-            }
-        );
-        */
+    //     this.abbchmprmdbhandler.executeSql(query, [objData.avatarname, objData.deviceid, objData.score, objData.datetime_lastupdated],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) {
+    //                 console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
+    //                 console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
+    //             }
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_saveWalletscore: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
+    //     */
 
-        var deletequery = "DELETE FROM chmwalletscoretbl WHERE avatarname="+objData.avatarname+" AND deviceid="+objData.deviceid;
-        var insertquery = "INSERT INTO chmwalletscoretbl (avatarname, deviceid, score, datetime_lastupdated) VALUES ('"+objData.avatarname+"',"+objData.deviceid+"',"+objData.score+"',"+objData.datetime_lastupdated+")";
+    //     var deletequery = "DELETE FROM chmwalletscoretbl WHERE avatarname="+objData.avatarname+" AND deviceid="+objData.deviceid;
+    //     var insertquery = "INSERT INTO chmwalletscoretbl (avatarname, deviceid, score, datetime_lastupdated) VALUES ('"+objData.avatarname+"',"+objData.deviceid+"',"+objData.score+"',"+objData.datetime_lastupdated+")";
         
-        this.abbchmprmdbhandler.sqlBatch([
-                deletequery,
-                insertquery
-            ],
-            function () {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_saveWalletscore: success");
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_saveWalletscore: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.sqlBatch([
+    //             deletequery,
+    //             insertquery
+    //         ],
+    //         function () {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_saveWalletscore: success");
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_saveWalletscore: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_saveWalletscore");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_saveWalletscore");
+    // },
 
     // CHALLENGE MODE
     // Fetch the challenge mode WalletScore data for syncing (read all the unsynced walletscore records).
@@ -207,185 +207,185 @@ var abbprmdsjsapi = {
     //
     // chm_fetchUnsyncedWalletscoreRecords_cbf is the callback function, which will be invoked once the SQLite function completes its execution
 
-    chm_fetchUnsyncedWalletscoreRecords: function (callbackfn) {
+    // chm_fetchUnsyncedWalletscoreRecords: function (callbackfn) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedWalletscoreRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedWalletscoreRecords");
 
-        var query = "SELECT id AS objid, avatarname, deviceid, score, datetime_lastupdated FROM chmwalletscoretbl WHERE synced = 0";
+    //     var query = "SELECT id AS objid, avatarname, deviceid, score, datetime_lastupdated FROM chmwalletscoretbl WHERE synced = 0";
 
-        var arrObjs = new Array();
+    //     var arrObjs = new Array();
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                var nrecords = rs.rows.length;
-                if (abbprmdsjsapi.debugalerts)
-                   console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: success. Number of records:"+nrecords);
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             var nrecords = rs.rows.length;
+    //             if (abbprmdsjsapi.debugalerts)
+    //                console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: success. Number of records:"+nrecords);
                 
-                for (var i = 0; i < nrecords; i++) {
-                    arrObjs.push(rs.rows.item(i));
-                }
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: arrObjs: " + JSON.stringify(arrObjs));
+    //             for (var i = 0; i < nrecords; i++) {
+    //                 arrObjs.push(rs.rows.item(i));
+    //             }
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: arrObjs: " + JSON.stringify(arrObjs));
 
-                callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: failed" + error.message);
+    //             callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedWalletscoreRecords: failed" + error.message);
 
-                return false;
-            }
-        );
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedWalletscoreRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedWalletscoreRecords");
 
-    },
+    // },
 
-    // CHALLENGE MODE
-    // callback function for chm_fetchUnsyncedWalletscoreRecords
-    chm_fetchUnsyncedWalletscoreRecords_cbf: function (arrRecords) {
+    // // CHALLENGE MODE
+    // // callback function for chm_fetchUnsyncedWalletscoreRecords
+    // chm_fetchUnsyncedWalletscoreRecords_cbf: function (arrRecords) {
 
-        if(abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedWalletscoreRecords_cbf");
-        // console.log("chm_fetchUnsyncedWalletscoreRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
+    //     if(abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedWalletscoreRecords_cbf");
+    //     // console.log("chm_fetchUnsyncedWalletscoreRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
 
-        // Do all the Processing, REST API calls etc here
-        if(arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbchmwalletscore', arrRecords);
-    },
+    //     // Do all the Processing, REST API calls etc here
+    //     if(arrRecords.length > 0)
+    //         RESTAPImgr_1.invokeRESTAPI_1('txabbchmwalletscore', arrRecords);
+    // },
 
     // CHALLENGE MODE
     // mark all the records that have 'id' values specified in the 'ids' array as synced (set 'synced' field to 1.)
-    chm_markSyncedWalletscoreRecords: function (ids) {
+    // chm_markSyncedWalletscoreRecords: function (ids) {
 
-        var query = "UPDATE chmwalletscoretbl SET synced = 1 WHERE id IN (" + ids +")";
+    //     var query = "UPDATE chmwalletscoretbl SET synced = 1 WHERE id IN (" + ids +")";
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_markSyncedWalletscoreRecords. ids:" + ids + "  query: "+query);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_markSyncedWalletscoreRecords. ids:" + ids + "  query: "+query);
 
-        if ((ids.length == 0) || (ids == '')) {
-            if (abbprmdsjsapi.debugalerts)
-                console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
-            return true;
-        }
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) 
-                    console.log("abbprmdsjsapi: chm_markSyncedWalletscoreRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts) 
-                    console.log("abbprmdsjsapi: chm_markSyncedWalletscoreRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     if ((ids.length == 0) || (ids == '')) {
+    //         if (abbprmdsjsapi.debugalerts)
+    //             console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
+    //         return true;
+    //     }
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) 
+    //                 console.log("abbprmdsjsapi: chm_markSyncedWalletscoreRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts) 
+    //                 console.log("abbprmdsjsapi: chm_markSyncedWalletscoreRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Exit chm_markSyncedWalletscoreRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Exit chm_markSyncedWalletscoreRecords");
+    // },
 
     // CHALLENGE MODE
     // delete all the records that have 'synced' field as 1
-    chm_deleteSyncedWalletscoreRecords: function () {
+    // chm_deleteSyncedWalletscoreRecords: function () {
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Enter chm_deleteSyncedWalletscoreRecords");
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Enter chm_deleteSyncedWalletscoreRecords");
 
-        var query = "DELETE FROM chmwalletscoretbl WHERE synced = 1";
+    //     var query = "DELETE FROM chmwalletscoretbl WHERE synced = 1";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) 
-                    console.log("abbprmdsjsapi: chm_deleteSyncedWalletscoreRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_deleteSyncedWalletscoreRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) 
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedWalletscoreRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedWalletscoreRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Exit chm_deleteSyncedWalletscoreRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Exit chm_deleteSyncedWalletscoreRecords");
+    // },
 
     // CHALLENGE MODE
     // delete all the records that have 'id' values specified in the 'ids' array as synced. 
     // This function can be used to delete records directly instead of a two-step process of marking as synced and then deleting separately 
-    chm_deleteWalletscoreRecordsByIds: function (ids) {
+    // chm_deleteWalletscoreRecordsByIds: function (ids) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Enter chm_deleteWalletscoreRecordsByIds");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Enter chm_deleteWalletscoreRecordsByIds");
 
-        var query = "DELETE FROM chmwalletscoretbl WHERE id IN (" + ids + ")";
+    //     var query = "DELETE FROM chmwalletscoretbl WHERE id IN (" + ids + ")";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("ABSJSAPI: chm_deleteWalletscoreRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("ABSJSAPI: chm_deleteWalletscoreRecordsByIds: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("ABSJSAPI: chm_deleteWalletscoreRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("ABSJSAPI: chm_deleteWalletscoreRecordsByIds: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Exit chm_deleteWalletscoreRecordsByIds");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Exit chm_deleteWalletscoreRecordsByIds");
+    // },
 
 
 
     // CHALLENGE MODE
     // Save challenge mode gameplay record. The id_game_play corresponding to the saved gameplay is returned.
     // The returned id_game_play should be passed to 'chm_prm_saveAssessment' to save the Assessment data corresponding to this gameplay. 
-    chm_saveGameplay: function (objData) {
+    // chm_saveGameplay: function (objData) {
 
-        if((objData.id_game == "") || (objData.avatarname == "") || (objData.deviceid == "") || (objData.start_time == "") || (objData.hints == "")) {
+    //     if((objData.id_game == "") || (objData.avatarname == "") || (objData.deviceid == "") || (objData.start_time == "") || (objData.hints == "")) {
 
-            if (abbprmdsjsapi.erroralerts) {
-                console.log("abbprmdsjsapi: ERROR: prm_saveGameplay: values for one or more input parameters are missing.");
-            } 
+    //         if (abbprmdsjsapi.erroralerts) {
+    //             console.log("abbprmdsjsapi: ERROR: prm_saveGameplay: values for one or more input parameters are missing.");
+    //         } 
 
-            return false;
-        }
+    //         return false;
+    //     }
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter prm_saveGameplay. objData: " + objData.id_game+", "+objData.avatarname+", "+objData.deviceid+", "+objData.start_time+", "+objData.hints);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter prm_saveGameplay. objData: " + objData.id_game+", "+objData.avatarname+", "+objData.deviceid+", "+objData.start_time+", "+objData.hints);
 
 
-        var gameplayid = this.createGameplayId();
+    //     var gameplayid = this.createGameplayId();
 
-        var query = "INSERT INTO chmgameplaytbl (id_game_play, id_game, avatarname, deviceid, start_time, hints) VALUES (?,?,?,?,?,?)";
+    //     var query = "INSERT INTO chmgameplaytbl (id_game_play, id_game, avatarname, deviceid, start_time, hints) VALUES (?,?,?,?,?,?)";
         
-        this.abbchmprmdbhandler.executeSql(query, [gameplayid, objData.id_game, objData.avatarname, objData.deviceid, objData.start_time, objData.hints],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) {
-                    console.log("abbprmdsjsapi: chm_saveGameplay: success. id_game_play: " + gameplayid);
-                    console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
-                    console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
-                }
-                // return gameplayid; // IMPORTANT NOTE: This 'return' statement here WILL NOT WORK. SQLlite functions are executed asynchronously. 
-                                      // i.e This JS function will spawn executeSql function in a seperate thread and will continue executing the 
-                                      // remaining part of the function. So, prm_saveGameplayRecord function will return before the executeSql is 
-                                      // complete (the SQLite function will run in background). Hence returning gameplayid at this point will not work. 
-                                      // The calling function will get null value. So, the 'return gameplayid' is placed outside the SQLite function call.
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_saveGameplay: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [gameplayid, objData.id_game, objData.avatarname, objData.deviceid, objData.start_time, objData.hints],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) {
+    //                 // console.log("abbprmdsjsapi: chm_saveGameplay: success. id_game_play: " + gameplayid);
+    //                 console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
+    //                 console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
+    //             }
+    //             // return gameplayid; // IMPORTANT NOTE: This 'return' statement here WILL NOT WORK. SQLlite functions are executed asynchronously. 
+    //                                   // i.e This JS function will spawn executeSql function in a seperate thread and will continue executing the 
+    //                                   // remaining part of the function. So, prm_saveGameplayRecord function will return before the executeSql is 
+    //                                   // complete (the SQLite function will run in background). Hence returning gameplayid at this point will not work. 
+    //                                   // The calling function will get null value. So, the 'return gameplayid' is placed outside the SQLite function call.
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_saveGameplay: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_saveGameplay");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_saveGameplay");
 
-        return gameplayid;
-    },
+    //     return gameplayid;
+    // },
 
     // CHALLENGE MODE
     // Fetch the challenge mode gameplay data for syncing (read all the unsynced gameplay records).
@@ -396,175 +396,175 @@ var abbprmdsjsapi = {
     //
     // chm_fetchUnsyncedGameplayRecords_cbf is the callback function, which will be invoked once the SQLite function completes its execution
 
-    chm_fetchUnsyncedGameplayRecords: function (callbackfn) {
+    // chm_fetchUnsyncedGameplayRecords: function (callbackfn) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedGameplayRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedGameplayRecords");
 
-        var query = "SELECT id AS objid, id_game_play, id_game, avatarname, deviceid, start_time, hints FROM chmgameplaytbl WHERE synced = 0";
+    //     var query = "SELECT id AS objid, id_game_play, id_game, avatarname, deviceid, start_time, hints FROM chmgameplaytbl WHERE synced = 0";
 
-        var arrObjs = new Array();
+    //     var arrObjs = new Array();
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                var nrecords = rs.rows.length;
-                if (abbprmdsjsapi.debugalerts)
-                   console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: success. Number of records:"+nrecords);
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             var nrecords = rs.rows.length;
+    //             if (abbprmdsjsapi.debugalerts)
+    //                console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: success. Number of records:"+nrecords);
                 
-                for (var i = 0; i < nrecords; i++) {
-                    arrObjs.push(rs.rows.item(i));
-                }
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: arrObjs: " + JSON.stringify(arrObjs));
+    //             for (var i = 0; i < nrecords; i++) {
+    //                 arrObjs.push(rs.rows.item(i));
+    //             }
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: arrObjs: " + JSON.stringify(arrObjs));
 
-                callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //             callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedGameplayRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedGameplayRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedGameplayRecords");
 
-    },
+    // },
 
     // CHALLENGE MODE
     // callback function for chm_fetchUnsyncedGameplayRecords
-    chm_fetchUnsyncedGameplayRecords_cbf: function (arrRecords) {
+    // chm_fetchUnsyncedGameplayRecords_cbf: function (arrRecords) {
 
-        if(abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedGameplayRecords_cbf");
-        // console.log("chm_fetchUnsyncedGameplayRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
+    //     if(abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedGameplayRecords_cbf");
+    //     // console.log("chm_fetchUnsyncedGameplayRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
 
-        // Do all the Processing, REST API calls etc here
-        if(arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbchmgameplay', arrRecords);
-    },
+    //     // Do all the Processing, REST API calls etc here
+    //     if(arrRecords.length > 0)
+    //         RESTAPImgr_1.invokeRESTAPI_1('txabbchmgameplay', arrRecords);
+    // },
 
     // CHALLENGE MODE
     // mark all the records that have 'id' values specified in the 'ids' array as synced (set 'synced' field to 1.)
-    chm_markSyncedGameplayRecords: function (ids) {
+    // chm_markSyncedGameplayRecords: function (ids) {
 
-        var query = "UPDATE chmgameplaytbl SET synced = 1 WHERE id IN (" + ids +")";
+    //     var query = "UPDATE chmgameplaytbl SET synced = 1 WHERE id IN (" + ids +")";
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_markSyncedGameplayRecords. ids:" + ids + "  query: "+query);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_markSyncedGameplayRecords. ids:" + ids + "  query: "+query);
 
-        if ((ids.length == 0) || (ids == '')) {
-            if (abbprmdsjsapi.debugalerts)
-                console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
-            return true;
-        }
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) 
-                    console.log("abbprmdsjsapi: chm_markSyncedGameplayRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts) 
-                    console.log("abbprmdsjsapi: chm_markSyncedGameplayRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     if ((ids.length == 0) || (ids == '')) {
+    //         if (abbprmdsjsapi.debugalerts)
+    //             console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
+    //         return true;
+    //     }
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) 
+    //                 console.log("abbprmdsjsapi: chm_markSyncedGameplayRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts) 
+    //                 console.log("abbprmdsjsapi: chm_markSyncedGameplayRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Exit chm_markSyncedGameplayRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Exit chm_markSyncedGameplayRecords");
+    // },
 
     // CHALLENGE MODE
     // delete all the records that have 'synced' field as 1
-    chm_deleteSyncedGameplayRecords: function () {
+    // chm_deleteSyncedGameplayRecords: function () {
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Enter chm_deleteSyncedGameplayRecords");
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Enter chm_deleteSyncedGameplayRecords");
 
-        var query = "DELETE FROM chmgameplaytbl WHERE synced = 1";
+    //     var query = "DELETE FROM chmgameplaytbl WHERE synced = 1";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) 
-                    console.log("abbprmdsjsapi: chm_deleteSyncedGameplayRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_deleteSyncedGameplayRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) 
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedGameplayRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedGameplayRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts) 
-            console.log("abbprmdsjsapi: Exit chm_deleteSyncedGameplayRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts) 
+    //         console.log("abbprmdsjsapi: Exit chm_deleteSyncedGameplayRecords");
+    // },
 
     // CHALLENGE MODE
     // delete all the records that have 'id' values specified in the 'ids' array as synced. 
     // This function can be used to delete records directly instead of a two-step process of marking as synced and then deleting separately 
-    chm_deleteGameplayRecordsByIds: function (ids) {
+    // chm_deleteGameplayRecordsByIds: function (ids) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Enter chm_deleteGameplayRecordsByIds");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Enter chm_deleteGameplayRecordsByIds");
 
-        var query = "DELETE FROM chmgameplaytbl WHERE id IN (" + ids + ")";
+    //     var query = "DELETE FROM chmgameplaytbl WHERE id IN (" + ids + ")";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("ABSJSAPI: chm_deleteGameplayRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("ABSJSAPI: chm_deleteGameplayRecordsByIds: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("ABSJSAPI: chm_deleteGameplayRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("ABSJSAPI: chm_deleteGameplayRecordsByIds: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Exit chm_deleteGameplayRecordsByIds");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Exit chm_deleteGameplayRecordsByIds");
+    // },
 
 
     // CHALLENGE MODE
     // Save challenge mode assessment record. (game play details)
-    chm_saveAssessment: function (objData) {
+    // chm_saveAssessment: function (objData) {
 
 
-        if((objData.id_game_play == "") || (objData.id_question == "") || (objData.pass == "") || (objData.time2answer == "") || (objData.date_time_submission == "") || (objData.avatarname == "") || (objData.deviceid == "")) {
+    //     if((objData.id_game_play == "") || (objData.id_question == "") || (objData.pass == "") || (objData.time2answer == "") || (objData.date_time_submission == "") || (objData.avatarname == "") || (objData.deviceid == "")) {
 
-            if (abbprmdsjsapi.erroralerts) {
-                console.log("abbprmdsjsapi: ERROR: chm_saveAssessment: values for one or more input parameters are missing.");
-            } 
+    //         if (abbprmdsjsapi.erroralerts) {
+    //             console.log("abbprmdsjsapi: ERROR: chm_saveAssessment: values for one or more input parameters are missing.");
+    //         } 
 
-            return false;
-        }
+    //         return false;
+    //     }
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_saveAssessment. objData: " + objData.id_game_play + ", " + objData.id_question + ", " + objData.pass + ", " + objData.time2answer + ", " + objData.date_time_submission + ", " + objData.avatarname + ", " + objData.deviceid);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_saveAssessment. objData: " + objData.id_game_play + ", " + objData.id_question + ", " + objData.pass + ", " + objData.time2answer + ", " + objData.date_time_submission + ", " + objData.avatarname + ", " + objData.deviceid);
 
 
-        var query = "INSERT INTO chmgameplaydetailtbl (id_game_play, id_question, pass, time2answer, date_time_submission, avatarname, deviceid) VALUES (?,?,?,?,?,?,?)";
+    //     var query = "INSERT INTO chmgameplaydetailtbl (id_game_play, id_question, pass, time2answer, date_time_submission, avatarname, deviceid) VALUES (?,?,?,?,?,?,?)";
 
-        this.abbchmprmdbhandler.executeSql(query, [objData.id_game_play, objData.id_question, objData.pass, objData.time2answer, objData.date_time_submission, objData.avatarname, objData.deviceid],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) {
-                    console.log("abbprmdsjsapi: chm_saveAssessment: success");
-                    console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
-                    console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
-                }
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_saveAssessment: failed" + error.message);
+    //     this.abbchmprmdbhandler.executeSql(query, [objData.id_game_play, objData.id_question, objData.pass, objData.time2answer, objData.date_time_submission, objData.avatarname, objData.deviceid],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) {
+    //                 console.log("abbprmdsjsapi: chm_saveAssessment: success");
+    //                 console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
+    //                 console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
+    //             }
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_saveAssessment: failed" + error.message);
 
-                return false;
-            }
-        );
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_saveAssessment");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_saveAssessment");
+    // },
 
     // CHALLENGE MODE
     // Fetch the challenge mode assessment data for syncing (read all the unsynced assessment records).
@@ -576,178 +576,178 @@ var abbprmdsjsapi = {
     // chm_fetchUnsyncedAssessmentRecords_cbf is the callback function, which will be invoked once the SQLite function completes its execution
     //
 
-    chm_fetchUnsyncedAssessmentRecords: function (callbackfn) {
+    // chm_fetchUnsyncedAssessmentRecords: function (callbackfn) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedAssessmentRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedAssessmentRecords");
 
-        var query = "SELECT id AS objid, id_game_play, id_question, pass, time2answer, date_time_submission, avatarname, deviceid FROM chmgameplaydetailtbl WHERE synced = 0";
+    //     var query = "SELECT id AS objid, id_game_play, id_question, pass, time2answer, date_time_submission, avatarname, deviceid FROM chmgameplaydetailtbl WHERE synced = 0";
 
-        var arrObjs = new Array();
+    //     var arrObjs = new Array();
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                var nrecords = rs.rows.length;
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedAssessmentRecords: success. Number of records:" + nrecords);
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             var nrecords = rs.rows.length;
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedAssessmentRecords: success. Number of records:" + nrecords);
 
-                for (var i = 0; i < nrecords; i++) {
-                    arrObjs.push(rs.rows.item(i));
-                }
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: arrObjs: " + JSON.stringify(arrObjs));
+    //             for (var i = 0; i < nrecords; i++) {
+    //                 arrObjs.push(rs.rows.item(i));
+    //             }
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: arrObjs: " + JSON.stringify(arrObjs));
 
-                callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_fetchUnsyncedAssessmentRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //             callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchUnsyncedAssessmentRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedAssessmentRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_fetchUnsyncedAssessmentRecords");
 
-    },
+    // },
 
-    // CHALLENGE MODE
-    // callback function for chm_fetchUnsyncedAssessmentRecords
-    chm_fetchUnsyncedAssessmentRecords_cbf: function (arrRecords) {
+    // // CHALLENGE MODE
+    // // callback function for chm_fetchUnsyncedAssessmentRecords
+    // chm_fetchUnsyncedAssessmentRecords_cbf: function (arrRecords) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedAssessmentRecords_cbf");
-        // console.log("chm_fetchUnsyncedAssessmentRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchUnsyncedAssessmentRecords_cbf");
+    //     // console.log("chm_fetchUnsyncedAssessmentRecords_cbf: arrRecords: " + JSON.stringify(arrRecords));
 
-        // Do all the Processing, REST API calls etc here
-        if (arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbchmgameplaydetail', arrRecords);
-    },
+    //     // Do all the Processing, REST API calls etc here
+    //     if (arrRecords.length > 0)
+    //         RESTAPImgr_1.invokeRESTAPI_1('txabbchmgameplaydetail', arrRecords);
+    // },
 
     // CHALLENGE MODE
     // mark all the records that have 'id' values specified in the 'ids' array as synced (set 'synced' field to 1.)
-    chm_markSyncedAssessmentRecords: function (ids) {
+    // chm_markSyncedAssessmentRecords: function (ids) {
 
-        var query = "UPDATE chmgameplaydetailtbl SET synced = 1 WHERE id IN (" + ids + ")";
+    //     var query = "UPDATE chmgameplaydetailtbl SET synced = 1 WHERE id IN (" + ids + ")";
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_markSyncedAssessmentRecords. ids:" + ids + "  query: " + query);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_markSyncedAssessmentRecords. ids:" + ids + "  query: " + query);
 
-        if ((ids.length == 0) || (ids == '')) {
-            if (abbprmdsjsapi.debugalerts)
-                console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
-            return true;
-        }
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_markSyncedAssessmentRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_markSyncedAssessmentRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     if ((ids.length == 0) || (ids == '')) {
+    //         if (abbprmdsjsapi.debugalerts)
+    //             console.log("abbprmdsjsapi: Empty list of 'id's. No action performed.");
+    //         return true;
+    //     }
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_markSyncedAssessmentRecords: success. resultSet.rowsAffected:" + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_markSyncedAssessmentRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_markSyncedAssessmentRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_markSyncedAssessmentRecords");
+    // },
 
 
     // CHALLENGE MODE
-    // delete all the records that have 'synced' field as 1
-    chm_deleteSyncedAssessmentRecords: function () {
+    // // delete all the records that have 'synced' field as 1
+    // chm_deleteSyncedAssessmentRecords: function () {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_deleteSyncedAssessmentRecords");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_deleteSyncedAssessmentRecords");
 
-        var query = "DELETE FROM chmgameplaydetailtbl WHERE synced = 1";
+    //     var query = "DELETE FROM chmgameplaydetailtbl WHERE synced = 1";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts) 
-                    console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts) 
+    //                 console.log("abbprmdsjsapi: chm_deleteSyncedAssessmentRecords: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_deleteSyncedAssessmentRecords");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_deleteSyncedAssessmentRecords");
+    // },
 
     // CHALLENGE MODE
     // delete all the records that have 'id' values specified in the 'ids' array as synced. 
     // This function can be used to delete records directly instead of a two-step process of marking as synced and then deleting separately 
-    chm_deleteAssessmentRecordsByIds: function (ids) {
+    // chm_deleteAssessmentRecordsByIds: function (ids) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Enter chm_deleteAssessmentRecordsByIds");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Enter chm_deleteAssessmentRecordsByIds");
 
-        var query = "DELETE FROM chmgameplaydetailtbl WHERE id IN (" + ids + ")";
+    //     var query = "DELETE FROM chmgameplaydetailtbl WHERE id IN (" + ids + ")";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("ABSJSAPI: chm_deleteAssessmentRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("ABSJSAPI: chm_deleteAssessmentRecordsByIds: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("ABSJSAPI: chm_deleteAssessmentRecordsByIds: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("ABSJSAPI: chm_deleteAssessmentRecordsByIds: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Exit chm_deleteAssessmentRecordsByIds");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Exit chm_deleteAssessmentRecordsByIds");
+    // },
 
 
     // CHALLENGE MODE
     // Save game master records (may use this function to save the Game master data fetched via the REST API from the SERVER)
     // Make sure that the table is emptied of the existing records before saving (as 'id' also is saved, 'duplicate' error would be thrown by the database if tried to insert data with same 'id')
     // 'id' is also set (instead of autoincrement value) to ensure that Games are not added again if the table already has records
-    chm_saveGameMasterData: function (objData) {
+    // chm_saveGameMasterData: function (objData) {
 
 
-        if((objData.id == "") || (objData.id_game == "") || (objData.id_grade == "")) {
+    //     if((objData.id == "") || (objData.id_game == "") || (objData.id_grade == "")) {
 
-            if (abbprmdsjsapi.erroralerts) {
-                console.log("abbprmdsjsapi: ERROR: chm_saveGameMasterData: values for one or more input parameters are missing.");
-            } 
+    //         if (abbprmdsjsapi.erroralerts) {
+    //             console.log("abbprmdsjsapi: ERROR: chm_saveGameMasterData: values for one or more input parameters are missing.");
+    //         } 
 
-            return false;
-        }
+    //         return false;
+    //     }
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_saveGameMasterData. objData: " + objData.id + ", "+ objData.id_game + ", " + objData.game_description + ", " + objData.id_grade + ", " + objData.gametoopen + ", " + objData.prerequisitegame);
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_saveGameMasterData. objData: " + objData.id + ", "+ objData.id_game + ", " + objData.game_description + ", " + objData.id_grade + ", " + objData.gametoopen + ", " + objData.prerequisitegame);
 
 
-        var query = "INSERT INTO chmgamemastertbl (id, id_game, game_description, id_grade, gametoopen, prerequisitegame) VALUES (?,?,?,?,?,?)";
+    //     var query = "INSERT INTO chmgamemastertbl (id, id_game, game_description, id_grade, gametoopen, prerequisitegame) VALUES (?,?,?,?,?,?)";
 
-        this.abbchmprmdbhandler.executeSql(query, [objData.id, objData.id_game, objData.game_description, objData.id_grade, objData.gametoopen, objData.prerequisitegame],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts) {
-                    console.log("abbprmdsjsapi: chm_saveGameMasterData: success");
-                    console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
-                    console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
-                }
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_saveGameMasterData: failed" + error.message);
+    //     this.abbchmprmdbhandler.executeSql(query, [objData.id, objData.id_game, objData.game_description, objData.id_grade, objData.gametoopen, objData.prerequisitegame],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts) {
+    //                 console.log("abbprmdsjsapi: chm_saveGameMasterData: success");
+    //                 console.log("abbprmdsjsapi: resultSet.insertId: " + rs.insertId);
+    //                 console.log("abbprmdsjsapi: resultSet.rowsAffected: " + rs.rowsAffected);
+    //             }
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_saveGameMasterData: failed" + error.message);
 
-                return false;
-            }
-        );
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_saveGameMasterData");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_saveGameMasterData");
+    // },
 
     // CHALLENGE MODE
     // Fetch the Game Master Data (This function may be used to read the Game Master table data, which is saved locally after downloading from the SERVER)
@@ -759,78 +759,78 @@ var abbprmdsjsapi = {
     // The callback function, which will be invoked once the SQLite function completes its execution, should be provided by the function invoking this API
     //
 
-    chm_fetchGameMasterData: function (callbackfn) {
+    // chm_fetchGameMasterData: function (callbackfn) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Enter chm_fetchGameMasterData");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Enter chm_fetchGameMasterData");
 
-        var query = "SELECT id, id_game, game_description, id_grade, gametoopen, prerequisitegame FROM chmgamemastertbl";
+    //     var query = "SELECT id, id_game, game_description, id_grade, gametoopen, prerequisitegame FROM chmgamemastertbl";
 
-        var arrObjs = new Array();
+    //     var arrObjs = new Array();
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                var nrecords = rs.rows.length;
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: chm_fetchGameMasterData: success. Number of records:" + nrecords);
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             var nrecords = rs.rows.length;
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchGameMasterData: success. Number of records:" + nrecords);
 
-                for (var i = 0; i < nrecords; i++) {
-                    arrObjs.push(rs.rows.item(i));
-                }
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("abbprmdsjsapi: arrObjs: " + JSON.stringify(arrObjs));
+    //             for (var i = 0; i < nrecords; i++) {
+    //                 arrObjs.push(rs.rows.item(i));
+    //             }
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("abbprmdsjsapi: arrObjs: " + JSON.stringify(arrObjs));
 
-                callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("abbprmdsjsapi: chm_fetchGameMasterData: failed" + error.message);
-                return false;
-            }
-        );
+    //             callbackfn(arrObjs); // Invoke the callback function to send the array of Objects with the fetched records
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("abbprmdsjsapi: chm_fetchGameMasterData: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("abbprmdsjsapi: Exit chm_fetchGameMasterData");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("abbprmdsjsapi: Exit chm_fetchGameMasterData");
 
-    },
+    // },
 
-    // CHALLENGE MODE
-    // Sample callback function for chm_fetchGameMasterData
-    chm_fetchGameMasterData_cbf: function (arrRecords) {
+    // // CHALLENGE MODE
+    // // Sample callback function for chm_fetchGameMasterData
+    // chm_fetchGameMasterData_cbf: function (arrRecords) {
 
-        if (abbprmdsjsapi.debugalerts) {
-            console.log("abbprmdsjsapi: Enter chm_fetchGameMasterData_cbf");
-        }
-        // console.log("chm_fetchGameMasterData_cbf: arrRecords: " + JSON.stringify(arrRecords));
+    //     if (abbprmdsjsapi.debugalerts) {
+    //         console.log("abbprmdsjsapi: Enter chm_fetchGameMasterData_cbf");
+    //     }
+    //     // console.log("chm_fetchGameMasterData_cbf: arrRecords: " + JSON.stringify(arrRecords));
 
-        // May add any processing logic below this  
-    },
+    //     // May add any processing logic below this  
+    // },
 
     // CHALLENGE MODE
     // delete all the records in the Game Master Table  
     // This function can be used to delete records in the Game Master Table before downloading the Master data again from the SERVER and Saving in the local table
-    chm_deleteGameMasterData: function (ids) {
+    // chm_deleteGameMasterData: function (ids) {
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Enter chm_deleteGameMasterData");
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Enter chm_deleteGameMasterData");
 
-        var query = "DELETE FROM chmgameplaydetailtbl";
+    //     var query = "DELETE FROM chmgameplaydetailtbl";
 
-        this.abbchmprmdbhandler.executeSql(query, [],
-            function (rs) {
-                if (abbprmdsjsapi.debugalerts)
-                    console.log("ABSJSAPI: chm_deleteGameMasterData: success. resultSet.rowsAffected: " + rs.rowsAffected);
-            },
-            function (error) {
-                if (abbprmdsjsapi.erroralerts)
-                    console.log("ABSJSAPI: chm_deleteGameMasterData: failed" + error.message);
-                return false;
-            }
-        );
+    //     this.abbchmprmdbhandler.executeSql(query, [],
+    //         function (rs) {
+    //             if (abbprmdsjsapi.debugalerts)
+    //                 console.log("ABSJSAPI: chm_deleteGameMasterData: success. resultSet.rowsAffected: " + rs.rowsAffected);
+    //         },
+    //         function (error) {
+    //             if (abbprmdsjsapi.erroralerts)
+    //                 console.log("ABSJSAPI: chm_deleteGameMasterData: failed" + error.message);
+    //             return false;
+    //         }
+    //     );
 
-        if (abbprmdsjsapi.debugalerts)
-            console.log("ABSJSAPI: Exit chm_deleteGameMasterData");
-    },
+    //     if (abbprmdsjsapi.debugalerts)
+    //         console.log("ABSJSAPI: Exit chm_deleteGameMasterData");
+    // },
 
     // PRACTICE Mode
     // Save practice mode gameplay record. The id_game_play corresponding to the saved gameplay is returned.
@@ -949,7 +949,7 @@ var abbprmdsjsapi = {
 
         // Do all the Processing, REST API calls etc here
         if(arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbprmgameplay', arrRecords);
+            RESTAPImgr_1.invokeRESTAPI_1('txabbprmgameplay', arrRecords);
     },
 
     // PRACTICE Mode
@@ -1127,7 +1127,7 @@ var abbprmdsjsapi = {
 
         // Do all the Processing, REST API calls etc here
         if (arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbprmgameplaydetail', arrRecords);
+            RESTAPImgr_1.invokeRESTAPI_1('txabbprmgameplaydetail', arrRecords);
     },
 
     // PRACTCIE MODE
@@ -1310,7 +1310,7 @@ var abbprmdsjsapi = {
 
         // Do all the Processing, REST API calls etc here
         if (arrRecords.length > 0)
-            RESTAPImgr.invokeRESTAPI('txabbprmekstepevents', arrEventData);
+            RESTAPImgr_1.invokeRESTAPI_1('txabbprmekstepevents', arrEventData);
     },
 
     // PRACTICE MODE
@@ -1399,15 +1399,16 @@ var abbprmdsjsapi = {
     // Hence the 'syncTelemetryData' will return before the execution of all 'fetch' functions are complete. 
     // Hence, no point in returning any status value from this function
     syncTelemetryData: function () {
+        console.log("syncTelemetryData inside bbpp[][][][][][][][][][][][][][]");
 
         // Sync CHALLANGE MODE Gameplay records
-        this.chm_fetchUnsyncedGameplayRecords(this.chm_fetchUnsyncedGameplayRecords_cbf);
+        // this.chm_fetchUnsyncedGameplayRecords(this.chm_fetchUnsyncedGameplayRecords_cbf);
 
         // Sync CHALLENGE MODE Gameplaydetail records
-        this.chm_fetchUnsyncedAssessmentRecords(this.chm_fetchUnsyncedAssessmentRecords_cbf);
+        // this.chm_fetchUnsyncedAssessmentRecords(this.chm_fetchUnsyncedAssessmentRecords_cbf);
 
         // Sync CHALLENGE MODE Walletscore records
-        this.chm_fetchUnsyncedWalletscoreRecords(this.chm_fetchUnsyncedWalletscoreRecords_cbf);
+        // this.chm_fetchUnsyncedWalletscoreRecords(this.chm_fetchUnsyncedWalletscoreRecords_cbf);
 
 
         // Sync PRACTICE MODE Gameplay records
@@ -1442,7 +1443,7 @@ var abbprmdsjsapi = {
 
 };
 
-var RESTAPImgr = {
+var RESTAPImgr_1 = {
 
     //abbrestapi_baseurl: "https://dev.abs.klp.org.in/abbchmprm/",
     //abbrestapi_baseurl: "https://abbmath.klp.org.in/abbchmprm/",
@@ -1453,12 +1454,12 @@ var RESTAPImgr = {
     //"https://10.0.2.2/abbchmprm/",
 
     // function to invoke REST API
-    invokeRESTAPI: function (apiname, jsondata) {
+    invokeRESTAPI_1: function (apiname, jsondata) {
 
         var apiurl = this.abbrestapi_baseurl + apiname;
         var rtn = true;
 
-         console.log("RESTAPImgr.invokeRESTAPI: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
+         console.log("RESTAPImgr_1.invokeRESTAPI_1: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
 
         $.ajax({
             url: apiurl,
@@ -1470,11 +1471,11 @@ var RESTAPImgr = {
             accepts: 'application/json',
             success: function (jsonresp) {
                  console.log("REST API success"+JSON.stringify(jsonresp));
-                RESTAPImgr.deleteSyncedRecords(apiname, jsonresp); // delete the Synced records
+                RESTAPImgr_1.deleteSyncedRecords(apiname, jsonresp); // delete the Synced records
             },
             error: function (error) {
                 rtn = false;
-                console.log("abbprmdsjsapi: invokeRESTAPI failed: api: "+apiurl+" error: "+error.toString());
+                console.log("abbprmdsjsapi: invokeRESTAPI_1 failed: api: "+apiurl+" error: "+error.toString());
             }
         });
 
@@ -1483,89 +1484,89 @@ var RESTAPImgr = {
 
     deleteSyncedRecords: function (apiname, jsonresp) {
 
-        // console.log("RESTAPImgr.deleteSyncedRecords");
+        // console.log("RESTAPImgr_1.deleteSyncedRecords");
 
         switch (apiname) {
 
 
-            case 'txabbchmwalletscore':
+            // case 'txabbchmwalletscore':
 
-                var arrObjs1 = new Array();
-                var arrIds1 = new Array();
+            //     var arrObjs1 = new Array();
+            //     var arrIds1 = new Array();
 
-                var nrecs1 = jsonresp.length;
-                // console.log("nrecords:" + nrecs1);
-                for (var i = 0; i < nrecs1; i++) {
-                    arrObjs1.push(jsonresp[i]);  
-                }
+            //     var nrecs1 = jsonresp.length;
+            //     // console.log("nrecords:" + nrecs1);
+            //     for (var i = 0; i < nrecs1; i++) {
+            //         arrObjs1.push(jsonresp[i]);  
+            //     }
 
-                var nfields1 = arrObjs1.length;
-                for (var j = 0; j < nfields1; j++) {
-                    if(arrObjs1[j].status == 'success')
-                        arrIds1.push(arrObjs1[j].objid);   // Only those records which were successfully synced are to be deleted
-                }
+            //     var nfields1 = arrObjs1.length;
+            //     for (var j = 0; j < nfields1; j++) {
+            //         if(arrObjs1[j].status == 'success')
+            //             arrIds1.push(arrObjs1[j].objid);   // Only those records which were successfully synced are to be deleted
+            //     }
                
-                //console.log("arrIds toString: " + arrIds1.toString());
+            //     //console.log("arrIds toString: " + arrIds1.toString());
 
-                abbprmdsjsapi.chm_deleteWalletscoreRecordsByIds(arrIds1.toString());
+            //     abbprmdsjsapi.chm_deleteWalletscoreRecordsByIds(arrIds1.toString());
 
-                break;
+            //     break;
 
-            case 'txabbchmgameplay':
+            // case 'txabbchmgameplay':
 
-                var arrObjs1 = new Array();
-                var arrIds1 = new Array();
+            //     var arrObjs1 = new Array();
+            //     var arrIds1 = new Array();
 
-                var nrecs1 = jsonresp.length;
-                // console.log("nrecords:" + nrecs1);
-                for (var i = 0; i < nrecs1; i++) {
-                    arrObjs1.push(jsonresp[i]);  
-                }
+            //     var nrecs1 = jsonresp.length;
+            //     // console.log("nrecords:" + nrecs1);
+            //     for (var i = 0; i < nrecs1; i++) {
+            //         arrObjs1.push(jsonresp[i]);  
+            //     }
 
-                var nfields1 = arrObjs1.length;
-                for (var j = 0; j < nfields1; j++) {
-                    if(arrObjs1[j].status == 'success')
-                        arrIds1.push(arrObjs1[j].objid);   // Only those records which were successfully synced are to be deleted
-                }
+            //     var nfields1 = arrObjs1.length;
+            //     for (var j = 0; j < nfields1; j++) {
+            //         if(arrObjs1[j].status == 'success')
+            //             arrIds1.push(arrObjs1[j].objid);   // Only those records which were successfully synced are to be deleted
+            //     }
                
-                //console.log("arrIds toString: " + arrIds1.toString());
+            //     //console.log("arrIds toString: " + arrIds1.toString());
 
-                // Mark fetched records as 'Synced'
-                // abbprmdsjsapi.chm_markSyncedGameplayRecords(arrIds1.toString());
-                // Delete 'Synced' records
-                // abbprmdsjsapi.chm_deleteSyncedGameplayRecords();
-                abbprmdsjsapi.chm_deleteGameplayRecordsByIds(arrIds1.toString());
+            //     // Mark fetched records as 'Synced'
+            //     // abbprmdsjsapi.chm_markSyncedGameplayRecords(arrIds1.toString());
+            //     // Delete 'Synced' records
+            //     // abbprmdsjsapi.chm_deleteSyncedGameplayRecords();
+            //     abbprmdsjsapi.chm_deleteGameplayRecordsByIds(arrIds1.toString());
 
-                break;
+            //     break;
 
-            case 'txabbchmgameplaydetail':
+            // case 'txabbchmgameplaydetail':
 
-                // console.log("deleteSyncedRecords: case: txabsgameplaydetail");
+            //     // console.log("deleteSyncedRecords: case: txabsgameplaydetail");
 
-                var arrObjs2 = new Array();
-                var arrIds2 = new Array();
+            //     var arrObjs2 = new Array();
+            //     var arrIds2 = new Array();
 
-                var nrecs2 = jsonresp.length;
-                // console.log("nrecords:" + nrecs2);
-                for (var i = 0; i < nrecs2; i++) {
-                    arrObjs2.push(jsonresp[i]);
-                }
+            //     var nrecs2 = jsonresp.length;
+            //     // console.log("nrecords:" + nrecs2);
+            //     for (var i = 0; i < nrecs2; i++) {
+            //         arrObjs2.push(jsonresp[i]);
+            //     }
 
-                var nfields2 = arrObjs2.length;
-                for (var j = 0; j < nfields2; j++) {
-                    if (arrObjs2[j].status == 'success')
-                        arrIds2.push(arrObjs2[j].objid);   // Only those records which were successfully synced are to be deleted
-                }
+            //     var nfields2 = arrObjs2.length;
+            //     for (var j = 0; j < nfields2; j++) {
+            //         if (arrObjs2[j].status == 'success')
+            //             arrIds2.push(arrObjs2[j].objid);   // Only those records which were successfully synced are to be deleted
+            //     }
 
-                //console.log("arrIds toString: " + arrIds2.toString());
+            //     //console.log("arrIds toString: " + arrIds2.toString());
 
-                // Mark fetched records as 'Synced'
-                // abbprmdsjsapi.prm_markSyncedAssessmentRecords(arrIds2.toString());
-                // Delete 'Synced' records
-                // abbprmdsjsapi.prm_deleteSyncedAssessmentRecords();
-                abbprmdsjsapi.chm_deleteAssessmentRecordsByIds(arrIds2.toString());
+            //     // Mark fetched records as 'Synced'
+            //     // abbprmdsjsapi.prm_markSyncedAssessmentRecords(arrIds2.toString());
+            //     // Delete 'Synced' records
+            //     // abbprmdsjsapi.prm_deleteSyncedAssessmentRecords();
+            //     abbprmdsjsapi.chm_deleteAssessmentRecordsByIds(arrIds2.toString());
 
-                break;
+            //     break;
 
             case 'txabbprmgameplay':
 
@@ -1658,175 +1659,175 @@ var RESTAPImgr = {
     }
 };
 
-var TestMgr_abbprmdsjsapi = {
+// var TestMgr_abbprmdsjsapi = {
 
 
-    forTest: function () {
+//     forTest: function () {
 
-        // console.log("Enter forTest");
+//         // console.log("Enter forTest");
 
-        // document.addEventListener('deviceready', this.doTest.bind(this), false);
-        document.getElementById('test-btn1').addEventListener('click', this.doTest.bind(this, '1'), false);
-        document.getElementById('test-btn2').addEventListener('click', this.doTest.bind(this, '2'), false);
-        document.getElementById('test-btn3').addEventListener('click', this.doTest.bind(this, '3'), false);
-        document.getElementById('prmtest-btn4').addEventListener('click', this.doTest.bind(this, '4'), false);
-        document.getElementById('prmtest-btn5').addEventListener('click', this.doTest.bind(this, '5'), false);
-        document.getElementById('prmtest-btn6').addEventListener('click', this.doTest.bind(this, '6'), false);
-        document.getElementById('prmtest-btn7').addEventListener('click', this.doTest.bind(this, '7'), false);
-        document.getElementById('prmtest-btn8').addEventListener('click', this.doTest.bind(this, '8'), false);
-        document.getElementById('prmtest-btn9').addEventListener('click', this.doTest.bind(this, '9'), false);
-        document.getElementById('prmtest-btn10').addEventListener('click', this.doTest.bind(this, '10'), false);
-        document.getElementById('prmtest-btn11').addEventListener('click', this.doTest.bind(this, '11'), false);
-        document.getElementById('prmtest-btn12').addEventListener('click', this.doTest.bind(this, '12'), false);
-        document.getElementById('test-btn13').addEventListener('click', this.doTest.bind(this, '13'), false);
+//         // document.addEventListener('deviceready', this.doTest.bind(this), false);
+//         document.getElementById('test-btn1').addEventListener('click', this.doTest.bind(this, '1'), false);
+//         document.getElementById('test-btn2').addEventListener('click', this.doTest.bind(this, '2'), false);
+//         document.getElementById('test-btn3').addEventListener('click', this.doTest.bind(this, '3'), false);
+//         document.getElementById('prmtest-btn4').addEventListener('click', this.doTest.bind(this, '4'), false);
+//         document.getElementById('prmtest-btn5').addEventListener('click', this.doTest.bind(this, '5'), false);
+//         document.getElementById('prmtest-btn6').addEventListener('click', this.doTest.bind(this, '6'), false);
+//         document.getElementById('prmtest-btn7').addEventListener('click', this.doTest.bind(this, '7'), false);
+//         document.getElementById('prmtest-btn8').addEventListener('click', this.doTest.bind(this, '8'), false);
+//         document.getElementById('prmtest-btn9').addEventListener('click', this.doTest.bind(this, '9'), false);
+//         document.getElementById('prmtest-btn10').addEventListener('click', this.doTest.bind(this, '10'), false);
+//         document.getElementById('prmtest-btn11').addEventListener('click', this.doTest.bind(this, '11'), false);
+//         document.getElementById('prmtest-btn12').addEventListener('click', this.doTest.bind(this, '12'), false);
+//         document.getElementById('test-btn13').addEventListener('click', this.doTest.bind(this, '13'), false);
 
-        document.getElementById('test-nextpage').addEventListener('click', this.doTest.bind(this, '14'), false);
+//         document.getElementById('test-nextpage').addEventListener('click', this.doTest.bind(this, '14'), false);
 
-     //   document.getElementById('test-reloadds').addEventListener('click', this.doTest.bind(this, '15'), false);
-     //   document.getElementById('test-backtoindexpage').addEventListener('click', this.doTest.bind(this, '16'), false);
+//      //   document.getElementById('test-reloadds').addEventListener('click', this.doTest.bind(this, '15'), false);
+//      //   document.getElementById('test-backtoindexpage').addEventListener('click', this.doTest.bind(this, '16'), false);
         
 
-        // Challenge Mode
-        document.getElementById('chmtest-btn1').addEventListener('click', this.doTest.bind(this, 'CHM1'), false);
-        document.getElementById('chmtest-btn2').addEventListener('click', this.doTest.bind(this, 'CHM2'), false);
-        document.getElementById('chmtest-btn3').addEventListener('click', this.doTest.bind(this, 'CHM3'), false);
-        document.getElementById('chmtest-btn4').addEventListener('click', this.doTest.bind(this, 'CHM4'), false);
-        document.getElementById('chmtest-btn5').addEventListener('click', this.doTest.bind(this, 'CHM5'), false);
-        document.getElementById('chmtest-btn6').addEventListener('click', this.doTest.bind(this, 'CHM6'), false);
-        document.getElementById('chmtest-btn7').addEventListener('click', this.doTest.bind(this, 'CHM7'), false);
-        document.getElementById('chmtest-btn8').addEventListener('click', this.doTest.bind(this, 'CHM8'), false);
+//         // Challenge Mode
+//         document.getElementById('chmtest-btn1').addEventListener('click', this.doTest.bind(this, 'CHM1'), false);
+//         document.getElementById('chmtest-btn2').addEventListener('click', this.doTest.bind(this, 'CHM2'), false);
+//         document.getElementById('chmtest-btn3').addEventListener('click', this.doTest.bind(this, 'CHM3'), false);
+//         document.getElementById('chmtest-btn4').addEventListener('click', this.doTest.bind(this, 'CHM4'), false);
+//         document.getElementById('chmtest-btn5').addEventListener('click', this.doTest.bind(this, 'CHM5'), false);
+//         document.getElementById('chmtest-btn6').addEventListener('click', this.doTest.bind(this, 'CHM6'), false);
+//         document.getElementById('chmtest-btn7').addEventListener('click', this.doTest.bind(this, 'CHM7'), false);
+//         document.getElementById('chmtest-btn8').addEventListener('click', this.doTest.bind(this, 'CHM8'), false);
         
-        // console.log("Exit forTest");
-    },
+//         // console.log("Exit forTest");
+//     },
 
-    doTest: function (arg) {
+//     doTest: function (arg) {
 
-        // console.log("Enter doTest: arg:" + arg);
+//         // console.log("Enter doTest: arg:" + arg);
 
-        var accesstoken = "5a891ee77f10e" ;
+//         var accesstoken = "5a891ee77f10e" ;
 
-        switch (arg) {
+//         switch (arg) {
 
-            case '1':
-                abbprmdsjsapi.echoTest();
-                abbprmdsjsapi.selfTest();
-                break;
+//             case '1':
+//                 abbprmdsjsapi.echoTest();
+//                 abbprmdsjsapi.selfTest();
+//                 break;
 
-            case '2':
-                abbprmdsjsapi.initializeDS();
-                break;
+//             case '2':
+//                 abbprmdsjsapi.initializeDS();
+//                 break;
 
-            case '3':
-                abbprmdsjsapi.dropTables();
-                break;
+//             case '3':
+//                 abbprmdsjsapi.dropTables();
+//                 break;
 
-            case 'CHM1':
-             console.log("abbprmdsjsapi: in CHM1");
-                var chmwalletscoredata = { avatarname: "avatarsk", deviceid: "deviceidsk", score: "100", datetime_lastupdated: "12:10:05:10:15:10" };
-                var id_chmgameplay = abbprmdsjsapi.chm_saveWalletscore(chmwalletscoredata);
-                break;
+//             case 'CHM1':
+//              console.log("abbprmdsjsapi: in CHM1");
+//                 var chmwalletscoredata = { avatarname: "avatarsk", deviceid: "deviceidsk", score: "100", datetime_lastupdated: "12:10:05:10:15:10" };
+//                 var id_chmgameplay = abbprmdsjsapi.chm_saveWalletscore(chmwalletscoredata);
+//                 break;
 
-            case 'CHM2':
-                abbprmdsjsapi.chm_fetchUnsyncedWalletscoreRecords(abbprmdsjsapi.chm_fetchUnsyncedWalletscoreRecords_cbf);
-                break;
+//             case 'CHM2':
+//                 abbprmdsjsapi.chm_fetchUnsyncedWalletscoreRecords(abbprmdsjsapi.chm_fetchUnsyncedWalletscoreRecords_cbf);
+//                 break;
 
-            case 'CHM3':
-                var chmgameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10", hints: "10" };
-                var id_chmgameplay = abbprmdsjsapi.chm_saveGameplay(chmgameplaydata);
-                break;
+//             case 'CHM3':
+//                 var chmgameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10", hints: "10" };
+//                 var id_chmgameplay = abbprmdsjsapi.chm_saveGameplay(chmgameplaydata);
+//                 break;
 
-            case 'CHM4':
-                abbprmdsjsapi.chm_fetchUnsyncedGameplayRecords(abbprmdsjsapi.chm_fetchUnsyncedGameplayRecords_cbf);
-                break;
+//             case 'CHM4':
+//                 abbprmdsjsapi.chm_fetchUnsyncedGameplayRecords(abbprmdsjsapi.chm_fetchUnsyncedGameplayRecords_cbf);
+//                 break;
 
-            case 'CHM5':
-                var chmgameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10", hints: "10" };
-                var id_chmgameplay = abbprmdsjsapi.chm_saveGameplay(chmgameplaydata);
+//             case 'CHM5':
+//                 var chmgameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10", hints: "10" };
+//                 var id_chmgameplay = abbprmdsjsapi.chm_saveGameplay(chmgameplaydata);
 
-                var chmassessmentdata = { id_game_play: id_chmgameplay, id_question: "1001", pass: "Yes", time2answer: "10", date_time_submission: "12:10:05:10:15:10", avatarname: "avatarsk", deviceid: "deviceidsk"};
-                abbprmdsjsapi.chm_saveAssessment(chmassessmentdata);
-                break;
+//                 var chmassessmentdata = { id_game_play: id_chmgameplay, id_question: "1001", pass: "Yes", time2answer: "10", date_time_submission: "12:10:05:10:15:10", avatarname: "avatarsk", deviceid: "deviceidsk"};
+//                 abbprmdsjsapi.chm_saveAssessment(chmassessmentdata);
+//                 break;
 
-            case 'CHM6':
-                abbprmdsjsapi.chm_fetchUnsyncedAssessmentRecords(abbprmdsjsapi.chm_fetchUnsyncedAssessmentRecords_cbf);
-                break;
+//             case 'CHM6':
+//                 abbprmdsjsapi.chm_fetchUnsyncedAssessmentRecords(abbprmdsjsapi.chm_fetchUnsyncedAssessmentRecords_cbf);
+//                 break;
 
-            case 'CHM7':
-                var chmgamemasterdata = { id: "1", id_game: "SK101", game_description: "Game Description SK", id_grade: "1", gametoopen: "SK102", prerequisitegame: "100" };
-                abbprmdsjsapi.chm_saveGameMasterData(chmgamemasterdata);
-                break;
+//             case 'CHM7':
+//                 var chmgamemasterdata = { id: "1", id_game: "SK101", game_description: "Game Description SK", id_grade: "1", gametoopen: "SK102", prerequisitegame: "100" };
+//                 abbprmdsjsapi.chm_saveGameMasterData(chmgamemasterdata);
+//                 break;
 
-            case 'CHM8':
-                abbprmdsjsapi.chm_fetchGameMasterData(abbprmdsjsapi.chm_fetchGameMasterData_cbf);
-                break;
+//             case 'CHM8':
+//                 abbprmdsjsapi.chm_fetchGameMasterData(abbprmdsjsapi.chm_fetchGameMasterData_cbf);
+//                 break;
 
 
-            case '4':
-                var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
-                var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
-                break;
+//             case '4':
+//                 var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
+//                 var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
+//                 break;
 
-            case '5':
-                abbprmdsjsapi.prm_fetchUnsyncedGameplayRecords(abbprmdsjsapi.prm_fetchUnsyncedGameplayRecords_cbf);
-                break;
+//             case '5':
+//                 abbprmdsjsapi.prm_fetchUnsyncedGameplayRecords(abbprmdsjsapi.prm_fetchUnsyncedGameplayRecords_cbf);
+//                 break;
 
-            case '6':
-                abbprmdsjsapi.prm_deleteSyncedGameplayRecords();
-                break;
+//             case '6':
+//                 abbprmdsjsapi.prm_deleteSyncedGameplayRecords();
+//                 break;
 
-            case '7':
-                var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
-                var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
+//             case '7':
+//                 var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
+//                 var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
 
-                var assessmentdata = { id_game_play: id_gameplay, id_question: "10", pass: "Yes", time2answer: "5", attempts: "2", date_time_submission: "05:06:07:08:09:10", avatarname: "avatarsk", deviceid: "deviceidsk" };
-                abbprmdsjsapi.prm_saveAssessment(assessmentdata);
-                break;
+//                 var assessmentdata = { id_game_play: id_gameplay, id_question: "10", pass: "Yes", time2answer: "5", attempts: "2", date_time_submission: "05:06:07:08:09:10", avatarname: "avatarsk", deviceid: "deviceidsk" };
+//                 abbprmdsjsapi.prm_saveAssessment(assessmentdata);
+//                 break;
 
-            case '8':
-                abbprmdsjsapi.prm_fetchUnsyncedAssessmentRecords(abbprmdsjsapi.prm_fetchUnsyncedAssessmentRecords_cbf);
-                break;
+//             case '8':
+//                 abbprmdsjsapi.prm_fetchUnsyncedAssessmentRecords(abbprmdsjsapi.prm_fetchUnsyncedAssessmentRecords_cbf);
+//                 break;
 
-            case '9':
-                abbprmdsjsapi.prm_deleteSyncedAssessmentRecords();
-                break;
+//             case '9':
+//                 abbprmdsjsapi.prm_deleteSyncedAssessmentRecords();
+//                 break;
 
-            case '10':
-                var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
-                var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
+//             case '10':
+//                 var gameplaydata = { id_game: "SK101", avatarname: "avatarsk", deviceid: "deviceidsk", start_time: "12:10:05:10:15:10" };
+//                 var id_gameplay = abbprmdsjsapi.prm_saveGameplay(gameplaydata);
 
-                var interactdata = { id_game_play: id_gameplay, id_question: "10", date_time_event: "03:04:07:08:07:10", event_type: "TOUCH", res_id: "DEVICE_BAK_BUTTON", avatarname: "avatarsk", deviceid: "deviceidsk" };
-                abbprmdsjsapi.prm_saveInteractEvent(interactdata);
-                break;
+//                 var interactdata = { id_game_play: id_gameplay, id_question: "10", date_time_event: "03:04:07:08:07:10", event_type: "TOUCH", res_id: "DEVICE_BAK_BUTTON", avatarname: "avatarsk", deviceid: "deviceidsk" };
+//                 abbprmdsjsapi.prm_saveInteractEvent(interactdata);
+//                 break;
 
-            case '11':
-                abbprmdsjsapi.prm_fetchUnsyncedInteractEventRecords(abbprmdsjsapi.prm_fetchUnsyncedInteractEventRecords_cbf);
-                break;
+//             case '11':
+//                 abbprmdsjsapi.prm_fetchUnsyncedInteractEventRecords(abbprmdsjsapi.prm_fetchUnsyncedInteractEventRecords_cbf);
+//                 break;
 
-            case '12':
-                abbprmdsjsapi.prm_deleteSyncedInteractEventRecords();
-                break;
+//             case '12':
+//                 abbprmdsjsapi.prm_deleteSyncedInteractEventRecords();
+//                 break;
 
-            case '13':
-                abbprmdsjsapi.syncTelemetryData();
-                break;
+//             case '13':
+//                 abbprmdsjsapi.syncTelemetryData();
+//                 break;
 
-            case '14':
-                window.location = "page2.html";
-                break;
+//             case '14':
+//                 window.location = "page2.html";
+//                 break;
 
-            case '15':
-                console.log("case15: to call reload()");
-                abbprmdsjsapi.reload();
-                break;
+//             case '15':
+//                 console.log("case15: to call reload()");
+//                 abbprmdsjsapi.reload();
+//                 break;
 
-            case '16':
-                console.log("going back to index page");
-                window.location = "index.html";
-                break;
-        }
+//             case '16':
+//                 console.log("going back to index page");
+//                 window.location = "index.html";
+//                 break;
+//         }
 
-    }
-};
+//     }
+// };
 
 //TestMgr_abbprmdsjsapi.forTest();
 

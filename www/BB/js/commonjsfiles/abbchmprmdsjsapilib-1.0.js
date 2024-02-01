@@ -10,7 +10,7 @@
  *              Allow access to the abbrestapi_baseurl in the cordova project config.xml
  * Author: sureshkodoor@gmail.com
  */
-console.log(window.app_Grade,"inside abbchmprm app grade$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+// console.log(window.app_Grade,"inside abbchmprm app grade$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 var abbchmprmdsjsapi = {
 
     databasename: "abbchmprmdb.db",
@@ -1398,6 +1398,7 @@ var abbchmprmdsjsapi = {
     // Hence the 'syncTelemetryData' will return before the execution of all 'fetch' functions are complete. 
     // Hence, no point in returning any status value from this function
     syncTelemetryData: function () {
+        console.log("syncTelemetryData inside bb&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
 
         // Sync CHALLANGE MODE Gameplay records
         this.chm_fetchUnsyncedGameplayRecords(this.chm_fetchUnsyncedGameplayRecords_cbf);

@@ -29,7 +29,7 @@ Game.mainScreen.prototype = {
         titleBar_start.drawRect(0, 0, 540, 80);
 
 
-        var titleTxt_start = this.add.text(this.world.centerX - 40, 45, "Building Blocks");
+        var titleTxt_start = this.add.text(this.world.centerX - 140, 45, "Building Blocks");
         titleTxt_start.x = Math.round(titleTxt_start.x);
         titleTxt_start.anchor.setTo(0.5);
         titleTxt_start.align = 'center';

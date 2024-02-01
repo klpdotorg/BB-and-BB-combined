@@ -67,7 +67,7 @@ Game.preloader_GMSS_03_G8.prototype = {
 
     this.load.image(
       "BG1",
-      window.baseUrl + "assets/gradeAssets/GMSS-03-G8/bg.png"
+      window.baseUrl + "assets/gradeAssets/GMSS-03-G8/Bg.png"
     );
 
     //Boxes

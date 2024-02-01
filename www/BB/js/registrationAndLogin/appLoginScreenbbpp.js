@@ -56,7 +56,7 @@ Game.appLoginScreenbbpp.prototype = {
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		var titleTxt = _this.add.text(_this.world.centerX - 40, 45, "Building Blocks 6-8 by Akshara");
+		var titleTxt = _this.add.text(_this.world.centerX, 45, "Building Blocks 6-8 by Akshara");//-80
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -537,7 +537,7 @@ Game.appLoginScreenbbpp.prototype = {
 			if (navigator.connection.type != "none" && navigator.connection.type != "unknown" && navigator.connection.type != null && navigator.connection.type != "undefined") {
 				var apiurl = "https://abbmath.klp.org.in/abbppchmprm/getchild";
 				//var apiurl = "https://10.0.2.2/abbppchmprm/getchild";
-				
+
 				$.ajax({
 					url: apiurl,
 					type: "POST",
@@ -596,7 +596,7 @@ Game.appLoginScreenbbpp.prototype = {
 
 function successFunction() {
 	console.log('Immersive mode set successfully.');
-} 
+}
 
 function errorFunction(error) {
 	console.error('Error setting immersive mode:', error);

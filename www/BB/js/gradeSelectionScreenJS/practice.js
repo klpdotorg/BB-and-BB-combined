@@ -109,6 +109,12 @@ Game.practiceModegradeSelectionScreen.prototype={
 			_this.gradeBackBtn.inputEnabled = true;
 			_this.gradeBackBtn.input.useHandCursor = true;
 			_this.gradeBackBtn.events.onInputDown.add(function(){
+				if (window.user.deviceId) {
+					console.log(window.user.deviceId, "If condition Check");
+					window.user.deviceid = window.user.deviceId;
+				}
+				console.log(window.user.deviceid, "PRACTICE JS BACK BTN");
+				
 				game.state.start('gameModeSelectionScreen',true,false);
 			},_this);
 

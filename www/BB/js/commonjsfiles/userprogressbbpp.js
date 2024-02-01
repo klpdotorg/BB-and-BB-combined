@@ -73,7 +73,7 @@ Game.userprogressbbpp.prototype={
 			var apiurl = "https://abbmath.klp.org.in/abbppchmprm/assets/userprogress/userprogress";
 			//var apiurl = "https://10.0.2.2/abbppchmprm/assets/userprogress/userprogress";
 			
-		        console.log("RESTAPImgr.invokeRESTAPI: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
+		        console.log("RESTAPImgr_1.invokeRESTAPI_1: apiname:" + apiurl + "jsondata" + JSON.stringify(jsondata));
 		        nativeApp.CallUserProgressBeforeFEtchingData();
 
 		        $.ajax({

@@ -1,23 +1,30 @@
-Game.appLoginEditScreen = function () {};
+Game.appLoginEditScreen = function () { };
 
 Game.appLoginEditScreen.prototype = {
   init: function (user) {
     _this = this;
+    window.user = user;
+    if (user.deviceid) {
+      window.user.deviceid = user.deviceid;
+    } else if (user.deviceId) {
+      window.user.deviceid = user.deviceId;
+    }
+    console.log(user.deviceId, user.deviceid, "user.deviceId >>");
     _this.user = user;
     console.log(_this.user);
   },
 
   preload: function (game) {
     /*var bmd = game.add.bitmapData(800,600);                
-    	bmd.ctx.beginPath();        
-    	bmd.ctx.lineWidth = "4";        
-    	bmd.ctx.strokeStyle = 'white';        
-    	bmd.ctx.setLineDash([2,3]);        
-    	bmd.ctx.moveTo(10, 10);        
-    	bmd.ctx.lineTo(400 , 400);        
-    	bmd.ctx.stroke();        
-    	bmd.ctx.closePath();        
-    	var sprite = game.add.sprite(200, 400, bmd);*/
+      bmd.ctx.beginPath();        
+      bmd.ctx.lineWidth = "4";        
+      bmd.ctx.strokeStyle = 'white';        
+      bmd.ctx.setLineDash([2,3]);        
+      bmd.ctx.moveTo(10, 10);        
+      bmd.ctx.lineTo(400 , 400);        
+      bmd.ctx.stroke();        
+      bmd.ctx.closePath();        
+      var sprite = game.add.sprite(200, 400, bmd);*/
   },
 
   create: function (game) {
@@ -192,11 +199,7 @@ Game.appLoginEditScreen.prototype = {
       false
     );
 
-    var titleTxt = game.add.text(
-      game.world.centerX - 80,
-      45,
-      "Building Blocks"
-    );
+    var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 1-5 by Akshara");
     titleTxt.x = Math.round(titleTxt.x);
     titleTxt.anchor.setTo(0.5);
     titleTxt.align = "center";
@@ -291,7 +294,7 @@ Game.appLoginEditScreen.prototype = {
     _this.regBackArrow.inputEnabled = true;
     _this.regBackArrow.events.onInputDown.add(function () {
       console.log(_this.user, "APPLOgEDitScreen Back btn !!!");
-      _this.state.start("appLoginScreen",true,false,_this.user.language);
+      _this.state.start("appLoginScreen", true, false, _this.user.language);
     }, _this);
 
     document.addEventListener("backbutton", _this.goback, false);
@@ -303,7 +306,7 @@ Game.appLoginEditScreen.prototype = {
         item_id: "",
       });
       console.log(_this.user, "moving to index 2 !");
-      _this.state.start("index2",true,false,_this.user,false);
+      _this.state.start("index2", true, false, _this.user, false);
     }, _this);
   },
 
@@ -599,172 +602,172 @@ Game.appLoginEditScreen.prototype = {
   },
 
   /*checkIfAllAssetsArePresent:function(fileCheck)
-	{
-		
-		_this.downloadAll = false;
+  {
+  	
+    _this.downloadAll = false;
 
-		window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, 
-			function(fileEntry){
-				fileEntry.file(function(fileObj) {
-		                console.log("Size = " + fileObj.size);
-		                if(fileObj.size == _this.fullSize)
-		                {
-		                	//start the game.
-		                }
-		                else
-		                {
-		                	for(var i=0;i<_this.fileCheck.length;i++)
-							{
-								var filename = _this.fileCheck[i][0];
-								var size = _this.fileCheck[i][1];
-								
-								window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory+filename, 
-									function(){
-											//do nothing
-							            
-									}, function(error){
-										_this.downloadFilesIfNotDownloaded(filename);
-										return;
-									});
-							}
-		                }
-		            },
-		            function (error) {
-		            	console.log("error"+error);
-		            });
-		            
-			}, function(error){
-					_this.downloadAll = true;
-		});
+    window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, 
+      function(fileEntry){
+        fileEntry.file(function(fileObj) {
+                    console.log("Size = " + fileObj.size);
+                    if(fileObj.size == _this.fullSize)
+                    {
+                      //start the game.
+                    }
+                    else
+                    {
+                      for(var i=0;i<_this.fileCheck.length;i++)
+              {
+                var filename = _this.fileCheck[i][0];
+                var size = _this.fileCheck[i][1];
+              	
+                window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory+filename, 
+                  function(){
+                      //do nothing
+                          
+                  }, function(error){
+                    _this.downloadFilesIfNotDownloaded(filename);
+                    return;
+                  });
+              }
+                    }
+                },
+                function (error) {
+                  console.log("error"+error);
+                });
+                
+      }, function(error){
+          _this.downloadAll = true;
+    });
 
-		if(_this.downloadAll)
-		{
-			_this.downloadFilesIfNotDownloaded(_this.zipFiles[i][0]);
-			
-		}
+    if(_this.downloadAll)
+    {
+      _this.downloadFilesIfNotDownloaded(_this.zipFiles[i][0]);
+    	
+    }
 
-	},
+  },
 
-	checkIfAnyZipFileIsPresent:function()
-	{
-		var length = _this.zipFiles.length;
-		//for(var i=0;i<length;i++)
-		//{
-			console.log(i);
-			var filename = _this.zipFiles[i][0];
-			var size = _this.zipFiles[i][1];
-			
-			window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory+filename, 
-				function(fileEntry){
-					fileEntry.file(function(fileObj) {
-		                console.log("Size = " + fileObj.size);
-		                if(fileObj.size == size)
-		                {
-		                	alert("here");
-		                	zip.unzip(cordova.file.externalDataDirectory+filename, _this.basePath, function(message){
-				    			console.log(message);
-				    			if(message==0)
-				    			{
-				    				fileEntry.remove(function (file) {
-						                console.log("file removed!");
-						            }, function (error) {
-						                console.log("error occurred: " + error.code);
-						            }, function () {
-						                console.log("file does not exist");
-						            });
-				    			}
-				    			else
-				    			{
-				    				console.log("error unzipping");
-				    			}
-						    }, function(progressEvent){
-						    	console.log(Math.round((progressEvent.loaded / progressEvent.total) * 100));
-						    });
-		                }
-		                else
-		                {
-		                	_this.downloadFilesIfNotDownloaded(filename);
-		                }
-		            },
-		            function (error) {
-		            	console.log("error"+error);
-		            });
-				}, function(error){
-					console.log("errors"+error);
-					console.log(i);
-					console.log(length);
-					if(i==length-1)
-					{
-						_this.checkIfAllAssetsArePresent();
-					}
-					
-				});
-		//}
+  checkIfAnyZipFileIsPresent:function()
+  {
+    var length = _this.zipFiles.length;
+    //for(var i=0;i<length;i++)
+    //{
+      console.log(i);
+      var filename = _this.zipFiles[i][0];
+      var size = _this.zipFiles[i][1];
+    	
+      window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory+filename, 
+        function(fileEntry){
+          fileEntry.file(function(fileObj) {
+                    console.log("Size = " + fileObj.size);
+                    if(fileObj.size == size)
+                    {
+                      alert("here");
+                      zip.unzip(cordova.file.externalDataDirectory+filename, _this.basePath, function(message){
+                  console.log(message);
+                  if(message==0)
+                  {
+                    fileEntry.remove(function (file) {
+                            console.log("file removed!");
+                        }, function (error) {
+                            console.log("error occurred: " + error.code);
+                        }, function () {
+                            console.log("file does not exist");
+                        });
+                  }
+                  else
+                  {
+                    console.log("error unzipping");
+                  }
+                }, function(progressEvent){
+                  console.log(Math.round((progressEvent.loaded / progressEvent.total) * 100));
+                });
+                    }
+                    else
+                    {
+                      _this.downloadFilesIfNotDownloaded(filename);
+                    }
+                },
+                function (error) {
+                  console.log("error"+error);
+                });
+        }, function(error){
+          console.log("errors"+error);
+          console.log(i);
+          console.log(length);
+          if(i==length-1)
+          {
+            _this.checkIfAllAssetsArePresent();
+          }
+        	
+        });
+    //}
 	
-	},
+  },
 
 	
-	downloadFilesIfNotDownloaded:function(filename)
-	{
-		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
-		{
-			console.log(cordova.file.externalDataDirectory);
-			_this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
-			var fileTransfer = new FileTransfer();
+  downloadFilesIfNotDownloaded:function(filename)
+  {
+    if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
+    {
+      console.log(cordova.file.externalDataDirectory);
+      _this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
+      var fileTransfer = new FileTransfer();
 
-			fileTransfer.onprogress = function(progressEvent) {
-			    if (progressEvent.lengthComputable) {
-			        //loadingStatus.setPercentage(progressEvent.loaded / progressEvent.total);
-			        console.log((progressEvent.loaded / progressEvent.total)*100);
-			    } else {
-			        //loadingStatus.increment();
-			        //console.log(loadingStatus);
-			    }
-			};
-			var uri = encodeURI(_this.baseUrl+filename);
+      fileTransfer.onprogress = function(progressEvent) {
+          if (progressEvent.lengthComputable) {
+              //loadingStatus.setPercentage(progressEvent.loaded / progressEvent.total);
+              console.log((progressEvent.loaded / progressEvent.total)*100);
+          } else {
+              //loadingStatus.increment();
+              //console.log(loadingStatus);
+          }
+      };
+      var uri = encodeURI(_this.baseUrl+filename);
 
-			fileTransfer.download(
-			    uri,
-			    _this.basePath+filename,
-			    function(entry) {
-			        console.log("download complete: " + entry.toURL());
-					zip.unzip(_this.basePath+filename, _this.basePath, function(message){
-				    	console.log(message);
-				    	if(message==0)
-				    			{
-				    				fileEntry.remove(function (file) {
-						                console.log("file removed!");
-						            }, function (error) {
-						                console.log("error occurred: " + error.code);
-						            }, function () {
-						                console.log("file does not exist");
-						            });
-				    			}
-				    			else
-				    			{
-				    				console.log("error unzipping");
-				    			}
-				    }, function(progressEvent){
-				    	console.log(Math.round((progressEvent.loaded / progressEvent.total) * 100));
-				    });
-			    },
-			    function(error) {
-			        console.log("download error source " + error.source);
-			        console.log("download error target " + error.target);
-			        console.log("download error code" + error.code);
-			    }
-			);
-		}
-		else
-		{
-			window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
-		    document.addEventListener("online", _this.checkNetwork, false);
-		}
-	},
+      fileTransfer.download(
+          uri,
+          _this.basePath+filename,
+          function(entry) {
+              console.log("download complete: " + entry.toURL());
+          zip.unzip(_this.basePath+filename, _this.basePath, function(message){
+              console.log(message);
+              if(message==0)
+                  {
+                    fileEntry.remove(function (file) {
+                            console.log("file removed!");
+                        }, function (error) {
+                            console.log("error occurred: " + error.code);
+                        }, function () {
+                            console.log("file does not exist");
+                        });
+                  }
+                  else
+                  {
+                    console.log("error unzipping");
+                  }
+            }, function(progressEvent){
+              console.log(Math.round((progressEvent.loaded / progressEvent.total) * 100));
+            });
+          },
+          function(error) {
+              console.log("download error source " + error.source);
+              console.log("download error target " + error.target);
+              console.log("download error code" + error.code);
+          }
+      );
+    }
+    else
+    {
+      window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
+        document.addEventListener("online", _this.checkNetwork, false);
+    }
+  },
 
-	checkNetwork:function()
-	{
-		document.removeEventListener("online", _this.checkNetwork, false);
-		_this.create();
-	},*/
+  checkNetwork:function()
+  {
+    document.removeEventListener("online", _this.checkNetwork, false);
+    _this.create();
+  },*/
 };
