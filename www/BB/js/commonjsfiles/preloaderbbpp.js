@@ -5,9 +5,8 @@ var fx;
 
 Game.preloaderbbpp.prototype = {
 
-    // init: function ()
-    // {
-
+    // init: function () {
+   
     // },
 
     preload: function () {
@@ -23,6 +22,12 @@ Game.preloaderbbpp.prototype = {
         console.log(_this.app_mode);
 
         // window.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets1/";
+
+        screen.orientation.lock('landscape');
+        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+        _this.game.scale.setGameSize(960, 540);
+        _this.scale.forceOrientation(false, true);
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         _this.bg = _this.add.tileSprite(0, 0, _this.world.width, _this.world.height, 'loadingBg1');
 
@@ -815,12 +820,6 @@ Game.preloaderbbpp.prototype = {
 
     create: function (game) {
 
-        screen.orientation.lock('landscape');
-        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
-        _this.game.scale.setGameSize(960, 540);
-        _this.scale.forceOrientation(false, true);
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-
         game.state.add('practiceModegradeSelectionScreenbbpp', Game.practiceModegradeSelectionScreenbbpp);
 
         game.state.add('selectgrade6MicroConceptScreen', Game.selectgrade6MicroConceptScreen);
@@ -1251,9 +1250,9 @@ Game.preloaderbbpp.prototype = {
 }
 
 function successFunction() {
-	console.log('Immersive mode set successfully.');
+    console.log('Immersive mode set successfully.');
 }
 
 function errorFunction(error) {
-	console.error('Error setting immersive mode:', error);
+    console.error('Error setting immersive mode:', error);
 }

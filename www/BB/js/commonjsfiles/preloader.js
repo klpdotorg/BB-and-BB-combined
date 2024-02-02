@@ -204,6 +204,12 @@ Game.preloader.prototype = {
 
         //this.checkPreviouslyDownloaded();
 
+        screen.orientation.lock('landscape');
+        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+        _this.game.scale.setGameSize(960, 540);
+        _this.scale.forceOrientation(false, true);
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+
         _this.bg = _this.add.tileSprite(0, 0, _this.world.width, _this.world.height, 'loadingBg1');
 
         _this.loadingSound = document.createElement('audio');
@@ -12256,17 +12262,11 @@ Game.preloader.prototype = {
         this.load.image('nsd6_5_div', window.baseUrl + 'assets/gradeAssets/nsd6.5/div.png')
     },
     onDeviceReady: function () {
-		//this.receivedEvent('deviceready');
-		AndroidFullScreen.immersiveMode(successFunction, errorFunction);
-	},
+        //this.receivedEvent('deviceready');
+        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+    },
 
     create: function (game) {
-
-        screen.orientation.lock('landscape');
-        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
-        _this.game.scale.setGameSize(960, 540);
-        _this.scale.forceOrientation(false, true); 
-		document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         game.state.add('gameModeSelectionScreen', Game.gameModeSelectionScreen);
         game.state.add('gradeSelectionScreen', Game.gradeSelectionScreen);
@@ -13192,9 +13192,9 @@ Game.preloader.prototype = {
 }
 
 function successFunction() {
-	console.log('Immersive mode set successfully.');
+    console.log('Immersive mode set successfully.');
 }
 
 function errorFunction(error) {
-	console.error('Error setting immersive mode:', error);
+    console.error('Error setting immersive mode:', error);
 }
