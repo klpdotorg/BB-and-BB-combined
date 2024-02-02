@@ -21,6 +21,18 @@ Game.gameModeSelectionScreen.prototype = {
 			//sent.init({ dsn: 'https://6abe4b184d3b48d48d5776b4c5c74517@sentry.io/1302277' });
 		}
 		document.addEventListener("online", this.syncTelFunc, false);
+
+		screen.orientation.lock('landscape');
+		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+		_this.game.scale.setGameSize(960, 540);
+		_this.scale.forceOrientation(false, true);
+		document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+
+	},
+
+	onDeviceReady: function () {
+		//this.receivedEvent('deviceready');
+		AndroidFullScreen.immersiveMode(successFunction, errorFunction);
 	},
 
 	syncTelFunc: function () {
@@ -76,15 +88,15 @@ Game.gameModeSelectionScreen.prototype = {
 			//if(appConfig.cordova && !appConfig.browser)
 			//{
 			//document.removeEventListener('backbutton', _this.exitAppFull , false);
-			screen.orientation.lock('portrait');
-			AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-			document.addEventListener('resume', function () {
-				AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-			}, false);
+			// screen.orientation.lock('portrait');
+			// AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+			// document.addEventListener('resume', function () {
+			// 	AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+			// }, false);
 
-			_this.game.scale.setGameSize(540, 960);
+			// _this.game.scale.setGameSize(540, 960);
 
-			_this.scale.forceOrientation(true, false);
+			// _this.scale.forceOrientation(true, false);
 
 
 			if (window.user.deviceId) {
@@ -304,3 +316,12 @@ Game.gameModeSelectionScreen.prototype = {
 	}
 
 };
+
+
+function successFunction() {
+	console.log('Immersive mode set successfully.');
+}
+
+function errorFunction(error) {
+	console.error('Error setting immersive mode:', error);
+}

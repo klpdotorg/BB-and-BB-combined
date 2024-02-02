@@ -52,7 +52,7 @@ Game.preloaderbbpp.prototype = {
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade6NumberSystems.js", "js");
 
         //** grade 7 
-        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/selectgrade7MicroConceptScreen.js", "js");       
+        this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/selectgrade7MicroConceptScreen.js", "js");
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7Algebra.js", "js");
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7Geometry.js", "js");
         this.loadjscssfile("BBPP/js/gradeSelectionScreenJS/grade7NumberSystems.js", "js");
@@ -472,69 +472,69 @@ Game.preloaderbbpp.prototype = {
         this.loadjscssfile("BBPP/js/gradejs/GMSS_02_G7/level1.js", "js");
         this.loadjscssfile("BBPP/js/gradejs/GMSS-03-G7/level1.js", "js");
         this.loadjscssfile("BBPP/js/gradejs/GMSS-04-G7/level1.js", "js");
-        this.loadjscssfile("BBPP/js/gradejs/NSD-6-G7/level1.js", "js"); 
+        this.loadjscssfile("BBPP/js/gradejs/NSD-6-G7/level1.js", "js");
 
-         //*Grade 8 Scripts here
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_DIV_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_ES1_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_IDE_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL_2_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL1_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL3_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_03_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_01_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_FACT_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_03_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_DIN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_RN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_01_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_02_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_04_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_05_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_02_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_SQ_CUB_G8.js", "js");
- 
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_DIV_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_ES1_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_IDE_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL_2_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL1_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL3_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_03_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_01_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_FACT_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_03_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_DIN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_01_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_02_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_04_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_05_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_02_G8.js", "js");
-         this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_SQ_CUB_G8.js", "js");
-         //*
-         this.loadjscssfile("BBPP/js/gradejs/AL-FACT-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/NS-RN-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-DIV-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-ES1-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-IDE-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-MUL-2-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-MUL3-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/AL-MUL1-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMM-03-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMSS-01-G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMSS_02_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMM_05_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMM_04_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMM_02_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMM_01_G8/level1.js", "js");
+        //*Grade 8 Scripts here
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_DIV_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_ES1_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_IDE_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL_2_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL1_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_MUL3_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_03_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_01_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_AL_FACT_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_03_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_DIN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_RN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_01_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_02_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_04_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMM_05_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_GMSS_02_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/preloader_NS_SQ_CUB_G8.js", "js");
+
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_DIV_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_ES1_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_IDE_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL_2_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL1_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_MUL3_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_03_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_01_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_AL_FACT_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_03_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_DIN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_RN_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_01_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_02_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_04_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMM_05_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_GMSS_02_G8.js", "js");
+        this.loadjscssfile("BBPP/js/commonjsfiles/loadJson_NS_SQ_CUB_G8.js", "js");
+        //*
+        this.loadjscssfile("BBPP/js/gradejs/AL-FACT-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/NS-RN-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-DIV-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-ES1-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-IDE-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-MUL-2-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-MUL3-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/AL-MUL1-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMM-03-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMSS-01-G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMSS_02_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMM_05_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMM_04_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMM_02_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMM_01_G8/level1.js", "js");
         // this.loadjscssfile("BBPP/js/gradejs/NS_RN_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/NS_DIN_G8/level1.js", "js");
-         this.loadjscssfile("BBPP/js/gradejs/GMSS_03_G8/level1.js", "js");  
-         this.loadjscssfile("BBPP/js/gradejs/NS_SQ_CUB_G8/level1.js", "js");  
-         //*level,json,preloader
+        this.loadjscssfile("BBPP/js/gradejs/NS_DIN_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/GMSS_03_G8/level1.js", "js");
+        this.loadjscssfile("BBPP/js/gradejs/NS_SQ_CUB_G8/level1.js", "js");
+        //*level,json,preloader
 
         //// ***************************** loading the video files *****************************************//
         this.load.video('demo7_1_1', './demo.mp4');
@@ -738,25 +738,25 @@ Game.preloaderbbpp.prototype = {
         _this.load.image('GMSS_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-03-G7.png');
         _this.load.image('GMSS_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-04-G7.png');
 
-          //* Grade 8 Game icons
-          _this.load.image('AL_MUL3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL3-G8.png');
-          _this.load.image('GMM_1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-01-G8.png');
-          _this.load.image('GMM_2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-02-G8.png');
-          _this.load.image('AL_DIV_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-DIV-G8.png');
-          _this.load.image('AL_ES1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-ES1-G8.png');
-          _this.load.image('AL_FACT_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-FACT-G8.png');
-          _this.load.image('AL_IDE_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-IDE-G8.png');
-          _this.load.image('AL_MUL1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL1-G8.png');
-          _this.load.image('AL_MUL2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL2-G8.png');
-          _this.load.image('GMM_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-03-G8.png');
-          _this.load.image('GMM_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-04-G8.png');
-          _this.load.image('GMM_5_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-05-G8.png');
-          _this.load.image('GMSS_01_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_01_G8.png');
-          _this.load.image('GMSS_02_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_02_G8.png');
-          _this.load.image('GMSS_03_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-03-G8.png');
-          _this.load.image('NS_DIN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_DIN_G8.png');
-          _this.load.image('NS_SQ_CUB_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_SQ_CUB_G8.png');
-          _this.load.image('NS_RN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS-RN-G8.png');
+        //* Grade 8 Game icons
+        _this.load.image('AL_MUL3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL3-G8.png');
+        _this.load.image('GMM_1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-01-G8.png');
+        _this.load.image('GMM_2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-02-G8.png');
+        _this.load.image('AL_DIV_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-DIV-G8.png');
+        _this.load.image('AL_ES1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-ES1-G8.png');
+        _this.load.image('AL_FACT_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-FACT-G8.png');
+        _this.load.image('AL_IDE_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-IDE-G8.png');
+        _this.load.image('AL_MUL1_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL1-G8.png');
+        _this.load.image('AL_MUL2_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/AL-MUL2-G8.png');
+        _this.load.image('GMM_3_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-03-G8.png');
+        _this.load.image('GMM_4_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-04-G8.png');
+        _this.load.image('GMM_5_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMM-05-G8.png');
+        _this.load.image('GMSS_01_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_01_G8.png');
+        _this.load.image('GMSS_02_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS_02_G8.png');
+        _this.load.image('GMSS_03_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/GMSS-03-G8.png');
+        _this.load.image('NS_DIN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_DIN_G8.png');
+        _this.load.image('NS_SQ_CUB_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS_SQ_CUB_G8.png');
+        _this.load.image('NS_RN_Screen', window.baseUrl + 'assets/gradeSelectionScreenAssets/NS-RN-G8.png');
 
     },
 
@@ -811,6 +811,11 @@ Game.preloaderbbpp.prototype = {
 
     create: function (game) {
 
+        screen.orientation.lock('landscape');
+        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+        _this.game.scale.setGameSize(960, 540);
+        _this.scale.forceOrientation(false, true);
+
         game.state.add('practiceModegradeSelectionScreenbbpp', Game.practiceModegradeSelectionScreenbbpp);
 
         game.state.add('selectgrade6MicroConceptScreen', Game.selectgrade6MicroConceptScreen);
@@ -825,11 +830,11 @@ Game.preloaderbbpp.prototype = {
         game.state.add('grade6RatioandProportion', Game.grade6RatioandProportion);
 
         game.state.add('grade7Geometry', Game.grade7Geometry);
-        game.state.add('grade7NumberSystems', Game.grade7NumberSystems);       
+        game.state.add('grade7NumberSystems', Game.grade7NumberSystems);
         game.state.add('grade7Algebra', Game.grade7Algebra);
 
         game.state.add('grade8Geometry', Game.grade8Geometry);
-        game.state.add('grade8NumberSystems', Game.grade8NumberSystems);       
+        game.state.add('grade8NumberSystems', Game.grade8NumberSystems);
         game.state.add('grade8Algebra', Game.grade8Algebra);
 
         //Testing game fm-1

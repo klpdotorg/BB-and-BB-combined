@@ -40,7 +40,7 @@ Game.mainScreen.prototype = {
         titleTxt_start.wordWrap = true;
         titleTxt_start.wordWrapWidth = 500;
 
-        var cloud1_5 = this.add.sprite(190, 210, 'mainCloud');
+        var cloud1_5 = this.add.sprite(150, 310, 'mainCloud');//190-40,210+100
         // cloud1_5.anchor.setTo(0.5);
         cloud1_5.inputEnabled = true;
         cloud1_5.input.useHandCursor = true;
@@ -49,7 +49,7 @@ Game.mainScreen.prototype = {
             bbreglogin.initializeDB();
             _this.game.state.start('appLoginScreen', true, false);
         }, _this);
-        var cloud1_5Txt = this.add.text(210, 198, ' \n' + 'Grade 1-5' + '\n ');
+        var cloud1_5Txt = this.add.text(170, 298, ' \n' + 'Grade 1-5' + '\n ');//210-40,198+100
         // cloud1_5Txt.anchor.setTo(0.5);
         cloud1_5Txt.align = 'center';
         cloud1_5Txt.font = 'gradefont';
@@ -59,7 +59,7 @@ Game.mainScreen.prototype = {
         cloud1_5Txt.wordWrap = true;
         cloud1_5Txt.wordWrapWidth = 500;
 
-        var cloud6_8 = this.add.sprite(190, 410, 'mainCloud');
+        var cloud6_8 = this.add.sprite(150, 510, 'mainCloud');//190-40,410+100
         // cloud6_8.anchor.setTo(0.5);
         cloud6_8.inputEnabled = true;
         cloud6_8.input.useHandCursor = true;
@@ -68,7 +68,7 @@ Game.mainScreen.prototype = {
             bbregloginbbpp.initializeDB();
             _this.game.state.start('appLoginScreenbbpp', true, false, this.app_Mode);
         }, _this);
-        var cloud6_8Txt = this.add.text(210, 398, ' \n' + 'Grade 6-8' + '\n ');
+        var cloud6_8Txt = this.add.text(170, 498, ' \n' + 'Grade 6-8' + '\n ');//210,398+100
         // cloud6_8Txt.anchor.setTo(0.5);
         cloud6_8Txt.align = 'center';
         cloud6_8Txt.font = 'gradefont';

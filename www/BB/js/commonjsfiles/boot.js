@@ -66,7 +66,7 @@ Game.boot.prototype = {
 		_this.game.scale.setGameSize(960, 540);
 
 		_this.scale.forceOrientation(false, true);
-
+ 
 		if (window.app_Grade == "BB") {
 			var translations = _this.cache.getJSON('translations');
 

@@ -10,6 +10,13 @@ Game.appLoginEditScreen.prototype = {
       window.user.deviceid = user.deviceId;
     }
     console.log(user.deviceId, user.deviceid, "user.deviceId >>");
+
+    screen.orientation.lock('portrait');
+    AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+    _this.game.scale.setGameSize(540, 960);
+    _this.scale.forceOrientation(true, false);
+    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+    
     _this.user = user;
     console.log(_this.user);
   },
@@ -26,6 +33,11 @@ Game.appLoginEditScreen.prototype = {
       bmd.ctx.closePath();        
       var sprite = game.add.sprite(200, 400, bmd);*/
   },
+  
+	onDeviceReady: function () {
+		//this.receivedEvent('deviceready');
+		AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+	},
 
   create: function (game) {
     _this = this;
@@ -771,3 +783,11 @@ Game.appLoginEditScreen.prototype = {
     _this.create();
   },*/
 };
+
+function successFunction() {
+	console.log('Immersive mode set successfully.');
+}
+
+function errorFunction(error) {
+	console.error('Error setting immersive mode:', error);
+}

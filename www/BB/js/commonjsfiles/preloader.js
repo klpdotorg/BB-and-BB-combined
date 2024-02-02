@@ -12258,6 +12258,11 @@ Game.preloader.prototype = {
 
     create: function (game) {
 
+        screen.orientation.lock('landscape');
+        AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+        _this.game.scale.setGameSize(960, 540);
+        _this.scale.forceOrientation(false, true);
+
         game.state.add('gameModeSelectionScreen', Game.gameModeSelectionScreen);
         game.state.add('gradeSelectionScreen', Game.gradeSelectionScreen);
         game.state.add('challengeModeGgradeSelectionScreen', Game.challengeModeGgradeSelectionScreen);
