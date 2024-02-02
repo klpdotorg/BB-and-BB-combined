@@ -808,6 +808,10 @@ Game.preloaderbbpp.prototype = {
         this.load.image("bottomBar", window.baseUrl + "assets/commonAssets/bottomBar.png");
         this.load.image("skipDemoVideos", window.baseUrl + "assets/commonAssets/skipArrow.png");
     },
+    onDeviceReady: function () {
+        //this.receivedEvent('deviceready');
+        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+    },
 
     create: function (game) {
 
@@ -815,6 +819,7 @@ Game.preloaderbbpp.prototype = {
         AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
         _this.game.scale.setGameSize(960, 540);
         _this.scale.forceOrientation(false, true);
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         game.state.add('practiceModegradeSelectionScreenbbpp', Game.practiceModegradeSelectionScreenbbpp);
 
@@ -1243,4 +1248,12 @@ Game.preloaderbbpp.prototype = {
         }
         //alert(window.score);
     }
+}
+
+function successFunction() {
+	console.log('Immersive mode set successfully.');
+}
+
+function errorFunction(error) {
+	console.error('Error setting immersive mode:', error);
 }

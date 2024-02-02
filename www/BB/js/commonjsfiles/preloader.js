@@ -12255,13 +12255,18 @@ Game.preloader.prototype = {
         this.load.image('nsd6_5_chart', window.baseUrl + 'assets/gradeAssets/nsd6.5/10.png');
         this.load.image('nsd6_5_div', window.baseUrl + 'assets/gradeAssets/nsd6.5/div.png')
     },
+    onDeviceReady: function () {
+		//this.receivedEvent('deviceready');
+		AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+	},
 
     create: function (game) {
 
         screen.orientation.lock('landscape');
         AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
         _this.game.scale.setGameSize(960, 540);
-        _this.scale.forceOrientation(false, true);
+        _this.scale.forceOrientation(false, true); 
+		document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
 
         game.state.add('gameModeSelectionScreen', Game.gameModeSelectionScreen);
         game.state.add('gradeSelectionScreen', Game.gradeSelectionScreen);
@@ -13184,4 +13189,12 @@ Game.preloader.prototype = {
         }
         //alert(window.score);
     }
+}
+
+function successFunction() {
+	console.log('Immersive mode set successfully.');
+}
+
+function errorFunction(error) {
+	console.error('Error setting immersive mode:', error);
 }
