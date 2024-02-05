@@ -2,7 +2,6 @@ Game.numbersense5=function(){
 
 };
 
-
 Game.numbersense5.prototype={
 	
 	init:function()
@@ -13,7 +12,6 @@ Game.numbersense5.prototype={
 		
 	},
 			
-
 	create:function(){		
 
 		numberSense5 = true;
@@ -268,10 +266,8 @@ Game.numbersense5.prototype={
             this.scoreDeductGroup.destroy();
             game.state.start(this.gamestate,true,false);
     	},this);
-
     },
 
-	
 	shutdown:function()
 	{
 		

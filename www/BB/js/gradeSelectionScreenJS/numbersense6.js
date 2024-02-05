@@ -2,7 +2,6 @@ Game.numbersense6=function(){
 
 };
 
-
 Game.numbersense6.prototype={
 	
 	init:function()
@@ -13,7 +12,6 @@ Game.numbersense6.prototype={
 		
 	},
 			
-
 	create:function(){		
 
 		numberSense6 = true;
