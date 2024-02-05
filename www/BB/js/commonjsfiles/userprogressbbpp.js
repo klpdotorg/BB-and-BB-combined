@@ -172,7 +172,7 @@ Game.userprogressbbpp.prototype={
 			this.practiceModeTime = 0;
 		if(isNaN(this.challengeModeTime))
 			this.challengeModeTime = 0;
-
+ 
 
 		this.practiceModeTime = this.secondsToHms(this.practiceModeTime);
 		//this.challengeModeTime = this.secondsToHms(this.challengeModeTime);
@@ -342,6 +342,8 @@ Game.userprogressbbpp.prototype={
 		this.practicemodeTimeTxt.fill = '#000000';
 		this.practicemodeTimeTxt.wordWrap = true;
 		this.practicemodeTimeTxt.wordWrapWidth = 500;
+
+		this.addScrollingtouserprogress(game, completedText);
 
 	},
 
