@@ -29,7 +29,7 @@ var nativeApp =
 			//_this.game.input.enabled = false;
 			_this.video.play(false);
 					
-					_this.video.changeSource("./helpvideo.mp4");
+					_this.video.changeSource("./demo.mp4");
 					
 					_this.something = _this.video.addToWorld();
 					
