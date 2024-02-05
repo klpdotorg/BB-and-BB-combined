@@ -138,25 +138,7 @@ Game.numbersense3.prototype={
 			},this);
 		}
 
-		/*this.numbersense1_2 = this.add.sprite(this.world.centerX,200,"numbersense3_1");
-		this.numbersense1_2.anchor.setTo(0.5);
-
-		if(this.numbersense1_2State=="playedwithhint"||this.numbersense1_2State=="canplay")
-		{
-			this.numbersense1_2.inputEnabled = true;
-			this.numbersense1_2.events.onInputDown.add(function()
-			{
-				if(this.numbersense1_2State=="playedwithhint")
-				{
-					window.score -= 5;
-        			localStorage.setItem(window.avatarName+"Score", window.score);
-        			//this.deductScore(this,-5,false,false,null,'length_MLG_2_1level1');
-				}
-				//else
-					//this.state.start('length_MLG_2_1level1',true,false);
-			},this);
-		}*/
-
+	
 		this.numbersense1_3 = this.add.sprite(this.world.centerX,200,"numbersense3_2");
 		this.numbersense1_3.anchor.setTo(0.5);
 

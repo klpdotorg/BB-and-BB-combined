@@ -2760,36 +2760,15 @@ Game.grade1Measurement.prototype={
 
 		if(window.languageSelected=="Hindi")
 		{
-			/*_this.topicTitleText.frame = 1;
-			//_this.CountingIcecreams1_1ScreenTxt.frame = 1;
-			_this.PluckingMangoes1_2ScreenTxt.frame = 1;
-			_this.CountingFish1_3ScreenTxt.frame = 1;
-			_this.CountingFlowers1_4ScreenTxt.frame = 1;
-			_this.PluckingMangoes1_5ScreenTxt.frame = 1;
-			_this.BurstingBubbles1_6ScreenTxt.frame = 1;
-			_this.TracingNumbers1_7ScreenTxt.frame = 1;*/
+			
 		}
 		else if(window.languageSelected=="Kannada")
 		{
-			/*_this.topicTitleText.frame = 2;
-			//_this.CountingIcecreams1_1ScreenTxt.frame = 2;
-			_this.PluckingMangoes1_2ScreenTxt.frame = 2;
-			_this.CountingFish1_3ScreenTxt.frame = 2;
-			_this.CountingFlowers1_4ScreenTxt.frame = 2;
-			_this.PluckingMangoes1_5ScreenTxt.frame = 2;
-			_this.BurstingBubbles1_6ScreenTxt.frame = 2;
-			_this.TracingNumbers1_7ScreenTxt.frame = 2;*/
+			
 		}
 		else
 		{
-			/*_this.topicTitleText.frame = 0;
-			//_this.CountingIcecreams1_1ScreenTxt.frame = 0;
-			_this.PluckingMangoes1_2ScreenTxt.frame = 0;
-			_this.CountingFish1_3ScreenTxt.frame = 0;
-			_this.CountingFlowers1_4ScreenTxt.frame = 0;
-			_this.PluckingMangoes1_5ScreenTxt.frame = 0;
-			_this.BurstingBubbles1_6ScreenTxt.frame = 0;
-			_this.TracingNumbers1_7ScreenTxt.frame = 0;*/
+		
 		}
 		
 		
@@ -2916,59 +2895,7 @@ Game.grade1Measurement.prototype={
 		},_this);
 
 
-		/*_this.hungryRabbit6_1Screen = _this.add.sprite(300,120,'unity6.1');
-		//_this.hungryRabbit6_1ScreenTxt = _this.add.sprite(165,255,'Hungry rabbit 6.1');
-		//_this.hungryRabbit6_1ScreenTxt.anchor.setTo(0.5);
-
-		_this.bgGraphic2 = this.add.graphics(410,175);
-		_this.bgGraphic2.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphic2.beginFill(0x493A19, 1);
-		_this.bgGraphic2.drawRoundedRect(0,0,30,30,10);
-		_this.bgGraphic2.boundsPadding = 0;
-
-		_this.hungryRabbit6_1ScreenTxt = this.add.text(425, 192, ' \n '+window.selctedLang.HungryRabbit6_1+' \n ');
-		_this.hungryRabbit6_1ScreenTxt.anchor.setTo(0.5);
-		_this.hungryRabbit6_1ScreenTxt.align = 'center';
-		
-				
-		_this.hungryRabbit6_1ScreenTxt.font = 'gradefont';
-		_this.hungryRabbit6_1ScreenTxt.fontSize = 20;
-		_this.hungryRabbit6_1ScreenTxt.fontWeight = 'normal';
-		_this.hungryRabbit6_1ScreenTxt.fill = 'white';
-
-		_this.hungryRabbit6_1ScreenTxt.wordWrap = true;
-		_this.hungryRabbit6_1ScreenTxt.wordWrapWidth = 500;
-		//_this.hungryRabbit6_1ScreenTxt.setTextBounds(0,0,500,500);
-		//_this.hungryRabbit6_1ScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.hungryRabbit6_1ScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.hungryRabbit6_1ScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-		
-
-		_this.hungryRabbit6_1Screen.inputEnabled = true;
-		_this.hungryRabbit6_1Screen.input.useHandCursor = true;
-		_this.hungryRabbit6_1Screen.name = "Fractions 1.1 A";
-		_this.hungryRabbit6_1Screen.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-
-					//telInitializer.gameIdInit("unity6_1",1);
-					
-					_this.state.start('unity6_1level1',true,false);
-				}
-			},_this);
-			
-		},_this);*/
+	
 
 
 		_this.coinMachine7_1_1Screen = _this.add.sprite(300,120,'unity7_2_1');
@@ -2993,14 +2920,7 @@ Game.grade1Measurement.prototype={
 
 		_this.coinMachine7_1_1ScreenTxt.wordWrap = true;
 		_this.coinMachine7_1_1ScreenTxt.wordWrapWidth = 500;
-		//_this.coinMachine7_1_1ScreenTxt.setTextBounds(0,0,500,500);
-		//_this.coinMachine7_1_1ScreenTxt.padding.set(50, 50);
 		
-		
-		//_this.coinMachine7_1_1ScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.coinMachine7_1_1ScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
 		
 
 		_this.coinMachine7_1_1Screen.inputEnabled = true;
