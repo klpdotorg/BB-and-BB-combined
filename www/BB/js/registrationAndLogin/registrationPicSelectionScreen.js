@@ -122,8 +122,6 @@ Game.registrationPicSelectionScreen.prototype = {
 		tree.scale.setTo(0.8);
 		tree.anchor.setTo(0.5);
 
-
-
 		var regTickBtn = game.add.sprite(game.world.centerX, game.world.centerY + 345, 'regTickBtn');
 		regTickBtn.scale.setTo(0.5);
 		regTickBtn.anchor.setTo(0.5);
@@ -136,7 +134,6 @@ Game.registrationPicSelectionScreen.prototype = {
 			avatarSelected = "Fish";
 			this.checkActive(fish, butterfly, flower, parrot, sun, tree, regTickBtn, avatarSelected);
 		}, this);
-
 
 		butterfly.inputEnabled = true;
 		butterfly.events.onInputDown.add(function () {
@@ -324,13 +321,11 @@ Game.registrationPicSelectionScreen.prototype = {
 						else {
 
 						}
-
 					},
 					error: function (error) {
 						console.log(error);
 						window.plugins.toast.show(error, 1000, "bottom");
 					}
-
 				});
 			}
 			else {
@@ -372,13 +367,11 @@ Game.registrationPicSelectionScreen.prototype = {
 						else {
 
 						}
-
 					},
 					error: function (error) {
 						window.plugins.toast.show(error, 3000, "bottom");
 
 					}
-
 				});
 			}
 			else {
