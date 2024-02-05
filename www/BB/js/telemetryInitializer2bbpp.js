@@ -207,8 +207,5 @@ var telInitializer2bbpp = {
                          }, 500);
 		}
 
-
-
-
 };
 

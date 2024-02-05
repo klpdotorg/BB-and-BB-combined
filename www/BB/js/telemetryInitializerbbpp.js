@@ -430,32 +430,8 @@ var telInitializerbbpp = {
 		if (gameID == null || gameID == "" || gameID == undefined) {
 			//alert("game id is not proper");
 		}
-
-		// if(grade==1)
-		// {
-		// 	gameID = gameID + "-G1"; 
-		// }
-		// else if(grade==2)
-		// {
-		// 	gameID = gameID + "-G2"; 
-		// }
-		// else if(grade==3)
-		// {
-		// 	gameID = gameID + "-G3"; 
-		// }
-		// else if(grade==4)
-		// {
-		// 	gameID = gameID + "-G4"; 
-		// }
-		// else if(grade==5)
-		// {
-		// 	gameID = gameID + "-G5"; 
-		// }
-
 		passStringToWebView = gameID;
-
 		telInitializerbbpp.tele_saveGamePlay(gameID);
-
 	},
 
 	tele_saveGamePlay: function (gameid) {
@@ -505,7 +481,6 @@ var telInitializerbbpp = {
 
 			window.rateCount++;
 
-
 			setTimeout(function () {
 				if (localStorage.getItem("FirstTimeRate") == "false") {
 					window.rateCount = 0;
@@ -518,7 +493,6 @@ var telInitializerbbpp = {
 					nativeApp.RateApp();
 				}
 			}, 500);
-
 
 		}
 
@@ -548,8 +522,6 @@ var telInitializerbbpp = {
 			deviceid: window.deviceId
 		}
 
-
-
 		if (saveAsment.id_question == null || saveAsment.id_question == "" || saveAsment.id_question == undefined) {
 			//alert("question id is not proper");
 		}
@@ -563,8 +535,6 @@ var telInitializerbbpp = {
 		abbprmdsjsapi.prm_saveAssessment(saveAsment);
 
 	},
-
-
 
 };
 
