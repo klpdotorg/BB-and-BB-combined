@@ -127,90 +127,15 @@ var app = {
     this.game.add.text(0, 0, "hack", { font: "1px regfont3", fill: "#FFFFFF" });
     this.game.add.text(0, 0, "hack", { font: "1px regfont4", fill: "#FFFFFF" });
 
-
-
     game.time.events.add(300, function () {
       game.time.events.removeAll();
-      /*game.width = 960;
-        game.height = 540;
-      console.log(game);
-  
-      screen.orientation.lock('landscape');*/
-      // @@ // game.state.start('appLoginScreen', true, false, this.app_Mode);
-      // screen.orientation.lock('portrait');
-      // AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-      // game.scale.setGameSize(540, 960);
-      // this.scale.forceOrientation(true, false);
-
+     
       game.state.start('mainScreen', true, false, this.app_Mode);
-
-      // var backBg = this.add.sprite(this.world.centerX, this.world.centerY, 'registrationbg');
-      // backBg.scale.setTo(1);
-      // backBg.anchor.setTo(0.5);
-
-
-
-      // var titleBar_start = this.add.graphics(0, 0);
-      // titleBar_start.anchor.setTo(0.5);
-      // titleBar_start.lineStyle(2, 0x000000, 0.8);
-      // titleBar_start.beginFill(0x4E342E, 1);
-      // titleBar_start.drawRect(0, 0, 540, 80);
-
-
-      // var titleTxt_start = this.add.text(this.world.centerX - 40, 45, "Building Blocks");
-      // titleTxt_start.x = Math.round(titleTxt_start.x);
-      // titleTxt_start.anchor.setTo(0.5);
-      // titleTxt_start.align = 'center';
-      // titleTxt_start.font = 'regfont4';
-      // titleTxt_start.fontSize = '22pt';
-      // titleTxt_start.fontWeight = 500;
-      // titleTxt_start.fill = '#FFFFFF';
-      // titleTxt_start.wordWrap = true;
-      // titleTxt_start.wordWrapWidth = 500;
-
-      // var cloud1_5 = this.add.sprite(190, 210, 'mainCloud');
-      // // cloud1_5.anchor.setTo(0.5);
-      // cloud1_5.inputEnabled = true;
-      // cloud1_5.input.useHandCursor = true;
-      // cloud1_5.events.onInputDown.add(() => {
-      //   bbreglogin.initializeDB();
-      //   game.state.start('appLoginScreen', true, false);
-      // }, _this);
-      // var cloud1_5Txt = this.add.text(210, 198, ' \n' + 'Grade 1-5' + '\n ');
-      // // cloud1_5Txt.anchor.setTo(0.5);
-      // cloud1_5Txt.align = 'center';
-      // cloud1_5Txt.font = 'gradefont';
-      // cloud1_5Txt.fontSize = 34;
-      // cloud1_5Txt.fontWeight = 'normal';
-      // cloud1_5Txt.fill = '#563814';
-      // cloud1_5Txt.wordWrap = true;
-      // cloud1_5Txt.wordWrapWidth = 500;
-
-      // var cloud6_8 = this.add.sprite(190, 410, 'mainCloud');
-      // // cloud6_8.anchor.setTo(0.5);
-      // cloud6_8.inputEnabled = true;
-      // cloud6_8.input.useHandCursor = true;
-      // cloud6_8.events.onInputDown.add(() => {
-      //   bbregloginbbpp.initializeDB();
-      //   game.state.start('appLoginScreenbbpp', true, false, this.app_Mode);
-      // }, _this);
-      // var cloud6_8Txt = this.add.text(210, 398, ' \n' + 'Grade 6-8' + '\n ');
-      // // cloud6_8Txt.anchor.setTo(0.5);
-      // cloud6_8Txt.align = 'center';
-      // cloud6_8Txt.font = 'gradefont';
-      // cloud6_8Txt.fontSize = 34;
-      // cloud6_8Txt.fontWeight = 'normal';
-      // cloud6_8Txt.fill = '#563814';
-      // cloud6_8Txt.wordWrap = true;
-      // cloud6_8Txt.wordWrapWidth = 500;
-
 
     }, this);
 
   },
 
-
-  // };
 };
 
 function successFunction() {
