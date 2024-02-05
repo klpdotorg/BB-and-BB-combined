@@ -56,12 +56,7 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
           game.state.start("mainScreen", true, false, _this.app_Mode); //,lang
         }, this);
       }
-      // regBackArrow.inputEnabled = true;
-      // regBackArrow.events.onInputDown.add(function () {
-      // 	console.log(_this.user, "registrationPicSelectionScreen Back");
-      // 	game.state.start('appLoginScreenbbpp', true, false, _this.app_Mode);//,lang
-      // }, this);
-
+ 
       document.addEventListener("backbutton", _this.goback, false);
 
       var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 6-8 by Akshara");
@@ -271,8 +266,6 @@ Game.registrationLangSelectionScreenbbpp.prototype = {
     if (i + 1 < 10) grp.add(this["sprite" + i]);
     grp.add(this["languageTxt" + i]);
 
-    // _this.languageSelected = localStorage.setItem("language","ENG");//ENG
-    // window.languageSelected = "English";
   },
 
   shutdown: function () {

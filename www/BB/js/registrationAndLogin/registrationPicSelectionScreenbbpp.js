@@ -60,8 +60,6 @@ Game.registrationPicSelectionScreenbbpp.prototype = {
 
 		document.addEventListener('backbutton', _this.goback, false);
 
-
-
 		var titleTxt = game.add.text(game.world.centerX - 5, 45, "Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);

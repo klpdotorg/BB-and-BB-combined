@@ -35,11 +35,6 @@ Game.registrationLangSelectionScreen.prototype = {
       regBackArrowGrph.drawRect(-60, -60, 200, 200);
       regBackArrow.addChild(regBackArrowGrph);
 
-      // regBackArrow.inputEnabled = true;
-      // regBackArrow.events.onInputDown.add(function(){
-      // 	game.state.start('appLoginScreen',true,false);
-      // },this);
-      //if (_this.user.length > 0) {
       regBackArrow.inputEnabled = true;
       regBackArrow.events.onInputDown.add(function () {
         console.log(_this.user, "registrationPicSelectionScreen BB");
