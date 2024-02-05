@@ -32,16 +32,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 	},
 
 	preload: function (game) {
-		/*var bmd = game.add.bitmapData(800,600);                
-		bmd.ctx.beginPath();        
-		bmd.ctx.lineWidth = "4";        
-		bmd.ctx.strokeStyle = 'white';        
-		bmd.ctx.setLineDash([2,3]);        
-		bmd.ctx.moveTo(10, 10);        
-		bmd.ctx.lineTo(400 , 400);        
-		bmd.ctx.stroke();        
-		bmd.ctx.closePath();        
-		var sprite = game.add.sprite(200, 400, bmd);*/
+	
 	},
 
 	create: function (game) {
@@ -56,11 +47,7 @@ Game.appLoginEditScreenbbpp.prototype = {
 		//* nEED to change this ****
 		_this.fullSize = 302978124;
 
-		//* change this zip file size according to bb++ ******
-		// _this.zipFiles = [["Assets1.zip", 26430143], ["Assets2.zip", 39780906], ["Assets3.zip", 18453216],
-		// ["Assets4.zip", 14402031], ["Assets5.zip", 19891065], ["Assets6.zip", 19889389],
-		// ["English.zip", 23759971], ["Kannada.zip", 25787866], ["Hindi.zip", 25508626],
-		// ["Odiya.zip", 40129117], ["Gujarati.zip", 31882078], ["questionSounds.zip", 162758079]];
+		
 
 		_this.zipFiles = [["Assets1.zip", 565373], ["Assets2.zip", 25572815], ["Assets4.zip", 66105124], ["EnglishquestionSounds.zip", 29272691], ["HINquestionSounds.zip", 29272691],
 		["KANquestionSounds.zip", 29272691], ["ODIquestionSounds.zip", 48682701], ["MARquestionSounds.zip", 39766797], ["TMquestionSounds.zip", 30783494], ["sounds.zip", 3742800]];

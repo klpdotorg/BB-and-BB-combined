@@ -247,19 +247,6 @@ Game.gameModeSelectionScreenbbpp.prototype = {
 
 
 
-		/*var bmd = game.add.bitmapData(800,600);                
-		bmd.ctx.beginPath();        
-		bmd.ctx.lineWidth = "4";        
-		bmd.ctx.strokeStyle = '#000000';        
-		bmd.ctx.setLineDash([2,3]);        
-		bmd.ctx.moveTo(10, 10);        
-		bmd.ctx.lineTo(100 , 100);
-		ctx.moveTo(100, 10);
-		ctx.quadraticCurveTo(230, 150, 250, 20);        
-		bmd.ctx.stroke();        
-		bmd.ctx.closePath();        
-		var sprite = game.add.sprite(200, 400, bmd);*/
-
 		var orline1 = game.add.graphics(0, 0);
 		//var graphics=game.add.graphics(line.start.x,line.start.y);//if you have a static line
 		orline1.lineStyle(2.5, 0x000000, 1);

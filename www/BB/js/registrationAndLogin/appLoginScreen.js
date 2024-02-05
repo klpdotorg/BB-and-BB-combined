@@ -18,11 +18,7 @@ Game.appLoginScreen.prototype = {
 	},
 
 	create: function (game) {
-		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-		// screen.orientation.lock('portrait');
-		// AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-		// _this.game.scale.setGameSize(540, 960);
+		
 		screen.orientation.lock('portrait');
 		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
 		_this.game.scale.setGameSize(540, 960);
@@ -110,31 +106,7 @@ Game.appLoginScreen.prototype = {
 	},
 
 	checkPermission: function () {
-		// var permissions = cordova.plugins.permissions;
-		// permissions.checkPermission(permissions.READ_PHONE_STATE, function (status) {
-		// 	if (status.hasPermission) {
-		// 		console.log("Yes :D ");
-		// 		_this.startGame();
-		// 	}
-		// 	else {
-		// 		console.warn("No :( ");
-		// 		permissions.requestPermission(permissions.READ_PHONE_STATE, function (status) {
-		// 			if (status.hasPermission) {
-		// 				console.log("Yes :D ");
-
-		// 				_this.startGame();
-		// 			}
-		// 			else {
-		// 				console.warn("No :( ");
-		// 				_this.checkPermission();
-		// 			}
-		// 		}, function (error) {
-		// 			console.log(error);
-		// 		});
-		// 	}
-		// }, function (error) {
-		// 	console.log(error);
-		// });
+		
 		_this.startGame();
 
 	},
@@ -149,14 +121,7 @@ Game.appLoginScreen.prototype = {
 		selectPicTxt.align = 'center';
 		selectPicTxt.font = 'regfont3';
 
-		/*if(window.devicePixelRatio >=2.5 && window.devicePixelRatio<3)
-			selectPicTxt.fontSize = 31;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=3.5)
-			selectPicTxt.fontSize = 36;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
-			selectPicTxt.fontSize = 36;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
-			selectPicTxt.fontSize = 36;*/
+		
 
 		selectPicTxt.fontSize = '26pt';
 
@@ -273,19 +238,6 @@ Game.appLoginScreen.prototype = {
 		}, this);
 
 
-
-		/*var bmd = game.add.bitmapData(800,600);                
-		bmd.ctx.beginPath();        
-		bmd.ctx.lineWidth = "4";        
-		bmd.ctx.strokeStyle = '#000000';        
-		bmd.ctx.setLineDash([2,3]);        
-		bmd.ctx.moveTo(10, 10);        
-		bmd.ctx.lineTo(100 , 100);
-		ctx.moveTo(100, 10);
-		ctx.quadraticCurveTo(230, 150, 250, 20);        
-		bmd.ctx.stroke();        
-		bmd.ctx.closePath();        
-		var sprite = game.add.sprite(200, 400, bmd);*/
 
 		var orline1 = game.add.graphics(0, 0);
 		//var graphics=game.add.graphics(line.start.x,line.start.y);//if you have a static line

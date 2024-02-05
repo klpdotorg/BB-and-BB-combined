@@ -391,20 +391,10 @@ Game.index2.prototype={
 		
 				}
 			}
-			/*else if(window.prevScreen == "gameModeSelectionScreen"&& window.currScreen == "gameModeSelectionScreen")
-			{
-				nativeApp.onButtonShowPopupWindowClick();
-			}*/
+			
 			else
 			{
-				/*if(window.mode == "practice")
-				{
-					game.state.start('practiceModegradeSelectionScreen',true,false);	
-				}	
-				else
-				{
-					game.state.start('challengeModeGgradeSelectionScreen',true,false);
-				}*/
+			
 				if(grade1NumberSenseSelected == true)
 				{
 					grade1NumberSenseSelected = false;

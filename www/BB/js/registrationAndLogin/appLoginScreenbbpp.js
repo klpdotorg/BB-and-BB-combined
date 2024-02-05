@@ -72,26 +72,7 @@ Game.appLoginScreenbbpp.prototype = {
 
 		}
 
-		// this.helpIcon = this.add.image(500, 42, 'helpIcon');
-		// this.helpIcon.scale.setTo(1);
-		// this.helpIcon.anchor.setTo(0.5);
-		// // this.helpIcon.inputEnabled = true;
-		// // this.helpIcon.input.useHandCursor = true;
-		// this.helpIcon.events.onInputDown.add(function () {
-		// 	//this.clickSound = this.add.audio('ClickSound');
-		// 	//this.clickSound.play();
-		// 	//if(appConfig.cordova && !appConfig.browser)
-		// 	//{
-		// 	screen.orientation.lock('landscape');
-		// 	AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
-		// 	//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
-
-
-		// 	_this.game.scale.setGameSize(960, 540);
-		// 	nativeApp.playHelp(_this, "appLoginScreenbbpp");
-		// 	//}
-
-		// }, this);
+		
 		_this.regBackArrow = _this.game.add.sprite(40, 40, 'regBackArrow');
 		_this.regBackArrow.scale.setTo(0.35);
 		_this.regBackArrow.anchor.setTo(0.5);
@@ -110,31 +91,7 @@ Game.appLoginScreenbbpp.prototype = {
 	},
 
 	checkPermission: function () {
-		// var permissions = cordova.plugins.permissions;
-		// permissions.checkPermission(permissions.READ_PHONE_STATE, function (status) {
-		// 	if (status.hasPermission) {
-		// 		console.log("Yes :D ");
-		// 		_this.startGame();
-		// 	}
-		// 	else {
-		// 		console.warn("No :( ");
-		// 		permissions.requestPermission(permissions.READ_PHONE_STATE, function (status) {
-		// 			if (status.hasPermission) {
-		// 				console.log("Yes :D ");
-
-		// 				_this.startGame();
-		// 			}
-		// 			else {
-		// 				console.warn("No :( ");
-		// 				_this.checkPermission();
-		// 			}
-		// 		}, function (error) {
-		// 			console.log(error);
-		// 		});
-		// 	}
-		// }, function (error) {
-		// 	console.log(error);
-		// });
+		
 
 		_this.startGame();
 	},
@@ -149,15 +106,7 @@ Game.appLoginScreenbbpp.prototype = {
 		selectPicTxt.align = 'center';
 		selectPicTxt.font = 'regfont3';
 
-		/*if(window.devicePixelRatio >=2.5 && window.devicePixelRatio<3)
-			selectPicTxt.fontSize = 31;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=3.5)
-			selectPicTxt.fontSize = 36;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
-			selectPicTxt.fontSize = 36;
-		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
-			selectPicTxt.fontSize = 36;*/
-
+	
 		selectPicTxt.fontSize = '26pt';
 
 		selectPicTxt.fontWeight = 0;
