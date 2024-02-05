@@ -34,10 +34,7 @@ Game.grade8Algebra.prototype = {
 
         grade8NumberSystemsSelected = false;
         grade8AlgebraSelected = false;
-        // grade6RatioandProportionSelected = false;
-        // grade6GeometrySelected  = false;
-        // grade6DecimalsSelected  = false;
-
+    
         this.video = null;
         this.video1 = null;
         this.video2 = null;
@@ -78,13 +75,9 @@ Game.grade8Algebra.prototype = {
         //_this.grade6PatternsGroup = _this.add.group();
 
         _this.addgrade6OperationsTopic();
-        //_this.addgrade6PatternsTopic();
 
         _this.grade8OperationsGroup.x = 0;
         _this.grade8OperationsGroup.y = 0;
-
-        // _this.grade6PatternsGroup.x = 0;
-        // _this.grade6PatternsGroup.y = 500;
 
         _this.graphicsBg = _this.add.graphics(0, 0);
         _this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -105,7 +98,6 @@ Game.grade8Algebra.prototype = {
         _this.mask.endFill();
         _this.graphicsBg.mask = _this.mask;
 
-
         _this.graphicsBg.addChild(_this.grade8OperationsGroup);
         //_this.graphicsBg.addChild(_this.grade6PatternsGroup);
 
@@ -124,13 +116,7 @@ Game.grade8Algebra.prototype = {
         });
 
         _this.mc.on("swipeup", function (v) {
-            //console.log(v);
-
-
-            //	if(swipeUpFlag)
-            //	{
-            //game.input.enabled = false;
-
+        
             _this.tween = game.add.tween(_this.graphicsBg);
             _this.tween.to({ y: _this.graphicsBg.y - (v.distance * (v.overallVelocity * 2 / -1)) }, 0, 'Linear', true, 0);
             _this.tween.onComplete.add(function () {
@@ -141,7 +127,6 @@ Game.grade8Algebra.prototype = {
                     _this.graphicsBg.y = -270;
                 }
 
-                //game.input.enabled = true;
             }, _this);
             _this.tween.onUpdateCallback(function () {
                 _this.tap = false;
@@ -149,8 +134,6 @@ Game.grade8Algebra.prototype = {
                     //swipeUpFlag = false;
                     _this.graphicsBg.y = -270;
                     _this.tween.stop();
-                    //_this.tween = null;
-                    //game.input.enabled = true;
                 }
             }, _this);
 
@@ -159,9 +142,6 @@ Game.grade8Algebra.prototype = {
 
         _this.mc.on("swipedown", function (v) {
 
-            //	if(swipeDownFlag)
-            //	{
-            //game.input.enabled = false;
             _this.tween = game.add.tween(_this.graphicsBg);
             _this.tween.to({ y: _this.graphicsBg.y + (v.distance * (v.overallVelocity * 2)) }, 0, 'Linear', true, 0);
             _this.tween.onComplete.add(function () {
@@ -519,127 +499,6 @@ Game.grade8Algebra.prototype = {
             }, _this);
         }, _this);
 
-        // _this.ALP_1_Screen = _this.add.sprite(700, 320, 'ALP_1_Screen');
-        // _this.bgGraphicAlg8 = this.add.graphics(810, 375);
-        // _this.bgGraphicAlg8.lineStyle(0, 0xFFFFFF, 0.8);
-        // _this.bgGraphicAlg8.beginFill(0x493A19, 1);
-        // _this.bgGraphicAlg8.drawRoundedRect(0, 0, 30, 30, 10);
-        // _this.bgGraphicAlg8.boundsPadding = 0;
-        // _this.ALP_1_ScreenTxt = this.add.text(825, 392, ' \n ' + window.selctedLang.ALP_1_Screen + ' \n ');
-        // _this.ALP_1_ScreenTxt.anchor.setTo(0.5);
-        // _this.ALP_1_ScreenTxt.align = 'center';
-        // _this.ALP_1_ScreenTxt.font = 'gradefont';
-        // _this.ALP_1_ScreenTxt.fontSize = 20;
-        // _this.ALP_1_ScreenTxt.fontWeight = 'normal';
-        // _this.ALP_1_ScreenTxt.fill = 'white';
-        // _this.ALP_1_ScreenTxt.wordWrap = true;
-        // _this.ALP_1_ScreenTxt.wordWrapWidth = 500;
-        // _this.ALP_1_Screen.inputEnabled = true;
-        // _this.ALP_1_Screen.input.useHandCursor = true;
-        // _this.ALP_1_Screen.name = "NSD-1";
-        // _this.ALP_1_Screen.events.onInputDown.add(function (target) {
-        //     _this.time.events.add(300, function () {
-        //         if (_this.tap) {
-        //             _this.time.events.removeAll();
-        //             target.events.onInputDown.removeAll();
-        //             _this.clickSound = _this.add.audio('ClickSound');
-        //             _this.clickSound.play();
-        //             _this.state.start('preloader_ALP_01_G6', true, false);
-        //         }
-        //     }, _this);
-        // }, _this);
-
-        // _this.ALP_2_Screen = _this.add.sprite(100, 520, 'ALP_2_Screen');
-        // _this.bgGraphicAlg9 = this.add.graphics(210, 575);
-        // _this.bgGraphicAlg9.lineStyle(0, 0xFFFFFF, 0.8);
-        // _this.bgGraphicAlg9.beginFill(0x493A19, 1);
-        // _this.bgGraphicAlg9.drawRoundedRect(0, 0, 30, 30, 10);
-        // _this.bgGraphicAlg9.boundsPadding = 0;
-        // _this.ALP_2_ScreenTxt = this.add.text(225, 592, ' \n ' + window.selctedLang.ALP_2_Screen + ' \n ');
-        // _this.ALP_2_ScreenTxt.anchor.setTo(0.5);
-        // _this.ALP_2_ScreenTxt.align = 'center';
-        // _this.ALP_2_ScreenTxt.font = 'gradefont';
-        // _this.ALP_2_ScreenTxt.fontSize = 20;
-        // _this.ALP_2_ScreenTxt.fontWeight = 'normal';
-        // _this.ALP_2_ScreenTxt.fill = 'white';
-        // _this.ALP_2_ScreenTxt.wordWrap = true;
-        // _this.ALP_2_ScreenTxt.wordWrapWidth = 500;
-        // _this.ALP_2_Screen.inputEnabled = true;
-        // _this.ALP_2_Screen.input.useHandCursor = true;
-        // _this.ALP_2_Screen.name = "NSD-2A";
-        // _this.ALP_2_Screen.events.onInputDown.add(function (target) {
-        //     _this.time.events.add(300, function () {
-        //         if (_this.tap) {
-        //             _this.time.events.removeAll();
-        //             target.events.onInputDown.removeAll();
-        //             _this.clickSound = _this.add.audio('ClickSound');
-        //             _this.clickSound.play();
-        //             _this.state.start('preloader_ALP_02_G6', true, false);
-        //         }
-        //     }, _this);
-        // }, _this);
-
-        // _this.ALMAZE_1_Screen = _this.add.sprite(300, 520, 'ALMAZE_1_Screen');
-        // _this.bgGraphicAlg10 = this.add.graphics(410, 575);
-        // _this.bgGraphicAlg10.lineStyle(0, 0xFFFFFF, 0.8);
-        // _this.bgGraphicAlg10.beginFill(0x493A19, 1);
-        // _this.bgGraphicAlg10.drawRoundedRect(0, 0, 30, 30, 10);
-        // _this.bgGraphicAlg10.boundsPadding = 0;
-        // _this.ALMAZE_1_ScreenTxt = this.add.text(425, 592, ' \n ' + window.selctedLang.ALMAZE_1_Screen + ' \n ');
-        // _this.ALMAZE_1_ScreenTxt.anchor.setTo(0.5);
-        // _this.ALMAZE_1_ScreenTxt.align = 'center';
-        // _this.ALMAZE_1_ScreenTxt.font = 'gradefont';
-        // _this.ALMAZE_1_ScreenTxt.fontSize = 20;
-        // _this.ALMAZE_1_ScreenTxt.fontWeight = 'normal';
-        // _this.ALMAZE_1_ScreenTxt.fill = 'white';
-        // _this.ALMAZE_1_ScreenTxt.wordWrap = true;
-        // _this.ALMAZE_1_ScreenTxt.wordWrapWidth = 500;
-        // _this.ALMAZE_1_Screen.inputEnabled = true;
-        // _this.ALMAZE_1_Screen.name = "NSF-2B";
-        // _this.ALMAZE_1_Screen.input.useHandCursor = true;
-        // _this.ALMAZE_1_Screen.events.onInputDown.add(function (target) {
-        //     _this.time.events.add(300, function () {
-        //         if (_this.tap) {
-        //             _this.time.events.removeAll();
-        //             target.events.onInputDown.removeAll();
-        //             _this.clickSound = _this.add.audio('ClickSound');
-        //             _this.clickSound.play();
-        //             _this.state.start('preloader_AL_MAZE_G6', true, false);
-        //         }
-        //     }, _this);
-        // }, _this);
-
-        // _this.ALMEM_1_Screen = _this.add.sprite(500, 520, 'ALMEM_1_Screen');
-        // _this.bgGraphicAlg11 = this.add.graphics(610, 575);
-        // _this.bgGraphicAlg11.lineStyle(0, 0xFFFFFF, 0.8);
-        // _this.bgGraphicAlg11.beginFill(0x493A19, 1);
-        // _this.bgGraphicAlg11.drawRoundedRect(0, 0, 30, 30, 10);
-        // _this.bgGraphicAlg11.boundsPadding = 0;
-        // _this.ALMEM_1_ScreenTxt = this.add.text(625, 592, ' \n ' + window.selctedLang.ALMEM_1_Screen + ' \n ');
-        // _this.ALMEM_1_ScreenTxt.anchor.setTo(0.5);
-        // _this.ALMEM_1_ScreenTxt.align = 'center';
-        // _this.ALMEM_1_ScreenTxt.font = 'gradefont';
-        // _this.ALMEM_1_ScreenTxt.fontSize = 20;
-        // _this.ALMEM_1_ScreenTxt.fontWeight = 'normal';
-        // _this.ALMEM_1_ScreenTxt.fill = 'white';
-        // _this.ALMEM_1_ScreenTxt.wordWrap = true;
-        // _this.ALMEM_1_ScreenTxt.wordWrapWidth = 500;
-        // _this.ALMEM_1_Screen.inputEnabled = true;
-        // _this.ALMEM_1_Screen.name = "NSD-3A";
-        // _this.ALMEM_1_Screen.input.useHandCursor = true;
-        // _this.ALMEM_1_Screen.events.onInputDown.add(function (target) {
-        //     _this.time.events.add(300, function () {
-        //         if (_this.tap) {
-        //             _this.time.events.removeAll();
-        //             target.events.onInputDown.removeAll();
-        //             _this.clickSound = _this.add.audio('ClickSound');
-        //             _this.clickSound.play();
-        //             _this.state.start('preloader_AL_MEM_G6', true, false);
-        //         }
-        //     }, _this);
-        // }, _this);
-
-
         if (window.languageSelected == "Hindi") {
             //_this.topicTitleText.frame = 1;
             //_this.fractions1_1AScreenTxt.frame = 1;
@@ -649,8 +508,7 @@ Game.grade8Algebra.prototype = {
             //_this.fractions1_1AScreenTxt.frame = 2;
         }
         else {
-            //_this.topicTitleText.frame = 0;
-            //_this.fractions1_1AScreenTxt.frame = 0;
+
         }
 
         _this.grade8OperationsGroup.add(_this.topicTxtBg);
@@ -678,116 +536,6 @@ Game.grade8Algebra.prototype = {
         _this.grade8OperationsGroup.add(_this.bgGraphicAlg7);
         _this.grade8OperationsGroup.add(_this.AL_DIV_ScreenTxt);
 
-        // _this.grade6OperationsGroup.add(_this.ALP_1_Screen);
-        // _this.grade6OperationsGroup.add(_this.bgGraphicAlg8);
-        // _this.grade6OperationsGroup.add(_this.ALP_1_ScreenTxt);
-
-        // _this.grade6OperationsGroup.add(_this.ALP_2_Screen);
-        // _this.grade6OperationsGroup.add(_this.bgGraphicAlg9);
-        // _this.grade6OperationsGroup.add(_this.ALP_2_ScreenTxt);
-
-        // _this.grade6OperationsGroup.add(_this.ALMAZE_1_Screen);
-        // _this.grade6OperationsGroup.add(_this.bgGraphicAlg10);
-        // _this.grade6OperationsGroup.add(_this.ALMAZE_1_ScreenTxt);
-
-        // _this.grade6OperationsGroup.add(_this.ALMEM_1_Screen);
-        // _this.grade6OperationsGroup.add(_this.bgGraphicAlg11);
-        // _this.grade6OperationsGroup.add(_this.ALMEM_1_ScreenTxt);
-
     },
 
-    amplifyMedia: function (mediaElem, multiplier) {
-        var context = new (window.AudioContext || window.webkitAudioContext),
-            result = {
-                context: context,
-                source: context.createMediaElementSource(mediaElem),
-                gain: context.createGain(),
-                media: mediaElem,
-                amplify: function (multiplier) { result.gain.gain.value = multiplier; },
-                getAmpLevel: function () { return result.gain.gain.value; }
-            };
-        result.source.connect(result.gain);
-        result.gain.connect(context.destination);
-        result.amplify(multiplier);
-
-        return result;
-    },
-
-    stopDemoVoice: function () {
-        if (_this.playQuestionSound) {
-            if (_this.playQuestionSound.contains(_this.src)) {
-                _this.playQuestionSound.removeChild(_this.src);
-                _this.src = null;
-            }
-            if (!_this.playQuestionSound.paused) {
-                _this.playQuestionSound.pause();
-                _this.playQuestionSound.currentTime = 0.0;
-            }
-            _this.playQuestionSound = null;
-            _this.src = null;
-        }
-    },
-
-    shutdown: function () {
-        if (_this.mc) {
-            _this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL, enable: false });
-        }
-        document.removeEventListener("online", _this.syncTelFunc, false);
-
-        // if(this.video)
-        // {
-        // 	this.video.destroy();
-        // 	this.video.removeVideoElement();
-        // 	this.video = null;
-        // }
-
-        // if(this.video1)
-        // {
-        // 	this.video1.destroy();
-        // 	this.video1.removeVideoElement();
-        // 	this.video1 = null;
-        // }
-        // if(this.video2)
-        // {
-        // 	this.video2.destroy();
-        // 	this.video2.removeVideoElement();
-        // 	this.video2 = null;
-        // }
-        // if(this.video3)
-        // {
-        // 	this.video3.destroy();
-        // 	this.video3.removeVideoElement();
-        // 	this.video3 = null;
-        // }
-
-    },
-
-
-    convertTimeinMinandSectoHrsMinsSecs: function (Hours1, Minutes1, Seconds1) {
-        console.log("inside convert time", Hours1, Minutes1, Seconds1);
-
-        const totalMinutes = Math.floor((parseInt(Seconds1) + parseInt(_this.timeInSeconds)) / 60) + (parseInt(Minutes1) + parseInt(_this.timeInMinutes));
-        const Seconds2 = (parseInt(Seconds1) + parseInt(_this.timeInSeconds)) % 60;
-
-        const Hours2 = Math.floor(totalMinutes / 60) + parseInt(Hours1);
-        const Minutes2 = totalMinutes % 60;
-
-        console.log("before adding");
-        console.log("totalMinutes", totalMinutes);
-        console.log("after adding");
-        console.log("Seconds2", Seconds2);
-        console.log("Hours2", Hours2);
-        console.log("Minutes2", Minutes2)
-
-        var save_assessment = {
-            game_id: _this.game_id,
-            totalLearningTimeinHrs: Hours2.toString(),
-            totalLearningTimeinMins: Minutes2.toString(),
-            totalLearningTimeinSecs: Seconds2.toString(),
-        }
-        console.log("save assessment", save_assessment);
-        if (_this.userHasPlayed == 1) {
-            BBplusplusdbDetails.updateRecordsUsingGameID(save_assessment);
-        }
-    }
 };

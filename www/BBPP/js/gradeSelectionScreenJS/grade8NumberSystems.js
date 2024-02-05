@@ -41,11 +41,7 @@ Game.grade8NumberSystems.prototype = {
 		this.game.input.enabled = false;
 
 		grade8NumberSystemsSelected = false;
-		// grade6AlgebraSelected = false;
-		// grade6RatioandProportionSelected = false;
-		// grade6GeometrySelected = false;
-		// grade6DecimalsSelected = false;
-
+	
 		this.video = null;
 		this.video1 = null;
 		this.video2 = null;
@@ -83,31 +79,11 @@ Game.grade8NumberSystems.prototype = {
 
 
 		_this.grade8NumbersGroup = _this.add.group();
-		// _this.grade6IntegersGroup = _this.add.group();
-		// _this.grade6FractionsGroup = _this.add.group();
-		// _this.grade6DecimalsGroup = _this.add.group();
-		// _this.grade6RatioandProportionGroup = _this.add.group();
 
 		_this.addgrade8NumbersTopic();
-		// _this.addgrade6IntegersTopic();
-		// _this.addgrade6FractionsTopic();
-		// _this.addgrade6DecimalsTopic();
-		// _this.addgrade6RatioProportionTopic();
-
+	
 		_this.grade8NumbersGroup.x = 0;
 		_this.grade8NumbersGroup.y = 0;
-
-		// _this.grade6IntegersGroup.x = 0;
-		// _this.grade6IntegersGroup.y = 500;
-
-		// _this.grade6FractionsGroup.x = 0;
-		// _this.grade6FractionsGroup.y = 1410;
-
-		// _this.grade6DecimalsGroup.x = 0;
-		// _this.grade6DecimalsGroup.y = 2320;
-
-		// _this.grade6RatioandProportionGroup.x = 0;
-		// _this.grade6RatioandProportionGroup.y = 3230;
 
 		_this.graphicsBg = _this.add.graphics(0, 0);
 		_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -127,12 +103,7 @@ Game.grade8NumberSystems.prototype = {
 		_this.mask.endFill();
 		_this.graphicsBg.mask = _this.mask;
 
-		// _this.graphicsBg.addChild(_this.grade6RatioandProportionGroup);
-		// _this.graphicsBg.addChild(_this.grade6DecimalsGroup);
-		// _this.graphicsBg.addChild(_this.grade6FractionsGroup);
 		_this.graphicsBg.addChild(_this.grade8NumbersGroup);
-		//_this.graphicsBg.addChild(_this.grade6IntegersGroup);
-
 
 		_this.swipeUpFlag = true;
 		_this.swipeDownFlag = false;
@@ -149,13 +120,7 @@ Game.grade8NumberSystems.prototype = {
 		});
 
 		_this.mc.on("swipeup", function (v) {
-			//console.log(v);
-
-
-			//	if(swipeUpFlag)
-			//	{
-			//game.input.enabled = false;
-
+		
 			_this.tween = game.add.tween(_this.graphicsBg);
 			_this.tween.to({ y: _this.graphicsBg.y - (v.distance * (v.overallVelocity * 2 / -1)) }, 0, 'Linear', true, 0);
 			_this.tween.onComplete.add(function () {
@@ -174,8 +139,6 @@ Game.grade8NumberSystems.prototype = {
 					//swipeUpFlag = false;
 					_this.graphicsBg.y = -2000;
 					_this.tween.stop();
-					//_this.tween = null;
-					//game.input.enabled = true;
 				}
 			}, _this);
 
@@ -184,9 +147,6 @@ Game.grade8NumberSystems.prototype = {
 
 		_this.mc.on("swipedown", function (v) {
 
-			//	if(swipeDownFlag)
-			//	{
-			//game.input.enabled = false;
 			_this.tween = game.add.tween(_this.graphicsBg);
 			_this.tween.to({ y: _this.graphicsBg.y + (v.distance * (v.overallVelocity * 2)) }, 0, 'Linear', true, 0);
 			_this.tween.onComplete.add(function () {
@@ -205,8 +165,6 @@ Game.grade8NumberSystems.prototype = {
 					//swipeUpFlag = false;
 					_this.graphicsBg.y = 0;
 					_this.tween.stop();
-					//_this.tween = null;
-					//game.input.enabled = true;
 				}
 			}, _this);
 			//	}
@@ -234,14 +192,10 @@ Game.grade8NumberSystems.prototype = {
 				if (_this.graphicsBg.y >= 10) {
 					//swipeUpFlag = false;
 					_this.graphicsBg.y = 0;
-					//tween.stop();
-					//game.input.enabled = true;
 				}
 				else if (_this.graphicsBg.y <= -2000) {
 					//swipeUpFlag = false;
 					_this.graphicsBg.y = -2000;
-					//tween.stop();
-					//game.input.enabled = true;
 				}
 			}, _this);
 
@@ -262,7 +216,6 @@ Game.grade8NumberSystems.prototype = {
 					//swipeUpFlag = false;
 					_this.graphicsBg.y = -2000;
 				}
-
 			}, _this);
 
 		}, _this);
@@ -273,7 +226,6 @@ Game.grade8NumberSystems.prototype = {
 			_this.time.events.add(3000, function () {
 				_this.time.events.removeAll();
 				_this.tap = false;
-				//console.log("tapfalse");
 			}, _this);
 		}, _this);
 
@@ -1322,18 +1274,6 @@ Game.grade8NumberSystems.prototype = {
 
 	addgrade6RatioProportionTopic: function () {
 
-		// if(window.languageSelected == 'Tamil')
-		// {
-		// 	console.log("hey there! Tamil");
-		// 	_this.topicTxtBg = _this.add.graphics(100, 60);
-		// 	_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
-		// 	_this.topicTxtBg.beginFill(0xD957A0, 1);
-		// 	_this.topicTxtBg.drawRoundedRect(0,0,480,100,10);//320
-		// 	_this.topicTxtBg.boundsPadding = 0;
-
-		// 	_this.topicTitleText = this.add.text(340, 85, ' \n '+window.selctedLang.ratioandproportionTitle+' \n ');//260
-		// }else
-		// {
 		console.log("hey there!");
 		_this.topicTxtBg = _this.add.graphics(100, 60);
 		_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -1576,36 +1516,6 @@ Game.grade8NumberSystems.prototype = {
 			}, _this);
 		}, _this);
 
-		// _this.NS_DIN_Screen = _this.add.sprite(500, 120, 'NS_DIN_Screen');
-		// _this.bgGraphicNum3 = this.add.graphics(610, 175);
-		// _this.bgGraphicNum3.lineStyle(0, 0xFFFFFF, 0.8);
-		// _this.bgGraphicNum3.beginFill(0x493A19, 1);
-		// _this.bgGraphicNum3.drawRoundedRect(0, 0, 30, 30, 10);
-		// _this.bgGraphicNum3.boundsPadding = 0;
-		// _this.NS_DIN_ScreenTxt = this.add.text(625, 192, ' \n ' + window.selctedLang.NS_DIN_Screen + ' \n ');
-		// _this.NS_DIN_ScreenTxt.anchor.setTo(0.5);
-		// _this.NS_DIN_ScreenTxt.align = 'center';
-		// _this.NS_DIN_ScreenTxt.font = 'gradefont';
-		// _this.NS_DIN_ScreenTxt.fontSize = 20;
-		// _this.NS_DIN_ScreenTxt.fontWeight = 'normal';
-		// _this.NS_DIN_ScreenTxt.fill = 'white';
-		// _this.NS_DIN_ScreenTxt.wordWrap = true;
-		// _this.NS_DIN_ScreenTxt.wordWrapWidth = 500;
-		// _this.NS_DIN_Screen.inputEnabled = true;
-		// _this.NS_DIN_Screen.name = "Numbers HCF-1";
-		// _this.NS_DIN_Screen.input.useHandCursor = true;
-		// _this.NS_DIN_Screen.events.onInputDown.add(function (target) {
-		// 	_this.time.events.add(300, function () {
-		// 		if (_this.tap) {
-		// 			_this.time.events.removeAll();
-		// 			target.events.onInputDown.removeAll();
-		// 			_this.clickSound = _this.add.audio('ClickSound');
-		// 			_this.clickSound.play();
-		// 			_this.state.start('preloader_NS_DIN_G8', true, false);
-		// 		}
-		// 	}, _this);
-		// }, _this);
-
 		_this.grade8NumbersGroup.add(_this.topicTxtBg);
 		_this.grade8NumbersGroup.add(_this.topicTitleText);
 		_this.grade8NumbersGroup.add(_this.topicBg);
@@ -1618,18 +1528,7 @@ Game.grade8NumberSystems.prototype = {
 		_this.grade8NumbersGroup.add(_this.NS_DIN_Screen);
 		_this.grade8NumbersGroup.add(_this.bgGraphicNum3);
 		_this.grade8NumbersGroup.add(_this.NS_DIN_ScreenTxt);
-		// _this.grade8NumbersGroup.add(_this.PRM_1_Screen);
-		// _this.grade8NumbersGroup.add(_this.bgGraphicNum4);
-		// _this.grade8NumbersGroup.add(_this.PRM_1_ScreenTxt);
-		// _this.grade8NumbersGroup.add(_this.FM_3_Screen);
-		// _this.grade8NumbersGroup.add(_this.bgGraphicNum5);
-		// _this.grade8NumbersGroup.add(_this.FM_3_ScreenTxt);
-		// _this.grade8NumbersGroup.add(_this.FM_4_Screen);
-		// _this.grade8NumbersGroup.add(_this.bgGraphicNum6);
-		// _this.grade8NumbersGroup.add(_this.FM_4_ScreenTxt);
-		// _this.grade8NumbersGroup.add(_this.LCM_1_Screen);
-		// _this.grade8NumbersGroup.add(_this.bgGraphicNum7);
-		// _this.grade8NumbersGroup.add(_this.LCM_1_ScreenTxt);
+
 	},
 
 	addgrade6IntegersTopic: function () {
@@ -2122,93 +2021,4 @@ Game.grade8NumberSystems.prototype = {
 		_this.grade6IntegersGroup.add(_this.bgGraphicInt14);
 		_this.grade6IntegersGroup.add(_this.HornINT_14_ScreenTxt);
 	},
-
-	amplifyMedia: function (mediaElem, multiplier) {
-		var context = new (window.AudioContext || window.webkitAudioContext),
-			result = {
-				context: context,
-				source: context.createMediaElementSource(mediaElem),
-				gain: context.createGain(),
-				media: mediaElem,
-				amplify: function (multiplier) { result.gain.gain.value = multiplier; },
-				getAmpLevel: function () { return result.gain.gain.value; }
-			};
-		result.source.connect(result.gain);
-		result.gain.connect(context.destination);
-		result.amplify(multiplier);
-
-		return result;
-	},
-
-	stopDemoVoice: function () {
-		if (_this.playQuestionSound) {
-			if (_this.playQuestionSound.contains(_this.src)) {
-				_this.playQuestionSound.removeChild(_this.src);
-				_this.src = null;
-			}
-			if (!_this.playQuestionSound.paused) {
-				_this.playQuestionSound.pause();
-				_this.playQuestionSound.currentTime = 0.0;
-			}
-			_this.playQuestionSound = null;
-			_this.src = null;
-		}
-	},
-	shutdown: function () {
-		if (_this.mc) {
-			_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL, enable: false });
-		}
-		document.removeEventListener("online", _this.syncTelFunc, false);
-
-		if (this.video) {
-			this.video.destroy();
-			this.video.removeVideoElement();
-			this.video = null;
-		}
-
-		if (this.video1) {
-			this.video1.destroy();
-			this.video1.removeVideoElement();
-			this.video1 = null;
-		}
-		if (this.video2) {
-			this.video2.destroy();
-			this.video2.removeVideoElement();
-			this.video2 = null;
-		}
-		if (this.video3) {
-			this.video3.destroy();
-			this.video3.removeVideoElement();
-			this.video3 = null;
-		}
-	},
-
-	convertTimeinMinandSectoHrsMinsSecs: function (Hours1, Minutes1, Seconds1) {
-		console.log("inside convert time", Hours1, Minutes1, Seconds1);
-
-		const totalMinutes = Math.floor((parseInt(Seconds1) + parseInt(_this.timeInSeconds)) / 60) + (parseInt(Minutes1) + parseInt(_this.timeInMinutes));
-		const Seconds2 = (parseInt(Seconds1) + parseInt(_this.timeInSeconds)) % 60;
-
-		const Hours2 = Math.floor(totalMinutes / 60) + parseInt(Hours1);
-		const Minutes2 = totalMinutes % 60;
-
-		console.log("before adding");
-		console.log("totalMinutes", totalMinutes);
-		console.log("after adding");
-		console.log("Seconds2", Seconds2);
-		console.log("Hours2", Hours2);
-		console.log("Minutes2", Minutes2)
-
-		var save_assessment = {
-			game_id: _this.game_id,
-			totalLearningTimeinHrs: Hours2.toString(),
-			totalLearningTimeinMins: Minutes2.toString(),
-			totalLearningTimeinSecs: Seconds2.toString(),
-		}
-		console.log("save assessment", save_assessment);
-		if (_this.userHasPlayed == 1) {
-			BBplusplusdbDetails.updateRecordsUsingGameID(save_assessment);
-		}
-
-	}
 };

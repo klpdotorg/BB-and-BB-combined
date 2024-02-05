@@ -100,22 +100,7 @@ Game.selectgrade7MicroConceptScreen.prototype={
 
 			this.microConceptTopics(game,300,220,window.selctedLang.McTopicText1,"NUMBER SYSTEMS","tree1",0);
 			this.microConceptTopics(game,480,350,window.selctedLang.McTopicText2,"ALGEBRA","tree2",1);
-			this.microConceptTopics(game,670,220,window.selctedLang.McTopicText4,"GEOMETRY","tree3",2);
-			// this.microConceptTopics(game,860,320,window.selctedLang.McTopicText4,"GEOMETRY","tree4",3);
-			// this.microConceptTopics(game,110,320,window.selctedLang.McTopicText5,"DECIMALS","tree5",4);
-			//"conversionTitle":"CONVERSION",
-			// "NSD_3A_Screen":"1",
-			// "NSD_3B_Screen":"2",
-			// "NSD_2A_Screen":"3",
-			// "NSD_2B_Screen":"4",
-			// "NSD_1_Screen":"5",
-			// "NSD_6A_Screen":"6",
-			// "NSD_6B_Screen":"7",
-			// "NSD_4A_Screen":"8",
-			// "NSD_4B_Screen":"9"	,
-			// "NSD_4E_Screen":"10",
-			// "NSD_4C_Screen":"11",
-			// "NSD_4D_Screen":"12"		
+			this.microConceptTopics(game,670,220,window.selctedLang.McTopicText4,"GEOMETRY","tree3",2);	
 		}
 	},
 
@@ -197,9 +182,6 @@ Game.selectgrade7MicroConceptScreen.prototype={
                   return true;
                }
                else{
-               	//console.log("denied");
-               	//don nothing, continue.
-                  //document.write ("User does not want to continue!");
                   return false;
               }
 	},
@@ -243,15 +225,7 @@ Game.selectgrade7MicroConceptScreen.prototype={
 	        delete: true
 	    });
 
-
-		//downloader.init({folder: "www", fileSystem:window.directoryPath, unzip: true, delete: true});
-		//downloader.get(url);
-
 		this.downlodPopupGrp.visible = true;
-		//this.game.input.enabled = false;
-
-		//_this.downloading = true;
-		////alert(_this.downloading);
 
 		document.addEventListener("DOWNLOADER_downloadProgress", function(event){
 		  var data = event.data;
@@ -271,66 +245,26 @@ Game.selectgrade7MicroConceptScreen.prototype={
 
 		document.addEventListener("DOWNLOADER_downloadSuccess", function(event){
 		  var data = event.data;
-		  //console.log(data);
-		  //location.reload(); 
 		});
 
 		document.addEventListener("DOWNLOADER_unzipProgress", function(event){
 		  var data = event.data;
-		  //console.log(data);
-		  //_this.downloading = true;
 		  _this.downloadTxt.setText("Unzipping.... \n "+data[0]+"%");
 		});
 
 		document.addEventListener("DOWNLOADER_unzipSuccess", function(event){
 		  var data = event.data;
-		  //console.log(data);
-		  //target.frame = 0;
-		  //_this.downloading = false;
-
+	
 		  _this.downlodPopupGrp.visible = false;
 
 		  location.reload(); 
-		  
-		  //_this.setDownloadComplete(target);
-
-
-		  /*//alert(_this.downloading);
-		  if(target.name=="NUMBER SENSE")
-		{
-			_this.numberSense1Downloaded = true;
-		}
-		else if(target.name=="MEASUREMENT")
-		{
-			_this.measurement1Downloaded = true;
-		}
-		else if(target.name=="NUMBER OPERATIONS")
-		{
-			_this.numperoperation1Downloaded = true;
-		}
-
-		var retVal = confirm("Download complete do you want to reload the game?");
-               if( retVal == true ){
-               	  location.reload(); 
-                  //return true;
-               }
-               else{
-               	
-                  //return false;
-              }
-
-
-
-		  //_this.confirmReload();*/
+	
 		});
 
 		document.addEventListener("DOWNLOADER_unzipError", function(event){
 		  var data = event.data;
-		  //console.log(data);
-		  //alert("Error while unZipping");
 		  _this.downlodPopupGrp.visible = false;
-		  //alert("Download Failed please try again");
-		  //_this.game.input.enabled = true;
+	
 		});
 	},
 
@@ -350,22 +284,17 @@ Game.selectgrade7MicroConceptScreen.prototype={
 		}
 	},
 
-
-
 	confirmReload:function()
 	{
 			var retVal = confirm("Download complete do you want to reload the game?");
                if( retVal == true ){
                	  location.reload(); 
-                  //return true;
                }
                else{
-               	
-                  //return false;
+
               }
 	},
 
-	
 	shutdown:function()
 	{
 		document.removeEventListener("online", _this.syncTelFunc, false);

@@ -90,123 +90,7 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 				console.log(window.user.deviceid, "PRACTICE JS BACK BTN");
 
 				game.state.start('appLoginEditScreenbbpp', true, false, window.user, window.app_Mode);
-				// game.state.start('gameScreen',true,false);
-
-				// if(game && !exitOnce)
-				// {
-				//game.input.enabled = true;
-				//exitOnce = true;
-
-				// var exitGrp = game.add.group();
-
-				// var stageBg = game.add.graphics(0, 0);
-				// stageBg.lineStyle(0, 0xFFFFFF, 0.8);
-				// stageBg.beginFill(0xFFFFFF, 1);
-				// stageBg.drawRect(0, 0, 960, 540);
-				// stageBg.boundsPadding = 0;
-				// stageBg.alpha = 0.2;
-
-
-				// var exitBg = game.add.sprite(game.world.centerX, game.world.centerY, 'exitBg');
-				// exitBg.anchor.setTo(0.5);
-				// exitBg.inputEnabled = true;
-				// exitBg.input.priorityID = 2;
-
-
-				// var exitTxt = null;
-				// var okTxt = null;
-				// var cancelTxt = null;
-
-				// if (window.languageSelected == "Hindi") {
-				// 	exitTxt = "क्या गेम छोड़ना चाहते हो?";
-				// 	okTxt = "हाँ";
-				// 	cancelTxt = "नहीं";
-				// }
-				// else if (window.languageSelected == "Kannada") {
-				// 	exitTxt = "ನೀವು ಆಟದಿಂದ ನಿರ್ಗಮಿಸಲು \n ಬಯಸುತ್ತೀರಾ?";
-				// 	okTxt = "ಹೌದು";
-				// 	cancelTxt = "ಇಲ್ಲ";
-				// }
-				// else if (window.languageSelected == "Odiya") {
-				// 	exitTxt = "ଆପଣ ଖେଳ ଛାଡ଼ି ଯିବାକୁ ଚାହାନ୍ତି କି?";
-				// 	okTxt = "ହଁ";
-				// 	cancelTxt = "ନା";
-				// }
-				// else if (window.languageSelected == "Gujarati") {
-				// 	exitTxt = "તમે છોડવા માગો છો?";
-				// 	okTxt = "હા";
-				// 	cancelTxt = "ના";
-				// }
-				// else {
-				// 	exitTxt = "Do you want to quit?";
-				// 	okTxt = "Yes";
-				// 	cancelTxt = "No";
-				// }
-
-				// var exitText = game.add.text(game.world.centerX, game.world.centerY - 50, exitTxt);
-				// exitText.anchor.setTo(0.5);
-				// exitText.align = 'center';
-				// exitText.fontSize = 26;
-				// exitText.fontWeight = 'normal';
-				// exitText.fill = '#FFFFFF';
-
-				// var okBtn = game.add.sprite(game.world.centerX - 100, game.world.centerY + 50, 'confirmBg');
-				// okBtn.anchor.setTo(0.5);
-
-				// var okText = game.add.text(game.world.centerX - 100, game.world.centerY + 50, okTxt);
-				// okText.anchor.setTo(0.5);
-				// okText.align = 'center';
-				// okText.fontSize = 20;
-				// okText.fontWeight = 'normal';
-				// okText.fill = '#FFFFFF';
-
-				// var cancelBtn = game.add.sprite(game.world.centerX + 100, game.world.centerY + 50, 'confirmBg');
-				// cancelBtn.anchor.setTo(0.5);
-
-				// var cancelText = game.add.text(game.world.centerX + 100, game.world.centerY + 50, cancelTxt);
-				// cancelText.anchor.setTo(0.5);
-				// cancelText.align = 'center';
-				// cancelText.fontSize = 20;
-				// cancelText.fontWeight = 'normal';
-				// cancelText.fill = '#FFFFFF';
-
-				// exitGrp.add(stageBg);
-				// exitGrp.add(exitBg);
-				// exitGrp.add(exitText);
-				// exitGrp.add(okBtn);
-				// exitGrp.add(okText);
-				// exitGrp.add(cancelBtn);
-				// exitGrp.add(cancelText);
-
-				// // stageBg.inputEnabled = true;
-				// // stageBg.events.onInputDown.add(function(){
-
-				// // },game);
-
-				// okBtn.inputEnabled = true;
-				// okBtn.input.priorityID = 3;
-				// okBtn.events.onInputDown.add(function () {
-				// 	exitGrp.destroy();
-				// 	window.prevScreen = "";
-				// 	// exitOnce = false;
-				// 	//navigator.app.exitApp();
-				// 	//nativeApp.CloseApp();
-
-				// 	navigator.app.exitApp();
-				// }, game);
-
-				// cancelBtn.inputEnabled = true;
-				// cancelBtn.input.priorityID = 4;
-				// cancelBtn.events.onInputDown.add(function () {
-
-				// 	exitGrp.destroy();
-				// 	// exitOnce = false;
-				// }, game);
-
-				// //game.add.stage(exitGrp);
-
-				// // }
-
+				
 			}, _this);
 
 			this.gameProgressBtn = game.add.image(820, 18, 'userProgressIcon');//870, 18,
@@ -240,19 +124,6 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 				this.video = this.add.video('demo');
 
 			}
-
-			// this.helpIcon = game.add.image(820, 21, 'helpIcon');
-			// this.helpIcon.scale.setTo(0.8);
-			// this.helpIcon.anchor.setTo(0.5);
-			// this.helpIcon.inputEnabled = true;
-			// this.helpIcon.input.useHandCursor = true;
-			// // this.helpIcon.events.onInputDown.add(function()
-			// // {
-			// // 	this.clickSound = this.add.audio('ClickSound');
-			// // 	this.clickSound.play();
-			// // 	_this.scale.forceOrientation(false, true);
-			// // 	nativeApp.playHelp(this,"practiceModegradeSelectionScreenbbpp");
-			// // },this);
 
 			//adding grade clouds
 			_this.grade6Cloud = _this.add.sprite(220, 180, 'gradeCloud');
@@ -312,44 +183,6 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 			_this.grade8CloudTxt.wordWrap = true;
 			_this.grade8CloudTxt.wordWrapWidth = 500;
 
-			// _this.grade4Cloud = _this.add.sprite(250, 400, 'gradeCloud');
-			// _this.grade4Cloud.anchor.setTo(0.5);
-			// _this.grade4Cloud.name = "";
-			// _this.grade4Cloud.inputEnabled = true;
-			// _this.grade4Cloud.input.useHandCursor = true;
-			// //_this.grade4Cloud.events.onInputDown.add(_this.gradeSelected,_this);
-			// _this.grade4CloudTxt = this.add.text(240, 398, ' \n \n ');
-			// _this.grade4CloudTxt.anchor.setTo(0.5);
-			// _this.grade4CloudTxt.align = 'center';
-			// _this.grade4CloudTxt.font = 'gradefont';
-			// if (_this.languageSelected == "TM")
-			// 	_this.grade4CloudTxt.fontSize = 30;
-			// else
-			// 	_this.grade4CloudTxt.fontSize = 34;
-			// _this.grade4CloudTxt.fontWeight = 'normal';
-			// _this.grade4CloudTxt.fill = '#563814';
-			// _this.grade4CloudTxt.wordWrap = true;
-			// _this.grade4CloudTxt.wordWrapWidth = 500;
-
-			// _this.grade5Cloud = _this.add.sprite(700, 420, 'gradeCloud');
-			// _this.grade5Cloud.anchor.setTo(0.5);
-			// _this.grade5Cloud.name = "";
-			// _this.grade5Cloud.inputEnabled = true;
-			// _this.grade5Cloud.input.useHandCursor = true;
-			// //_this.grade5Cloud.events.onInputDown.add(_this.gradeSelected,_this);
-			// _this.grade5CloudTxt = this.add.text(690, 418, ' \n\n ');
-			// _this.grade5CloudTxt.anchor.setTo(0.5);
-			// _this.grade5CloudTxt.align = 'center';
-			// _this.grade5CloudTxt.font = 'gradefont';
-			// if (_this.languageSelected == "TM")
-			// 	_this.grade5CloudTxt.fontSize = 32;
-			// else
-			// 	_this.grade5CloudTxt.fontSize = 34;
-			// _this.grade5CloudTxt.fontWeight = 'normal';
-			// _this.grade5CloudTxt.fill = '#563814';
-			// _this.grade5CloudTxt.wordWrap = true;
-			// _this.grade5CloudTxt.wordWrapWidth = 500;
-
 			_this.graphicsBg = _this.add.graphics(0, 0);
 			_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
 			_this.graphicsBg.beginFill(0xF7D519, 0);
@@ -384,15 +217,11 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 			_this.graphicsBg.addChild(_this.grade6Cloud);
 			_this.graphicsBg.addChild(_this.grade7Cloud);
 			_this.graphicsBg.addChild(_this.grade8Cloud);
-			// _this.graphicsBg.addChild(_this.grade4Cloud);
-			// _this.graphicsBg.addChild(_this.grade5Cloud);
-
+	
 			_this.graphicsBg.addChild(_this.grade6CloudTxt);
 			_this.graphicsBg.addChild(_this.grade7CloudTxt);
 			_this.graphicsBg.addChild(_this.grade8CloudTxt);
-			// _this.graphicsBg.addChild(_this.grade4CloudTxt);
-			// _this.graphicsBg.addChild(_this.grade5CloudTxt);
-
+		
 		}
 
 	},
@@ -409,7 +238,6 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 		_this.grade7Cloud.events.onInputDown.removeAll();
 		_this.grade8Cloud.events.onInputDown.removeAll();
 		// _this.grade4Cloud.events.onInputDown.removeAll();
-
 
 		_this.clickSound = _this.add.audio('ClickSound');
 		_this.clickSound.play();
@@ -444,12 +272,10 @@ Game.practiceModegradeSelectionScreenbbpp.prototype = {
 		}
 	},
 
-
 	shutdown: function () {
 		window.currScreen = "";
 		document.removeEventListener("online", _this.syncTelFunc, false);
 	}
-
 
 };
 function successFunction() {

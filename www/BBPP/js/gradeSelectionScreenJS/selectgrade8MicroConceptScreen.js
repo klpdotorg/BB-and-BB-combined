@@ -42,33 +42,7 @@ Game.selectgrade8MicroConceptScreen.prototype={
 
 		_this = this;
 		selectgrade8MicroConcept = true;
-		// selectgrade2MicroConcept = false;
-		// selectgrade3MicroConcept = false;
-		// selectgrade4MicroConcept = false;
-		// selectgrade5MicroConcept = false;
-
-		// if(grade8NumberSystemsSelected)
-		// {
-		// 	this.state.start('grade8NumberSystems',true,false);
-		// }
-		// else if(grade8AlgebraSelected)
-		// {
-		// 	this.state.start('grade8Algebra',true,false);
-		// }
-		// else if(grade6RatioandProportionSelected)
-		// {
-		// 	this.state.start('grade6RatioandProportion',true,false);
-		// }
-		// else if(grade8GeometrySelected)
-		// {
-		// 	this.state.start('grade8Geometry',true,false);
-		// }
-		// // else if(grade6DecimalsSelected)
-		// // {
-		// // 	this.state.start('grade6Decimals',true,false);
-		// // }
-		// else
-		//{
+		
 			app.gradeScreen = true;
 			game.input.enabled = true;
 			this.gradeTree = [];
@@ -101,22 +75,6 @@ Game.selectgrade8MicroConceptScreen.prototype={
 			this.microConceptTopics(game,300,220,window.selctedLang.McTopicText1,"NUMBER SYSTEMS","tree1",0);
 			this.microConceptTopics(game,480,350,window.selctedLang.McTopicText2,"ALGEBRA","tree2",1);
 			this.microConceptTopics(game,670,220,window.selctedLang.McTopicText4,"GEOMETRY","tree3",2);
-			// this.microConceptTopics(game,860,320,window.selctedLang.McTopicText4,"GEOMETRY","tree4",3);
-			// this.microConceptTopics(game,110,320,window.selctedLang.McTopicText5,"DECIMALS","tree5",4);
-			//"conversionTitle":"CONVERSION",
-			// "NSD_3A_Screen":"1",
-			// "NSD_3B_Screen":"2",
-			// "NSD_2A_Screen":"3",
-			// "NSD_2B_Screen":"4",
-			// "NSD_1_Screen":"5",
-			// "NSD_6A_Screen":"6",
-			// "NSD_6B_Screen":"7",
-			// "NSD_4A_Screen":"8",
-			// "NSD_4B_Screen":"9"	,
-			// "NSD_4E_Screen":"10",
-			// "NSD_4C_Screen":"11",
-			// "NSD_4D_Screen":"12"		
-		//}
 	},
 
 	microConceptTopics:function(game,x,y,lang,name,key,arrIndex)
@@ -167,132 +125,6 @@ Game.selectgrade8MicroConceptScreen.prototype={
 			this.state.start('grade8NumberSystems',true,false);
 		}			
 	},
-
-	// checkDownload:function(dirPath,stateName,url,target,_this)
-	// {
-
-	// 	window.resolveLocalFileSystemURL(dirPath, 
-	// 		function(){
-	// 			//alert("scucess");
-	// 			_this.state.start(stateName,true,false);
-	// 			return true;
-	// 		}, 
-	// 		function(){
-	// 			//alert("failure");
-	// 			_this.downloadTheFile(url,target);
-	// 			return false;
-	// 		});
-	// },
-
-
-	// confirmation:function(url,target)
-	// {
-	// 	var retVal = confirm("Abort previous download and Download this files?");
-    //            if( retVal == true ){
-
-    //            		if(downloader && this.downloading)
-    //            			downloader.abort();
-
-    //            	 this.downloadTheFile(url,target);
-    //               return true;
-    //            }
-    //            else{
-    //            	//console.log("denied");
-    //            	//don nothing, continue.
-    //               //document.write ("User does not want to continue!");
-    //               return false;
-    //           }
-	// },
-
-	// checkDirExistsorNot:function(dirPath,target)
-	// {
-	// 	////alert(dirPath);
-	// 	window.resolveLocalFileSystemURL(dirPath, 
-	// 		function(){
-	// 			//alert("scucess");
-	// 			target.frame = 0;
-	// 			return true;
-	// 		}, 
-	// 		function(){
-	// 			//alert("failure");
-	// 			target.frame = 1;
-	// 			return false;
-	// 		});
-	// },
-
-	// downloadTheFile:function(url,target)
-	// {
-	// 	var _this = this;
-	// 	////alert("here download");
-
-	// 	var initialized = function (event) {
-	//         downloader.get(url);
-	//         event.target.removeEventListener(event.name, initialized);
-	//     };
-
-	//     document.addEventListener('DOWNLOADER_initialized', initialized);
-
-	//     	downloader.init({
-	//         folder: 'www',
-	//         fileSystem: window.directoryPath,
-	//         unzip: true,
-	//         check: false,
-	//         noMedia: true,
-	//         wifiOnly: false,
-	//         delete: true
-	//     });
-
-	// 	this.downlodPopupGrp.visible = true;
-
-	// 	document.addEventListener("DOWNLOADER_downloadProgress", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	 // _this.downloading = true;
-	// 	 	_this.downloadTxt.setText("Downloading.... \n "+data[0]+"%");
-	// 	});
-
-
-	// 	document.addEventListener("DOWNLOADER_downloadError", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	  _this.downlodPopupGrp.visible = false;
-	// 	  alert("Download Failed please try again");
-	// 	  //_this.game.input.enabled = true;
-	// 	});
-
-	// 	document.addEventListener("DOWNLOADER_downloadSuccess", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	  //location.reload(); 
-	// 	});
-
-	// 	document.addEventListener("DOWNLOADER_unzipProgress", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	  //_this.downloading = true;
-	// 	  _this.downloadTxt.setText("Unzipping.... \n "+data[0]+"%");
-	// 	});
-
-	// 	document.addEventListener("DOWNLOADER_unzipSuccess", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	  //target.frame = 0;
-	// 	  //_this.downloading = false;
-
-	// 	  _this.downlodPopupGrp.visible = false;
-
-	// 	  location.reload(); 
-	// 	});
-
-	// 	document.addEventListener("DOWNLOADER_unzipError", function(event){
-	// 	  var data = event.data;
-	// 	  //console.log(data);
-	// 	  //alert("Error while unZipping");
-	// 	  _this.downlodPopupGrp.visible = false;
-	// 	  //alert("Download Failed please try again");
-	// 	  //_this.game.input.enabled = true;
-	// 	});
-	// },
 
 	shutdown:function()
 	{
