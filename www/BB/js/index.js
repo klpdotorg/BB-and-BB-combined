@@ -56,7 +56,8 @@ var app = {
 
   preload: function (game) {
     game.load.video('demo', './demo.mp4');
-    game.load.image('splash', 'BBPP/assets/splash.png');
+    game.load.image('splash', 'BB/assets/splash.png');
+    // game.load.image('splash', 'BBPP/assets/splash.png');
     game.load.image('helpIcon', './helpIcon.png');
     game.load.image('closeIcon', './closeIcon.png');
     game.load.image('registrationbg_1', 'BBPP/assets/registrationbg.png');
