@@ -8,20 +8,20 @@
   },
   "installed_plugins": {
     "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-androidx-adapter": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-file": {
       "ANDROIDX_WEBKIT_VERSION": "1.4.0",
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-firebasex": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
@@ -47,39 +47,39 @@
       "ANDROID_GSON_VERSION": "2.9.0",
       "ANDROID_FIREBASE_PERF_GRADLE_PLUGIN_VERSION": "1.4.1",
       "ANDROID_GRPC_OKHTTP": "1.46.0",
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-fullscreen": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-native-spinner": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-plugin-zip": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     },
     "nl.madebymark.share": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     }
   },
   "dependent_plugins": {
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.akshara.BuildngBlocks"
+      "PACKAGE_NAME": "com.akshara.BuildingBlocks"
     }
   }
 }

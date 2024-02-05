@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "buildingblocks.jks",
+            "storePassword": "buildingblock",
+            "alias": "buildingblocks",
+            "password" : "buildingblock",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "buildingblocks.jks",
+            "storePassword": "buildingblock",
+            "alias": "buildingblocks",
+            "password" : "buildingblock",
+            "keystoreType": "jks"
+        }
+    }
+}

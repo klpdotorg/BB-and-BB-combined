@@ -471,9 +471,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:507559977821:android:43931841d9be4ff14c3eb4",
+        "mobilesdk_app_id": "1:507559977821:android:0cff56fde4d12c484c3eb4",
         "android_client_info": {
-          "package_name": "com.akshara.BuildngBlocks"
+          "package_name": "com.akshara.BuildingBlocks"
         }
       },
       "oauth_client": [
