@@ -26,9 +26,6 @@ var telInitializer2 = {
 	    	start_time: this.timeSaveFunc(),
 	    	hints: "0"
 	    };
-
-	    //this.saveGameplayReturnedValue = abbchmprmdsjsapi.chm_saveGameplay(saveGamePlayObj);
-
 	},
 
 
@@ -47,24 +44,11 @@ var telInitializer2 = {
 			avatarname: this.avatarName, 
 	    	deviceid: this.deviceId 
 	    };
-			
-	    //abbchmprmdsjsapi.chm_saveAssessment(saveAsmentObj);
-
+		
 	},
 
 	tele_saveWallet:function(score)
 	{
-
-		/*this.saveWallet = 
-	    { 
-			avatarname: this.avatarName, 
-	    	deviceid: this.deviceId,
-	    	score:window.score,
-	    	datetime_lastupdated:this.timeSaveFunc()
-	    };*/
-			
-	    //abbchmprmdsjsapi.chm_saveWalletscore(saveWallet);
-
 	},
 
 	syncToServer:function(hint)

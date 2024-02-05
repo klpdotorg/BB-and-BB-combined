@@ -57,21 +57,7 @@ Game.videoSkip.prototype={
 				window.parent = null;
 				_this.state.start('gameModeSelectionScreen',true,false);
 			},false);
-			/*_this.skipDemos = game.add.sprite(803,423,'skipDemoVideos');
-			_this.skipDemos.inputEnabled = true;
-			_this.skipDemos.events.onInputDown.add(function(){
-				_this.skipDemos.destroy();
-				window.demo.pause();
-				window.demo.src = "";
-				window.demo.remove();
-				window.parent.remove();
-				window.demo = null;
-				window.parent = null;
-				_this.state.start('gameModeSelectionScreen',true,false);	
-						
-			},_this);
-			_this.stage.add(_this.skipDemos);
-			window.parent.style.zIndex = -1;*/
+			
 		}
 	},
 
