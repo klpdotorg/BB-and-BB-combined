@@ -870,192 +870,6 @@ Game.preloader.prototype = {
 
         this.challengeModeAssets();
 
-
-
-
-        /*_this.addgame1_1AAssets();
-        _this.addgame2_1AAssets();
-        _this.addgame2_1BAssets();
-        _this.addgame2_2Assets();
-        _this.addgame2_3Assets();
-        _this.addgame3_1Assets();
-        _this.addgame3_2AAssets();
-    	
-        _this.addgame1_1BAssets();
-        _this.addgame1_2AAssets();
-        _this.addgame1_2BAssets();
-        _this.addgame1_3AAssets();
-        _this.addgame1_3BAssets();
-        _this.addgame1_4Assets();
-        _this.addgame2_4AAssets();
-        _this.addgame3_2BAssets();
-        _this.addgame3_2CAssets();
-        _this.addgame3_3AAssets();
-        _this.addgame3_3B1Assets();
-        _this.addgame3_3B2Assets();
-    	
-        _this.addgame4_1AAssets();
-        _this.addgame4_2AAssets();
-        _this.addgame4_2BAssets();
-        _this.addgame4_2CAssets();
-        _this.addgame4_3AAssets();
-
-        _this.addgame5_1Assets();
-
-        _this.addgame5_2Assets();
-        _this.addgame5_4Assets();
-
-        _this.addgame6_1Assets();
-        _this.addgame6_2Assets();
-
-        _this.addgame7_1Assets();
-        _this.addgame7_2Assets();
-
-        //Unity games...
-        _this.addunitygame1_1Assets();
-        _this.addunitygame1_2Assets();
-        _this.addunitygame1_3Assets();
-        _this.addunitygame1_4Assets();
-        _this.addunitygame1_5Assets();
-        _this.addunitygame1_6Assets();
-        _this.addunitygame1_7Assets();
-
-    	
-        _this.addunitygame2_1_1Assets();
-    	
-
-        _this.addunitygame2_6_1Assets();
-        //_this.addunitygame2_6_2Assets();
-        //_this.addunitygame2_6_3Assets();
-
-        _this.addunitygame4_1Assets();
-        _this.addunitygame4_2Assets();
-
-        _this.addunitygame3_1_1AAssets();
-        //_this.addunitygame3_1_1BAssets();
-
-    	
-        _this.addunitygame4_1_1Assets();
-        _this.addunitygame4_2_2Assets();
-        _this.addunitygame4_2_3Assets();
-        _this.addunitygame4_3_1Assets();
-        _this.addunitygame4_4_1Assets();
-        _this.addunitygame4_6_1Assets();
-        //_this.addunitygame4_6_2Assets();
-
-    	
-        _this.addunitygame5_1Assets();
-        _this.addunitygame6_1Assets();
-
-        _this.addunitygame7_2_1Assets();
-        //_this.addunitygame7_2_2Assets1();
-        //_this.addunitygame7_2_3Assets1();
-
-        _this.addunitygame8_1Assets();
-
-        _this.addunitygame10_1_1Assets();
-        //_this.addunitygame10_2_1Assets();
-
-        _this.addunitygame11_1Assets();
-        //_this.addunitygame11_2Assets();
-
-        _this.addunitygame12_1Assets();
-        _this.addunitygame12_2Assets();
-
-        _this.addunitygame12_3_1Assets();
-        //_this.addunitygame12_3_2Assets();
-        //_this.addunitygame12_3_3Assets();
-
-        _this.addunitygame13_1Assets();
-        _this.addunitygame14_1Assets();
-        _this.addunitygame14_2Assets();
-
-        _this.addunitygame15_1Assets();
-        _this.addunitygame16_1Assets();
-
-        this.challengeModeAssets();
-
-
-        this.addsg1_1_1Assets();
-        this.addsg2_1_1Assets();
-        this.addsg2_2_1Assets();
-        this.addsg3_1_1Assets();
-        this.addsg3_2_1Assets();
-        this.addsg4_1_1Assets();
-        this.addsg4_2_1Assets();
-
-        this.addsg5_1_2Assets();
-        this.addsg7_1_2Assets();
-        this.addsg7_2_2Assets();
-        this.addsg7_2_2xAssets();
-        this.addsg8_1_2Assets();
-        this.addsg8_2_2Assets();
-        this.addsg8_2_2xAssets();
-
-
-        this.addsg11_1_3Assets();
-        this.addsg12_1_3Assets();
-        this.addsg14_1_3Assets();
-        this.addsg15_1_3Assets();
-        this.addsg15_2_3Assets();
-
-        this.addsg16_1_4Assets();
-        this.addsg16_2_4Assets();
-        this.addsg17_1_4Assets();
-        this.addsg20_1_4Assets();
-        this.addsg20_2_4Assets();
-        this.addsg24_1_4Assets();
-        this.addsg24_2_4Assets();
-
-        this.addsg21_1_5Assets();
-        this.addsg21_2_5Assets();
-        this.addsg21_3_5Assets();
-        this.addsg22_1_5Assets();
-        this.addsg23_1_5Assets();
-
-        this.addsg21_3_6Assets();
-
-
-        this.addnsf1_4Assets();
-        this.addnsf2_4Assets();
-        this.addnsf3_4Assets();
-
-        this.addnsf1_5Assets();
-        this.addnsf2_5Assets();
-        this.addnsf3_5Assets();
-        this.addnsf4_5Assets();
-        this.addnsf5_5Assets();
-
-        this.addnsd1_5Assets();
-        this.addnsd2_5Assets();
-        this.addnsd4_5Assets();
-        this.addnsd5_5Assets();
-        this.addnsd6_5Assets();
-
-
-        //_this.addunitygame16_2Assets();
-        //_this.addunitygame16_3Assets();
-
-    	
-        /*_this.preloadBar.x = 10;
-        _this.preloadBar.animations.add('swim', 0, 30, true);
-        _this.preloadBar.animations.play('swim');*/
-
-        /*_this.timer = this.time.create(false);
-
-        _this.timer.loop(2000, function(){
-
-            if(_this.preloadBar.key == "preloadBar")
-             _this.preloadBar.loadTexture('preloadBar2', 0);
-            else 
-             _this.preloadBar.loadTexture('preloadBar', 0);
-
-              _this.preloadBar.animations.add('swim', 0, 30, true);
-            _this.preloadBar.animations.play('swim');
-        }, _this);
-             _this.timer.start();*/
-
-
         this.loadjscssfile("BB/js/gradeSelectionScreenJS/measurement1.js", "js");
         this.loadjscssfile("BB/js/gradeSelectionScreenJS/measurement2.js", "js");
         this.loadjscssfile("BB/js/gradeSelectionScreenJS/measurement3.js", "js");
@@ -1323,203 +1137,6 @@ Game.preloader.prototype = {
 
         this.loadCommonAssets1();
 
-        /*//Unity games...
-        this.addgame4_1AAssets();
-
-        //Unity games...
-        _this.addgame4_2AAssets();
-        _this.addgame4_2BAssets();
-        _this.addgame4_2CAssets();
-
-        //Unity games...
-        _this.addgame4_3AAssets();
-
-        _this.addgame6_1Assets();
-        _this.addgame6_2Assets();
-
-        //Unity games...
-        _this.addgame7_1Assets();
-        _this.addgame7_2Assets();
-
-        _this.addgame2_3Assets();  
-
-        _this.addgame2_1BAssets();
-        _this.addgame2_2Assets();
-
-        _this.addgame2_4AAssets();
-
-        _this.addgame3_2Assets();
-
-        _this.addgame3_2BAssets();
-        _this.addgame3_2CAssets();
-
-        _this.addgame3_3AAssets();
-        _this.addgame3_3B1Assets();
-        _this.addgame3_3B2Assets();
-
-        //Unity games...
-        _this.addgame5_1Assets();
-        _this.addgame5_2Assets();
-        _this.addgame5_4Assets();
-
-        //Unity games...
-        _this.gradeAssets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame1_4Assets();
-        _this.addgame1_5Assets();
-
-        //Unity games...
-        this.gradeAssets2();
-
-        _this.addunitygame2_4_1Assets();
-        _this.addunitygame2_4_1aAssets();
-       // _this.addunitygame2_5_1Assets();
-       // _this.addunitygame2_5_1aAssets();
-        _this.addunitygame2_6_1Assets();
-
-        _this.addunitygame2_3_2aAssets();
-        _this.addunitygame2_1_2Assets();
-        _this.addunitygame2_1_2aAssets();
-        _this.addunitygame2_2_2Assets();
-        _this.addunitygame2_2_2aAssets();
-        _this.addunitygame2_3_2Assets();
-        _this.addunitygame2_3_2aAssets();
-
-        //Unity games...
-        this.gradeAssets3();
-
-        //Unity games...
-        this.gradeAssets4();
-
-        //Unity games...
-        this.gradeAssets5();
-
-        //Unity games...
-        this.gradeAssets6();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame4_4_1Assets();
-        _this.addgame4_5_1Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame4_4_2Assets();
-        _this.addgame4_5_2Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame4_4_3Assets();
-        _this.addgame4_5_3Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame1_1AAssets();
-        _this.addgame1_1BAssets();	
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame1_2AAssets();
-        _this.addgame1_2BAssets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addgame1_3AAssets();
-        _this.addgame1_3BAssets();
-
-        //Unity games...
-        _this.addgame1_4Assets2();
-
-        //Unity games...
-        //this.gradeAssets();
-        this.addgame1_6Assets();
-        this.addgame2_6_1Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame3_1_1Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame3_1_1Assets2();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame3_1_2Assets();
-
-        //Unity games...
-        //this.gradeAssets();
-        this.addgame4_6_1Assets();
-
-        //Unity games...
-        //this.gradeAssets();
-        this.addgame4_6_2Assets();
-
-        //Unity games...
-        _this.gradeAssets7();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame7_2_1Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame7_2_2Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame7_2_3Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame10_1_11Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame10_1_12Assets();
-         
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame10_1_13Assets();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame10_1_14Assets();
-
-        _this.addunitygame16_1Assets();
-        _this.addunitygame16_2Assets();
-
-         _this.addunitygame15_1Assets();	
-
-         _this.addgame16_3Assets();
-
-         //Unity games...
-        _this.gradeAssets8();
-
-        //Unity games...
-        this.gradeAssets9();
-
-        //Unity games...
-        this.gradeAssets10();
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame12_1Assets();
-        _this.addunitygame12_2Assets();
-
-
-        //Unity games...
-        //_this.gradeAssets();
-        _this.addunitygame12_3_2Assets();
-        _this.addunitygame12_3_3Assets();
-        _this.addunitygame13_1Assets();
-
-        //Unity games...
-        this.gradeAssets11();
-    	
-        */
     },
 
 
@@ -1589,19 +1206,6 @@ Game.preloader.prototype = {
     progress1: function (progress, cacheKey, success, totalLoaded, totalFiles) {
 
 
-        /*if(progress<=10)
-        {
-            //this.preloadBar.frame = 5;
-
-            _this.preloadBar.animations.add('swim', [0,1,2,3,4,5], 30, true);
-            //_this.preloadBar.animations.play('swim');
-        }
-        else if(progress<=50)
-        {
-            _this.preloadBar.animations.add('swim', [6,7,8,9,10,11,12,13,14,15], 30, true);
-            //_this.preloadBar.animations.play('swim');
-        }*/
-
 
         if (progress == 8) {
             _this.tween = _this.add.tween(_this.preloadBar);
@@ -1644,60 +1248,6 @@ Game.preloader.prototype = {
     progress2: function (progress, cacheKey, success, totalLoaded, totalFiles) {
 
 
-        /*if(progress<=10)
-        {
-            //this.preloadBar.frame = 5;
-
-            _this.preloadBar.animations.add('swim', [0,1,2,3,4,5], 30, true);
-            //_this.preloadBar.animations.play('swim');
-        }
-        else if(progress<=50)
-        {
-            _this.preloadBar.animations.add('swim', [6,7,8,9,10,11,12,13,14,15], 30, true);
-            //_this.preloadBar.animations.play('swim');
-        }*/
-
-
-        /*if(progress==8)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 120 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==25)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 240 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==37)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 360 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==50)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 480 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==62)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 600 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==75)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 720 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==85)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 820 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }
-        else if(progress==92)
-        {
-            _this.tween = _this.add.tween(_this.preloadBar);
-            _this.tween.to({ x: 1000 }, 0, Phaser.Easing.Sinusoidal.InOut, true, 0);
-        }*/
         if (progress == 10) {
             if (_this.once) {
                 _this.once = false;
@@ -2156,13 +1706,7 @@ Game.preloader.prototype = {
 
     addgradeSelectionAssets: function () {
         _this.load.atlas('MicroConceptTree', window.baseUrl + 'assets/gradeSelectionScreenAssets/microConceptTree.png', window.baseUrl + 'json/gradeSelectionScreenJson/microConceptTree.json');
-        /*
-        _this.load.atlas('tree1',window.baseUrl+'assets/gradeSelectionScreenAssets/tree1.png',window.baseUrl+'assets/gradeSelectionScreenAssets/tree1.json');	
-        _this.load.atlas('tree2',window.baseUrl+'assets/gradeSelectionScreenAssets/tree2.png',window.baseUrl+'assets/gradeSelectionScreenAssets/tree2.json');	
-        _this.load.atlas('tree3',window.baseUrl+'assets/gradeSelectionScreenAssets/tree3.png',window.baseUrl+'assets/gradeSelectionScreenAssets/tree3.json');	
-        _this.load.atlas('tree4',window.baseUrl+'assets/gradeSelectionScreenAssets/tree4.png',window.baseUrl+'assets/gradeSelectionScreenAssets/tree4.json');	
-        _this.load.atlas('tree5',window.baseUrl+'assets/gradeSelectionScreenAssets/tree5.png',window.baseUrl+'assets/gradeSelectionScreenAssets/tree5.json');	
-        */
+
         _this.load.image('McBg', window.baseUrl + 'assets/gradeSelectionScreenAssets/McBg.png');
         _this.load.image('gameselectBg', window.baseUrl + 'assets/gradeSelectionScreenAssets/gradeSelectBg.png');
         //_this.load.atlas('gradeSceneBackBtn',window.baseUrl+'assets/gradeSelectionScreenAssets/gradeSceneBackBtn.png',window.baseUrl+'json/gradeSelectionScreenJson/gradeSceneBackBtn.json');		
@@ -2978,181 +2522,6 @@ Game.preloader.prototype = {
     },
 
     addgame2_3Assets: function () {
-        /*_this.load.image('Level23_bg1',window.baseUrl+'assets/gradeAssets/2.3/bg1.png');
-        _this.load.image('Level23_bg3',window.baseUrl+'assets/gradeAssets/2.3/bg3.png');
-        //_this.load.image('Level23_title',window.baseUrl+'assets/gradeAssets/2.3/title.png');
-       // _this.load.image('Level23_tittleBaar',window.baseUrl+'assets/gradeAssets/2.3/tittleBaar.png');
-       // _this.load.atlas('Level23_replay',window.baseUrl+'assets/gradeAssets/2.3/reply.png' ,window.baseUrl+'json/gradeJson/2.3/reply.json');
-       // _this.load.atlas('Level23_btn',window.baseUrl+'assets/gradeAssets/2.3/btn.png',window.baseUrl+'json/gradeJson/2.3/btn.json');
-     
-        //_this.load.atlas('Level23_backbtn',window.baseUrl+'assets/gradeAssets/2.3/backbtn.png' ,window.baseUrl+'json/gradeJson/2.3/backbtn.json');
-        //_this.load.atlas('Level23_speaker',window.baseUrl+'assets/gradeAssets/2.3/speaker.png' ,window.baseUrl+'json/gradeJson/2.3/speaker.json');
-        //_this.load.atlas('Level23_starAnim',window.baseUrl+'assets/gradeAssets/2.3/starAnim.png',window.baseUrl+'json/gradeJson/2.3/starAnim.json');
-  
-        _this.load.atlas('Level23_numberbtn1',window.baseUrl+'assets/gradeAssets/2.3/numberbtn1.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn1.json');
-        _this.load.atlas('Level23_numberbtn2',window.baseUrl+'assets/gradeAssets/2.3/numberbtn2.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn2.json');
-        _this.load.atlas('Level23_numberbtn3',window.baseUrl+'assets/gradeAssets/2.3/numberbtn3.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn3.json');
-        _this.load.atlas('Level23_numberbtn4',window.baseUrl+'assets/gradeAssets/2.3/numberbtn4.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn4.json');
-        _this.load.atlas('Level23_numberbtn5',window.baseUrl+'assets/gradeAssets/2.3/numberbtn5.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn5.json');
-        _this.load.atlas('Level23_numberbtn6',window.baseUrl+'assets/gradeAssets/2.3/numberbtn6.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn6.json');
-        _this.load.atlas('Level23_numberbtn7',window.baseUrl+'assets/gradeAssets/2.3/numberbtn7.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn7.json');
-        _this.load.atlas('Level23_numberbtn8',window.baseUrl+'assets/gradeAssets/2.3/numberbtn8.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn8.json');
-        _this.load.atlas('Level23_numberbtn9',window.baseUrl+'assets/gradeAssets/2.3/numberbtn9.png' ,window.baseUrl+'json/gradeJson/2.3/numberbtn9.json');
-        
-        _this.load.atlas('Level23_tree1',window.baseUrl+'assets/gradeAssets/2.3/tree1.png' ,window.baseUrl+'json/gradeJson/2.3/tree1.json');
-        _this.load.image('Level23_leaf1',window.baseUrl+'assets/gradeAssets/2.3/leaf1.png');
-        _this.load.image('Level23_line1',window.baseUrl+'assets/gradeAssets/2.3/line1.png');
-        _this.load.atlas('Level23_leaf',window.baseUrl+'assets/gradeAssets/2.3/leaf.png' ,window.baseUrl+'json/gradeJson/2.3/leaf.json');
-        
-        _this.load.atlas('Level23_pencil',window.baseUrl+'assets/gradeAssets/2.3/pencil.png' ,window.baseUrl+'json/gradeJson/2.3/pencil.json');
-        _this.load.image('Level23_cutter1',window.baseUrl+'assets/gradeAssets/2.3/cutter1.png');
-        _this.load.atlas('Level23_cutters',window.baseUrl+'assets/gradeAssets/2.3/cutters.png' ,window.baseUrl+'json/gradeJson/2.3/cutters.json');
-        
-        _this.load.atlas('Level23_crocodile',window.baseUrl+'assets/gradeAssets/2.3/crocodile.png' ,window.baseUrl+'json/gradeJson/2.3/crocodile.json');
-        _this.load.atlas('Level23_crocs',window.baseUrl+'assets/gradeAssets/2.3/crocs.png' ,window.baseUrl+'json/gradeJson/2.3/crocs.json');
-        _this.load.image('Level23_line2',window.baseUrl+'assets/gradeAssets/2.3/line2.png');
-        _this.load.image('Level23_crocodile1',window.baseUrl+'assets/gradeAssets/2.3/crocodile1.png');
-        
-        _this.load.atlas('Level23_snake',window.baseUrl+'assets/gradeAssets/2.3/Snake.png' ,window.baseUrl+'json/gradeJson/2.3/Snake.json');
-        _this.load.atlas('Level23_buggs',window.baseUrl+'assets/gradeAssets/2.3/Buggs.png' ,window.baseUrl+'json/gradeJson/2.3/Buggs.json');
-        _this.load.image('Level23_bug1',window.baseUrl+'assets/gradeAssets/2.3/bug1.png');
-        
-        _this.load.atlas('Level23_Window',window.baseUrl+'assets/gradeAssets/2.3/Window.png' ,window.baseUrl+'json/gradeJson/2.3/window.json');
-        _this.load.atlas('Level23_palms',window.baseUrl+'assets/gradeAssets/2.3/palms.png' ,window.baseUrl+'json/gradeJson/2.3/palms.json');
-        _this.load.image('Level23_palm1',window.baseUrl+'assets/gradeAssets/2.3/palm1.png');
-        
-        _this.load.atlas('Level23_petrol',window.baseUrl+'assets/gradeAssets/2.3/petrol.png' ,window.baseUrl+'json/gradeJson/2.3/petrol.json');
-        _this.load.atlas('Level23_petrol111',window.baseUrl+'assets/gradeAssets/2.3/petrol111.png' ,window.baseUrl+'json/gradeJson/2.3/petrol111.json');
-         _this.load.atlas('Level23_petrolbooth',window.baseUrl+'assets/gradeAssets/2.3/petrolbooth.png' ,window.baseUrl+'json/gradeJson/2.3/petrolbooth.json');
-        
-        _this.load.atlas('Level23_tablebox',window.baseUrl+'assets/gradeAssets/2.3/tablebox.png' ,window.baseUrl+'json/gradeJson/2.3/tablebox.json');
-        
-        _this.load.atlas('Level23_Can',window.baseUrl+'assets/gradeAssets/2.3/Can.png' ,window.baseUrl+'json/gradeJson/2.3/Can.json');
-        _this.load.image('Level23_Line8',window.baseUrl+'assets/gradeAssets/2.3/Line8.png');
-        
-        _this.load.atlas('Level23_Shoes',window.baseUrl+'assets/gradeAssets/2.3/Shoes.png' ,window.baseUrl+'json/gradeJson/2.3/Shoes.json');
-        _this.load.atlas('Level23_palm22',window.baseUrl+'assets/gradeAssets/2.3/palm22.png' ,window.baseUrl+'json/gradeJson/2.3/palm22.json');
-        _this.load.image('Level23_Line9',window.baseUrl+'assets/gradeAssets/2.3/Line9.png');
-        _this.load.image('Level23_palm2',window.baseUrl+'assets/gradeAssets/2.3/palm2.png');
-        
-        _this.load.atlas('Level23_soffa',window.baseUrl+'assets/gradeAssets/2.3/Soffa.png' ,window.baseUrl+'json/gradeJson/2.3/Soffa.json');
-        _this.load.image('Level23_Line10',window.baseUrl+'assets/gradeAssets/2.3/Line10.png');      
-                
-        _this.load.atlas('Level23_Longtable',window.baseUrl+'assets/gradeAssets/2.3/Longtable.png' ,window.baseUrl+'json/gradeJson/2.3/Longtable.json');
-        _this.load.image('Level23_Line11',window.baseUrl+'assets/gradeAssets/2.3/Line11.png');    
-        
-        _this.load.atlas('Level23_Suitcase',window.baseUrl+'assets/gradeAssets/2.3/Suitcase.png' ,window.baseUrl+'json/gradeJson/2.3/Suitcase.json');
-        _this.load.image('Level23_Line12',window.baseUrl+'assets/gradeAssets/2.3/Line12.png'); 
-        
-        
-          _this.load.atlas('Level23_Car',window.baseUrl+'assets/gradeAssets/2.3/Car.png' ,window.baseUrl+'json/gradeJson/2.3/Car.json');
-        _this.load.atlas('Level23_hand',window.baseUrl+'assets/gradeAssets/2.3/hand.png' ,window.baseUrl+'json/gradeJson/2.3/hand.json');
-        _this.load.image('Level23_Line13',window.baseUrl+'assets/gradeAssets/2.3/Line13.png');
-        _this.load.image('Level23_hand1',window.baseUrl+'assets/gradeAssets/2.3/hand1.png');
-        
-         
-          _this.load.atlas('Level23_gate',window.baseUrl+'assets/gradeAssets/2.3/gate.png' ,window.baseUrl+'json/gradeJson/2.3/gate.json');
-        _this.load.image('Level23_Line14',window.baseUrl+'assets/gradeAssets/2.3/Line14.png');
-            
-                 _this.load.atlas('Level23_Table',window.baseUrl+'assets/gradeAssets/2.3/Table.png' ,window.baseUrl+'json/gradeJson/2.3/Table.json');
-        _this.load.image('Level23_Line15',window.baseUrl+'assets/gradeAssets/2.3/Line15.png');
-            
-            _this.load.atlas('Level23_rope',window.baseUrl+'assets/gradeAssets/2.3/rope.png' ,window.baseUrl+'json/gradeJson/2.3/rope.json');
-        _this.load.image('Level23_Line16',window.baseUrl+'assets/gradeAssets/2.3/Line16.png');
-        
-                _this.load.atlas('Level23_Chair',window.baseUrl+'assets/gradeAssets/2.3/Chair.png' ,window.baseUrl+'json/gradeJson/2.3/Chair.json');
-        _this.load.atlas('Level23_hand11',window.baseUrl+'assets/gradeAssets/2.3/hand11.png' ,window.baseUrl+'json/gradeJson/2.3/hand11.json');
-        _this.load.image('Level23_Line17',window.baseUrl+'assets/gradeAssets/2.3/Line17.png');
-        _this.load.image('Level23_hand111',window.baseUrl+'assets/gradeAssets/2.3/hand111.png');
-        
-             _this.load.atlas('Level23_door',window.baseUrl+'assets/gradeAssets/2.3/door.png' ,window.baseUrl+'json/gradeJson/2.3/door.json');
-        _this.load.image('Level23_Line18',window.baseUrl+'assets/gradeAssets/2.3/Line18.png');
-        
-        
-            _this.load.atlas('Level23_flower',window.baseUrl+'assets/gradeAssets/2.3/flower.png' ,window.baseUrl+'json/gradeJson/2.3/flower.json');
-        _this.load.image('Level23_Line19',window.baseUrl+'assets/gradeAssets/2.3/Line19.png');
-        
-        
-            _this.load.atlas('Level23_flower1',window.baseUrl+'assets/gradeAssets/2.3/flower1.png' ,window.baseUrl+'json/gradeJson/2.3/flower1.json');
-        _this.load.image('Level23_Line20',window.baseUrl+'assets/gradeAssets/2.3/Line20.png');
-        
-        
-        
-        //from 21
-        _this.load.atlas('Level23_ladder',window.baseUrl+'assets/gradeAssets/2.3/ladder.png' ,window.baseUrl+'json/gradeJson/2.3/ladder.json');
-        _this.load.atlas('Level23_feets',window.baseUrl+'assets/gradeAssets/2.3/feets.png' ,window.baseUrl+'json/gradeJson/2.3/feets.json');
-        _this.load.atlas('Level23_feets101',window.baseUrl+'assets/gradeAssets/2.3/feets101.png' ,window.baseUrl+'json/gradeJson/2.3/feets101.json');
-        _this.load.image('Level23_Line21',window.baseUrl+'assets/gradeAssets/2.3/Line21.png');
-        _this.load.image('Level23_feet1',window.baseUrl+'assets/gradeAssets/2.3/feet1.png');
-        _this.load.image('Level23_feet2',window.baseUrl+'assets/gradeAssets/2.3/feet2.png');
-        
-        _this.load.atlas('Level23_House',window.baseUrl+'assets/gradeAssets/2.3/House.png' ,window.baseUrl+'json/gradeJson/2.3/House.json');
-        _this.load.image('Level23_Line22',window.baseUrl+'assets/gradeAssets/2.3/Line22.png');
-        
-        _this.load.atlas('Level23_gate2',window.baseUrl+'assets/gradeAssets/2.3/gate2.png' ,window.baseUrl+'json/gradeJson/2.3/gate2.json');
-        _this.load.image('Level23_Line23',window.baseUrl+'assets/gradeAssets/2.3/Line23.png');
-        
-        _this.load.atlas('Level23_treee',window.baseUrl+'assets/gradeAssets/2.3/treee.png' ,window.baseUrl+'json/gradeJson/2.3/treee.json');
-        _this.load.image('Level23_Line24',window.baseUrl+'assets/gradeAssets/2.3/Line24.png');
-        
-        _this.load.atlas('Level23_ladder2',window.baseUrl+'assets/gradeAssets/2.3/ladder2.png' ,window.baseUrl+'json/gradeJson/2.3/ladder2.json');
-        _this.load.atlas('Level23_ropes11',window.baseUrl+'assets/gradeAssets/2.3/ropes11.png' ,window.baseUrl+'json/gradeJson/2.3/ropes11.json');
-        _this.load.image('Level23_Line28',window.baseUrl+'assets/gradeAssets/2.3/Line28.png');
-        _this.load.image('Level23_rope11',window.baseUrl+'assets/gradeAssets/2.3/rope11.png');
-        
-        _this.load.atlas('Level23_door111',window.baseUrl+'assets/gradeAssets/2.3/door111.png' ,window.baseUrl+'json/gradeJson/2.3/door111.json');
-        _this.load.image('Level23_Line27',window.baseUrl+'assets/gradeAssets/2.3/Line27.png');
-        
-        _this.load.atlas('Level23_petrol111',window.baseUrl+'assets/gradeAssets/2.3/petrol111.png' ,window.baseUrl+'json/gradeJson/2.3/petrol111.json');
-        _this.load.image('Level23_Line26',window.baseUrl+'assets/gradeAssets/2.3/Line26.png');
-        
-        _this.load.atlas('Level23_flower111',window.baseUrl+'assets/gradeAssets/2.3/flower111.png' ,window.baseUrl+'json/gradeJson/2.3/flower111.json');
-        _this.load.image('Level23_Line25',window.baseUrl+'assets/gradeAssets/2.3/Line25.png');
-        
-        _this.load.atlas('Level23_car111',window.baseUrl+'assets/gradeAssets/2.3/car111.png' ,window.baseUrl+'json/gradeJson/2.3/car111.json');
-        _this.load.atlas('Level23_ropes111',window.baseUrl+'assets/gradeAssets/2.3/ropes111.png' ,window.baseUrl+'json/gradeJson/2.3/ropes111.json');
-        _this.load.image('Level23_Line32',window.baseUrl+'assets/gradeAssets/2.3/Line32.png');
-        _this.load.image('Level23_rope111',window.baseUrl+'assets/gradeAssets/2.3/rope111.png');
-        
-        _this.load.atlas('Level23_gate21',window.baseUrl+'assets/gradeAssets/2.3/gate21.png' ,window.baseUrl+'json/gradeJson/2.3/gate21.json');
-        _this.load.image('Level23_Line31',window.baseUrl+'assets/gradeAssets/2.3/Line31.png');
-        
-         _this.load.atlas('Level23_longtable111',window.baseUrl+'assets/gradeAssets/2.3/longtable111.png' ,window.baseUrl+'json/gradeJson/2.3/longtable111.json');
-        _this.load.image('Level23_Line30',window.baseUrl+'assets/gradeAssets/2.3/Line30.png');
-        
-        _this.load.atlas('Level23_shoes111',window.baseUrl+'assets/gradeAssets/2.3/shoes111.png' ,window.baseUrl+'json/gradeJson/2.3/shoes111.json');
-        _this.load.image('Level23_Line29',window.baseUrl+'assets/gradeAssets/2.3/Line29.png');
-    	
-        /*_this.load.audio('Eng_23_1', window.baseUrl+'questionSounds/2.3/English/2.3_1.mp3');
-        _this.load.audio('Eng_23_2', window.baseUrl+'questionSounds/2.3/English/2.3_2.mp3');
-        _this.load.audio('Eng_23_3', window.baseUrl+'questionSounds/2.3/English/2.3_3.mp3');
-        _this.load.audio('Eng_23_4', window.baseUrl+'questionSounds/2.3/English/2.3_4.mp3');
-        _this.load.audio('Eng_23_5', window.baseUrl+'questionSounds/2.3/English/2.3_5.mp3');
-        _this.load.audio('Eng_23_6', window.baseUrl+'questionSounds/2.3/English/2.3_6.mp3');
-        _this.load.audio('Eng_23_7', window.baseUrl+'questionSounds/2.3/English/2.3_7.mp3');
-        _this.load.audio('Eng_23_8', window.baseUrl+'questionSounds/2.3/English/2.3_8.mp3');
-        _this.load.audio('Eng_23_4option', window.baseUrl+'questionSounds/2.3/English/2.3_4 option.mp3');
-        
-        
-        _this.load.audio('Kan_23_1', window.baseUrl+'questionSounds/2.3/Kannada/2.3_1.mp3');
-        _this.load.audio('Kan_23_2', window.baseUrl+'questionSounds/2.3/Kannada/2.3_2.mp3');
-        _this.load.audio('Kan_23_3', window.baseUrl+'questionSounds/2.3/Kannada/2.3_3.mp3');
-        _this.load.audio('Kan_23_4', window.baseUrl+'questionSounds/2.3/Kannada/2.3_4.mp3');
-        _this.load.audio('Kan_23_5', window.baseUrl+'questionSounds/2.3/Kannada/2.3_5.mp3');
-        _this.load.audio('Kan_23_6', window.baseUrl+'questionSounds/2.3/Kannada/2.3_6.mp3');
-        _this.load.audio('Kan_23_7', window.baseUrl+'questionSounds/2.3/Kannada/2.3_7.mp3');
-        _this.load.audio('Kan_23_8', window.baseUrl+'questionSounds/2.3/Kannada/2.3_8.mp3');
-        
-        _this.load.audio('Hin_23_1', window.baseUrl+'questionSounds/2.3/Hindi/2.3_1.mp3');
-        _this.load.audio('Hin_23_2', window.baseUrl+'questionSounds/2.3/Hindi/2.3_2.mp3');
-        _this.load.audio('Hin_23_3', window.baseUrl+'questionSounds/2.3/Hindi/2.3_3.mp3');
-        _this.load.audio('Hin_23_4', window.baseUrl+'questionSounds/2.3/Hindi/2.3_4.mp3');
-        _this.load.audio('Hin_23_5', window.baseUrl+'questionSounds/2.3/Hindi/2.3_5.mp3');
-        _this.load.audio('Hin_23_6', window.baseUrl+'questionSounds/2.3/Hindi/2.3_6.mp3');
-        _this.load.audio('Hin_23_7', window.baseUrl+'questionSounds/2.3/Hindi/2.3_7.mp3');
-        _this.load.audio('Hin_23_8', window.baseUrl+'questionSounds/2.3/Hindi/2.3_8.mp3');*/
-
-
 
         _this.load.image('Level23_bg1', window.baseUrl + 'assets/gradeAssets/2.3/bg1.png');
         _this.load.image('Level23_bg3', window.baseUrl + 'assets/gradeAssets/2.3/bg3.png');
@@ -3160,14 +2529,6 @@ Game.preloader.prototype = {
         this.load.atlas('Level23_jugg', window.baseUrl + 'assets/gradeAssets/2.3/jugg.png', window.baseUrl + 'json/gradeJson/2.3/jugg.json');
         this.load.atlas('Level23_boot', window.baseUrl + 'assets/gradeAssets/2.3/boot.png', window.baseUrl + 'json/gradeJson/2.3/boot.json');
         this.load.atlas('Level23_housenew', window.baseUrl + 'assets/gradeAssets/2.3/housenew.png', window.baseUrl + 'json/gradeJson/2.3/housenew.json');
-        //_this.load.image('Level23_title',window.baseUrl+'assets/gradeAssets/2.3/title.png');
-        // _this.load.image('Level23_tittleBaar',window.baseUrl+'assets/gradeAssets/2.3/tittleBaar.png');
-        // _this.load.atlas('Level23_replay',window.baseUrl+'assets/gradeAssets/2.3/reply.png' ,window.baseUrl+'json/gradeJson/2.3/reply.json');
-        // _this.load.atlas('Level23_btn',window.baseUrl+'assets/gradeAssets/2.3/btn.png',window.baseUrl+'json/gradeJson/2.3/btn.json');
-
-        //_this.load.atlas('Level23_backbtn',window.baseUrl+'assets/gradeAssets/2.3/backbtn.png' ,window.baseUrl+'json/gradeJson/2.3/backbtn.json');
-        //_this.load.atlas('Level23_speaker',window.baseUrl+'assets/gradeAssets/2.3/speaker.png' ,window.baseUrl+'json/gradeJson/2.3/speaker.json');
-        //_this.load.atlas('Level23_starAnim',window.baseUrl+'assets/gradeAssets/2.3/starAnim.png',window.baseUrl+'json/gradeJson/2.3/starAnim.json');
 
         _this.load.atlas('Level23_numberbtn1', window.baseUrl + 'assets/gradeAssets/2.3/numberbtn1.png', window.baseUrl + 'json/gradeJson/2.3/numberbtn1.json');
         _this.load.atlas('Level23_numberbtn2', window.baseUrl + 'assets/gradeAssets/2.3/numberbtn2.png', window.baseUrl + 'json/gradeJson/2.3/numberbtn2.json');
@@ -3304,45 +2665,12 @@ Game.preloader.prototype = {
         _this.load.atlas('Level23_shoes111', window.baseUrl + 'assets/gradeAssets/2.3/shoes111.png', window.baseUrl + 'json/gradeJson/2.3/shoes111.json');
         _this.load.image('Level23_Line29', window.baseUrl + 'assets/gradeAssets/2.3/Line29.png');
 
-        /*_this.load.audio('Eng_23_1', window.baseUrl+'questionSounds/2.3/English/2.3_1.mp3');
-        _this.load.audio('Eng_23_2', window.baseUrl+'questionSounds/2.3/English/2.3_2.mp3');
-        _this.load.audio('Eng_23_3', window.baseUrl+'questionSounds/2.3/English/2.3_3.mp3');
-        _this.load.audio('Eng_23_4', window.baseUrl+'questionSounds/2.3/English/2.3_4.mp3');
-        _this.load.audio('Eng_23_5', window.baseUrl+'questionSounds/2.3/English/2.3_5.mp3');
-        _this.load.audio('Eng_23_6', window.baseUrl+'questionSounds/2.3/English/2.3_6.mp3');
-        _this.load.audio('Eng_23_7', window.baseUrl+'questionSounds/2.3/English/2.3_7.mp3');
-        _this.load.audio('Eng_23_8', window.baseUrl+'questionSounds/2.3/English/2.3_8.mp3');
-        _this.load.audio('Eng_23_4option', window.baseUrl+'questionSounds/2.3/English/2.3_4 option.mp3');
-        
-        
-        _this.load.audio('Kan_23_1', window.baseUrl+'questionSounds/2.3/Kannada/2.3_1.mp3');
-        _this.load.audio('Kan_23_2', window.baseUrl+'questionSounds/2.3/Kannada/2.3_2.mp3');
-        _this.load.audio('Kan_23_3', window.baseUrl+'questionSounds/2.3/Kannada/2.3_3.mp3');
-        _this.load.audio('Kan_23_4', window.baseUrl+'questionSounds/2.3/Kannada/2.3_4.mp3');
-        _this.load.audio('Kan_23_5', window.baseUrl+'questionSounds/2.3/Kannada/2.3_5.mp3');
-        _this.load.audio('Kan_23_6', window.baseUrl+'questionSounds/2.3/Kannada/2.3_6.mp3');
-        _this.load.audio('Kan_23_7', window.baseUrl+'questionSounds/2.3/Kannada/2.3_7.mp3');
-        _this.load.audio('Kan_23_8', window.baseUrl+'questionSounds/2.3/Kannada/2.3_8.mp3');
-        
-        _this.load.audio('Hin_23_1', window.baseUrl+'questionSounds/2.3/Hindi/2.3_1.mp3');
-        _this.load.audio('Hin_23_2', window.baseUrl+'questionSounds/2.3/Hindi/2.3_2.mp3');
-        _this.load.audio('Hin_23_3', window.baseUrl+'questionSounds/2.3/Hindi/2.3_3.mp3');
-        _this.load.audio('Hin_23_4', window.baseUrl+'questionSounds/2.3/Hindi/2.3_4.mp3');
-        _this.load.audio('Hin_23_5', window.baseUrl+'questionSounds/2.3/Hindi/2.3_5.mp3');
-        _this.load.audio('Hin_23_6', window.baseUrl+'questionSounds/2.3/Hindi/2.3_6.mp3');
-        _this.load.audio('Hin_23_7', window.baseUrl+'questionSounds/2.3/Hindi/2.3_7.mp3');
-        _this.load.audio('Hin_23_8', window.baseUrl+'questionSounds/2.3/Hindi/2.3_8.mp3');*/
+
     },
 
     addgame3_1Assets: function () {
         _this.load.image('Level31_bg1', window.baseUrl + 'assets/gradeAssets/3.1/bg1.png');
         _this.load.image('Level31_bg3', window.baseUrl + 'assets/gradeAssets/3.1/bg3.png');
-        // _this.load.image('Level31_tittleBaar',window.baseUrl+'assets/gradeAssets/3.1/tittleBaar.png');
-        // _this.load.atlas('Level31_replay',window.baseUrl+'assets/gradeAssets/3.1/reply.png' ,window.baseUrl+'json/gradeJson/3.1/reply.json');
-        // _this.load.atlas('Level31_btn',window.baseUrl+'assets/gradeAssets/3.1/btn.png' ,window.baseUrl+'json/gradeJson/3.1/btn.json');
-        // _this.load.atlas('Level31_backbtn',window.baseUrl+'assets/gradeAssets/3.1/backbtn.png' ,window.baseUrl+'json/gradeJson/3.1/backbtn.json');
-        // _this.load.atlas('Level31_speaker',window.baseUrl+'assets/gradeAssets/3.1/speaker.png' ,window.baseUrl+'json/gradeJson/3.1/speaker.json');
-        // _this.load.atlas('Level31_starAnim',window.baseUrl+'assets/gradeAssets/3.1/starAnim.png',window.baseUrl+'json/gradeJson/3.1/starAnim.json');
         _this.load.image('Level31_sh1', window.baseUrl + 'assets/gradeAssets/3.1/sh1.png');
         _this.load.image('Level31_sh2', window.baseUrl + 'assets/gradeAssets/3.1/sh2.png');
         _this.load.image('Level31_sh3', window.baseUrl + 'assets/gradeAssets/3.1/sh3.png');
@@ -3354,7 +2682,6 @@ Game.preloader.prototype = {
         _this.load.image('Level31_sh9', window.baseUrl + 'assets/gradeAssets/3.1/sh9.png');
         _this.load.image('Level31_sh10', window.baseUrl + 'assets/gradeAssets/3.1/sh10.png');
         _this.load.image('Level31_sh11', window.baseUrl + 'assets/gradeAssets/3.1/sh11.png');
-        //_this.load.image('Level31_sh12',window.baseUrl+'assets/gradeAssets/3.1/sh12.png');
         _this.load.image('Level31_sh13', window.baseUrl + 'assets/gradeAssets/3.1/sh13.png');
         _this.load.image('Level31_sh14', window.baseUrl + 'assets/gradeAssets/3.1/sh14.png');
         _this.load.image('Level31_sh15', window.baseUrl + 'assets/gradeAssets/3.1/sh15.png');
@@ -3405,70 +2732,9 @@ Game.preloader.prototype = {
         _this.load.atlas('Level31_bread1', window.baseUrl + 'assets/gradeAssets/3.1/bread1.png', window.baseUrl + 'json/gradeJson/3.1/bread1.json');
 
 
-
-        /*_this.load.audio('goingdown', window.baseUrl+'questionSounds/3.1/goingdown.mp3');
-        _this.load.audio('goingup', window.baseUrl+'questionSounds/3.1/goingup.mp3');
-        _this.load.audio('E1_31a', window.baseUrl+'questionSounds/3.1/E1a.mp3');
-        _this.load.audio('E1_31b', window.baseUrl+'questionSounds/3.1/E1b.mp3');
-        _this.load.audio('H1_31a', window.baseUrl+'questionSounds/3.1/H1a.mp3');
-        _this.load.audio('H1_31b', window.baseUrl+'questionSounds/3.1/H1b.mp3');
-        _this.load.audio('K1_31a', window.baseUrl+'questionSounds/3.1/K1a.mp3');
-        _this.load.audio('K1_31b', window.baseUrl+'questionSounds/3.1/K1b.mp3');*/
     },
 
     addgame3_2AAssets: function () {
-        /*//game assets.
-        _this.load.image('Level32A_gameBg',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/gameBg.png');
-        
-        _this.load.image('Level32A_weight1',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/weight1.png');
-        _this.load.image('Level32A_weight2',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/weight2.png');
-        _this.load.image('Level32A_weight3',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/weight3.png');
-        
-        _this.load.atlas('Level32A_Can',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Can.png',window.baseUrl+'json/gradeJson/3.2A/Can.json');
-        _this.load.atlas('Level32A_Carrot',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Carot.png',window.baseUrl+'json/gradeJson/3.2A/Carot.json');
-        _this.load.atlas('Level32A_Coin',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Coin.png',window.baseUrl+'json/gradeJson/3.2A/Coin.json');
-        _this.load.atlas('Level32A_Ball',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Ball.png',window.baseUrl+'json/gradeJson/3.2A/Ball.json');
-        _this.load.atlas('Level32A_Book',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Book.png',window.baseUrl+'json/gradeJson/3.2A/Book.json');
-        _this.load.atlas('Level32A_Banana',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Banana.png',window.baseUrl+'json/gradeJson/3.2A/Banana.json');
-        _this.load.atlas('Level32A_Comb',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/comb.png',window.baseUrl+'json/gradeJson/3.2A/comb.json');
-        _this.load.atlas('Level32A_Eraser',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/eraser.png',window.baseUrl+'json/gradeJson/3.2A/eraser.json');
-        _this.load.atlas('Level32A_Eraser2',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/eraser2.png',window.baseUrl+'json/gradeJson/3.2A/eraser2.json');
-        _this.load.atlas('Level32A_Glass',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Glass.png',window.baseUrl+'json/gradeJson/3.2A/Glass.json');
-        _this.load.atlas('Level32A_Glass2',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Glass2.png',window.baseUrl+'json/gradeJson/3.2A/Glass2.json');
-        _this.load.atlas('Level32A_Mug',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Mug.png',window.baseUrl+'json/gradeJson/3.2A/Mug.json');
-        _this.load.atlas('Level32A_Key',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Key.png',window.baseUrl+'json/gradeJson/3.2A/Key.json');
-        _this.load.atlas('Level32A_Pappaya',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Pappaya.png',window.baseUrl+'json/gradeJson/3.2A/Pappaya.json');
-        _this.load.atlas('Level32A_Pencil',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Pencil.png',window.baseUrl+'json/gradeJson/3.2A/Pencil.json');
-        _this.load.atlas('Level32A_ScrewDriver',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/ScrewDriver.png',window.baseUrl+'json/gradeJson/3.2A/ScrewDriver.json');
-        _this.load.atlas('Level32A_Shoe',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/Shoe.png',window.baseUrl+'json/gradeJson/3.2A/Shoe.json');
- 
-        
-        _this.load.image('Level32A_level2Bg',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/level2/level2Bg.png');
-        _this.load.image('Level32A_txtbox',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/level2/box.png');
-        _this.load.atlas('Level32A_numbg',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/level2/numbg.png',window.baseUrl+'json/gradeJson/3.2A/numbg.json');
-        _this.load.atlas('Level32A_rightBtn',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/level2/rightBtn.png',window.baseUrl+'json/gradeJson/3.2A/rightBtn.json');
-        _this.load.atlas('Level32A_wrongBtn',window.baseUrl+'assets/gradeAssets/3.2A/gameAssets/level2/wrongBtn.png',window.baseUrl+'json/gradeJson/3.2A/wrongBtn.json');
-    	
-    	
-        _this.load.audio('slide', window.baseUrl+'questionSounds/3.2A/slide.mp3');
-        
-        
-       /* _this.load.audio('ElevelD', window.baseUrl+'questionSounds/3.2A/ElevelD.mp3');
-        _this.load.audio('HlevelD', window.baseUrl+'questionSounds/3.2A/HlevelD.mp3');
-        _this.load.audio('KlevelD', window.baseUrl+'questionSounds/3.2A/KlevelD.mp3');
-        _this.load.audio('ElevelCa', window.baseUrl+'questionSounds/3.2A/ElevelCa.mp3');
-        _this.load.audio('ElevelCb', window.baseUrl+'questionSounds/3.2A/ElevelCb.mp3');
-        _this.load.audio('HlevelCa', window.baseUrl+'questionSounds/3.2A/HlevelCa.mp3');
-        _this.load.audio('HlevelCb', window.baseUrl+'questionSounds/3.2A/HlevelCb.mp3');
-        _this.load.audio('KlevelCa', window.baseUrl+'questionSounds/3.2A/KlevelCa.mp3');
-        _this.load.audio('KlevelCb', window.baseUrl+'questionSounds/3.2A/KlevelCb.mp3');
-        
-        _this.load.audio('Eng_32A1', window.baseUrl+'questionSounds/3.2A/Eng_3.2A1.mp3');
-        _this.load.audio('Eng_32A2', window.baseUrl+'questionSounds/3.2A/Eng_3.2A2.mp3');
-        _this.load.audio('Hin_32A1', window.baseUrl+'questionSounds/3.2A/Hin_3.2A1.mp3');
-        _this.load.audio('Hin_32A2', window.baseUrl+'questionSounds/3.2A/Hin_3.2A2.mp3');
-        _this.load.audio('Kan_32A1', window.baseUrl+'questionSounds/3.2A/Kan_3.2A1.mp3');
-        _this.load.audio('Kan_32A2', window.baseUrl+'questionSounds/3.2A/Kan_3.2A2.mp3');*/
 
 
         //game assets.
@@ -3505,24 +2771,6 @@ Game.preloader.prototype = {
 
 
 
-
-
-        /* _this.load.audio('ElevelD', window.baseUrl+'questionSounds/3.2A/ElevelD.mp3');
-         _this.load.audio('HlevelD', window.baseUrl+'questionSounds/3.2A/HlevelD.mp3');
-         _this.load.audio('KlevelD', window.baseUrl+'questionSounds/3.2A/KlevelD.mp3');
-         _this.load.audio('ElevelCa', window.baseUrl+'questionSounds/3.2A/ElevelCa.mp3');
-         _this.load.audio('ElevelCb', window.baseUrl+'questionSounds/3.2A/ElevelCb.mp3');
-         _this.load.audio('HlevelCa', window.baseUrl+'questionSounds/3.2A/HlevelCa.mp3');
-         _this.load.audio('HlevelCb', window.baseUrl+'questionSounds/3.2A/HlevelCb.mp3');
-         _this.load.audio('KlevelCa', window.baseUrl+'questionSounds/3.2A/KlevelCa.mp3');
-         _this.load.audio('KlevelCb', window.baseUrl+'questionSounds/3.2A/KlevelCb.mp3');
-         
-         _this.load.audio('Eng_32A1', window.baseUrl+'questionSounds/3.2A/Eng_3.2A1.mp3');
-         _this.load.audio('Eng_32A2', window.baseUrl+'questionSounds/3.2A/Eng_3.2A2.mp3');
-         _this.load.audio('Hin_32A1', window.baseUrl+'questionSounds/3.2A/Hin_3.2A1.mp3');
-         _this.load.audio('Hin_32A2', window.baseUrl+'questionSounds/3.2A/Hin_3.2A2.mp3');
-         _this.load.audio('Kan_32A1', window.baseUrl+'questionSounds/3.2A/Kan_3.2A1.mp3');
-         _this.load.audio('Kan_32A2', window.baseUrl+'questionSounds/3.2A/Kan_3.2A2.mp3');*/
     },
 
     addgame1_1BAssets: function () {
@@ -3581,164 +2829,9 @@ Game.preloader.prototype = {
     },
 
 
-    /*addgame1_2AAssets:function()
-    {
-        //load common assets/gradeAssets/1.2A
-        _this.load.image('Level12A_background',window.baseUrl+'assets/gradeAssets/1.2A/firstSceneBg.png');
-        _this.load.image('Level12A_navBg',window.baseUrl+'assets/gradeAssets/1.2A/navBg.png');
-    	
-        _this.load.image('Level12A_stick', window.baseUrl+'assets/gradeAssets/1.2A/stick.png');
-        _this.load.image('Level12A_tittleBar', window.baseUrl+'assets/gradeAssets/1.2A/tittleBar.png');
-    	
-        _this.load.atlas('Level12A_btn',window.baseUrl+'assets/gradeAssets/1.2A/btn.png',window.baseUrl+'json/gradeJson/1.2A/btn.json');
-        _this.load.atlas('Level12A_backBtn',window.baseUrl+'assets/gradeAssets/1.2A/backBtn.png',window.baseUrl+'json/gradeJson/1.2A/backBtn.json');
-        _this.load.atlas('Level12A_speakerBtn',window.baseUrl+'assets/gradeAssets/1.2A/speakerBtn.png',window.baseUrl+'json/gradeJson/1.2A/speakerBtn.json');
-        _this.load.atlas('Level12A_starAnim',window.baseUrl+'assets/gradeAssets/1.2A/starAnim.png',window.baseUrl+'json/gradeJson/1.2A/starAnim.json');
-    	
-    	
-        //scene1 assets/gradeAssets/1.2A
-        //_this.load.image('Level12A_scene1wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind1.png');
-        _this.load.atlas('Level12A_scene1wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind1.png',window.baseUrl+'json/gradeJson/1.2A/scene1wind1.json');
-        _this.load.atlas('Level12A_scene1wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind2.png',window.baseUrl+'json/gradeJson/1.2A/scene1wind2.json');
-        _this.load.atlas('Level12A_scene1wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind3.png',window.baseUrl+'json/gradeJson/1.2A/scene1wind3.json');
-        _this.load.atlas('Level12A_scene1wind33', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind33.png',window.baseUrl+'json/gradeJson/1.2A/scene1wind33.json');
-        
-        _this.load.atlas('Level12A_scene2wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind1.png',window.baseUrl+'json/gradeJson/1.2A/scene2wind1.json');
-        _this.load.atlas('Level12A_scene2wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind2.png',window.baseUrl+'json/gradeJson/1.2A/scene2wind2.json');
-        _this.load.atlas('Level12A_scene2wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind3.png',window.baseUrl+'json/gradeJson/1.2A/scene2wind3.json');
-        
-        _this.load.atlas('Level12A_scene3wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind1.png',window.baseUrl+'json/gradeJson/1.2A/scene3wind1.json');
-        _this.load.atlas('Level12A_scene3wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind2.png',window.baseUrl+'json/gradeJson/1.2A/scene3wind2.json');
-        _this.load.atlas('Level12A_scene3wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind3.png',window.baseUrl+'json/gradeJson/1.2A/scene3wind3.json'); 
-        
-       // _this.load.atlas('Level12A_scene1spin1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1spin1.png',window.baseUrl+'json/gradeJson/1.2A/scene1spin1.json');
-      //  _this.load.atlas('Level12A_scene1spin2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1spin2.png',window.baseUrl+'json/gradeJson/1.2A/scene1spin2.json');
-      //  _this.load.atlas('Level12A_scene1spin3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1spin3.png',window.baseUrl+'json/gradeJson/1.2A/scene1spin3.json');
-       // _this.load.atlas('Level12A_scene1wind33', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind33.png',window.baseUrl+'json/gradeJson/1.2A/scene1wind33.json');
-        
-      //  _this.load.atlas('Level12A_scene2spin1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2spin1.png',window.baseUrl+'json/gradeJson/1.2A/scene2spin1.json');
-      //  _this.load.atlas('Level12A_scene2spin2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2spin2.png',window.baseUrl+'json/gradeJson/1.2A/scene2spin2.json');
-      //  _this.load.atlas('Level12A_scene2spin3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2spin3.png',window.baseUrl+'json/gradeJson/1.2A/scene2spin3.json');
-        
-      //  _this.load.atlas('Level12A_scene3spin1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3spin1.png',window.baseUrl+'json/gradeJson/1.2A/scene3spin1.json');
-      //  _this.load.atlas('Level12A_scene3spin2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3spin2.png',window.baseUrl+'json/gradeJson/1.2A/scene3spin2.json');
-      //  _this.load.atlas('Level12A_scene3spin3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3spin3.png',window.baseUrl+'json/gradeJson/1.2A/scene3spin3.json');
-        
-        //		_this.load.image('Level12A_scene1wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind2.png');
-        //		_this.load.image('Level12A_scene1wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene1wind3.png');
-        //		_this.load.image('Level12A_scene2wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind1.png');
-        //		_this.load.image('Level12A_scene2wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind2.png');
-        //		_this.load.image('Level12A_scene2wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene2wind3.png');
-        //		_this.load.image('Level12A_scene3wind1', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind1.png');
-        //		_this.load.image('Level12A_scene3wind2', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind2.png');
-        //		_this.load.image('Level12A_scene3wind3', window.baseUrl+'assets/gradeAssets/1.2A/reduced/scene3wind3.png');
-        //	
-        //scene2 assets/gradeAssets/1.2A
-        //_this.load.atlas('Level12A_scene2Btn',window.baseUrl+'assets/gradeAssets/1.2A/levelFirstScene/scene2Btn.png',window.baseUrl+'json/gradeJson/1.2A/scene2Btn.json');
-        _this.load.atlas('Level12A_scene2Btn1',window.baseUrl+'assets/gradeAssets/1.2A/scene2Btn1.png',window.baseUrl+'json/gradeJson/1.2A/scene2Btn1.json');
-        _this.load.atlas('Level12A_scene2Btn2',window.baseUrl+'assets/gradeAssets/1.2A/scene2Btn2.png',window.baseUrl+'json/gradeJson/1.2A/scene2Btn2.json');
-        _this.load.atlas('Level12A_scene2Btn3',window.baseUrl+'assets/gradeAssets/1.2A/scene2Btn3.png',window.baseUrl+'json/gradeJson/1.2A/scene2Btn3.json');
-    	
-        //scene3 assets/gradeAssets/1.2A
-        _this.load.atlas('Level12A_pencil',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/pencil.png' ,window.baseUrl+'json/gradeJson/1.2A/pencil.json');
-  
-        
-        _this.load.image('Level12A_centerCircle', window.baseUrl+'assets/gradeAssets/1.2A/centerCircle.png');
-        _this.load.image('Level12A_wind2Center', window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/wind2Center.png');
-        _this.load.atlas('Level12A_replay', window.baseUrl+'assets/gradeAssets/1.2A/reply.png', window.baseUrl+'json/gradeJson/1.2A/reply.json');
-    	
-    	
-        //_this.load.image('Level12A_crayon', window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/crayon.png');
-        _this.load.image('Level12A_eraser', window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/eraser.png');
-        
-
-        //_this.load.atlas('Level12A_wind1',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/wind1.png' ,window.baseUrl+'json/gradeJson/1.2A/wind1.json');
-        //_this.load.atlas('Level12A_scene3wind2',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/wind2new.png' ,window.baseUrl+'json/gradeJson/1.2A/wind2new.json');
-        //_this.load.atlas('Level12A_windmel',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/wind3new3.png' ,window.baseUrl+'json/gradeJson/1.2A/wind3new3.json');
-        //_this.load.atlas('Level12A_windmel2',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/wind32New.png' ,window.baseUrl+'json/gradeJson/1.2A/wind32New.json');
-        _this.load.atlas('Level12A_checkbtn',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/checkbtn.png' ,window.baseUrl+'json/gradeJson/1.2A/checkbtn.json');
-
-        
-        
-        _this.load.atlas('Level12A_wind1',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/w1.png' ,window.baseUrl+'json/gradeJson/1.2A/w1.json');
-        _this.load.atlas('Level12A_wind2',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/w2.png' ,window.baseUrl+'json/gradeJson/1.2A/w2.json');
-        _this.load.atlas('Level12A_wind3',window.baseUrl+'assets/gradeAssets/1.2A/levelLastScene/w3.png' ,window.baseUrl+'json/gradeJson/1.2A/w3.json');
-        
-        
-        _this.load.image('Level12A_wind11', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind11.png');
-        _this.load.image('Level12A_wind12', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind12.png');
-        _this.load.image('Level12A_wind13', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind13.png');
-        _this.load.image('Level12A_wind21', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind21.png');
-        _this.load.image('Level12A_wind22', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind22.png');
-        _this.load.image('Level12A_wind23', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind23.png');
-        _this.load.image('Level12A_wind31', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind31.png');
-        _this.load.image('Level12A_wind32', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind32.png');
-        _this.load.image('Level12A_wind33', window.baseUrl+'assets/gradeAssets/1.2A/reduced/wind33.png');
-    	
-        _this.load.audio('spin2', window.baseUrl+'questionSounds/1.2A/spin2.mp3');
-        _this.load.audio('Eng_12A1', window.baseUrl+'questionSounds/1.2A/English/1.2A1.mp3');
-        _this.load.audio('Eng_12A2', window.baseUrl+'questionSounds/1.2A/English/1.2A2.mp3');
-        _this.load.audio('Eng_12A3', window.baseUrl+'questionSounds/1.2A/English/1.2A3.mp3');
-        _this.load.audio('Eng_12B1', window.baseUrl+'questionSounds/1.2A/English/1.2B1.mp3');
-        _this.load.audio('Eng_12B2', window.baseUrl+'questionSounds/1.2A/English/1.2B2.mp3');
-        _this.load.audio('Eng_12B3', window.baseUrl+'questionSounds/1.2A/English/1.2B3.mp3');
-        _this.load.audio('Eng_12B5', window.baseUrl+'questionSounds/1.2A/English/1.2B5.mp3');
-        _this.load.audio('Eng_12C1', window.baseUrl+'questionSounds/1.2A/English/1.2C1.mp3');
-        _this.load.audio('Eng_12C2', window.baseUrl+'questionSounds/1.2A/English/1.2C2.mp3');
-        _this.load.audio('Eng_12C3', window.baseUrl+'questionSounds/1.2A/English/1.2C3.mp3');
-        _this.load.audio('Kan_12A1', window.baseUrl+'questionSounds/1.2A/Kannada/1.2A1.mp3');
-        _this.load.audio('Kan_12A2', window.baseUrl+'questionSounds/1.2A/Kannada/1.2A2.mp3');
-        _this.load.audio('Kan_12A3', window.baseUrl+'questionSounds/1.2A/Kannada/1.2A3.mp3');
-        _this.load.audio('Kan_12B1', window.baseUrl+'questionSounds/1.2A/Kannada/1.2B1.mp3');
-        _this.load.audio('Kan_12B2', window.baseUrl+'questionSounds/1.2A/Kannada/1.2B2.mp3');
-        _this.load.audio('Kan_12B3', window.baseUrl+'questionSounds/1.2A/Kannada/1.2B3.mp3');
-        _this.load.audio('Kan_12B5', window.baseUrl+'questionSounds/1.2A/Kannada/1.2B5.mp3');
-        _this.load.audio('Kan_12C1', window.baseUrl+'questionSounds/1.2A/Kannada/1.2C1.mp3');
-        _this.load.audio('Kan_12C2', window.baseUrl+'questionSounds/1.2A/Kannada/1.2C2.mp3');
-        _this.load.audio('Kan_12C3', window.baseUrl+'questionSounds/1.2A/Kannada/1.2C3.mp3');
-        _this.load.audio('Hin_12A1', window.baseUrl+'questionSounds/1.2A/Hindi/1.2A1.mp3');
-        _this.load.audio('Hin_12A2', window.baseUrl+'questionSounds/1.2A/Hindi/1.2A2.mp3');
-        _this.load.audio('Hin_12A3', window.baseUrl+'questionSounds/1.2A/Hindi/1.2A3.mp3');
-        _this.load.audio('Hin_12B1', window.baseUrl+'questionSounds/1.2A/Hindi/1.2B1.mp3');
-        _this.load.audio('Hin_12B2', window.baseUrl+'questionSounds/1.2A/Hindi/1.2B2.mp3');
-        _this.load.audio('Hin_12B3', window.baseUrl+'questionSounds/1.2A/Hindi/1.2B3.mp3');
-        _this.load.audio('Hin_12B5', window.baseUrl+'questionSounds/1.2A/Hindi/1.2B5.mp3');
-        _this.load.audio('Hin_12C1', window.baseUrl+'questionSounds/1.2A/Hindi/1.2C1.mp3');
-        _this.load.audio('Hin_12C2', window.baseUrl+'questionSounds/1.2A/Hindi/1.2C2.mp3');
-        _this.load.audio('Hin_12C3', window.baseUrl+'questionSounds/1.2A/Hindi/1.2C3.mp3');
-    },
-    */
 
 
     addgame1_2BAssets: function () {
-
-        //this.load.image('background',window.baseUrl+'assets/bg.png');
-        //this.load.image('bg1',window.baseUrl+'assets/bg1.png');
-        //this.load.image('questionBackground', 'questionBackground.png');
-
-        // this.load.audio('baudio', ['BackgroundSound.mp3', 'BackgroundSound.ogg']);
-        // this.load.audio('waudio', ['WrongCelebrationSound.mp3', 'WrongCelebrationSound.ogg']);
-        //this.load.audio('ClickSound', 'ClickSound.mp3');
-        // this.load.audio('baudio1', ['BackgroundMusic.mp3', 'BackgroundMusic.ogg']);
-        // this.load.audio('celebr', 'celebration.mp3');
-
-        //this.load.image('playBg', 'playbg.png');
-        //	this.load.image('langBg', window.baseUrl+'assets/langbg.png');
-
-
-        //this.load.atlas('heading',window.baseUrl+'assets/hedding.png' ,window.baseUrl+'json/heading.json');
-        //this.load.atlas('heading1',window.baseUrl+'assets/heading1.png' ,window.baseUrl+'json/heading1.json');
-        //this.load.image('line','Line.png');
-        //	this.load.image('celeb', window.baseUrl+'assets/c.png');
-        //  this.load.atlas('backbtn',window.baseUrl+'assets/backbtn.png' ,window.baseUrl+'json/backbtn.json');
-        //  this.load.atlas('speaker',window.baseUrl+'assets/speaker.png' ,window.baseUrl+'json/speaker.json');
-        //  this.load.image('headingLine', window.baseUrl+'assets/headingLine.png');
-
-        //	this.load.atlas('starAnim',window.baseUrl+'assets/starAnim.png',window.baseUrl+'json/starAnim.json');
-        //  this.load.atlas('btn',window.baseUrl+'assets/btn.png',window.baseUrl+'json/btn.json');
-        // this.load.image('tittleBar', window.baseUrl+'assets/tittleBar.png');
-        // this.load.atlas('replay', window.baseUrl+'assets/reply.png', window.baseUrl+'json/reply.json');
-
 
         this.load.image('unity1.2Bbackg', window.baseUrl + 'assets/gradeAssets/1.2A/bg.png');
         _this.load.atlas('unity1.2BstarAnim', window.baseUrl + 'assets/commonAssets/starAnim1.png', window.baseUrl + 'json/commonJson/starAnim1.json');
@@ -3813,15 +2906,6 @@ Game.preloader.prototype = {
         _this.load.image('Level13A_Ans2', window.baseUrl + 'assets/gradeAssets/1.3A/o12.png');
         _this.load.image('Level13A_Ans3', window.baseUrl + 'assets/gradeAssets/1.3A/o13.png');
 
-        /*_this.load.atlas('Level13A_flagmain12', window.baseUrl+'assets/gradeAssets/1.3A/m2.png', window.baseUrl+'json/gradeJson/1.3A/m2.json');
-        _this.load.image('Level13A_Ans21',window.baseUrl+'assets/gradeAssets/1.3A/o21.png');
-        _this.load.image('Level13A_Ans22',window.baseUrl+'assets/gradeAssets/1.3A/o22.png');
-        _this.load.image('Level13A_Ans23',window.baseUrl+'assets/gradeAssets/1.3A/o23.png');
-
-        _this.load.atlas('Level13A_flagmain31', window.baseUrl+'assets/gradeAssets/1.3A/m3.png', window.baseUrl+'json/gradeJson/1.3A/m3.json');
-        _this.load.image('Level13A_Ans31',window.baseUrl+'assets/gradeAssets/1.3A/o31.png');
-        _this.load.image('Level13A_Ans32',window.baseUrl+'assets/gradeAssets/1.3A/o32.png');
-        _this.load.image('Level13A_Ans33',window.baseUrl+'assets/gradeAssets/1.3A/o33.png');*/
 
         _this.load.atlas('Level13A_flagmain41', window.baseUrl + 'assets/gradeAssets/1.3A/m4.png', window.baseUrl + 'json/gradeJson/1.3A/m4.json');
         _this.load.image('Level13A_Ans41', window.baseUrl + 'assets/gradeAssets/1.3A/o41.png');
@@ -3833,10 +2917,6 @@ Game.preloader.prototype = {
         _this.load.image('Level13A_Ans52', window.baseUrl + 'assets/gradeAssets/1.3A/o52.png');
         _this.load.image('Level13A_Ans53', window.baseUrl + 'assets/gradeAssets/1.3A/o53.png');
 
-        /*_this.load.atlas('Level13A_flagmain61', window.baseUrl+'assets/gradeAssets/1.3A/m6.png', window.baseUrl+'json/gradeJson/1.3A/m6.json');
-        _this.load.image('Level13A_Ans61',window.baseUrl+'assets/gradeAssets/1.3A/o61.png');
-        _this.load.image('Level13A_Ans62',window.baseUrl+'assets/gradeAssets/1.3A/o62.png');
-        _this.load.image('Level13A_Ans63',window.baseUrl+'assets/gradeAssets/1.3A/o63.png');*/
 
         _this.load.atlas('Level13A_flagmain71', window.baseUrl + 'assets/gradeAssets/1.3A/m7.png', window.baseUrl + 'json/gradeJson/1.3A/m7.json');
         _this.load.image('Level13A_Ans71', window.baseUrl + 'assets/gradeAssets/1.3A/o71.png');
@@ -3920,28 +3000,7 @@ Game.preloader.prototype = {
         _this.load.atlas('Level12A_scene3wind2', window.baseUrl + 'assets/gradeAssets/1.4/reduced/scene3wind2.png', window.baseUrl + 'json/gradeJson/1.4/scene3wind2.json');
         _this.load.atlas('Level12A_scene3wind3', window.baseUrl + 'assets/gradeAssets/1.4/reduced/scene3wind3.png', window.baseUrl + 'json/gradeJson/1.4/scene3wind3.json');
 
-        // _this.load.atlas('Level12A_scene1spin1', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1spin1.png',window.baseUrl+'json/gradeJson/1.4/scene1spin1.json');
-        //  _this.load.atlas('Level12A_scene1spin2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1spin2.png',window.baseUrl+'json/gradeJson/1.4/scene1spin2.json');
-        //  _this.load.atlas('Level12A_scene1spin3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1spin3.png',window.baseUrl+'json/gradeJson/1.4/scene1spin3.json');
-        // _this.load.atlas('Level12A_scene1wind33', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1wind33.png',window.baseUrl+'json/gradeJson/1.4/scene1wind33.json');
 
-        //  _this.load.atlas('Level12A_scene2spin1', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2spin1.png',window.baseUrl+'json/gradeJson/1.4/scene2spin1.json');
-        //  _this.load.atlas('Level12A_scene2spin2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2spin2.png',window.baseUrl+'json/gradeJson/1.4/scene2spin2.json');
-        //  _this.load.atlas('Level12A_scene2spin3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2spin3.png',window.baseUrl+'json/gradeJson/1.4/scene2spin3.json');
-
-        //  _this.load.atlas('Level12A_scene3spin1', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3spin1.png',window.baseUrl+'json/gradeJson/1.4/scene3spin1.json');
-        //  _this.load.atlas('Level12A_scene3spin2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3spin2.png',window.baseUrl+'json/gradeJson/1.4/scene3spin2.json');
-        //  _this.load.atlas('Level12A_scene3spin3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3spin3.png',window.baseUrl+'json/gradeJson/1.4/scene3spin3.json');
-
-        //		_this.load.image('Level12A_scene1wind2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1wind2.png');
-        //		_this.load.image('Level12A_scene1wind3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene1wind3.png');
-        //		_this.load.image('Level12A_scene2wind1', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2wind1.png');
-        //		_this.load.image('Level12A_scene2wind2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2wind2.png');
-        //		_this.load.image('Level12A_scene2wind3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene2wind3.png');
-        //		_this.load.image('Level12A_scene3wind1', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3wind1.png');
-        //		_this.load.image('Level12A_scene3wind2', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3wind2.png');
-        //		_this.load.image('Level12A_scene3wind3', window.baseUrl+'assets/gradeAssets/1.4/reduced/scene3wind3.png');
-        //	
         //scene2 assets/gradeAssets/1.4
         //_this.load.atlas('Level12A_scene2Btn',window.baseUrl+'assets/gradeAssets/1.4/levelFirstScene/scene2Btn.png',window.baseUrl+'json/gradeJson/1.4/scene2Btn.json');
         _this.load.atlas('Level12A_scene2Btn1', window.baseUrl + 'assets/gradeAssets/1.4/scene2Btn1.png', window.baseUrl + 'json/gradeJson/1.4/scene2Btn1.json');
@@ -3960,11 +3019,6 @@ Game.preloader.prototype = {
         //_this.load.image('Level12A_crayon', window.baseUrl+'assets/gradeAssets/1.4/levelLastScene/crayon.png');
         _this.load.image('Level12A_eraser', window.baseUrl + 'assets/gradeAssets/1.4/levelLastScene/eraser.png');
 
-
-        //_this.load.atlas('Level12A_wind1',window.baseUrl+'assets/gradeAssets/1.4/levelLastScene/wind1.png' ,window.baseUrl+'json/gradeJson/1.4/wind1.json');
-        //_this.load.atlas('Level12A_scene3wind2',window.baseUrl+'assets/gradeAssets/1.4/levelLastScene/wind2new.png' ,window.baseUrl+'json/gradeJson/1.4/wind2new.json');
-        //_this.load.atlas('Level12A_windmel',window.baseUrl+'assets/gradeAssets/1.4/levelLastScene/wind3new3.png' ,window.baseUrl+'json/gradeJson/1.4/wind3new3.json');
-        //_this.load.atlas('Level12A_windmel2',window.baseUrl+'assets/gradeAssets/1.4/levelLastScene/wind32New.png' ,window.baseUrl+'json/gradeJson/1.4/wind32New.json');
         _this.load.atlas('Level12A_checkbtn', window.baseUrl + 'assets/gradeAssets/1.4/levelLastScene/checkbtn.png', window.baseUrl + 'json/gradeJson/1.4/checkbtn.json');
 
 
@@ -3973,16 +3027,6 @@ Game.preloader.prototype = {
         _this.load.atlas('Level12A_wind2', window.baseUrl + 'assets/gradeAssets/1.4/levelLastScene/w2.png', window.baseUrl + 'json/gradeJson/1.4/w2.json');
         _this.load.atlas('Level12A_wind3', window.baseUrl + 'assets/gradeAssets/1.4/levelLastScene/w3.png', window.baseUrl + 'json/gradeJson/1.4/w3.json');
 
-
-        /* this.load.image('wind11', window.baseUrl+'assets/reduced/wind11.png');
-         this.load.image('wind12', window.baseUrl+'assets/reduced/wind12.png');
-         this.load.image('wind13', window.baseUrl+'assets/reduced/wind13.png');
-         this.load.image('wind21', window.baseUrl+'assets/reduced/wind21.png');
-         this.load.image('wind22', window.baseUrl+'assets/reduced/wind22.png');
-         this.load.image('wind23', window.baseUrl+'assets/reduced/wind23.png');
-         this.load.image('wind31', window.baseUrl+'assets/reduced/wind31.png');
-         this.load.image('wind32', window.baseUrl+'assets/reduced/wind32.png');
-         this.load.image('wind33', window.baseUrl+'assets/reduced/wind33.png');*/
         _this.load.image('commonBg1', window.baseUrl + 'assets/commonAssets/commonBg1.png');
         _this.load.image('commonBg2', window.baseUrl + 'assets/commonAssets/commonBg2.png');
         _this.load.image('bottomBar', window.baseUrl + 'assets/commonAssets/bottomBar.png');
@@ -3991,92 +3035,12 @@ Game.preloader.prototype = {
 
 
     addgame2_4AAssets: function () {
-        /*_this.load.image('Level24A_bg1',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/bg1.png');
-        
-        
-        
-       // _this.load.atlas('Level24A_backbtn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/2.4A/backbtn.json');
-        //_this.load.atlas('Level24A_speaker',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/2.4A/speaker.json');
-        //_this.load.atlas('Level24A_starAnim',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/2.4A/starAnim.json');
-        _this.load.image('Level24A_cloud',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/cloud.png');
-       // _this.load.atlas('Level24A_btn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/btn.png',window.baseUrl+'json/gradeJson/2.4A/btn.json');
-        _this.load.image('Level24A_bg3',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/bg3.png');
-        //_this.load.image('Level24A_tittleBaar',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tittleBaar.png');
-        //_this.load.atlas('Level24A_replay',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/2.4A/reply.json');
-        _this.load.atlas('Level24A_numbg',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/numbg.png' ,window.baseUrl+'json/gradeJson/2.4A/numbg.json');
-        _this.load.atlas('Level24A_rightBtn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/rightBtn.png' ,window.baseUrl+'json/gradeJson/2.4A/rightBtn.json');
-        _this.load.atlas('Level24A_wrongBtn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/wrongBtn.png' ,window.baseUrl+'json/gradeJson/2.4A/wrongBtn.json');
-        
-        
-        _this.load.atlas('Level24A_tape15cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape15cm.png' ,window.baseUrl+'json/gradeJson/2.4A/tape15cm.json');
-        _this.load.atlas('Level24A_tape30cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape30cm.png' ,window.baseUrl+'json/gradeJson/2.4A/tape30cm.json');
-        _this.load.atlas('Level24A_tape100cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape100cm.png' ,window.baseUrl+'json/gradeJson/2.4A/tape100cm.json');
-        _this.load.atlas('Level24A_scaleMarker',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/scaleMarker.png' ,window.baseUrl+'json/gradeJson/2.4A/scaleMarker.json');
-        _this.load.image('Level24A_scaleMarkerNew',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/scaleMarkerNew.png');
-        
-        _this.load.image('Level24A_txtbox',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/box.png');
-        _this.load.image('Level24A_tape1',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape1.png');
-        _this.load.image('Level24A_tape2',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape2.png');
-        _this.load.image('Level24A_tape3',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape3.png');
-       // _this.load.image('Level24A_tape15cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape15cm.png');
-       // _this.load.image('Level24A_tape30cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape30cm.png');
-       // _this.load.image('Level24A_tape100cm',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape100cm.png');
-        _this.load.image('Level24A_scale',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/scale.png');
-        _this.load.image('Level24A_scaleNew',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/scaleNew.png');
-        //_this.load.image('Level24A_scaleMarker',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/scaleMarker.png');
-        _this.load.image('Level24A_tapeTint',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tapeTint.png');
-        
-        
-        //My files to load
-        _this.load.atlas('Level24A_shoe',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/shoe.png' ,window.baseUrl+'json/gradeJson/2.4A/shoe.json');
-        _this.load.atlas('Level24A_shoe2',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/shoe2.png' ,window.baseUrl+'json/gradeJson/2.4A/shoe2.json');
-        _this.load.atlas('Level24A_fish',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/fish.png' ,window.baseUrl+'json/gradeJson/2.4A/fish.json');
-        _this.load.atlas('Level24A_clip',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/clip.png' ,window.baseUrl+'json/gradeJson/2.4A/clip.json');
-        _this.load.atlas('Level24A_pencil',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/pencil.png' ,window.baseUrl+'json/gradeJson/2.4A/pencil.json');
-        _this.load.atlas('Level24A_screwDriver',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/screwDriver.png' ,window.baseUrl+'json/gradeJson/2.4A/screwDriver.json');
-        _this.load.atlas('Level24A_key',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/key.png' ,window.baseUrl+'json/gradeJson/2.4A/key.json');
-        _this.load.atlas('Level24A_watch',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/watch.png' ,window.baseUrl+'json/gradeJson/2.4A/watch.json');
-        _this.load.atlas('Level24A_pen',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/pen.png' ,window.baseUrl+'json/gradeJson/2.4A/pen.json');
-        _this.load.atlas('Level24A_scale1',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/scale1.png' ,window.baseUrl+'json/gradeJson/2.4A/scale1.json');
-        _this.load.atlas('Level24A_scale2',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/scale2.png' ,window.baseUrl+'json/gradeJson/2.4A/scale2.json');
-        _this.load.atlas('Level24A_bat',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/bat.png' ,window.baseUrl+'json/gradeJson/2.4A/bat.json');
-        _this.load.atlas('Level24A_cup',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/cup.png' ,window.baseUrl+'json/gradeJson/2.4A/cup.json');
-        _this.load.atlas('Level24A_jug',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/jug.png' ,window.baseUrl+'json/gradeJson/2.4A/jug.json');
-        _this.load.atlas('Level24A_chair',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/chair.png' ,window.baseUrl+'json/gradeJson/2.4A/chair.json');
-        _this.load.atlas('Level24A_mug',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/mug.png' ,window.baseUrl+'json/gradeJson/2.4A/mug.json');
-        _this.load.atlas('Level24A_table',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/table.png' ,window.baseUrl+'json/gradeJson/2.4A/table.json');
-        _this.load.atlas('Level24A_pot',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/pot.png' ,window.baseUrl+'json/gradeJson/2.4A/pot.json');
-        
-        
-        _this.load.atlas('Level24A_level2Scale1',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/level2Scale1.png' ,window.baseUrl+'json/gradeJson/2.4A/level2Scale1.json');
-        _this.load.atlas('Level24A_level2Scale2',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/level2Scale2.png' ,window.baseUrl+'json/gradeJson/2.4A/level2Scale2.json');
-        _this.load.atlas('Level24A_level2Scale3',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/level2Scale3.png' ,window.baseUrl+'json/gradeJson/2.4A/level2Scale3.json');
-        _this.load.atlas('Level24A_tree',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/tree.png' ,window.baseUrl+'json/gradeJson/2.4A/tree.json');
-        _this.load.atlas('Level24A_tape4',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/tape4.png' ,window.baseUrl+'json/gradeJson/2.4A/tape4.json');
-        _this.load.atlas('Level24A_car',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/car.png' ,window.baseUrl+'json/gradeJson/2.4A/car.json');
-        _this.load.atlas('Level24A_carpet',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/carpet.png' ,window.baseUrl+'json/gradeJson/2.4A/carpet.json');
-    	
-    	
-    	
-        /*_this.load.audio('Eng_24A1', window.baseUrl+'questionSounds/2.4A/English/2.4A1.mp3');
-        _this.load.audio('Eng_24A2', window.baseUrl+'questionSounds/2.4A/English/2.4A2.mp3');
-        _this.load.audio('Eng_24B1', window.baseUrl+'questionSounds/2.4A/English/2.4B1.mp3');
-        _this.load.audio('Kan_24A1', window.baseUrl+'questionSounds/2.4A/Kannada/2.4A1.mp3');
-        _this.load.audio('Kan_24A2', window.baseUrl+'questionSounds/2.4A/Kannada/2.4A2.mp3');
-        _this.load.audio('Kan_24B1', window.baseUrl+'questionSounds/2.4A/Kannada/2.4B1.mp3');
-        _this.load.audio('Hin_24A1', window.baseUrl+'questionSounds/2.4A/Hindi/2.4A1.mp3');
-        _this.load.audio('Hin_24A2', window.baseUrl+'questionSounds/2.4A/Hindi/2.4A2.mp3');
-        _this.load.audio('Hin_24B1', window.baseUrl+'questionSounds/2.4A/Hindi/2.4B1.mp3');*/
 
 
         _this.load.image('Level24A_bg1', window.baseUrl + 'assets/gradeAssets/2.4A/commonAssets/bg1.png');
         _this.load.image('Level24B_bg1', window.baseUrl + 'assets/gradeAssets/2.4A/commonAssets/bg1.png');
 
 
-
-        // _this.load.atlas('Level24A_backbtn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/2.4A/backbtn.json');
-        //_this.load.atlas('Level24A_speaker',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/2.4A/speaker.json');
-        //_this.load.atlas('Level24A_starAnim',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/2.4A/starAnim.json');
         _this.load.image('Level24A_cloud', window.baseUrl + 'assets/gradeAssets/2.4A/commonAssets/cloud.png');
         // _this.load.atlas('Level24A_btn',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/btn.png',window.baseUrl+'json/gradeJson/2.4A/btn.json');
         _this.load.image('Level24A_bg3', window.baseUrl + 'assets/gradeAssets/2.4A/commonAssets/bg3.png');
@@ -4146,15 +3110,6 @@ Game.preloader.prototype = {
         //_this.load.atlas('DisplayScale',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/DisplayScale.png' ,window.baseUrl+'json/gradeJson/2.4A/DisplayScale.json');
         _this.load.atlas('DisplayScale', window.baseUrl + 'assets/newAssets/DisplayScale.png', window.baseUrl + 'assets/newAssets/DisplayScale.json');
 
-        /*_this.load.audio('Eng_24A1', window.baseUrl+'questionSounds/2.4A/English/2.4A1.mp3');
-        _this.load.audio('Eng_24A2', window.baseUrl+'questionSounds/2.4A/English/2.4A2.mp3');
-        _this.load.audio('Eng_24B1', window.baseUrl+'questionSounds/2.4A/English/2.4B1.mp3');
-        _this.load.audio('Kan_24A1', window.baseUrl+'questionSounds/2.4A/Kannada/2.4A1.mp3');
-        _this.load.audio('Kan_24A2', window.baseUrl+'questionSounds/2.4A/Kannada/2.4A2.mp3');
-        _this.load.audio('Kan_24B1', window.baseUrl+'questionSounds/2.4A/Kannada/2.4B1.mp3');
-        _this.load.audio('Hin_24A1', window.baseUrl+'questionSounds/2.4A/Hindi/2.4A1.mp3');
-        _this.load.audio('Hin_24A2', window.baseUrl+'questionSounds/2.4A/Hindi/2.4A2.mp3');
-        _this.load.audio('Hin_24B1', window.baseUrl+'questionSounds/2.4A/Hindi/2.4B1.mp3');*/
 
     },
 
@@ -4205,19 +3160,10 @@ Game.preloader.prototype = {
         _this.load.atlas('Level32B_level2weight3', window.baseUrl + 'assets/gradeAssets/3.2B/gameAssets/level2/L2.png', window.baseUrl + 'json/gradeJson/3.2B/L2.json');
         _this.load.atlas('Level32B_level2weight4', window.baseUrl + 'assets/gradeAssets/3.2B/gameAssets/level2/R2.png', window.baseUrl + 'json/gradeJson/3.2B/R2.json');
 
-        /*_this.load.audio('E_32a', window.baseUrl+'questionSounds/3.2A/E2a.mp3');
-        _this.load.audio('H_32a', window.baseUrl+'questionSounds/3.2A/H2a.mp3');
-        _this.load.audio('K_32a', window.baseUrl+'questionSounds/3.2A/K2a.mp3');*/
     },
 
     addgame3_2CAssets: function () {
         //common for all games.
-        //_this.load.atlas('Level32C_backbtn',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/3.2C/backbtn.json');
-        //_this.load.atlas('Level32C_speaker',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/3.2C/speaker.json');
-        //_this.load.atlas('Level32C_starAnim',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/3.2C/starAnim.json');
-        // _this.load.image('Level32C_tittleBaar',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/tittleBaar.png');
-        // _this.load.atlas('Level32C_replay',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/3.2C/reply.json');
-        // _this.load.atlas('Level32C_btn',window.baseUrl+'assets/gradeAssets/3.2C/commonAssets/btn.png',window.baseUrl+'json/gradeJson/3.2C/btn.json');
         _this.load.image('Level32C_bg', window.baseUrl + 'assets/gradeAssets/3.2C/commonAssets/bg.png');
 
         //game assets.
@@ -4376,17 +3322,7 @@ Game.preloader.prototype = {
         _this.load.atlas('Level33A_bottle2', window.baseUrl + 'assets/gradeAssets/3.3A/gameAssets/level3/bottle2.png', window.baseUrl + 'json/gradeJson/3.3A/bottle2.json');
         _this.load.atlas('Level33A_bottle', window.baseUrl + 'assets/gradeAssets/3.3A/gameAssets/level3/bottle.png', window.baseUrl + 'json/gradeJson/3.3A/bottle.json');
 
-        /*_this.load.audio('Eng_33A', window.baseUrl+'questionSounds/3.3A/English/3.3A.mp3');
-        _this.load.audio('Eng_33B1', window.baseUrl+'questionSounds/3.3A/English/3.3B_1.mp3');
-        _this.load.audio('Eng_33B2', window.baseUrl+'questionSounds/3.3A/English/3.3B_2.mp3');
-        _this.load.audio('Kan_33A', window.baseUrl+'questionSounds/3.3A/Kannada/3.3A.mp3');
-        _this.load.audio('Kan_33B1', window.baseUrl+'questionSounds/3.3A/Kannada/3.3B_1.mp3');
-        _this.load.audio('Kan_33B2', window.baseUrl+'questionSounds/3.3A/Kannada/3.3B_2.mp3');
-        _this.load.audio('Kan_33_3', window.baseUrl+'questionSounds/3.3A/Kannada/3.3_3.mp3');
-        _this.load.audio('Kan_33_4', window.baseUrl+'questionSounds/3.3A/Kannada/3.3_4.mp3');
-        _this.load.audio('Hin_33A', window.baseUrl+'questionSounds/3.3A/Hindi/3.3A.mp3');
-        _this.load.audio('Hin_33B1', window.baseUrl+'questionSounds/3.3A/Hindi/3.3B_1.mp3');
-        _this.load.audio('Hin_33B2', window.baseUrl+'questionSounds/3.3A/Hindi/3.3B_2.mp3');*/
+     
     },
 
 
@@ -4585,195 +3521,7 @@ Game.preloader.prototype = {
     },
 
     addgame4_1AAssets: function () {
-        /*_this.load.image('Level41A_bg1',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/bg1.png');
-        //_this.load.atlas('Level41A_backbtn',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/4.1A/backbtn.json');
-        //_this.load.atlas('Level41A_speaker',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/4.1A/speaker.json');
-        //_this.load.atlas('Level41A_starAnim',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/4.1A/starAnim.json');
-        _this.load.image('Level41A_cloud',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/cloud.png');
-      //  _this.load.atlas('Level41A_btn',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/btn.png',window.baseUrl+'json/gradeJson/4.1A/btn.json');
-        _this.load.image('Level41A_bg3',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/bg3.png');
-      //  _this.load.image('Level41A_tittleBaar',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/tittleBaar.png');
-        //_this.load.atlas('Level41A_replay',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/4.1A/reply.json');
-        
-        //My files to load
-        _this.load.atlas('Level41A_gameBox',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/gameBox.png' ,window.baseUrl+'json/gradeJson/4.1A/gameBox.json');
-        _this.load.atlas('Level41A_allimg',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/allimg.png' ,window.baseUrl+'json/gradeJson/4.1A/allimg.json');
-        _this.load.atlas('Level41A_tickMark',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/tickMark.png' ,window.baseUrl+'json/gradeJson/4.1A/tickMark.json');
-        _this.load.image('Level41A_croc',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/croc.png');
-        _this.load.image('Level41A_croc2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/croc2.png');
-        
-        _this.load.image('Level41A_glow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glow.png');
-        
-        //game items
-        _this.load.image('Level41A_cup1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/1.png');
-        _this.load.image('Level41A_cup2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/2.png');
-        _this.load.image('Level41A_cup3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/3.png');
-        _this.load.image('Level41A_cup4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/4.png');
-        
-        _this.load.image('Level41A_bucket1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/5.png');
-        _this.load.image('Level41A_bucket2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/6.png');
-        _this.load.image('Level41A_bucket3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/7.png');
-        _this.load.image('Level41A_bucket4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/8.png');
-        
-        _this.load.image('Level41A_jug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/9.png');
-        _this.load.image('Level41A_jug2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/10.png');
-        _this.load.image('Level41A_jug3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/11.png');
-        _this.load.image('Level41A_jug4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/12.png');
-        
-        _this.load.image('Level41A_flask1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/13.png');
-        _this.load.image('Level41A_flask2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/14.png');
-        _this.load.image('Level41A_flask3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/15.png');
-        _this.load.image('Level41A_flask4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/16.png');
-        
-        _this.load.image('Level41A_bottle1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/17.png');
-        _this.load.image('Level41A_bottle2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/18.png');
-        _this.load.image('Level41A_bottle3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/19.png');
-        _this.load.image('Level41A_bottle4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/20.png');
-        
-        _this.load.image('Level41A_milk1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/21.png');
-        _this.load.image('Level41A_milk2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/22.png');
-        _this.load.image('Level41A_milk3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/23.png');
-        _this.load.image('Level41A_milk4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/24.png');
-        
-        _this.load.image('Level41A_shadow1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow1.png');
-        _this.load.image('Level41A_shadow2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow2.png');
-        _this.load.image('Level41A_shadow3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow3.png');
-        _this.load.image('Level41A_shadow4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow4.png');
-        _this.load.image('Level41A_shadow5',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow5.png');
-        _this.load.image('Level41A_shadow6',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/shadow6.png');
-        
-        //Loading 4.1C Assets
-        _this.load.atlas('Level41A_gameBox3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/gameBox3.png' ,window.baseUrl+'json/gradeJson/4.1A/gameBox3.json');
-        _this.load.atlas('Level41A_allimages',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/allimages.png' ,window.baseUrl+'json/gradeJson/4.1A/allimages.json');
-        _this.load.image('Level41A_bluebottle1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bluebottle1.png');
-        _this.load.image('Level41A_bluebottle2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bluebottle2.png');
-        
-        _this.load.image('Level41A_glassfull1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull1.png');
-        _this.load.image('Level41A_glassfull2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull2.png');
-        _this.load.image('Level41A_glassfull3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull3.png');
-        _this.load.image('Level41A_glassfull4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull4.png');
-        
-        _this.load.image('Level41A_greendrum1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greendrum1.png');
-        _this.load.image('Level41A_greendrum2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greendrum2.png');
-        _this.load.image('Level41A_greendrum3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greendrum3.png');
-        
-        _this.load.image('Level41A_greenmug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenmug1.png');
-        _this.load.image('Level41A_greenmug2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenmug2.png');
-        
-        _this.load.image('Level41A_greencup1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greencup1.png');
-        _this.load.image('Level41A_greencup2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greencup2.png');
-        
-        _this.load.image('Level41A_greenpot1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenpot1.png');
-        _this.load.image('Level41A_greenpot2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenpot2.png');
-        _this.load.image('Level41A_greenpot3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenpot3.png');
-        _this.load.image('Level41A_greenpot4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenpot4.png');
-        
-        _this.load.image('Level41A_orangebucket1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangebucket1.png');
-        _this.load.image('Level41A_orangebucket2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangebucket2.png');
-        
-        _this.load.image('Level41A_orangecan1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangecan1.png');
-        _this.load.image('Level41A_orangecan2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangecan2.png');
-        _this.load.image('Level41A_orangecan3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangecan3.png');
-        
-        _this.load.image('Level41A_orangejug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangejug1.png');
-        _this.load.image('Level41A_orangejug2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangejug2.png');
-        
-        _this.load.image('Level41A_pinkbucket1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkbucket1.png');
-        _this.load.image('Level41A_pinkbucket2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkbucket2.png');
-        _this.load.image('Level41A_pinkbucket3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkbucket3.png');
-        
-        _this.load.image('Level41A_pinkmug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkmug1.png');
-        _this.load.image('Level41A_pinkmug2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkmug2.png');
-        
-        _this.load.image('Level41A_redjug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/redjug1.png');
-        _this.load.image('Level41A_redjug2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/redjug2.png');
-        _this.load.image('Level41A_redjug3',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/redjug3.png');
-        _this.load.image('Level41A_redjug4',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/redjug4.png');
-        
-        _this.load.image('Level41A_syntex1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/syntex1.png');
-        _this.load.image('Level41A_syntex2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/syntex2.png');
-        
-        _this.load.image('Level41A_whitemug1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/whitemug1.png');
-        _this.load.image('Level41A_whitesoda1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/whitesoda1.png');
-        _this.load.image('Level41A_whitesoda2',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/whitesoda2.png');
-        
-        _this.load.image('Level41A_yellowct1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/yellowct1.png');
-        _this.load.image('Level41A_bottleone',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bottleone.png');
-        
-        _this.load.image('Level41A_bluebottle1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bluebottle1_shadow.png');
-        _this.load.image('Level41A_glassfull1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull1_shadow.png');
-        _this.load.image('Level41A_glassfull2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull2_shadow.png');
-        _this.load.image('Level41A_greendrum1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greendrum1_shadow.png');
-        _this.load.image('Level41A_greendrum2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greendrum2_shadow.png');
-        _this.load.image('Level41A_greenmug1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenmug1_shadow.png');
-        _this.load.image('Level41A_greenpot1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/greenpot1_shadow.png');
-        _this.load.image('Level41A_orangebucket1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangebucket1_shadow.png');
-        _this.load.image('Level41A_orangebucket2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangebucket2_shadow.png');
-        _this.load.image('Level41A_orangecan1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangecan1_shadow.png');
-        _this.load.image('Level41A_orangecan2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangecan2_shadow.png');
-        _this.load.image('Level41A_orangejug1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangejug1_shadow.png');
-        _this.load.image('Level41A_orangejug2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/orangejug2_shadow.png');
-        _this.load.image('Level41A_pinkbucket1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkbucket1_shadow.png');
-        _this.load.image('Level41A_pinkbucket2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkbucket2_shadow.png');
-        _this.load.image('Level41A_pinkmug1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/pinkmug1_shadow.png');
-        _this.load.image('Level41A_redjug1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/redjug1_shadow.png');
-        _this.load.image('Level41A_syntex1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/syntex1_shadow.png');
-        _this.load.image('Level41A_syntex2_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/syntex2_shadow.png');
-        _this.load.image('Level41A_whitemug1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/whitemug1_shadow.png');
-        _this.load.image('Level41A_whitesoda1_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/whitesoda1_shadow.png');
-        
-        //load 4.1A assets
-        _this.load.image('Level41A_bg4_1',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/akshbg41.png');
-        _this.load.atlas('Level41A_bottlefull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bottlefull.png' ,window.baseUrl+'json/gradeJson/4.1A/bottlefull.json');
-        _this.load.atlas('Level41A_bottlehalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bottlehalf.png' ,window.baseUrl+'json/gradeJson/4.1A/bottlehalf.json');
-        _this.load.atlas('Level41A_bottlequarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bottlequarter.png' ,window.baseUrl+'json/gradeJson/4.1A/bottlequarter.json');
-        _this.load.atlas('Level41A_bucketfull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bucketfull.png' ,window.baseUrl+'json/gradeJson/4.1A/bucketfull.json');
-        _this.load.atlas('Level41A_buckethalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/buckethalf.png' ,window.baseUrl+'json/gradeJson/4.1A/buckethalf.json');
-        _this.load.atlas('Level41A_bucketquarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bucketquarter.png' ,window.baseUrl+'json/gradeJson/4.1A/bucketquarter.json');
-        _this.load.atlas('Level41A_glassfull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassfull.png' ,window.baseUrl+'json/gradeJson/4.1A/glassfull.json');
-        _this.load.atlas('Level41A_glasshalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glasshalf.png' ,window.baseUrl+'json/gradeJson/4.1A/glasshalf.json');
-        _this.load.atlas('Level41A_glassquarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glassquarter.png' ,window.baseUrl+'json/gradeJson/4.1A/glassquarter.json');
-        _this.load.atlas('Level41A_jugfull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/jugfull.png' ,window.baseUrl+'json/gradeJson/4.1A/jugfull.json');
-        _this.load.atlas('Level41A_jughalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/jughalf.png' ,window.baseUrl+'json/gradeJson/4.1A/jughalf.json');
-        _this.load.atlas('Level41A_jugquarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/jugquarter.png' ,window.baseUrl+'json/gradeJson/4.1A/jugquarter.json');
-        _this.load.atlas('Level41A_mugfull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/mugfull.png' ,window.baseUrl+'json/gradeJson/4.1A/mugfull.json');
-        _this.load.atlas('Level41A_mughalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/mughalf.png' ,window.baseUrl+'json/gradeJson/4.1A/mughalf.json');
-        _this.load.atlas('Level41A_mugquarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/mugquarter.png' ,window.baseUrl+'json/gradeJson/4.1A/mugquarter.json');
-        _this.load.atlas('Level41A_sodafull',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/sodafull.png' ,window.baseUrl+'json/gradeJson/4.1A/sodafull.json');
-        _this.load.atlas('Level41A_sodahalf',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/sodahalf.png' ,window.baseUrl+'json/gradeJson/4.1A/sodahalf.json');
-        _this.load.atlas('Level41A_sodaquarter',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/sodaquarter.png' ,window.baseUrl+'json/gradeJson/4.1A/sodaquarter.json');
-        _this.load.image('Level41A_bottle_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bottle_shadow.png');
-        _this.load.image('Level41A_bucket_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/bucket_shadow.png');
-        _this.load.image('Level41A_glass_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/glass_shadow.png');
-        _this.load.image('Level41A_jug_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/jug_shadow.png');
-        _this.load.image('Level41A_mug_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/mug_shadow.png');
-        _this.load.image('Level41A_soda_shadow',window.baseUrl+'assets/gradeAssets/4.1A/gameAssets/soda_shadow.png');
-    	
-    	
-    	
-        /*_this.load.audio('Eng_41A1', window.baseUrl+'questionSounds/4.1A/English/4.1A1.mp3');
-        _this.load.audio('Eng_41A2', window.baseUrl+'questionSounds/4.1A/English/4.1A2.mp3');
-        _this.load.audio('Eng_41A3', window.baseUrl+'questionSounds/4.1A/English/4.1A3.mp3');
-        _this.load.audio('Eng_41B1', window.baseUrl+'questionSounds/4.1A/English/4.1B1.mp3');
-        _this.load.audio('Eng_41B2', window.baseUrl+'questionSounds/4.1A/English/4.1B2.mp3');
-        _this.load.audio('Eng_41C1', window.baseUrl+'questionSounds/4.1A/English/4.1C1.mp3');
-        _this.load.audio('Eng_41C2', window.baseUrl+'questionSounds/4.1A/English/4.1C2.mp3');
-        _this.load.audio('Kan_41A1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A1.mp3');
-        _this.load.audio('Kan_41A2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A2.mp3');
-        _this.load.audio('Kan_41A3', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A3.mp3');
-        _this.load.audio('Kan_41B1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1B1.mp3');
-        _this.load.audio('Kan_41B2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1B2.mp3');
-        _this.load.audio('Kan_41C1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1C1.mp3');
-        _this.load.audio('Kan_41C2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1C2.mp3');
-        _this.load.audio('Hin_41A1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A1 OPTION1.mp3');
-        _this.load.audio('Hin_41A2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A2.mp3');
-        _this.load.audio('Hin_41A3', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A3 Option.mp3');
-        _this.load.audio('Hin_41B1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1B1.mp3');
-        _this.load.audio('Hin_41B2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1B2.mp3');
-        _this.load.audio('Hin_41C1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1C1.mp3');
-        _this.load.audio('Hin_41C2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1C2.mp3');*/
-
-
+     
         _this.load.image('Level41A_bg1', window.baseUrl + 'assets/gradeAssets/4.1A/commonAssets/bg1.png');
         //_this.load.atlas('Level41A_backbtn',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/4.1A/backbtn.json');
         //_this.load.atlas('Level41A_speaker',window.baseUrl+'assets/gradeAssets/4.1A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/4.1A/speaker.json');
@@ -4939,129 +3687,10 @@ Game.preloader.prototype = {
         _this.load.image('Level41A_soda_shadow', window.baseUrl + 'assets/gradeAssets/4.1A/gameAssets/soda_shadow.png');
 
 
-
-        /*_this.load.audio('Eng_41A1', window.baseUrl+'questionSounds/4.1A/English/4.1A1.mp3');
-        _this.load.audio('Eng_41A2', window.baseUrl+'questionSounds/4.1A/English/4.1A2.mp3');
-        _this.load.audio('Eng_41A3', window.baseUrl+'questionSounds/4.1A/English/4.1A3.mp3');
-        _this.load.audio('Eng_41B1', window.baseUrl+'questionSounds/4.1A/English/4.1B1.mp3');
-        _this.load.audio('Eng_41B2', window.baseUrl+'questionSounds/4.1A/English/4.1B2.mp3');
-        _this.load.audio('Eng_41C1', window.baseUrl+'questionSounds/4.1A/English/4.1C1.mp3');
-        _this.load.audio('Eng_41C2', window.baseUrl+'questionSounds/4.1A/English/4.1C2.mp3');
-        _this.load.audio('Kan_41A1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A1.mp3');
-        _this.load.audio('Kan_41A2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A2.mp3');
-        _this.load.audio('Kan_41A3', window.baseUrl+'questionSounds/4.1A/Kannada/4.1A3.mp3');
-        _this.load.audio('Kan_41B1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1B1.mp3');
-        _this.load.audio('Kan_41B2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1B2.mp3');
-        _this.load.audio('Kan_41C1', window.baseUrl+'questionSounds/4.1A/Kannada/4.1C1.mp3');
-        _this.load.audio('Kan_41C2', window.baseUrl+'questionSounds/4.1A/Kannada/4.1C2.mp3');
-        _this.load.audio('Hin_41A1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A1 OPTION1.mp3');
-        _this.load.audio('Hin_41A2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A2.mp3');
-        _this.load.audio('Hin_41A3', window.baseUrl+'questionSounds/4.1A/Hindi/4.1A3 Option.mp3');
-        _this.load.audio('Hin_41B1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1B1.mp3');
-        _this.load.audio('Hin_41B2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1B2.mp3');
-        _this.load.audio('Hin_41C1', window.baseUrl+'questionSounds/4.1A/Hindi/4.1C1.mp3');
-        _this.load.audio('Hin_41C2', window.baseUrl+'questionSounds/4.1A/Hindi/4.1C2.mp3');*/
     },
 
     addgame4_2AAssets: function () {
-        /*_this.load.image('Level42A_bgA',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/bgA.png');
-        //_this.load.atlas('Level42A_backbtn',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/4.2A/backbtn.json');
-        //_this.load.atlas('Level42A_speaker',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/4.2A/speaker.json');
-        //_this.load.atlas('Level42A_starAnim',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/4.2A/starAnim.json');
-        _this.load.image('Level42A_cloud',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/cloud.png');
-        //_this.load.atlas('Level42A_btn',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/btn.png',window.baseUrl+'json/gradeJson/4.2A/btn.json');
-        _this.load.image('Level42A_bg3',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/bg3.png');
-        //_this.load.image('Level42A_tittleBaar',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/tittleBaar.png');
-        //_this.load.atlas('Level42A_replay',window.baseUrl+'assets/gradeAssets/4.2A/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/4.2A/reply.json');
-        
-        //Load 4.2A Assets
-        _this.load.atlas('Level42A_bottle',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bottle.png' ,window.baseUrl+'json/gradeJson/4.2A/bottle.json');
-        _this.load.atlas('Level42A_bottleblue',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bottleblue.png' ,window.baseUrl+'json/gradeJson/4.2A/bottleblue.json');
-        _this.load.atlas('Level42A_bucket',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bucket.png' ,window.baseUrl+'json/gradeJson/4.2A/bucket.json');
-        _this.load.atlas('Level42A_cup',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/cup.png' ,window.baseUrl+'json/gradeJson/4.2A/cup.json');
-        _this.load.atlas('Level42A_cupreverse',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/cupreverse.png' ,window.baseUrl+'json/gradeJson/4.2A/cupreverse.json');
-        _this.load.atlas('Level42A_glass',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/glass.png' ,window.baseUrl+'json/gradeJson/4.2A/glass.json');
-        _this.load.atlas('Level42A_jug',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/jug.png' ,window.baseUrl+'json/gradeJson/4.2A/jug.json');
-        _this.load.atlas('Level42A_pinkmug',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/pinkmug.png' ,window.baseUrl+'json/gradeJson/4.2A/pinkmug.json');
-        _this.load.atlas('Level42A_soda',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/soda.png' ,window.baseUrl+'json/gradeJson/4.2A/soda.json');
-        _this.load.image('Level42A_box',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/box.png');
-        
-        
-        //Load 4.2C Assets
-        _this.load.atlas('Level42A_bluebottlec',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bluebottlec.png' ,window.baseUrl+'json/gradeJson/4.2A/bluebottlec.json');
-        _this.load.atlas('Level42A_bluebucketc',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bluebucketc.png' ,window.baseUrl+'json/gradeJson/4.2A/bluebucketc.json');
-        _this.load.atlas('Level42A_bottlec',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/bottlec.png' ,window.baseUrl+'json/gradeJson/4.2A/bottlec.json');
-        _this.load.atlas('Level42A_greenmugc',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/greenmugc.png' ,window.baseUrl+'json/gradeJson/4.2A/greenmugc.json');
-        _this.load.atlas('Level42A_pinkbucketc',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/pinkbucketc.png' ,window.baseUrl+'json/gradeJson/4.2A/pinkbucketc.json');
-        _this.load.atlas('Level42A_potsplashc',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/potsplashc.png' ,window.baseUrl+'json/gradeJson/4.2A/potsplashc.json');
-        _this.load.atlas('Level42A_vessel2c',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/vessel2c.png' ,window.baseUrl+'json/gradeJson/4.2A/vessel2c.json');
-        _this.load.atlas('Level42A_yellowctc',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/yellowctc.png' ,window.baseUrl+'json/gradeJson/4.2A/yellowctc.json');
-        _this.load.image('Level42A_maskbg',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/maskbg.png');
-        _this.load.image('Level42A_common_shadow',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/common_shadow.png');
-        
-        //LEVELB
-        
-        _this.load.atlas('Level42A_tank2',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/tank.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/tank.json');
-        _this.load.atlas('Level42A_drum2',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/drum.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/drum.json');
-        _this.load.atlas('Level42A_pot2',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/pot.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/pot.json');
-        _this.load.image('Level42A_box',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/box.png');
-        _this.load.image('Level42A_darkbg1',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/darkbg1.png');
-        _this.load.image('Level42A_darkbg2',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/darkbg2.png');
-        _this.load.image('Level42A_mainbox',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/mainbox.png');
-        _this.load.atlas('Level42A_tick',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/tick.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/tick.json');
-        
-        _this.load.atlas('Level42A_cookerB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/cooker.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/cooker.json');
-        _this.load.atlas('Level42A_bottleB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/bottle.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/bottle.json');
-        _this.load.atlas('Level42A_jugB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/jug.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/jug.json');
-        _this.load.image('Level42A_coffeecup',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/coffeecup.png');
-        
-        _this.load.atlas('Level42A_mugB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/mug.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/mug.json');
-        _this.load.atlas('Level42A_orangebottleB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/orangebottle.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/orangebottle.json');
-        _this.load.atlas('Level42A_canB',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/can.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/can.json');
-        
-        _this.load.atlas('Level42A_greenbot22',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/greenbot22.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/greenbot22.json');
-        _this.load.atlas('Level42A_bottle22',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/bottle22.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/bottle22.json');
-        
-        _this.load.atlas('Level42A_pinkglass',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/pinkglass.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/pinkglass.json');
-        _this.load.atlas('Level42A_greencup',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/greencup.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/greencup.json');
-        _this.load.atlas('Level42A_smallbottle',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/smallbottle.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/smallbottle.json');
-        _this.load.image('Level42A_spoon',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/spoon.png');
-        
-        _this.load.atlas('Level42A_bucket33',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/bucket.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/bucket.json');
-        _this.load.image('Level42A_greena1',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/greena1.png');
-        
-        _this.load.atlas('Level42A_bottle44',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/bottle44.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/bottle44.json');
-        _this.load.atlas('Level42A_redmug',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/redmug.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/redmug.json');
-        _this.load.atlas('Level42A_glass44',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/glass44.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/glass44.json');
-        
-        _this.load.atlas('Level42A_pot222',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/pot222.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/pot222.json');
-        _this.load.atlas('Level42A_can222',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/can222.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/can222.json');
-        _this.load.atlas('Level42A_watercontainer',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/watercontainer.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/watercontainer.json');
-        
-        _this.load.image('Level42A_shadow7',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/shadow7.png');
-        _this.load.image('Level42A_shadow8',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/shadow8.png');
-        _this.load.image('Level42A_shadow9',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/shadow9.png');
-        
-        _this.load.image('Level42A_a1',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/a1.png');
-        _this.load.atlas('Level42A_a11',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/a11.png',window.baseUrl+'json/gradeJson/4.2A/levelB/a11.json');
-        
-        _this.load.atlas('Level42A_boxb',window.baseUrl+'assets/gradeAssets/4.2A/gameAssets/levelB/boxb.png' ,window.baseUrl+'json/gradeJson/4.2A/levelB/boxb.json');
-        
-        /*_this.load.audio('waterFillingSound', window.baseUrl+'questionSounds/4.2A/waterFillingSound.mp3');
-        _this.load.audio('watersplash',window.baseUrl+'questionSounds/4.2A/watersplash.mp3');
-        
-        _this.load.audio('Eng_42A1', window.baseUrl+'questionSounds/4.2A/English/4.2A1.mp3');
-        _this.load.audio('Eng_42B1', window.baseUrl+'questionSounds/4.2A/English/4.2B1.mp3');
-        _this.load.audio('Eng_42C1', window.baseUrl+'questionSounds/4.2A/English/4.2C1.mp3');
-        _this.load.audio('Kan_42A1', window.baseUrl+'questionSounds/4.2A/Kannada/4.2A1.mp3');
-        _this.load.audio('Kan_42B1', window.baseUrl+'questionSounds/4.2A/Kannada/4.2B1.mp3');
-        _this.load.audio('Kan_42C1', window.baseUrl+'questionSounds/4.2A/Kannada/4.2C1.mp3');
-        _this.load.audio('Hin_42A1', window.baseUrl+'questionSounds/4.2A/Hindi/4.2A1.mp3');
-        _this.load.audio('Hin_42B1', window.baseUrl+'questionSounds/4.2A/Hindi/4.2B1.mp3');
-        _this.load.audio('Hin_42C1', window.baseUrl+'questionSounds/4.2A/Hindi/4.2C1.mp3');*/
-
-
-
+       
 
         this.load.image('Level42A_bgA', window.baseUrl + 'assets/gradeAssets/4.2A/commonAssets/bgA.png');
         this.load.atlas('Level42A_CommonBackBtn', window.baseUrl + 'assets/gradeAssets/4.2A/commonAssets/backbtn.png', window.baseUrl + 'json/gradeJson/4.2A/backbtn.json');
@@ -5220,97 +3849,7 @@ Game.preloader.prototype = {
 
 
     addgame4_3AAssets: function () {
-        /*_this.load.image('Level43A_bg1',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/BG.png');
-        //_this.load.atlas('Level43A_backbtn',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/4.3A/backbtn.json');
-       // _this.load.atlas('Level43A_speaker',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/4.3A/speaker.json');
-       // _this.load.atlas('Level43A_starAnim',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/4.3A/starAnim.json');
-        _this.load.image('Level43A_cloud',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/cloud.png');
-        //_this.load.atlas('Level43A_btn',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/btn.png',window.baseUrl+'json/gradeJson/4.3A/btn.json');
-        _this.load.image('Level43A_bg3',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/bg3.png');
-        //_this.load.image('Level43A_tittleBaar',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/tittleBaar.png');
-        //_this.load.atlas('Level43A_replay',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/4.3A/reply.json');
-        
-        _this.load.atlas('Level43A_numbg',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/numbg.png' ,window.baseUrl+'json/gradeJson/4.3A/numbg.json');
-        _this.load.atlas('Level43A_rightBtn',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/rightBtn.png' ,window.baseUrl+'json/gradeJson/4.3A/rightBtn.json');
-        _this.load.atlas('Level43A_wrongBtn',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/wrongBtn.png' ,window.baseUrl+'json/gradeJson/4.3A/wrongBtn.json');
-        
-        //My files to load
-      //  _this.load.atlas('Level43A_gameBox',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/gameBox.png' ,window.baseUrl+'json/gradeJson/4.3A/gameBox.json');
-        //_this.load.atlas('Level43A_allimg',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/allimg.png' ,window.baseUrl+'json/gradeJson/4.3A/allimg.json');
-        _this.load.atlas('Level43A_tickMark',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/tickMark.png' ,window.baseUrl+'json/gradeJson/4.3A/tickMark.json');
-        _this.load.atlas('Level43A_crossMark',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/crossMark.png' ,window.baseUrl+'json/gradeJson/4.3A/crossMark.json');
-        
-        //_this.load.image('Level43A_glow',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/glow.png');
-        
-        //game items
-            _this.load.image('Level43A_arrow',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/Arw.png');
-        
-         _this.load.atlas('Level43A_incBox',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/box1.png' ,window.baseUrl+'json/gradeJson/4.3A/box1.json');
-         _this.load.atlas('Level43A_AnswerBox',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/box2.png' ,window.baseUrl+'json/gradeJson/4.3A/box2.json');
-        
-         _this.load.atlas('Level43A_50Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/50mlQ.png' ,window.baseUrl+'json/gradeJson/4.3A/50mlQ.json');
-         _this.load.atlas('Level43A_100Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/100mlQ.png' ,window.baseUrl+'json/gradeJson/4.3A/100mlQ.json');
-         _this.load.atlas('Level43A_200Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/200mlQ.png' ,window.baseUrl+'json/gradeJson/4.3A/200mlQ.json');
-         _this.load.atlas('Level43A_250Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/250mlQ.png' ,window.baseUrl+'json/gradeJson/4.3A/250mlQ.json');
-         _this.load.atlas('Level43A_500Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/500mlQ.png' ,window.baseUrl+'json/gradeJson/4.3A/500mlQ.json');
-        
-         _this.load.atlas('Level43A_200A',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/A 200.png' ,window.baseUrl+'json/gradeJson/4.3A/A 200.json');
-         _this.load.atlas('Level43A_250A',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/A 250.png' ,window.baseUrl+'json/gradeJson/4.3A/A 250.json');
-         _this.load.atlas('Level43A_500A',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/A 500.png' ,window.baseUrl+'json/gradeJson/4.3A/A 500.json');
-         _this.load.atlas('Level43A_1000A',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/A 1000.png' ,window.baseUrl+'json/gradeJson/4.3A/A 1000.json');
-        
-        
-        _this.load.atlas('Level43A_equation',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/equation.png' ,window.baseUrl+'json/gradeJson/4.3A/equation.json');
-        
-        
-        /******************** Level 4.3B******************************/
-        /*        _this.load.atlas('Level43A_50Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/50mlQB.png' ,window.baseUrl+'json/gradeJson/4.3A/50mlQB.json');
-         _this.load.atlas('Level43A_100Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/100mlQB.png' ,window.baseUrl+'json/gradeJson/4.3A/100mlQB.json');
-         _this.load.atlas('Level43A_250Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/250mlQB.png' ,window.baseUrl+'json/gradeJson/4.3A/250mlQB.json');
-         _this.load.atlas('Level43A_500Q',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/500mlQB.png' ,window.baseUrl+'json/gradeJson/4.3A/500mlQB.json');
-        
-         _this.load.atlas('Level43A_bottle',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/bottleB.png' ,window.baseUrl+'json/gradeJson/4.3A/bottleB.json');
-         _this.load.atlas('Level43A_bottle2',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/bottle2B.png' ,window.baseUrl+'json/gradeJson/4.3A/bottle2B.json');
-         _this.load.atlas('Level43A_bottle3',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/bottle3B.png' ,window.baseUrl+'json/gradeJson/4.3A/bottle3B.json');
-         _this.load.atlas('Level43A_cup',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/cupB.png' ,window.baseUrl+'json/gradeJson/4.3A/cupB.json');
-         _this.load.atlas('Level43A_glass',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/glassB.png' ,window.baseUrl+'json/gradeJson/4.3A/glassB.json');
-         _this.load.atlas('Level43A_jug',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/jugB.png' ,window.baseUrl+'json/gradeJson/4.3A/jugB.json');
-         _this.load.atlas('Level43A_jug2',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/jug2B.png' ,window.baseUrl+'json/gradeJson/4.3A/jug2B.json');
-        
-        
-        _this.load.atlas('Level43A_equationB',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/equationB.png' ,window.baseUrl+'json/gradeJson/4.3A/equationB.json');
-        
-        
-        /*********************Level 4.3 C*******************************/
-        /* _this.load.atlas('Level43A_50QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/50mlQC.png' ,window.baseUrl+'json/gradeJson/4.3A/50mlQC.json');
-         _this.load.atlas('Level43A_100QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/100mlQC.png' ,window.baseUrl+'json/gradeJson/4.3A/100mlQC.json');
-         _this.load.atlas('Level43A_200QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/200mlQC.png' ,window.baseUrl+'json/gradeJson/4.3A/200mlQC.json');
-         _this.load.atlas('Level43A_250QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/250mlQC.png' ,window.baseUrl+'json/gradeJson/4.3A/250mlQC.json');
-         _this.load.atlas('Level43A_500QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/500mlQC.png' ,window.baseUrl+'json/gradeJson/4.3A/500mlQC.json');
-        
-         _this.load.atlas('Level43A_1000AC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/1000ltrC.png' ,window.baseUrl+'json/gradeJson/4.3A/1000ltrC.json');
-         _this.load.atlas('Level43A_1000QC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/1000mlQD.png' ,window.baseUrl+'json/gradeJson/4.3A/1000mlQD.json');
-         _this.load.atlas('Level43A_jugC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/2lJug.png' ,window.baseUrl+'json/gradeJson/4.3A/2lJug.json');
-         _this.load.atlas('Level43A_arrowC',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/arrowC.png' ,window.baseUrl+'json/gradeJson/4.3A/arrowC.json');
-         _this.load.atlas('Level43A_glow',window.baseUrl+'assets/gradeAssets/4.3A/gameAssets/glowC.png' ,window.baseUrl+'json/gradeJson/4.3A/glowC.json');
-         
-        /* _this.load.audio('waterFill', window.baseUrl+'questionSounds/4.3A/waterFillingSound.mp3');
-        _this.load.audio('Eng_43A1', window.baseUrl+'questionSounds/4.3A/English/4.3A1.mp3');
-        _this.load.audio('Eng_43B1', window.baseUrl+'questionSounds/4.3A/English/4.3B1.mp3');
-        _this.load.audio('Eng_43C1', window.baseUrl+'questionSounds/4.3A/English/4.3C1.mp3');
-        _this.load.audio('Eng_43C11', window.baseUrl+'questionSounds/4.3A/English/4.3C1.1.mp3');
-        _this.load.audio('Eng_43D1', window.baseUrl+'questionSounds/4.3A/English/4.3D1.mp3');
-        _this.load.audio('Kan_43A1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3A1.mp3');
-        _this.load.audio('Kan_43B1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3B1.mp3');
-        _this.load.audio('Kan_43C1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3C1.mp3');
-        _this.load.audio('Kan_43C11', window.baseUrl+'questionSounds/4.3A/Kannada/4.3C1.1.mp3');
-        _this.load.audio('Kan_43D1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3D1.mp3');
-        _this.load.audio('Hin_43A1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3A1.mp3');
-        _this.load.audio('Hin_43B1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3B1.mp3');
-        _this.load.audio('Hin_43C1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3C1.mp3');
-        _this.load.audio('Hin_43C11', window.baseUrl+'questionSounds/4.3A/Hindi/4.3C1.1.mp3');
-        _this.load.audio('Hin_43D1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3D1.mp3');*/
-
+      
 
         _this.load.image('Level43A_bg1', window.baseUrl + 'assets/gradeAssets/4.3A/commonAssets/BG.png');
         //_this.load.atlas('Level43A_backbtn',window.baseUrl+'assets/gradeAssets/4.3A/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/4.3A/backbtn.json');
@@ -5390,22 +3929,7 @@ Game.preloader.prototype = {
         _this.load.atlas('Level43A_arrowC', window.baseUrl + 'assets/gradeAssets/4.3A/gameAssets/arrowC.png', window.baseUrl + 'json/gradeJson/4.3A/arrowC.json');
         _this.load.atlas('Level43A_glow', window.baseUrl + 'assets/gradeAssets/4.3A/gameAssets/glowC.png', window.baseUrl + 'json/gradeJson/4.3A/glowC.json');
 
-        /* _this.load.audio('waterFill', window.baseUrl+'questionSounds/4.3A/waterFillingSound.mp3');
-        _this.load.audio('Eng_43A1', window.baseUrl+'questionSounds/4.3A/English/4.3A1.mp3');
-        _this.load.audio('Eng_43B1', window.baseUrl+'questionSounds/4.3A/English/4.3B1.mp3');
-        _this.load.audio('Eng_43C1', window.baseUrl+'questionSounds/4.3A/English/4.3C1.mp3');
-        _this.load.audio('Eng_43C11', window.baseUrl+'questionSounds/4.3A/English/4.3C1.1.mp3');
-        _this.load.audio('Eng_43D1', window.baseUrl+'questionSounds/4.3A/English/4.3D1.mp3');
-        _this.load.audio('Kan_43A1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3A1.mp3');
-        _this.load.audio('Kan_43B1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3B1.mp3');
-        _this.load.audio('Kan_43C1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3C1.mp3');
-        _this.load.audio('Kan_43C11', window.baseUrl+'questionSounds/4.3A/Kannada/4.3C1.1.mp3');
-        _this.load.audio('Kan_43D1', window.baseUrl+'questionSounds/4.3A/Kannada/4.3D1.mp3');
-        _this.load.audio('Hin_43A1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3A1.mp3');
-        _this.load.audio('Hin_43B1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3B1.mp3');
-        _this.load.audio('Hin_43C1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3C1.mp3');
-        _this.load.audio('Hin_43C11', window.baseUrl+'questionSounds/4.3A/Hindi/4.3C1.1.mp3');
-        _this.load.audio('Hin_43D1', window.baseUrl+'questionSounds/4.3A/Hindi/4.3D1.mp3');*/
+     
     },
 
     addgame5_1Assets: function () {
@@ -5461,114 +3985,7 @@ Game.preloader.prototype = {
 
     addgame5_2Assets: function () {
 
-        /*this.load.image('glow',window.baseUrl+'assets/gradeAssets/5.2/glow.png');
-        //game items
-        this.load.image('Bg',window.baseUrl+'assets/gradeAssets/5.2/Bg.png');
-        this.load.image('main_image1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/main_image.png');
-        this.load.image('main_image2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/main_image.png');
-        this.load.image('main_image3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/main_image.png');
-        this.load.image('main_image4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/main_image.png');
-        this.load.image('main_image5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/main_image.png');
-        this.load.image('main_image6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/main_image.png');
-        this.load.atlas('blankimg',window.baseUrl+'assets/gradeAssets/5.2/animslide.png',window.baseUrl+'json/gradeJson/5.2/animslide.json');
-       
-        this.load.image('wed1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img1.png');
-        this.load.image('tue1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img2.png');
-        this.load.image('sun1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img3.png');
-        this.load.image('sat1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img4.png');
-        this.load.image('fri1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img5.png');
-        this.load.image('thu1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img6.png');
-        this.load.image('mon1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/img7.png');
-       
-        this.load.image('mon2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img1.png');
-        this.load.image('sat2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img2.png');
-        this.load.image('sun2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img3.png');
-        this.load.image('fri2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img4.png');
-        this.load.image('tue2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img5.png');
-        this.load.image('thu2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img6.png');
-        this.load.image('wed2',window.baseUrl+'assets/gradeAssets/5.2/Slide2/img7.png');
-       
-        this.load.image('sun3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img1.png');
-        this.load.image('fri3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img2.png');
-        this.load.image('mon3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img3.png');
-        this.load.image('wed3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img4.png');
-        this.load.image('thu3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img5.png');
-        this.load.image('sat3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img6.png');
-        this.load.image('tue3',window.baseUrl+'assets/gradeAssets/5.2/Slide3/img7.png');
-     
-        this.load.image('tue4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img1.png');
-        this.load.image('wed4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img2.png');
-        this.load.image('mon4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img3.png');
-        this.load.image('fri4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img4.png');
-        this.load.image('sun4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img5.png');
-        this.load.image('thu4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img6.png');
-        this.load.image('sat4',window.baseUrl+'assets/gradeAssets/5.2/Slide4/img7.png');
-   
-        this.load.image('sat5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img1.png');
-        this.load.image('fri5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img2.png');
-        this.load.image('tue5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img3.png');
-        this.load.image('thu5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img4.png');
-        this.load.image('sun5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img5.png');
-        this.load.image('wed5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img6.png');
-        this.load.image('mon5',window.baseUrl+'assets/gradeAssets/5.2/Slide5/img7.png');
-       
-        this.load.image('sun6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img1.png');
-        this.load.image('tue6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img2.png');
-        this.load.image('thu6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img3.png');
-        this.load.image('sat6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img4.png');
-        this.load.image('fri6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img5.png');
-        this.load.image('wed6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img6.png');
-        this.load.image('mon6',window.baseUrl+'assets/gradeAssets/5.2/Slide6/img7.png');
-       
-        this.load.image('sun19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/sun.png');
-        this.load.image('mon19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/mon.png');
-        this.load.image('tue19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/tue.png');
-        this.load.image('wed19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/wed.png');
-        this.load.image('thu19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/thu.png');
-        this.load.image('fri19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/fri.png');
-        this.load.image('sat19',window.baseUrl+'assets/gradeAssets/5.2/Slide19/sat.png');
-       
-        this.load.image('sun20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/sun.png');
-        this.load.image('mon20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/mon.png');
-        this.load.image('tue20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/tue.png');
-        this.load.image('wed20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/wed.png');
-        this.load.image('thu20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/thu.png');
-        this.load.image('fri20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/fri.png');
-        this.load.image('sat20',window.baseUrl+'assets/gradeAssets/5.2/Slide20/sat.png');
-       
-        this.load.image('sun21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/sun.png');
-        this.load.image('mon21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/mon.png');
-        this.load.image('tue21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/tue.png');
-        this.load.image('wed21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/wed.png');
-        this.load.image('thu21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/thu.png');
-        this.load.image('fri21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/fri.png');
-        this.load.image('sat21',window.baseUrl+'assets/gradeAssets/5.2/Slide21/sat.png');
-       
-        this.load.image('sun22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/sun.png');
-        this.load.image('mon22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/mon.png');
-        this.load.image('tue22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/tue.png');
-        this.load.image('wed22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/wed.png');
-        this.load.image('thu22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/thu.png');
-        this.load.image('fri22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/fri.png');
-        this.load.image('sat22',window.baseUrl+'assets/gradeAssets/5.2/Slide22/sat.png');
-       
-        this.load.image('sun23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/sun.png');
-        this.load.image('mon23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/mon.png');
-        this.load.image('tue23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/tue.png');
-        this.load.image('wed23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/wed.png');
-        this.load.image('thu23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/thu.png');
-        this.load.image('fri23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/fri.png');
-        this.load.image('sat23',window.baseUrl+'assets/gradeAssets/5.2/Slide23/sat.png');
-       
-        this.load.image('sun24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/sun.png');
-        this.load.image('mon24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/mon.png');
-        this.load.image('tue24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/tue.png');
-        this.load.image('wed24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/wed.png');
-        this.load.image('thu24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/thu.png');
-        this.load.image('fri24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/fri.png');
-        this.load.image('sat24',window.baseUrl+'assets/gradeAssets/5.2/Slide24/sat.png');*/
-
-
+      
         this.load.image('Level52_bg1', window.baseUrl + 'assets/gradeAssets/5.2/commonAssets52/bg1.png');
         this.load.atlas('Level52_btn', window.baseUrl + 'assets/gradeAssets/5.2/commonAssets52/btn.png', window.baseUrl + 'json/gradeJson/5.2/btn.json');
         this.load.image('Level52_bg3', window.baseUrl + 'assets/gradeAssets/5.2/commonAssets52/bg3.png');
@@ -5587,14 +4004,6 @@ Game.preloader.prototype = {
         this.load.atlas('Level52_blankimg', window.baseUrl + 'assets/gradeAssets/5.2/animslide.png', window.baseUrl + 'json/gradeJson/5.2/animslide.json');
 
 
-        /*this.load.atlas('Level52_sunday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/sunday.png',window.baseUrl+'json/gradeJson/5.2/sunday.json');
-        this.load.atlas('Level52_monday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/monday.png',window.baseUrl+'json/gradeJson/5.2/monday.json');
-        this.load.atlas('Level52_tuesday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/tuesday.png',window.baseUrl+'json/gradeJson/5.2/tuesday.json');
-        this.load.atlas('Level52_wednesday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/wednesday.png',window.baseUrl+'json/gradeJson/5.2/wednesday.json');
-        this.load.atlas('Level52_thursday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/thursday.png',window.baseUrl+'json/gradeJson/5.2/thursday.json');
-        this.load.atlas('Level52_friday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/friday.png',window.baseUrl+'json/gradeJson/5.2/friday.json');
-        this.load.atlas('Level52_saturday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/saturday.png',window.baseUrl+'json/gradeJson/5.2/saturday.json');
-        */
         this.load.atlas('Level52_sunday', 'BB/assets/newAssets/07.png', 'BB/assets/newAssets/07.json');
         this.load.atlas('Level52_monday', 'BB/assets/newAssets/01.png', 'BB/assets/newAssets/01.json');
         this.load.atlas('Level52_tuesday', 'BB/assets/newAssets/02.png', 'BB/assets/newAssets/02.json');
@@ -5703,45 +4112,7 @@ Game.preloader.prototype = {
 
 
     addgame5_4Assets: function () {
-        /*this.load.image('bg1',window.baseUrl+'assets/commonAssets/bg1.png');
-        this.load.atlas('CommonBackBtn',window.baseUrl+'assets/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/5.4/backbtn.json');
-        this.load.atlas('CommonSpeakerBtn',window.baseUrl+'assets/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/5.4/speaker.json');
-        this.load.atlas('starAnim',window.baseUrl+'assets/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/5.4/starAnim.json');
-        this.load.image('cloud',window.baseUrl+'assets/commonAssets/cloud.png');
-        this.load.atlas('btn',window.baseUrl+'assets/commonAssets/btn.png',window.baseUrl+'json/gradeJson/5.4/btn.json');
-        this.load.image('bg3',window.baseUrl+'assets/commonAssets/bg3.png');
-        this.load.image('tittleBaar',window.baseUrl+'assets/commonAssets/tittleBaar.png');
-        this.load.atlas('replay',window.baseUrl+'assets/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/5.4/reply.json');*/
-        //game assets
-        /*  this.load.atlas('Level54_main_imageanim',window.baseUrl+'assets/gradeAssets/5.4/main_imageanim.png' ,window.baseUrl+'json/gradeJson/5.4/main_imageanim.json');
-          this.load.image('Level54_main_image',window.baseUrl+'assets/gradeAssets/5.4/main_image.png');
-          this.load.image('Level54_glow',window.baseUrl+'assets/gradeAssets/5.4/glow.png');
-          this.load.image('Level54_bg54',window.baseUrl+'assets/gradeAssets/5.4/bg54.png');
-          this.load.image('Level54_JAN',window.baseUrl+'assets/gradeAssets/5.4/JAN.png');
-          this.load.image('Level54_FEB',window.baseUrl+'assets/gradeAssets/5.4/FEB.png');
-          this.load.image('Level54_MAR',window.baseUrl+'assets/gradeAssets/5.4/MAR.png');
-          this.load.image('Level54_APR',window.baseUrl+'assets/gradeAssets/5.4/APR.png');
-          this.load.image('Level54_MAY',window.baseUrl+'assets/gradeAssets/5.4/MAY.png');
-          this.load.image('Level54_JUNE',window.baseUrl+'assets/gradeAssets/5.4/JUNE.png');
-          this.load.image('Level54_JULY',window.baseUrl+'assets/gradeAssets/5.4/JULY.png');
-          this.load.image('Level54_AUG',window.baseUrl+'assets/gradeAssets/5.4/AUG.png');
-          this.load.image('Level54_SEP',window.baseUrl+'assets/gradeAssets/5.4/SEP.png');
-          this.load.image('Level54_OCT',window.baseUrl+'assets/gradeAssets/5.4/OCT.png');
-          this.load.image('Level54_NOV',window.baseUrl+'assets/gradeAssets/5.4/NOV.png');
-          this.load.image('Level54_DEC',window.baseUrl+'assets/gradeAssets/5.4/DEC.png');
-          this.load.image('Level54_JAN2',window.baseUrl+'assets/gradeAssets/5.4/JAN2.png');
-          this.load.image('Level54_FEB2',window.baseUrl+'assets/gradeAssets/5.4/FEB2.png');
-          this.load.image('Level54_MAR2',window.baseUrl+'assets/gradeAssets/5.4/MAR2.png');
-          this.load.image('Level54_APR2',window.baseUrl+'assets/gradeAssets/5.4/APR2.png');
-          this.load.image('Level54_MAY2',window.baseUrl+'assets/gradeAssets/5.4/MAY2.png');
-          this.load.image('Level54_JUNE2',window.baseUrl+'assets/gradeAssets/5.4/JUNE2.png');
-          this.load.image('Level54_JULY2',window.baseUrl+'assets/gradeAssets/5.4/JULY2.png');
-          this.load.image('Level54_AUG2',window.baseUrl+'assets/gradeAssets/5.4/AUG2.png');
-          this.load.image('Level54_SEP2',window.baseUrl+'assets/gradeAssets/5.4/SEP2.png');
-          this.load.image('Level54_OCT2',window.baseUrl+'assets/gradeAssets/5.4/OCT2.png');
-          this.load.image('Level54_NOV2',window.baseUrl+'assets/gradeAssets/5.4/NOV2.png');
-          this.load.image('Level54_DEC2',window.baseUrl+'assets/gradeAssets/5.4/DEC2.png');*/
-
+     
 
         //common assets
         this.load.image('Level54_bg1', window.baseUrl + 'assets/gradeAssets/5.4/bg54.png');
@@ -5801,14 +4172,6 @@ Game.preloader.prototype = {
         this.load.image('Level61_year', window.baseUrl + 'assets/gradeAssets/6.1/year.png');
 
 
-        /* this.load.atlas('Level61_monday',window.baseUrl+'assets/gradeAssets/6.1/monday.png',window.baseUrl+'json/gradeJson/6.1/monday.json');
-         this.load.atlas('Level61_Tuesday',window.baseUrl+'assets/gradeAssets/6.1/Tuesday.png',window.baseUrl+'json/gradeJson/6.1/tuesday.json');
-         this.load.atlas('Level61_wednesday',window.baseUrl+'assets/gradeAssets/6.1/wednesday.png',window.baseUrl+'json/gradeJson/6.1/wednesday.json');
-         this.load.atlas('Level61_thusday',window.baseUrl+'assets/gradeAssets/6.1/thusday.png',window.baseUrl+'json/gradeJson/6.1/thursday.json');
-         this.load.atlas('Level61_friday',window.baseUrl+'assets/gradeAssets/6.1/friday.png',window.baseUrl+'json/gradeJson/6.1/friday.json');
-         this.load.atlas('Level61_saturday',window.baseUrl+'assets/gradeAssets/6.1/saturday.png',window.baseUrl+'json/gradeJson/6.1/saturday.json');
-         this.load.atlas('Level61_sunday',window.baseUrl+'assets/gradeAssets/6.1/sunday.png',window.baseUrl+'json/gradeJson/6.1/sunday.json');*/
-
         this.load.atlas('Level61_monday', 'BB/assets/newAssets/1.png', 'BB/assets/newAssets/1.json');
         this.load.atlas('Level61_Tuesday', 'BB/assets/newAssets/2.png', 'BB/assets/newAssets/2.json');
         this.load.atlas('Level61_wednesday', 'BB/assets/newAssets/3.png', 'BB/assets/newAssets/3.json');
@@ -5837,15 +4200,6 @@ Game.preloader.prototype = {
 
         this.load.image('Level62_year', window.baseUrl + 'assets/gradeAssets/6.2/year.png');
 
-
-        /*this.load.atlas('Level62_monday',window.baseUrl+'assets/gradeAssets/6.2/monday.png',window.baseUrl+'json/gradeJson/6.2/monday.json');
-        this.load.atlas('Level62_Tuesday',window.baseUrl+'assets/gradeAssets/6.2/Tuesday.png',window.baseUrl+'json/gradeJson/6.2/tuesday.json');
-        this.load.atlas('Level62_wednesday',window.baseUrl+'assets/gradeAssets/6.2/wednesday.png',window.baseUrl+'json/gradeJson/6.2/wednesday.json');
-        this.load.atlas('Level62_thusday',window.baseUrl+'assets/gradeAssets/6.2/thursday.png',window.baseUrl+'json/gradeJson/6.2/thursday.json');
-        this.load.atlas('Level62_friday',window.baseUrl+'assets/gradeAssets/6.2/friday.png',window.baseUrl+'json/gradeJson/6.2/friday.json');
-        this.load.atlas('Level62_saturday',window.baseUrl+'assets/gradeAssets/6.2/saturday.png',window.baseUrl+'json/gradeJson/6.2/saturday.json');
-        this.load.atlas('Level62_sunday',window.baseUrl+'assets/gradeAssets/6.2/sunday.png',window.baseUrl+'json/gradeJson/6.2/sunday.json');*/
-
         this.load.atlas('Level62_monday', 'BB/assets/newAssets/1.png', 'BB/assets/newAssets/1.json');
         this.load.atlas('Level62_Tuesday', 'BB/assets/newAssets/2.png', 'BB/assets/newAssets/2.json');
         this.load.atlas('Level62_wednesday', 'BB/assets/newAssets/3.png', 'BB/assets/newAssets/3.json');
@@ -5866,20 +4220,7 @@ Game.preloader.prototype = {
         this.load.image('Level71_backg', window.baseUrl + 'assets/gradeAssets/7.1/backg.png');
         this.load.atlas('Level71_clock1', window.baseUrl + 'assets/gradeAssets/7.1/clock1.png', window.baseUrl + 'json/gradeJson/7.1/clock1.json');
         this.load.atlas('Level71_clock2', window.baseUrl + 'assets/gradeAssets/7.1/clock2.png', window.baseUrl + 'json/gradeJson/7.1/clock2.json');
-        //this.load.atlas('Level71_clock3',window.baseUrl+'assets/gradeAssets/7.1/clock3.png' ,window.baseUrl+'json.gradeJson/7.1/clock3.json');
-        //this.load.atlas('Level71_timer',window.baseUrl+'assets/gradeAssets/7.1/timer.png',window.baseUrl+'json.gradeJson/7.1/timer.json');
-
-
-        //this.load.image('Level71_questionBackground', 'questionBackground.png');
-
-        // this.load.audio('Level71_baudio', ['BackgroundSound.mp3', 'BackgroundSound.ogg']);
-        // this.load.audio('Level71_waudio', ['WrongCelebrationSound.mp3', 'WrongCelebrationSound.ogg']);
-        //this.load.audio('Level71_ClickSound', 'ClickSound.mp3');
-        // this.load.audio('Level71_baudio1', ['BackgroundMusic.mp3', 'BackgroundMusic.ogg']);
-        // this.load.audio('Level71_celebr', 'celebration.mp3');
-
-        //this.load.image('Level71_playBg', 'playbg.png');
-
+    
         this.load.image('Level71_langBg', window.baseUrl + 'assets/gradeAssets/7.1/langbg.png');
 
 
@@ -13143,22 +11484,7 @@ Game.preloader.prototype = {
 
     shutdown: function () {
         _this.preloadBar = null;
-        /*_this.bg = null;
-        _this.preloadBar = null;
-        _this = null;*/
-
-        /*_this.world.onChildInputDown.removeAll();
-        _this.world.removeChildren(0, _this.world.length);
-
-        //this = null;
-        _this = null;*/
-
-        /*if(_this.loadingSound)
-        {
-            _this.loadingSound.stop();
-            _this.loadingSound = null;
-        }*/
-
+    
         if (_this.loadingSound) {
             if (_this.loadingSound.contains(_this.loadingSoundSrc)) {
                 _this.loadingSound.removeChild(_this.loadingSoundSrc);

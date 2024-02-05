@@ -237,59 +237,7 @@ Game.grade5NumberOperation.prototype={
 						//_this.tween = null;
 					}
 				}
-				/*_this.graphicsBg.inputEnabled = true;
-				_this.graphicsBg.input.enableDrag();
-				_this.graphicsBg.input.allowHorizontalDrag = false;
-
-				_this.graphicsBg.events.onDragUpdate.add(function(){
-					_this.tap = false;
-					if(_this.tween)
-					{
-						if(_this.tween.isRunning)
-						{
-							_this.tween.stop();
-							//_this.tween = null;
-						}
-					}
-					if(_this.graphicsBg.y>=10)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = 0;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-					else if(_this.graphicsBg.y<=-1570)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -1570;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-				},_this);
-
-				_this.graphicsBg.events.onDragStop.add(function(e){
-					_this.tap = false;
-					//console.log(e);
-					if(_this.tween)
-					{
-						//if(tween.isRunning)
-						_this.tween.stop();
-						//_this.tween = null;
-					}
-
-						if(_this.graphicsBg.y>=0)
-						{
-						//	swipeDownFlag = false;
-							_this.graphicsBg.y = 0;
-						}
-						else if(_this.graphicsBg.y<=-1570)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -1570;
-						}
-					
-				},_this);*/
-
+			
 			},_this);
 		
 		_this.input.onTap.add(function(){
@@ -303,35 +251,7 @@ Game.grade5NumberOperation.prototype={
 		},_this);
 
 		
-		/*if(gradeScreen)
-		{
-			_this.graphicsBg.y = -1570;
-
-			var gameScreenTween = game.add.tween(_this.graphicsBg);
-			gameScreenTween.to({ y: 0}, 2000, 'Linear', true, 0);
-			gameScreenTween.onComplete.add(function(){
-					this.game.input.enabled = true;	
-
-					if(_this.mc)
-					{
-						_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
-					}
-
-
-			}, _this);
-
-
-			gradeScreen = false;
-
-		}
-		else
-		{
-			if(_this.mc)
-			{
-				_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
-			}
-			this.game.input.enabled = true;
-		}*/
+	
 		this.game.input.enabled = true;
 	},
 	
@@ -598,15 +518,7 @@ Game.grade5NumberOperation.prototype={
 
 		_this.spatialRelationship5Txt.wordWrap = true;
 		_this.spatialRelationship5Txt.wordWrapWidth = 500;
-		//_this.fractions1_2BScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2BScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2BScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2BScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-		
+	
 
 		_this.spatialRelationship5.inputEnabled = true;
 		_this.spatialRelationship5.input.useHandCursor = true;
@@ -639,12 +551,6 @@ Game.grade5NumberOperation.prototype={
 					this.video.addToWorld();
 					
 					this.video.play(false);
-					//this.video.mute = true;
-
-					/*if(window.languageSelected == "Kannada" || window.languageSelected == "Gujarati")
-					{
-						this.video.playbackRate = 0.8;
-					}*/
 					
 					this.time.events.add(1000, function(){
                 this.skipDemos = this.add.sprite(820,400,'skipDemoVideos');

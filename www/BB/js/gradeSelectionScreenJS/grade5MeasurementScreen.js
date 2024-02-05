@@ -654,14 +654,7 @@ Game.grade5Measurement.prototype={
 
 		_this.volumes4_3AScreenTxt.wordWrap = true;
 		_this.volumes4_3AScreenTxt.wordWrapWidth = 500;
-		//_this.volumes4_3AScreenTxt.setTextBounds(0,0,500,500);
-		//_this.volumes4_3AScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.volumes4_3AScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.volumes4_3AScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
+	
 		
 		_this.volumes4_3AScreen.inputEnabled = true;
 		_this.volumes4_3AScreen.input.useHandCursor = true;
@@ -1218,65 +1211,7 @@ Game.grade5Measurement.prototype={
 			_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:false });
 		}
 		document.removeEventListener("online", _this.syncTelFunc, false);
-		/*_this.clickSound = null;
-		_this.mc = null;
-		//_this = null;
-		_this.tween = null;
-		_this.tap = null;
-		_this.background = null;
-		_this.gradeBackBtn = null;
-		_this.grade1FractionGroup = null;
-		_this.grade1LengthGroup = null;
-		_this.grade1WeightGroup = null;
-		_this.graphicsBg = null;
-		_this.mask = null;
-		_this.swipeUpFlag = null;
-		_this.swipeDownFlag = null;
-		_this.page = null; 
-		_this.input.onDown.removeAll();
-		_this.input.onTap.removeAll();
-		_this.time.events.removeAll();
-		
-		_this.topicTxtBg = null;
-		_this.topicTitleText = null;
-		_this.topicBg = null;
-		
-		_this.fractions1_1AScreen.events.onInputDown.removeAll();
-		_this.fractions1_1AScreen = null;
-		_this.fractions1_1AScreenTxt = null;
-		
-		_this.length2_1AScreen.events.onInputDown.removeAll();
-		_this.length2_1AScreen = null;
-		_this.length2_1AScreenTxt = null;
-		
-		_this.length2_1BScreen.events.onInputDown.removeAll();
-		_this.length2_1BScreen = null;
-		_this.length2_1BScreenTxt = null;
-		
-		_this.length2_2Screen.events.onInputDown.removeAll();
-		_this.length2_2Screen = null;
-		_this.length2_2ScreenTxt = null;
-		
-		_this.length2_3Screen.events.onInputDown.removeAll();
-		_this.length2_3Screen = null;
-		_this.length2_3ScreenTxt = null;
-		
-		_this.weight3_1Screen.events.onInputDown.removeAll();
-		_this.weight3_1Screen = null;
-		_this.weight3_1ScreenTxt = null;
-		
-		_this.weight3_2AScreen.events.onInputDown.removeAll();
-		_this.weight3_2AScreen = null;
-		_this.weight3_2AScreenTxt = null;
-		
-		console.log(_this.world);
-
-		_this = null;*/
-
-		/*_this.world.onChildInputDown.removeAll();
-        _this.world.removeChildren(0, _this.world.length);
-
-		_this = null;*/
+	
 	}
 	
 };

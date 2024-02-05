@@ -1217,65 +1217,7 @@ Game.grade4Measurement.prototype={
 			_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:false });
 		}
 		document.removeEventListener("online", _this.syncTelFunc, false);
-		/*_this.clickSound = null;
-		_this.mc = null;
-		//_this = null;
-		_this.tween = null;
-		_this.tap = null;
-		_this.background = null;
-		_this.gradeBackBtn = null;
-		_this.grade1FractionGroup = null;
-		_this.grade1LengthGroup = null;
-		_this.grade1WeightGroup = null;
-		_this.graphicsBg = null;
-		_this.mask = null;
-		_this.swipeUpFlag = null;
-		_this.swipeDownFlag = null;
-		_this.page = null; 
-		_this.input.onDown.removeAll();
-		_this.input.onTap.removeAll();
-		_this.time.events.removeAll();
-		
-		_this.topicTxtBg = null;
-		_this.topicTitleText = null;
-		_this.topicBg = null;
-		
-		_this.fractions1_1AScreen.events.onInputDown.removeAll();
-		_this.fractions1_1AScreen = null;
-		_this.fractions1_1AScreenTxt = null;
-		
-		_this.length2_1AScreen.events.onInputDown.removeAll();
-		_this.length2_1AScreen = null;
-		_this.length2_1AScreenTxt = null;
-		
-		_this.length2_1BScreen.events.onInputDown.removeAll();
-		_this.length2_1BScreen = null;
-		_this.length2_1BScreenTxt = null;
-		
-		_this.length2_2Screen.events.onInputDown.removeAll();
-		_this.length2_2Screen = null;
-		_this.length2_2ScreenTxt = null;
-		
-		_this.length2_3Screen.events.onInputDown.removeAll();
-		_this.length2_3Screen = null;
-		_this.length2_3ScreenTxt = null;
-		
-		_this.weight3_1Screen.events.onInputDown.removeAll();
-		_this.weight3_1Screen = null;
-		_this.weight3_1ScreenTxt = null;
-		
-		_this.weight3_2AScreen.events.onInputDown.removeAll();
-		_this.weight3_2AScreen = null;
-		_this.weight3_2AScreenTxt = null;
-		
-		console.log(_this.world);
 
-		_this = null;*/
-
-		/*_this.world.onChildInputDown.removeAll();
-        _this.world.removeChildren(0, _this.world.length);
-
-		_this = null;*/
 	}
 	
 };

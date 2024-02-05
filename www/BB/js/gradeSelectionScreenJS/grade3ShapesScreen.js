@@ -228,58 +228,7 @@ Game.grade3Shapes.prototype={
 						//_this.tween = null;
 					}
 				}
-				/*_this.graphicsBg.inputEnabled = true;
-				_this.graphicsBg.input.enableDrag();
-				_this.graphicsBg.input.allowHorizontalDrag = false;
-
-				_this.graphicsBg.events.onDragUpdate.add(function(){
-					_this.tap = false;
-					if(_this.tween)
-					{
-						if(_this.tween.isRunning)
-						{
-							_this.tween.stop();
-							//_this.tween = null;
-						}
-					}
-					if(_this.graphicsBg.y>=10)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = 0;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-					else if(_this.graphicsBg.y<=-1570)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -1570;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-				},_this);
-
-				_this.graphicsBg.events.onDragStop.add(function(e){
-					_this.tap = false;
-					//console.log(e);
-					if(_this.tween)
-					{
-						//if(tween.isRunning)
-						_this.tween.stop();
-						//_this.tween = null;
-					}
-
-						if(_this.graphicsBg.y>=0)
-						{
-						//	swipeDownFlag = false;
-							_this.graphicsBg.y = 0;
-						}
-						else if(_this.graphicsBg.y<=-1570)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -1570;
-						}
-					
-				},_this);*/
+			
 
 			},_this);
 		
@@ -293,36 +242,7 @@ Game.grade3Shapes.prototype={
 			},_this);
 		},_this);
 
-		
-		/*if(gradeScreen)
-		{
-			_this.graphicsBg.y = -1570;
-
-			var gameScreenTween = game.add.tween(_this.graphicsBg);
-			gameScreenTween.to({ y: 0}, 2000, 'Linear', true, 0);
-			gameScreenTween.onComplete.add(function(){
-					this.game.input.enabled = true;	
-
-					if(_this.mc)
-					{
-						_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
-					}
-
-
-			}, _this);
-
-
-			gradeScreen = false;
-
-		}
-		else
-		{
-			if(_this.mc)
-			{
-				_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
-			}
-			this.game.input.enabled = true;
-		}*/
+	
 		this.game.input.enabled = true;
 	},
 	
@@ -402,8 +322,7 @@ Game.grade3Shapes.prototype={
 
 		
 		_this.spatialRelationship2 = _this.add.sprite(300,120,'shape 12.1.3');
-		//_this.fractions1_2AScreenTxt = _this.add.sprite(175,250,'pinwheel1_1A');
-		//_this.fractions1_2AScreenTxt.anchor.setTo(0.5);
+		
 
 		_this.bgGraphic2 = this.add.graphics(410,175);
 		_this.bgGraphic2.lineStyle(0, 0xFFFFFF, 0.8);
@@ -423,14 +342,6 @@ Game.grade3Shapes.prototype={
 
 		_this.spatialRelationship2Txt.wordWrap = true;
 		_this.spatialRelationship2Txt.wordWrapWidth = 500;
-		//_this.fractions1_2AScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2AScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2AScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2AScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
 		
 
 		_this.spatialRelationship2.inputEnabled = true;
@@ -532,14 +443,6 @@ Game.grade3Shapes.prototype={
 
 		_this.spatialRelationship4Txt.wordWrap = true;
 		_this.spatialRelationship4Txt.wordWrapWidth = 500;
-		//_this.fractions1_2BScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2BScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2BScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2BScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
 		
 
 		_this.spatialRelationship4.inputEnabled = true;
@@ -619,171 +522,7 @@ Game.grade3Shapes.prototype={
 			
 		},_this);
 
-		/*
-		_this.spatialRelationship5 = _this.add.sprite(100,320,'fractions1_2BScreen');
-		//_this.fractions1_2BScreenTxt = _this.add.sprite(175,250,'pinwheel1_1A');
-		//_this.fractions1_2BScreenTxt.anchor.setTo(0.5);
-
-		_this.bgGraphic5 = this.add.graphics(210,375);
-		_this.bgGraphic5.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphic5.beginFill(0x493A19, 1);
-		_this.bgGraphic5.drawRoundedRect(0,0,30,30,10);
-		_this.bgGraphic5.boundsPadding = 0;
-
-		_this.spatialRelationship5Txt = this.add.text(225, 392, ' \n 5 \n ');
-		_this.spatialRelationship5Txt.anchor.setTo(0.5);
-		_this.spatialRelationship5Txt.align = 'center';
-		
-				
-		_this.spatialRelationship5Txt.font = 'gradefont';
-		_this.spatialRelationship5Txt.fontSize = 20;
-		_this.spatialRelationship5Txt.fontWeight = 'normal';
-		_this.spatialRelationship5Txt.fill = 'white';
-
-		_this.spatialRelationship5Txt.wordWrap = true;
-		_this.spatialRelationship5Txt.wordWrapWidth = 500;
-		//_this.fractions1_2BScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2BScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2BScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2BScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-		
-
-		_this.spatialRelationship5.inputEnabled = true;
-		_this.spatialRelationship5.input.useHandCursor = true;
-		_this.spatialRelationship5.name = "Fractions 1.1 A";
-		_this.spatialRelationship5.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-
-					//telInitializer.gameIdInit("pinwheel1_1A",1);
-					
-					_this.state.start('sg8_1_2level1',true,false);
-				}
-			},_this);
-			
-		},_this);
-
-		_this.spatialRelationship6 = _this.add.sprite(300,320,'fractions1_2BScreen');
-		//_this.fractions1_2BScreenTxt = _this.add.sprite(175,250,'pinwheel1_1A');
-		//_this.fractions1_2BScreenTxt.anchor.setTo(0.5);
-
-		_this.bgGraphic6 = this.add.graphics(410,375);
-		_this.bgGraphic6.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphic6.beginFill(0x493A19, 1);
-		_this.bgGraphic6.drawRoundedRect(0,0,30,30,10);
-		_this.bgGraphic6.boundsPadding = 0;
-
-		_this.spatialRelationship6Txt = this.add.text(425, 392, ' \n 6 \n ');
-		_this.spatialRelationship6Txt.anchor.setTo(0.5);
-		_this.spatialRelationship6Txt.align = 'center';
-		
-				
-		_this.spatialRelationship6Txt.font = 'gradefont';
-		_this.spatialRelationship6Txt.fontSize = 20;
-		_this.spatialRelationship6Txt.fontWeight = 'normal';
-		_this.spatialRelationship6Txt.fill = 'white';
-
-		_this.spatialRelationship6Txt.wordWrap = true;
-		_this.spatialRelationship6Txt.wordWrapWidth = 500;
-		//_this.fractions1_2BScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2BScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2BScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2BScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-		
-
-		_this.spatialRelationship6.inputEnabled = true;
-		_this.spatialRelationship6.input.useHandCursor = true;
-		_this.spatialRelationship6.name = "Fractions 1.1 A";
-		_this.spatialRelationship6.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-
-					//telInitializer.gameIdInit("pinwheel1_1A",1);
-					
-					_this.state.start('sg8_2_2level1',true,false);
-				}
-			},_this);
-			
-		},_this);
-
-		_this.spatialRelationship7 = _this.add.sprite(500,320,'fractions1_2BScreen');
-		//_this.fractions1_2BScreenTxt = _this.add.sprite(175,250,'pinwheel1_1A');
-		//_this.fractions1_2BScreenTxt.anchor.setTo(0.5);
-
-		_this.bgGraphic7 = this.add.graphics(610,375);
-		_this.bgGraphic7.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.bgGraphic7.beginFill(0x493A19, 1);
-		_this.bgGraphic7.drawRoundedRect(0,0,30,30,10);
-		_this.bgGraphic7.boundsPadding = 0;
-
-		_this.spatialRelationship7Txt = this.add.text(625, 392, ' \n 7 \n ');
-		_this.spatialRelationship7Txt.anchor.setTo(0.5);
-		_this.spatialRelationship7Txt.align = 'center';
-		
-				
-		_this.spatialRelationship7Txt.font = 'gradefont';
-		_this.spatialRelationship7Txt.fontSize = 20;
-		_this.spatialRelationship7Txt.fontWeight = 'normal';
-		_this.spatialRelationship7Txt.fill = 'white';
-
-		_this.spatialRelationship7Txt.wordWrap = true;
-		_this.spatialRelationship7Txt.wordWrapWidth = 500;
-		//_this.fractions1_2BScreenTxt.setTextBounds(0,0,500,500);
-		//_this.fractions1_2BScreenTxt.padding.set(50, 50);
-		
-		
-		//_this.fractions1_2BScreenTxt.useAdvancedWrap  = true;
-		
-
-		//_this.fractions1_2BScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-		
-
-		_this.spatialRelationship7.inputEnabled = true;
-		_this.spatialRelationship7.input.useHandCursor = true;
-		_this.spatialRelationship7.name = "Fractions 1.1 A";
-		_this.spatialRelationship7.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-
-					//telInitializer.gameIdInit("pinwheel1_1A",1);
-					
-					_this.state.start('sg8_2_2xlevel1',true,false);
-				}
-			},_this);
-			
-		},_this);
-
-	*/
-		
+	
 		
 		_this.spatialRelationshipGroup.add(_this.topicTxtBg);
 		_this.spatialRelationshipGroup.add(_this.topicTitleText);
@@ -809,14 +548,7 @@ Game.grade3Shapes.prototype={
 		_this.spatialRelationshipGroup.add(_this.bgGraphic5);
 		_this.spatialRelationshipGroup.add(_this.spatialRelationship5Txt);
 
-		/*_this.spatialRelationshipGroup.add(_this.spatialRelationship6);
-		_this.spatialRelationshipGroup.add(_this.bgGraphic6);
-		_this.spatialRelationshipGroup.add(_this.spatialRelationship6Txt);
-
-		_this.spatialRelationshipGroup.add(_this.spatialRelationship7);
-		_this.spatialRelationshipGroup.add(_this.bgGraphic7);
-		_this.spatialRelationshipGroup.add(_this.spatialRelationship7Txt);*/
-
+		
 		
 		
 	},
