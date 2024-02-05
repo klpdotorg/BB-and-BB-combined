@@ -1548,47 +1548,47 @@ Game.grade4NumberSense.prototype={
         if(window.languageSelected=="English")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/English/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/English/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Hindi")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Hindi/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Hindi/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Kannada")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Kannada/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Kannada/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Gujarati")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Gujarati/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Gujarati/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Marathi")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Marathi/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Marathi/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Odiya")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Odiya/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Odiya/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Tamil")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Tamil/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Tamil/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Telugu")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Telugu/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Telugu/Fill_the_boxes.mp3");
         }
         else if(window.languageSelected=="Urdu")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Urdu/Fill_the_boxes.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Urdu/Fill_the_boxes.mp3");
         }
                     
         this.playQuestionSound.appendChild(this.src);
@@ -1603,47 +1603,47 @@ Game.grade4NumberSense.prototype={
         if(window.languageSelected=="English")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/English/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/English/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Hindi")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Hindi/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Hindi/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Kannada")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Kannada/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Kannada/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Gujarati")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Gujarati/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Gujarati/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Marathi")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Marathi/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Marathi/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Odiya")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Odiya/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Odiya/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Tamil")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Tamil/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Tamil/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Telugu")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Telugu/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Telugu/Drag_the_pictures.mp3");
         }
         else if(window.languageSelected=="Urdu")
         {
             this.src = document.createElement('source');
-            this.src.setAttribute("src",window.baseUrl+"questionsounds/NSN1/Urdu/Drag_the_pictures.mp3");
+            this.src.setAttribute("src",window.baseUrl+"questionSounds/NSN1/Urdu/Drag_the_pictures.mp3");
         }
                     
         this.playQuestionSound.appendChild(this.src);
