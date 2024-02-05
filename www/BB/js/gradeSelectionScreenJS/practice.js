@@ -205,19 +205,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			_this.grade1CloudTxt.wordWrap = true;
 			_this.grade1CloudTxt.wordWrapWidth = 500;
-			//_this.grade1CloudTxt.setTextBounds(0,0,500,500);
-			//_this.grade1CloudTxt.padding.set(50, 50);
-
-
-			//_this.grade1CloudTxt.useAdvancedWrap  = true;
-
-
-			//_this.grade1CloudTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-
-
-
-
-			//_this.grade2Cloud = _this.add.sprite(750,190,'grade2Cloud');
+			
 			_this.grade2Cloud = _this.add.sprite(750, 190, 'gradeCloud');
 
 			_this.grade2Cloud.anchor.setTo(0.5);
@@ -244,20 +232,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			_this.grade2CloudTxt.wordWrap = true;
 			_this.grade2CloudTxt.wordWrapWidth = 500;
-			//_this.grade2CloudTxt.setTextBounds(0,0,500,500);
-			//_this.grade2CloudTxt.padding.set(50, 50);
-
-
-			//_this.grade2CloudTxt.useAdvancedWrap  = true;
-
-
-			//_this.grade2CloudTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-
-
-
-
-			//grade3Cloud = _this.add.sprite(_this.world.centerX,_this.world.centerY,'grade3Cloud');
-			//_this.grade3Cloud = _this.add.sprite(250,400,'grade3Cloud');
+		
 			_this.grade3Cloud = _this.add.sprite(_this.world.centerX, _this.world.centerY, 'gradeCloud');
 
 			_this.grade3Cloud.anchor.setTo(0.5);
@@ -283,19 +258,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			_this.grade3CloudTxt.wordWrap = true;
 			_this.grade3CloudTxt.wordWrapWidth = 500;
-			//_this.grade3CloudTxt.setTextBounds(0,0,500,500);
-			//_this.grade3CloudTxt.padding.set(50, 50);
-
-
-			//_this.grade3CloudTxt.useAdvancedWrap  = true;
-
-
-			//_this.grade3CloudTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-
-
-
-			//grade4Cloud = _this.add.sprite(250,400,'grade4Cloud');
-			//_this.grade4Cloud = _this.add.sprite(700,420,'grade4Cloud');
+		
 			_this.grade4Cloud = _this.add.sprite(250, 400, 'gradeCloud');
 
 			_this.grade4Cloud.anchor.setTo(0.5);
@@ -321,18 +284,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			_this.grade4CloudTxt.wordWrap = true;
 			_this.grade4CloudTxt.wordWrapWidth = 500;
-			//_this.grade4CloudTxt.setTextBounds(0,0,500,500);
-			//_this.grade4CloudTxt.padding.set(50, 50);
-
-
-			//_this.grade4CloudTxt.useAdvancedWrap  = true;
-
-
-			//_this.grade4CloudTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-
-
-			//grade4Cloud = _this.add.sprite(250,400,'grade4Cloud');
-			//_this.grade4Cloud = _this.add.sprite(700,420,'grade4Cloud');
+		
 			_this.grade5Cloud = _this.add.sprite(700, 420, 'gradeCloud');
 
 			_this.grade5Cloud.anchor.setTo(0.5);
@@ -358,16 +310,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 
 			_this.grade5CloudTxt.wordWrap = true;
 			_this.grade5CloudTxt.wordWrapWidth = 500;
-			//_this.grade4CloudTxt.setTextBounds(0,0,500,500);
-			//_this.grade4CloudTxt.padding.set(50, 50);
-
-
-			//_this.grade4CloudTxt.useAdvancedWrap  = true;
-
-
-			//_this.grade4CloudTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
-
-
+		
 			_this.graphicsBg = _this.add.graphics(0, 0);
 			_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
 			_this.graphicsBg.beginFill(0xF7D519, 0);
@@ -410,7 +353,6 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			_this.graphicsBg.addChild(_this.grade5CloudTxt);
 
 		}
-
 	},
 
 	onMouseOver: function (target) {
@@ -463,37 +405,7 @@ Game.practiceModegradeSelectionScreen.prototype = {
 	shutdown: function () {
 		window.currScreen = "";
 		document.removeEventListener("online", _this.syncTelFunc, false);
-		/*_this.gradeBackBtn.events.onInputDown.removeAll();
-		_this.grade1Cloud.events.onInputDown.removeAll();
-		_this.grade2Cloud.events.onInputDown.removeAll();
-		_this.grade3Cloud.events.onInputDown.removeAll();
-		_this.grade4Cloud.events.onInputDown.removeAll();
-				
-
-		_this.background = null;
-
-		_this.gradeBackBtn = null;
-
-		_this.grade1Cloud = null;
-		
-		_this.grade2Cloud = null;
-		
-		_this.grade3Cloud = null;
-
-		_this.grade4Cloud = null;
-		
-		_this.graphicsBg = null;
-		
-		_this.clickSound = null;*/
-
-		/*
-		_this.world.onChildInputDown.removeAll();
-		_this.world.removeChildren(0, _this.world.length);
-
-		//this = null;
-		_this = null;*/
 	}
-
 };
 
 function successFunction() {

@@ -61,8 +61,7 @@ var quizCommonFile =
 
         },
 		
-		
-		
+	
 		shuffle: function(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
             

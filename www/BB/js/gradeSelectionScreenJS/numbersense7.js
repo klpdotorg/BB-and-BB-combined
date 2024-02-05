@@ -204,7 +204,6 @@ Game.numbersense7.prototype={
 
     },
 
-	
 	shutdown:function()
 	{
 		

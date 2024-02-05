@@ -74,47 +74,6 @@ Game.selectgrade4MicroConceptScreen.prototype={
 			this.gradeTreeTxt = [];
 
 			this.gameArray = [];
-
-			/*this.NumberSenseGrade1Array = [
-			[app.languageSelected.numberTitle,'unity1_1','unity1_2','unity1_3','unity1_4','unity1_5','unity1_6','unity1_7'],
-			[app.languageSelected.sequenceTitle,'unity2_1_1','unity2_2_1','unity2_3_1','unity2_4_1','unity2_5_1','unity2_6_1'],
-			[app.languageSelected.ComparisionTitle,'unity4_1_1','unity4_2_1','unity4_3_1','unity4_4_1','unity4_5_1'],
-			[app.languageSelected.fractionTitle,'akshara1_1A','akshara1_1B'],
-			];
-
-			this.MeasurementGrade1Array = [
-			[app.languageSelected.additionTitle,'unity5_1','unity6_1','unity7_1_1','unity7_2_1'],
-			[app.languageSelected.subtractionTitle,'unity8_1','unity10_1_1','unity10_2_1'],
-			[app.languageSelected.multiplicationTitle,'unity11_1','unity11_2','unity12_3_1'],
-			[app.languageSelected.divisionTitle,'unity16_1','unity16_2'],
-			];
-
-			this.NumberOperationsGrade1Array = [
-			[app.languageSelected.lengthTitle,'akshara2_1A','akshara2_1B','akshara2_2','akshara2_3'],
-			[app.languageSelected.weightTitle,'akshara3_1','akshara3_2A'],
-			[app.languageSelected.timeTitle,'akshara5_1','akshara5_2','akshara5_4'],
-			];
-
-			/*this.NumberSenseGrade2Array = [
-			[app.languageSelected.sequenceTitle,'unity2_1_2','unity2_2_2','unity2_3_2','unity2_4_2','unity2_5_2','unity2_6_2'],
-			[app.languageSelected.ComparisionTitle,'unity4_3_2','unity4_4_2','unity4_5_2'],
-			[app.languageSelected.placeValueTitle,'unity3_1_1','unity3_2_1'],
-			[app.languageSelected.fractionTitle,'akshara1_1A','akshara1_1B'],
-			];
-
-			this.MeasurementGrade2Array = [
-			[app.languageSelected.additionTitle,'unity7_1_1','unity7_2_1'],
-			[app.languageSelected.subtractionTitle,'unity10_1_2','unity10_2_2'],
-			[app.languageSelected.multiplicationTitle,'unity12_1','unity12_2','unity12_3_2','unity12_3_3'],
-			[app.languageSelected.divisionTitle,'unity15_1','unity16_1','unity16_2','unity16_3','unity17_2','unity17_3'],
-			];
-
-			this.NumberOperationsGrade2Array = [
-			[app.languageSelected.lengthTitle,'akshara2_1A','akshara2_1B','akshara2_2','akshara2_3'],
-			[app.languageSelected.weightTitle,'akshara3_1','akshara3_2A'],
-			[app.languageSelected.timeTitle,'akshara5_1','akshara5_2','akshara5_4','akshara6_1','akshara6_2'],
-			];*/
-			
 			
 			gradeScreen = true;
 			this.background = game.add.tileSprite(0,0,game.world.width,game.world.height,'McBg');
@@ -149,58 +108,12 @@ Game.selectgrade4MicroConceptScreen.prototype={
         		},this);
 
 
-			/*this.microConceptTopics(game,150,250,app.languageSelected.McTopicText1,0);
-			this.microConceptTopics(game,330,400,app.languageSelected.McTopicText2,1);
-			this.microConceptTopics(game,480,250,app.languageSelected.McTopicText3,2);
-			this.microConceptTopics(game,630,400,app.languageSelected.McTopicText4,3);
-			this.microConceptTopics(game,810,300,app.languageSelected.McTopicText5,4);*/
-
-			//this.microConceptTopics(game,180,250,"NUMBER SENSE",0);
-			//this.microConceptTopics(game,480,250,"NUMBER \nOPERATIONS",1);
-
-			//this.microConceptTopics(game,330,250,selctedLang.McTopicText2,"MEASUREMENT","tree3",0);
-			//this.microConceptTopics(game,610,250,selctedLang.McTopicText3,"SHAPES","tree4",1);
-
-
 			this.microConceptTopics(game,100,220,window.selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
 			this.microConceptTopics(game,290,320,window.selctedLang.McTopicText2,"MEASUREMENT","tree2",1);
 			this.microConceptTopics(game,480,220,window.selctedLang.McTopicText5,"NUMBER OPERATIONS","tree3",2);
 			this.microConceptTopics(game,670,320,window.selctedLang.McTopicText3,"SHAPES","tree4",3);
 			this.microConceptTopics(game,860,220,window.selctedLang.McTopicText4,"DATA HANDLING","tree4",4);
 
-			/*this.downloadbg = _this.add.graphics(0, 0);
-			this.downloadbg.lineStyle(0, 0xFFFFFF, 0.8);
-			this.downloadbg.beginFill(0xFFFFFF, 1);
-			this.downloadbg.drawRect(0,0,960,540);
-			this.downloadbg.alpha = 0.5;
-			this.downloadbg.boundsPadding = 0;
-			this.downloadbg.inputEnabled = true;
-			this.downloadbg.events.onInputDown.add(function(){},this);
-
-			this.downloadPopup = _this.add.graphics(230, 170);
-			this.downloadPopup.lineStyle(0, 0xFFFFFF, 0.8);
-			this.downloadPopup.beginFill(0xFFFFFF, 1);
-			this.downloadPopup.drawRect(0,0,500,200);
-			this.downloadPopup.boundsPadding = 0;
-
-			this.downloadTxt = this.add.text(this.world.centerX, this.world.centerY, 'Downloading.... \n 0%');
-			this.downloadTxt.anchor.setTo(0.5);
-			this.downloadTxt.align = 'center';
-			
-					
-			this.downloadTxt.font = 'gradefont';
-			this.downloadTxt.fontSize = 32;
-			this.downloadTxt.fontWeight = 'normal';
-			this.downloadTxt.fill = 'black';
-
-			this.downloadTxt.wordWrap = true;
-			this.downloadTxt.wordWrapWidth = 500;
-
-			this.downlodPopupGrp = this.add.group();
-			this.downlodPopupGrp.add(this.downloadbg);
-			this.downlodPopupGrp.add(this.downloadPopup);
-			this.downlodPopupGrp.add(this.downloadTxt);
-			this.downlodPopupGrp.visible = false;*/
 		}
 		
 	},
@@ -232,23 +145,6 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		this.gradeTreeTxt[arrIndex].wordWrap = true;
 		this.gradeTreeTxt[arrIndex].wordWrapWidth = 500;
 
-		/*if(name=="NUMBER SENSE")
-		{
-			
-			this.checkDirExistsorNot(constant.checkNumberSense4Dir,this.gradeTree[arrIndex]);
-			
-		}
-		else if(name=="MEASUREMENT")
-		{
-			this.checkDirExistsorNot(constant.checkMeasurement4Dir,this.gradeTree[arrIndex]);
-			
-		}
-		else if(name=="NUMBER OPERATIONS")
-		{
-			this.checkDirExistsorNot(constant.checkNumberOperation4Dir,this.gradeTree[arrIndex]);
-			
-		}
-		*/
 	},
 	
 	onMouseOver:function(target)
@@ -285,80 +181,6 @@ Game.selectgrade4MicroConceptScreen.prototype={
 			this.state.start('grade4NumberOperation',true,false);
 		}
 
-
-		//if(target.name=="NUMBER SENSE")
-		//{
-			
-			/*if(numbersense1PrevDownld == false && this.numberSense1Downloaded)
-			{
-				this.confirmReload();
-			}
-			else if(this.downloading==true)
-			{
-				//this.confirmation(constant.downloadNumberSense1,target);
-				//alert("please wait till the previous download is complete");
-			}
-			else if(this.checkDirExistsorNot(constant.checkNumberSense1Dir))
-			{
-				this.state.start('grade1NumberSense',true,false);
-			}
-			else
-			{
-				this.downloadTheFile(constant.downloadNumberSense1,target);
-			}*/
-
-		//	this.checkDownload(constant.checkNumberSense4Dir,"grade4NumberSense",constant.downloadNumberSense4,target,this);
-
-
-		//}
-		//else if(target.name=="MEASUREMENT")
-		//{
-			
-			/*if(measurement1PrevDownld == false && this.measurement1Downloaded)
-			{
-				this.confirmReload();
-			}
-			else if(this.downloading==true)
-			{
-				//this.confirmation(constant.downloadMeasurement1,target);
-				//alert("please wait till the previous download is complete");
-			}
-			else if(this.checkDirExistsorNot(constant.checkMeasurement1Dir))
-			{
-				
-				this.state.start('grade1Measurement',true,false);
-			}
-			else
-			{
-				this.downloadTheFile(constant.downloadMeasurement1,target);
-			}*/
-
-		//	this.checkDownload(constant.checkMeasurement4Dir,"grade4Measurement",constant.downloadMeasurement4,target,this);
-		//}
-		//else if(target.name=="NUMBER OPERATIONS")
-		//{
-			
-			/*if(numberOPeration1PrevDownld == false && this.numperoperation1Downloaded)
-			{
-				this.confirmReload();
-				
-			}
-			else if(this.downloading==true)
-			{
-				//this.confirmation(constant.downloadNumberOperation1,target);
-				//alert("please wait till the previous download is complete");
-			}
-			else if(this.checkDirExistsorNot(constant.checkNumberOperation1Dir))
-			{
-				this.state.start('grade1NumberOperation',true,false);
-			}
-			else
-			{
-				this.downloadTheFile(constant.downloadNumberOperation1,target);
-			}*/
-
-		//	this.checkDownload(constant.checkNumberOperation4Dir,"grade4NumberOperation",constant.downloadNumberOperation4,target,this);
-		//}
 	},
 
 	checkDownload:function(dirPath,stateName,url,target,_this)
@@ -484,37 +306,6 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		  _this.downlodPopupGrp.visible = false;
 
 		  location.reload(); 
-		  
-		  //_this.setDownloadComplete(target);
-
-
-		  /*//alert(_this.downloading);
-		  if(target.name=="NUMBER SENSE")
-		{
-			_this.numberSense1Downloaded = true;
-		}
-		else if(target.name=="MEASUREMENT")
-		{
-			_this.measurement1Downloaded = true;
-		}
-		else if(target.name=="NUMBER OPERATIONS")
-		{
-			_this.numperoperation1Downloaded = true;
-		}
-
-		var retVal = confirm("Download complete do you want to reload the game?");
-               if( retVal == true ){
-               	  location.reload(); 
-                  //return true;
-               }
-               else{
-               	
-                  //return false;
-              }
-
-
-
-		  //_this.confirmReload();*/
 		});
 
 		document.addEventListener("DOWNLOADER_unzipError", function(event){
@@ -562,47 +353,6 @@ Game.selectgrade4MicroConceptScreen.prototype={
 	{
 		if(app.cordova)
 			document.removeEventListener("online", _this.syncTelFunc, false);
-
-		/*this.game = null;
-		delete this.game;
-
-
-		this.background.destroy();
-		this.background = null;
-		delete this.background;
-
-		this.gradeBackBtn.events.onInputDown.removeAll();
-		this.gradeBackBtn.destroy();
-		this.gradeBackBtn = null;
-		delete this.background;
-		
-		this.gradeTree[0].events.onInputDown.removeAll();
-        //this.gradeTree[1].events.onInputDown.removeAll();
-        //this.gradeTree[2].events.onInputDown.removeAll();
-        //this.gradeTree[3].events.onInputDown.removeAll();
-        //this.gradeTree[4].events.onInputDown.removeAll();
-
-        this.gradeTree[0].destroy();
-        //this.gradeTree[1].destroy();
-        //this.gradeTree[2].destroy();
-        //this.gradeTree[3].destroy();
-        //this.gradeTree[4].destroy();
-
-        this.gradeTreeTxt[0].destroy();
-        //this.gradeTreeTxt[1].destroy();
-        //this.gradeTreeTxt[2].destroy();
-        //this.gradeTreeTxt[3].destroy();
-        //this.gradeTreeTxt[4].destroy();
-
-        this.gradeTree = [];
-        this.gradeTree = null;
-
-        this.gradeTreeTxt = [];
-        this.gradeTreeTxt = null;
-
-        delete this.gradeTree;
-        delete this.gradeTreeTxt;*/
-
 	}
 	
 };
