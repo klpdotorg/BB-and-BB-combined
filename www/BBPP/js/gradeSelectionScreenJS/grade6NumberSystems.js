@@ -23,16 +23,6 @@ Game.grade6NumberSystems.prototype = {
 		_this.gradeTopics = gradeTopics;
 		_this.grade = grade;
 		_this.microConcepts = microConcepts;
-
-		//console.log("inside numbersystems menu",_this.userHasPlayed,_this.timeInMinutes,_this.timeInSeconds,_this.game_id,_this.score);
-
-		// if(_this.userHasPlayed !=0 && _this.timeInMinutes != undefined && _this.timeInSeconds != undefined && _this.game_id != undefined && _this.score != 0 && _this.gradeTopics != undefined && _this.grade != undefined && _this.microConcepts != undefined)
-		// {
-		// 	var objData = {
-		// 		game_id:_this.game_id,
-		// 	}
-		// 	BBplusplusdbDetails.bbplusplusdbhandler.executeSql('SELECT totalLearingTimeinHrs AS Hrs, totalLearingTimeinMins As Mins, totalLearingTimeinSecs As Secs FROM UserProgress WHERE gameId ="'+objData.game_id+'"', [], this.localdatasuccess, this.localdatafailed);
-		// }
 	},
 
 	syncTelFunc: function () {
@@ -1344,18 +1334,7 @@ Game.grade6NumberSystems.prototype = {
 
 	addgrade6RatioProportionTopic: function () {
 
-		// if(window.languageSelected == 'Tamil')
-		// {
-		// 	console.log("hey there! Tamil");
-		// 	_this.topicTxtBg = _this.add.graphics(100, 60);
-		// 	_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
-		// 	_this.topicTxtBg.beginFill(0xD957A0, 1);
-		// 	_this.topicTxtBg.drawRoundedRect(0,0,480,100,10);//320
-		// 	_this.topicTxtBg.boundsPadding = 0;
-
-		// 	_this.topicTitleText = this.add.text(340, 85, ' \n '+window.selctedLang.ratioandproportionTitle+' \n ');//260
-		// }else
-		// {
+		
 		console.log("hey there!");
 		_this.topicTxtBg = _this.add.graphics(100, 60);
 		_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -2295,111 +2274,9 @@ Game.grade6NumberSystems.prototype = {
 		}
 
 
-		/*_this.clickSound = null;
-		_this.mc = null;
-		//_this = null;
-		_this.tween = null;
-		_this.tap = null;
-		_this.background = null;
-		_this.gradeBackBtn = null;
-		_this.grade1FractionGroup = null;
-		_this.grade1LengthGroup = null;
-		_this.grade1WeightGroup = null;
-		_this.graphicsBg = null;
-		_this.mask = null;
-		_this.swipeUpFlag = null;
-		_this.swipeDownFlag = null;
-		_this.page = null; 
-		_this.input.onDown.removeAll();
-		_this.input.onTap.removeAll();
-		_this.time.events.removeAll();
-		
-		_this.topicTxtBg = null;
-		_this.topicTitleText = null;
-		_this.topicBg = null;
-		
-		_this.fractions1_1AScreen.events.onInputDown.removeAll();
-		_this.fractions1_1AScreen = null;
-		_this.fractions1_1AScreenTxt = null;
-		
-		_this.length2_1AScreen.events.onInputDown.removeAll();
-		_this.length2_1AScreen = null;
-		_this.length2_1AScreenTxt = null;
-		
-		_this.length2_1BScreen.events.onInputDown.removeAll();
-		_this.length2_1BScreen = null;
-		_this.length2_1BScreenTxt = null;
-		
-		_this.length2_2Screen.events.onInputDown.removeAll();
-		_this.length2_2Screen = null;
-		_this.length2_2ScreenTxt = null;
-		
-		_this.length2_3Screen.events.onInputDown.removeAll();
-		_this.length2_3Screen = null;
-		_this.length2_3ScreenTxt = null;
-		
-		_this.weight3_1Screen.events.onInputDown.removeAll();
-		_this.weight3_1Screen = null;
-		_this.weight3_1ScreenTxt = null;
-		
-		_this.weight3_2AScreen.events.onInputDown.removeAll();
-		_this.weight3_2AScreen = null;
-		_this.weight3_2AScreenTxt = null;
-		
-		console.log(_this.world);
-
-		_this = null;*/
-
-		/*_this.world.onChildInputDown.removeAll();
-		_this.world.removeChildren(0, _this.world.length);
-
-		_this = null;*/
 	},
 
-	//userprogress
-
-	// localdatasuccess:function(result) {
-	// 	console.log("start localdatasuccess",result);
-	// 	console.log("start localdatasuccess"+result.rows.length);
-	// 	if(result.rows.length>0)
-	// 	{
-	// 		console.log("inside if statement",result.rows.item(0));
-	// 		console.log("mins",result.rows.item(0).Mins);
-	// 		console.log("Hrs",result.rows.item(0).Hrs);
-	// 		console.log("secs",result.rows.item(0).Secs);
-	// 		_this.convertTimeinMinandSectoHrsMinsSecs(result.rows.item(0).Hrs,result.rows.item(0).Mins,result.rows.item(0).Secs);
-	// 	}
-	// 	else {
-	// 		_this.storingGameDetails();
-	// 	}
-	// },
-
-	// localdatafailed : function(error){
-	// 	console.log(error);
-	// },
-
-	// storingGameDetails :function()
-	// {
-	// 	console.log("inside storingGameDetails",_this.userHasPlayed,_this.timeInMinutes,_this.timeInSeconds,_this.game_id);
-	// 	console.log(device.serial+"_"+device.uuid);
-	// 	var save_assessment ={
-	// 		device_id:device.serial+"_"+device.uuid,
-	// 		grade: _this.grade,
-	// 		microConcept: _this.microConcepts,
-	// 		gradeTopics:_this.gradeTopics,
-	// 		game_id:_this.game_id,
-	// 		totalLearningTimeinHrs:'0',
-	// 		totalLearningTimeinMins:_this.timeInMinutes.toString(),
-	// 		totalLearningTimeinSecs:_this.timeInSeconds.toString(),
-	// 		score:_this.score,
-	// 	}
-	// 	console.log("save assessment",save_assessment.microConcept);
-	// 	if(_this.userHasPlayed == 1)
-	// 	{
-	// 		BBplusplusdbDetails.userProgressSaving(save_assessment);
-	// 	}
-	// },
-
+	
 	convertTimeinMinandSectoHrsMinsSecs: function (Hours1, Minutes1, Seconds1) {
 		console.log("inside convert time", Hours1, Minutes1, Seconds1);
 
