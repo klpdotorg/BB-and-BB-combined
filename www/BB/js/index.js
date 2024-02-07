@@ -128,7 +128,7 @@ var app = {
     this.game.add.text(0, 0, "hack", { font: "1px regfont3", fill: "#FFFFFF" });
     this.game.add.text(0, 0, "hack", { font: "1px regfont4", fill: "#FFFFFF" });
 
-    game.time.events.add(300, function () {
+    game.time.events.add(600, function () {
       game.time.events.removeAll();
      
       game.state.start('mainScreen', true, false, this.app_Mode);

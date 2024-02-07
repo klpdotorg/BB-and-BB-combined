@@ -50,11 +50,11 @@ Game.mainScreen.prototype = {
             bbreglogin.initializeDB();
             _this.game.state.start('appLoginScreen', true, false);
         }, _this);
-        var cloud1_5Txt = this.add.text(200, 308, ' \n' + 'Grade 1-5' + '\n ');//210-40,198+100, 170, 298, 
+        var cloud1_5Txt = this.add.text(210, 315, ' \n' + 'Grade 1-5' + '\n ');//210-40,198+100, 170, 298, 
         // cloud1_5Txt.anchor.setTo(0.5);
         cloud1_5Txt.align = 'center';
         cloud1_5Txt.font = 'gradefont';
-        cloud1_5Txt.fontSize = 34;
+        cloud1_5Txt.fontSize = 32;//34
         cloud1_5Txt.fontWeight = 'normal';
         cloud1_5Txt.fill = '#563814';
         cloud1_5Txt.wordWrap = true;
@@ -70,11 +70,11 @@ Game.mainScreen.prototype = {
             bbregloginbbpp.initializeDB();
             _this.game.state.start('appLoginScreenbbpp', true, false, this.app_Mode);
         }, _this);
-        var cloud6_8Txt = this.add.text(200, 508, ' \n' + 'Grade 6-8' + '\n ');//210,398+100
+        var cloud6_8Txt = this.add.text(210, 515, ' \n' + 'Grade 6-8' + '\n ');//210,398+100
         // cloud6_8Txt.anchor.setTo(0.5);
         cloud6_8Txt.align = 'center';
         cloud6_8Txt.font = 'gradefont';
-        cloud6_8Txt.fontSize = 34;
+        cloud6_8Txt.fontSize = 32;//34
         cloud6_8Txt.fontWeight = 'normal';
         cloud6_8Txt.fill = '#563814';
         cloud6_8Txt.wordWrap = true;
