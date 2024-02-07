@@ -116,7 +116,7 @@ var app = {
 
     game.stage.backgroundColor = '#71c5cf';
     var splash = game.add.sprite(game.world.centerX, game.world.centerY, 'splash');
-    splash.scale.setTo(1);
+    splash.scale.setTo(0.5,0.5);
     splash.anchor.setTo(0.5);
 
     console.log(game);
