@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.akshara.BuildingBlocks" android-versionCode="1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<widget id="com.akshara.easymath" android-versionCode="66" version="8.1.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <name>Building Blocks 1-8</name>
     <description>Sample Apache Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
@@ -27,16 +27,8 @@
         <icon density="xhdpi" src="assets/xhdpi/ic_bbpp_logo.png" />
         <icon density="xxhdpi" src="assets/xxhdpi/ic_bbpp_logo.png" />
 
-
         <!-- Portrait splash screens -->
-        <!-- <splash src="res/screen/android/ic_launcher_monochrome.png" density="port-ldpi"/>
-        <splash src="res/screen/android/ic_launcher_monochrome.png" density="port-mdpi"/>
-        <splash src="res/screen/android/ic_launcher_monochrome.png" density="port-hdpi"/>
-        <splash src="res/screen/android/ic_launcher_monochrome.png" density="port-xhdpi"/>
-        <splash src="res/screen/android/ic_launcher_monochrome.png" density="port-xxhdpi"/> -->
         <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splashscreen.xml" />
-
-        <!-- <preference name="AndroidWindowSplashScreenAnimatedIcon" value="true" /> -->
 
         <allow-intent href="market:*" />
         <preference name="Fullscreen" value="true" /> 
