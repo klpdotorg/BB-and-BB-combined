@@ -29,6 +29,8 @@
 
         <!-- Portrait splash screens -->
         <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splashscreen.xml" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#6082B6" />
+        <preference name="AndroidWindowSplashScreenAnimationDuration" value="1000"/>
 
         <allow-intent href="market:*" />
         <preference name="Fullscreen" value="true" /> 

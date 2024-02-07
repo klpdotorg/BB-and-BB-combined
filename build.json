@@ -1,17 +1,17 @@
 {
     "android": {
         "debug": {
-            "keystore": "buildingblocks.jks",
-            "storePassword": "bbpp1234",
-            "alias": "buildingblocks",
-            "password" : "bbpp1234",
+            "keystore": "buildingBlocks.jks",
+            "storePassword": "Aksharabb@org.in",
+            "alias": "aksharabuildingblockskey",
+            "password" : "Aksharabb@org.in",
             "keystoreType": "jks"
         },
         "release": {
-            "keystore": "buildingblocks.jks",
-            "storePassword": "bbpp1234",
-            "alias": "buildingblocks",
-            "password" : "bbpp1234",
+            "keystore": "buildingBlocks.jks",
+            "storePassword": "Aksharabb@org.in",
+            "alias": "aksharabuildingblockskey",
+            "password" : "Aksharabb@org.in",
             "keystoreType": "jks"
         }
     }
