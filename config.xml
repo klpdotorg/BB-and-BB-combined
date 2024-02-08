@@ -28,9 +28,12 @@
         <icon density="xxhdpi" src="assets/xxhdpi/ic_bbpp_logo.png" />
 
         <!-- Portrait splash screens -->
-        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splashscreen.xml" />
+        <!-- <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splashscreen.xml" />
         <preference name="AndroidWindowSplashScreenBackground" value="#6082B6" />
-        <preference name="AndroidWindowSplashScreenAnimationDuration" value="1000"/>
+        <preference name="AndroidWindowSplashScreenAnimationDuration" value="1000"/> -->
+
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/ic_launcher_monochrome.png"/>
+        <preference name="AndroidWindowSplashScreenBackground" value="#85C1E9" />
 
         <allow-intent href="market:*" />
         <preference name="Fullscreen" value="true" /> 

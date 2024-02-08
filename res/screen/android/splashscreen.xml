@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<splashscreen>
-    <icon src="res/screen/android/ic_launcher_monochrome.png" />
-    <background src="res/screen/android/ic_launcher_background.png" />
-    <duration value="1000" />
-</splashscreen>
