@@ -3431,7 +3431,7 @@ Game.GMSS_04_G7level1.prototype =
                     _this.wrongSound.play();
                 }
             } else {
-                _this.count1++;
+                //_this.count1++;
                 if (_this.selectedBox1 == true && _this.box1.name == 'shape9') {
                     _this.celebrationSound.play();
                     _this.disableBoxes();
