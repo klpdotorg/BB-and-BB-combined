@@ -20,9 +20,6 @@
       "ANDROIDX_WEBKIT_VERSION": "1.4.0",
       "PACKAGE_NAME": "com.akshara.easymath"
     },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.akshara.easymath"
-    },
     "cordova-plugin-firebasex": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
@@ -65,9 +62,6 @@
       "PACKAGE_NAME": "com.akshara.easymath"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "com.akshara.easymath"
-    },
-    "cordova-plugin-zip": {
       "PACKAGE_NAME": "com.akshara.easymath"
     },
     "cordova-sqlite-storage": {
